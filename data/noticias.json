@@ -1,0 +1,196 @@
+{
+  "actualizado": "2026-10-01T08:00:00Z",
+  "noticias": [
+    {
+      "id": "ejemplo-01",
+      "titulo": "[EJEMPLO FICTICIO] La campaña de naranja temprana arranca con calibres medios en la Vega Baja",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-10-01T06:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-1",
+      "imagen": null,
+      "categorias": [
+        "Cítricos",
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "ejemplo-02",
+      "titulo": "[EJEMPLO FICTICIO] Publicado el calendario de pagos anticipados de la PAC para este otoño",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-30T21:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-2",
+      "imagen": "https://picsum.photos/seed/lm-noticia-2/800/450",
+      "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "ejemplo-03",
+      "titulo": "[EJEMPLO FICTICIO] Nuevas restricciones de uso para una materia activa en frutales de hueso",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-30T12:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-3",
+      "imagen": "https://picsum.photos/seed/lm-noticia-3/800/450",
+      "categorias": [
+        "Fitosanitarios",
+        "Frutales"
+      ]
+    },
+    {
+      "id": "ejemplo-04",
+      "titulo": "[EJEMPLO FICTICIO] Bonificación del gasóleo agrícola y nuevas dotaciones de riego",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-30T03:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-4",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ]
+    },
+    {
+      "id": "ejemplo-05",
+      "titulo": "[EJEMPLO FICTICIO] El precio en origen del limón se estabiliza tras varias semanas de subidas",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-29T18:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-5",
+      "imagen": "https://picsum.photos/seed/lm-noticia-5/800/450",
+      "categorias": [
+        "Mercados y precios",
+        "Cítricos"
+      ]
+    },
+    {
+      "id": "ejemplo-06",
+      "titulo": "[EJEMPLO FICTICIO] Recomendaciones para la poda de invierno en melocotonero y nectarina",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-29T09:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-6",
+      "imagen": "https://picsum.photos/seed/lm-noticia-6/800/450",
+      "categorias": [
+        "Frutales"
+      ]
+    },
+    {
+      "id": "ejemplo-07",
+      "titulo": "[EJEMPLO FICTICIO] Seguimiento del cotonet en mandarina: umbrales y momentos de muestreo",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-29T00:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-7",
+      "imagen": null,
+      "categorias": [
+        "Cítricos",
+        "Fitosanitarios"
+      ]
+    },
+    {
+      "id": "ejemplo-08",
+      "titulo": "[EJEMPLO FICTICIO] Abierta la convocatoria de ayudas a la modernización de explotaciones",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-28T15:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-8",
+      "imagen": "https://picsum.photos/seed/lm-noticia-8/800/450",
+      "categorias": [
+        "PAC y ayudas",
+        "Maquinaria"
+      ]
+    },
+    {
+      "id": "ejemplo-09",
+      "titulo": "[EJEMPLO FICTICIO] Recordatorio: inspección ITEAF obligatoria para equipos de aplicación",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-28T06:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-9",
+      "imagen": "https://picsum.photos/seed/lm-noticia-9/800/450",
+      "categorias": [
+        "Maquinaria",
+        "Fitosanitarios"
+      ]
+    },
+    {
+      "id": "ejemplo-10",
+      "titulo": "[EJEMPLO FICTICIO] Guía práctica para revisar caudales y presiones en riego por goteo",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-27T21:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-10",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua",
+        "Hortalizas"
+      ]
+    },
+    {
+      "id": "ejemplo-11",
+      "titulo": "[EJEMPLO FICTICIO] Las exportaciones de cítricos crecen en el primer trimestre de la campaña",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-27T12:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-11",
+      "imagen": "https://picsum.photos/seed/lm-noticia-11/800/450",
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "ejemplo-12",
+      "titulo": "[EJEMPLO FICTICIO] El granado cierra una campaña con buena calidad de fruto",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-27T03:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-12",
+      "imagen": "https://picsum.photos/seed/lm-noticia-12/800/450",
+      "categorias": [
+        "Frutales",
+        "Agricultura ecológica"
+      ]
+    },
+    {
+      "id": "ejemplo-13",
+      "titulo": "[EJEMPLO FICTICIO] Cambios en la condicionalidad reforzada: lo que conviene revisar",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-26T18:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-13",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas",
+        "Gestión de la explotación"
+      ]
+    },
+    {
+      "id": "ejemplo-14",
+      "titulo": "[EJEMPLO FICTICIO] Ensayos de cubiertas vegetales en parcelas de naranjo",
+      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
+      "fecha": "2026-09-26T09:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-14",
+      "imagen": "https://picsum.photos/seed/lm-noticia-14/800/450",
+      "categorias": [
+        "Cítricos",
+        "Agricultura ecológica"
+      ]
+    },
+    {
+      "id": "ejemplo-15",
+      "titulo": "[EJEMPLO FICTICIO] Cuaderno digital SIEX: plazos de registro de tratamientos",
+      "extracto": "",
+      "fecha": "2026-09-26T00:00:00Z",
+      "fuente": "Ejemplo",
+      "url": "https://example.com/noticia-15",
+      "imagen": "https://picsum.photos/seed/lm-noticia-15/800/450",
+      "categorias": [
+        "Gestión de la explotación",
+        "Fitosanitarios"
+      ]
+    }
+  ]
+}
