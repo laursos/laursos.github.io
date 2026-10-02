@@ -1,0 +1,196 @@
+{
+  "dias_conservar": 30,
+  "max_noticias": 300,
+  "longitud_extracto": 250,
+  "fuentes": [
+    {
+      "nombre": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/feed/",
+      "categoria_por_defecto": "General"
+    },
+    {
+      "nombre": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/rss.xml",
+      "categoria_por_defecto": "General"
+    },
+    {
+      "nombre": "CARM - Agricultura",
+      "url": "https://www.carm.es/web/pagina?IDCONTENIDO=694&IDTIPO=200&RASTRO=&CANALRSS=1&TIPORSS=rss_2.0&__EXCLUIR_BUSCADOR_CARM=SI&__PLANT_MAESTRA=/JSP/CARM/plantillasPortal/plantillaVaciaDelTodo.jsp",
+      "categoria_por_defecto": "General",
+      "solo_si_contiene": [
+        "Agua, Agricultura, Ganadería y Pesca"
+      ]
+    },
+    {
+      "nombre": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
+      "categoria_por_defecto": "General"
+    },
+    {
+      "nombre": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/feed/",
+      "categoria_siempre": "Caza"
+    },
+    {
+      "nombre": "Federación de Caza Comunidad Valenciana",
+      "url": "https://federacioncazacv.com/feed/?post_type=prensa",
+      "categoria_siempre": "Caza"
+    },
+    {
+      "nombre": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/feed/",
+      "categoria_siempre": "Caza"
+    }
+  ],
+  "categorias": {
+    "Cítricos": [
+      "cítric*",
+      "citric*",
+      "naranja*",
+      "mandarina*",
+      "limón",
+      "limones",
+      "limonero*",
+      "pomelo*",
+      "clementina*"
+    ],
+    "Hortalizas": [
+      "hortaliza*",
+      "hortícola*",
+      "horticola*",
+      "alcachofa*",
+      "brócoli",
+      "lechuga*",
+      "pimiento*",
+      "tomate*",
+      "coliflor*",
+      "apio"
+    ],
+    "Frutales": [
+      "frutal*",
+      "granada*",
+      "granado*",
+      "almendr*",
+      "melocot*",
+      "albaricoq*",
+      "nectarina*",
+      "ciruel*",
+      "uva de mesa",
+      "olivo*",
+      "aceituna*",
+      "fruta de hueso"
+    ],
+    "Fitosanitarios": [
+      "fitosanit*",
+      "plaga*",
+      "cotonet",
+      "trips",
+      "mosca*",
+      "xylella",
+      "virus",
+      "hongo*",
+      "sanidad vegetal",
+      "biocontrol"
+    ],
+    "Fertilización": [
+      "fertiliza*",
+      "fertilizante*",
+      "abono*",
+      "abonado*",
+      "nitrato*",
+      "nitrógeno",
+      "enmienda*"
+    ],
+    "Riego y agua": [
+      "riego*",
+      "regante*",
+      "agua",
+      "trasvase*",
+      "tajo-segura",
+      "acuífero*",
+      "sequía*",
+      "desalad*",
+      "hídric*",
+      "embalse*",
+      "caudal*"
+    ],
+    "PAC y ayudas": [
+      "pac",
+      "pepac",
+      "plan estratégico",
+      "ecorrégimen*",
+      "ecorregimen*",
+      "eco-régimen*",
+      "ayuda*",
+      "subvenci*",
+      "fega",
+      "convocatoria*",
+      "jóvenes agricultores",
+      "joven agricultor",
+      "modernizaci*",
+      "mejora* de instalaciones",
+      "reconversi*",
+      "gasóleo*",
+      "gasoil",
+      "bonificaci*"
+    ],
+    "Maquinaria": [
+      "maquinaria*",
+      "tractor*",
+      "iteaf",
+      "plan renove",
+      "registro oficial de maquinaria",
+      "pulverizador*",
+      "atomizador*"
+    ],
+    "Gestión de la explotación": [
+      "cuaderno de explotación",
+      "cuaderno digital",
+      "siex",
+      "rea",
+      "regepa",
+      "registro de explotaci*",
+      "sigpac",
+      "asesoramiento",
+      "seguro* agrario*",
+      "agroseguro",
+      "enesa"
+    ],
+    "Agricultura ecológica": [
+      "agricultura ecológica",
+      "producción ecológica",
+      "producto* ecológico*",
+      "certificación ecológica",
+      "caerm",
+      "caecv"
+    ],
+    "Mercados y precios": [
+      "precio*",
+      "mercado*",
+      "export*",
+      "import*",
+      "lonja*",
+      "cotiza*",
+      "arancel*",
+      "mercosur",
+      "consumo",
+      "gasóleo*",
+      "gasoil",
+      "carburante*"
+    ],
+    "Caza": [
+      "caza",
+      "cazador*",
+      "cinegétic*",
+      "coto*",
+      "jabalí*",
+      "conejo*",
+      "perdiz",
+      "perdices",
+      "zorzal*",
+      "veda",
+      "rehala*"
+    ]
+  },
+  "_ayuda": "Palabras clave: sin asterisco = palabra exacta; con * al final = cualquier palabra que empiece así. Una noticia recibe TODAS las categorías que coincidan; si no coincide ninguna, recibe 'General'."
+}
