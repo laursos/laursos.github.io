@@ -154,6 +154,51 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 @media (max-width:1000px){.about-logo{display:none!important}}
 @media (max-width:1080px){.hdr .wrap{grid-template-columns:1fr auto}.nav{display:none}.tile .cap{left:20px;right:20px;bottom:24px}.hero-card{top:28px;padding:20px 24px}}
 @media (max-width:900px){.hero{grid-template-columns:1fr;height:auto;max-height:none}.tile{height:300px}.hero-card{position:relative;left:auto;top:auto;transform:none;margin:24px auto;grid-row:1}.area-head,.about,.contact{grid-template-columns:1fr}.news-grid{grid-template-columns:1fr}.pillars .wrap{grid-template-columns:1fr 1fr}}
+
+/* ===== MEJORAS DE DINÁMICA (oct 2026) ===== */
+/* 1. Pestañas de área como tarjetas + indicador deslizante */
+.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:36px 0 44px;position:relative;padding-bottom:14px}
+.tabs::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:var(--line-2)}
+.tab-ind{position:absolute;bottom:0;left:0;height:3px;width:0;border-radius:3px;background:var(--lm-green);transition:transform .45s cubic-bezier(.65,0,.35,1),width .45s cubic-bezier(.65,0,.35,1)}
+.tab{display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:14px;border:1px solid var(--line-1);background:#fff;color:var(--lm-black);text-align:left;font-weight:400;transition:border-color .25s,box-shadow .25s,transform .25s}
+.tab .ti{flex:none;width:52px;height:52px;border-radius:12px;display:grid;place-items:center;background:var(--lm-green-tint);color:var(--lm-green-dark);transition:background .25s,color .25s,transform .35s}
+.tab .tt{min-width:0}
+.tab b{display:block;font-family:var(--font-display);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em}
+.tab small{display:block;margin-top:3px;font-family:var(--font-body);font-size:12.5px;line-height:1.35;color:var(--lm-gray-500)}
+.tab .tn{margin-left:auto;flex:none;font-family:var(--font-display);font-size:11px;font-weight:700;color:var(--lm-green-dark);background:var(--lm-green-tint);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.tab:hover{border-color:var(--lm-green);transform:translateY(-2px);box-shadow:var(--shadow-2)}
+.tab:hover .ti{transform:rotate(-6deg) scale(1.06)}
+.tab.on{background:#fff;color:var(--lm-black);border-color:var(--lm-green);box-shadow:0 10px 28px rgba(20,122,89,.15)}
+.tab.on .ti{background:var(--lm-green);color:#fff}
+.tab.on .tn{background:var(--lm-green);color:#fff}
+.tab:focus-visible{outline:3px solid var(--lm-green-tint);outline-offset:2px}
+@media (max-width:760px){.tabs{gap:8px}.tab{flex-direction:column;text-align:center;gap:8px;padding:14px 8px}.tab small,.tab .tn{display:none}.tab b{font-size:13px}.tab .ti{width:44px;height:44px}}
+/* 2. Tarjetas de servicio: entrada escalonada + zoom suave */
+.card .cimg{overflow:hidden}
+.card .cimg image-slot{display:block;width:100%;height:100%;transition:transform .6s ease}
+.card:hover{border-color:var(--lm-green);box-shadow:var(--shadow-2);transform:translateY(-3px)}
+.card:hover .cimg image-slot{transform:scale(1.05)}
+@keyframes cardIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+#areas.vis .area.on>[id^="bloque"] .card,#areas.vis .expand.open .card{animation:cardIn .55s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(var(--i,0)*80ms)}
+/* 3. Firma: el logo se revela como un trazo al cargar */
+@keyframes firma{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes pipeIn{from{transform:scaleY(0)}to{transform:none}}
+@keyframes txtIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.brand img{animation:firma 1.5s cubic-bezier(.65,0,.35,1) .15s both}
+.brand .pipe{transform-origin:top;animation:pipeIn .45s ease-out 1.2s both}
+.brand .n{animation:txtIn .5s ease-out 1.4s both}
+.brand .r{animation:txtIn .5s ease-out 1.55s both}
+/* 4. Cabecera que se compacta + barra de progreso + sección activa */
+.hdr{transition:box-shadow .3s,background .3s}
+.hdr .wrap{transition:height .3s ease}
+.hdr .brand img{transition:width .3s ease,height .3s ease}
+.hdr.mini{box-shadow:0 6px 20px rgba(0,0,0,.06);background:rgba(255,255,255,.97)}
+.hdr.mini .wrap{height:60px}
+.hdr.mini .brand img{width:64px!important;height:42px!important}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--lm-green);transform-origin:left;transform:scaleX(0)}
+.nav a.act{color:var(--lm-green-dark)}
+.nav a.act::after{right:0}
+@media (prefers-reduced-motion:reduce){.brand img,.brand .pipe,.brand .n,.brand .r,#areas.vis .card{animation:none!important}.tab-ind,.tab,.card,.card .cimg image-slot{transition:none}}
 </style>
 </head>
 <body class="no-sponsors">
@@ -162,7 +207,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
   <a class="brand" href="#inicio"><img src="./img/logo-isotipo.png" alt="" style="width:84px;height:55px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
   <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
   <a class="cta" href="#contacto">Solicitar cita</a>
-</div></header>
+</div><div class="prog" id="prog" aria-hidden="true"></div></header>
 
 <section class="hero" id="inicio">
   <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Asesoramiento técnico agrícola, cinegético y de maquinaria</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Soluciones técnicas para mejorar tu explotación agrícola.</span></b></p></div>
@@ -174,10 +219,11 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <section class="s" id="servicios"><div class="wrap">
   <div class="eyebrow reveal">Servicios</div>
   <p class="lede reveal">Resuelvo tus dudas técnicas y normativas para que tu explotación cumpla la legislación vigente, con la experiencia y el rigor que tu actividad requiere.</p>
-  <div class="tabs" id="tabs">
-    <button class="tab on" data-area="agricola">Agrícola</button>
-    <button class="tab" data-area="maquinaria">Maquinaria</button>
-    <button class="tab" data-area="cinegetica">Cinegética</button>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Áreas de servicio">
+    <button class="tab on" data-area="agricola" role="tab" aria-selected="true"><span class="ti"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><span class="tt"><b>Agrícola</b><small>Asesoramiento técnico, normativa y ayudas</small></span><span class="tn"></span></button>
+    <button class="tab" data-area="maquinaria" role="tab" aria-selected="false"><span class="ti"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h9l1 7"/><path d="M4 11V4"/><path d="M8 10V4"/><path d="M18 5c-.6 0-1 .4-1 1v5.6"/><path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1"/><circle cx="7" cy="15" r=".5"/><circle cx="7" cy="15" r="5"/><path d="M16 18h-5"/><circle cx="18" cy="18" r="2"/></svg></span><span class="tt"><b>Maquinaria</b><small>ROMA, ITEAF y gasóleo bonificado</small></span><span class="tn"></span></button>
+    <button class="tab" data-area="cinegetica" role="tab" aria-selected="false"><span class="ti"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg></span><span class="tt"><b>Cinegética</b><small>Gestión técnica y documental de cotos</small></span><span class="tn"></span></button>
+    <span class="tab-ind" aria-hidden="true"></span>
   </div>
   <div id="areas"></div>
 </div><h2 class="h2 reveal" style="text-align:center">EN QUÉ TE PUEDO AYUDAR</h2></section>
@@ -289,7 +335,7 @@ const areasEl=document.getElementById('areas');
 // Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
 const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']]];
 const blockHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
-  <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
+  <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card" style="--i:${j}"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
 const CHIP_IMG={asesoramiento:SLOT_SRC['area-asesoramiento']||'./hero-asesoramiento.jpg',normativa:SLOT_SRC['area-normativa']||SLOT_SRC['card-asesoramiento-2']||'./hero-asesoramiento.jpg'};
 GROUPS.forEach(([g,keys],i)=>{
   const div=document.createElement('div');div.className='area'+(i?'':' on');div.dataset.area=g;
@@ -309,12 +355,28 @@ function openSub(k){
 areasEl.addEventListener('click',e=>{const c=e.target.closest('.chip-c');if(c)openSub(c.dataset.sub);});
 // Al abrir o cerrar «+ info», todas las tarjetas de la misma fila hacen lo mismo
 areasEl.addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;const c=b.closest('.card');const open=!c.classList.contains('open');const top=c.offsetTop;[...c.parentElement.children].filter(x=>Math.abs(x.offsetTop-top)<4).forEach(x=>{x.classList.toggle('open',open);const l=x.querySelector('.more .lbl');if(l)l.textContent=open?'Cerrar':'+ info';});});
-function showArea(k){if(k==='asesoramiento'||k==='normativa'){const s=k;k='agricola';setTimeout(()=>{if(!document.querySelector('.chip-c.on[data-sub="'+s+'"]')&&s==='normativa')openSub(s);},0);}document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.area===k));document.querySelectorAll('.area').forEach(a=>a.classList.toggle('on',a.dataset.area===k));}
+function showArea(k){if(k==='asesoramiento'||k==='normativa'){const s=k;k='agricola';setTimeout(()=>{if(!document.querySelector('.chip-c.on[data-sub="'+s+'"]')&&s==='normativa')openSub(s);},0);}document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.area===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});moverIndicador();document.querySelectorAll('.area').forEach(a=>a.classList.toggle('on',a.dataset.area===k));}
 document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)showArea(t.dataset.area);});
 document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showArea(g.dataset.area)));
 
 
 
+
+/* ===== MEJORAS DE DINÁMICA ===== */
+// Nº de servicios en cada pestaña (se calcula solo)
+(function(){const n={};GROUPS.forEach(([g,keys])=>n[g]=keys.reduce((t,k)=>t+AREAS[k].items.length,0));document.querySelectorAll('.tab').forEach(t=>{const x=n[t.dataset.area];t.querySelector('.tn').textContent=x+(x===1?' servicio':' servicios');});})();
+// Indicador verde que se desliza bajo la pestaña activa
+function moverIndicador(){const t=document.querySelector('.tab.on'),ind=document.querySelector('.tab-ind');if(!t||!ind)return;ind.style.width=t.offsetWidth+'px';ind.style.transform='translateX('+t.offsetLeft+'px)';}
+window.addEventListener('resize',moverIndicador);window.addEventListener('load',moverIndicador);moverIndicador();
+// Las tarjetas entran escalonadas cuando la sección se ve
+(function(){const el=document.getElementById('areas');new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){el.classList.add('vis');o.disconnect();}}),{threshold:.1}).observe(el);})();
+// Cabecera compacta + barra de progreso + sección activa en el menú
+(function(){const h=document.querySelector('.hdr'),p=document.getElementById('prog');let tick=false;
+function upd(){const y=window.scrollY,max=document.documentElement.scrollHeight-innerHeight;h.classList.toggle('mini',y>40);if(p)p.style.transform='scaleX('+(max>0?Math.min(y/max,1):0)+')';tick=false;}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();
+const links=[...document.querySelectorAll('.nav a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const secObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(sc=>secObs.observe(sc));
+})();
 
 /* reveal on scroll */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
