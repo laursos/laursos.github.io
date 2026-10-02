@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laura Muñoz Socorro · Ingeniera Técnica Agrícola</title>
+<link rel="stylesheet" href="./css/colors_and_type.css">
+<script src="./js/image-slot.js"></script>
+<link rel="stylesheet" href="./css/noticias.css">
+<link rel="stylesheet" href="./css/carrusel.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--lm-black);font-family:var(--font-body)}
+a{color:var(--lm-green-dark);text-decoration:none}a:hover{color:var(--lm-green)}
+h1,h2,h3{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+/* HEADER */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2)}
+.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;height:76px}
+.brand{display:flex;align-items:center;gap:8px;justify-self:start}
+.brand img{height:50px;width:auto}
+.brand .pipe{width:1px;height:40px;background:var(--lm-green)}
+.brand .n{font-family:var(--font-display);font-weight:800;font-size:13px;text-transform:uppercase;white-space:nowrap;line-height:1.2}
+.brand .r{font-size:11px;color:var(--lm-green-dark);white-space:nowrap}
+.nav{display:flex;gap:26px;font-family:var(--font-display);font-size:13px;font-weight:600}
+.nav a{color:var(--lm-black);position:relative;padding:6px 0;white-space:nowrap}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--lm-green);transition:right .25s ease-out}
+.nav a:hover::after{right:0}
+.cta{white-space:nowrap;justify-self:end;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:600;font-size:13px;padding:10px 18px;border-radius:8px;transition:background .15s}
+.cta:hover{background:var(--lm-green-dark);color:#fff}
+/* HERO MOSAIC */
+.hero{position:relative;height:calc(100vh - 76px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:#fff}
+.tile{position:relative;overflow:hidden}
+.tile .ph{position:absolute;inset:0}
+.tile .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,30,.78) 0%,rgba(10,40,30,.15) 55%,transparent 75%);pointer-events:none;transition:opacity .3s}
+.tile .cap{position:absolute;left:28px;right:28px;bottom:32px;color:#fff;pointer-events:none}
+.tile .cap .k{font-family:var(--font-display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;opacity:.9}
+.tile .cap h2{font-family:var(--font-display);font-weight:800;font-size:clamp(24px,2.6vw,36px);text-transform:uppercase;line-height:1.05;margin-top:8px}
+.tile .cap .go{pointer-events:auto;display:inline-flex;gap:8px;align-items:center;margin-top:14px;color:#fff;font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:3px}
+.hero-card{position:absolute;left:50%;top:44px;transform:translateX(-50%);background:#fff;padding:26px 34px;border-radius:14px;box-shadow:var(--shadow-3);text-align:center;max-width:620px;width:calc(100% - 64px);z-index:2}
+.hero-card h1{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,2.4vw,32px);text-transform:uppercase;line-height:1.1}
+.hero-card p{margin:10px 0 0;font-family:var(--font-display);font-style:italic;color:var(--lm-green-dark);font-size:16px}
+/* SECTIONS */
+section.s{padding:96px 0}
+section.soft{background:var(--lm-gray-50)}
+.eyebrow{font-family:var(--font-display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--lm-green-dark);font-weight:700}
+.h2{font-family:var(--font-display);font-weight:800;font-size:clamp(28px,3.4vw,42px);text-transform:uppercase;line-height:1.05;margin:10px 0 14px}
+.lede{max-width:640px;font-size:17px;line-height:1.6;color:var(--lm-gray-700);text-wrap:pretty}
+/* AREA TABS */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:36px 0 28px}
+.tab{font-family:var(--font-display);font-size:13px;font-weight:600;padding:10px 18px;border-radius:999px;border:1px solid var(--line-1);background:#fff;cursor:pointer;color:var(--lm-black);transition:all .15s}
+.tab:hover{border-color:var(--lm-green)}
+.tab.on{background:var(--lm-green);border-color:var(--lm-green);color:#fff}
+.area-sub{margin-top:56px;padding-top:44px;border-top:1px solid var(--line-1)}
+/* Selector circular del área Agrícola */
+.chooser{display:flex;justify-content:center;gap:clamp(28px,6vw,80px);flex-wrap:wrap;margin:8px 0 36px}
+.chip-c{background:none;border:0;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:16px;font-family:var(--font-display);font-weight:800;font-size:16px;line-height:1.2;text-transform:uppercase;color:var(--lm-black);max-width:240px;text-align:center}
+.chip-c .circ{width:clamp(150px,18vw,210px);aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:var(--shadow-2);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;pointer-events:none}
+.chip-c .circ img{width:100%;height:100%;object-fit:cover;display:block}
+.chip-c:hover .circ,.chip-c:focus-visible .circ{transform:scale(1.04)}
+.chip-c:focus-visible{outline:0}
+.chip-c.on{color:var(--lm-green-dark)}
+.chip-c.on .circ{border-color:var(--lm-green);box-shadow:0 0 0 6px var(--lm-green-tint),var(--shadow-3)}
+.chip-c .hint-c{font-family:var(--font-body);font-weight:600;font-size:12px;text-transform:none;color:var(--lm-green-dark)}
+.expand{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .6s ease,opacity .45s ease}
+.expand>div{overflow:hidden;min-height:0}
+.expand.open{grid-template-rows:1fr;opacity:1}
+.area{display:none}.area.on{display:block;animation:rise .45s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.area-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center;margin-bottom:32px}
+.area-head .img{height:320px;border-radius:14px;overflow:hidden}
+.area-head h3{font-family:var(--font-display);font-weight:800;font-size:28px;text-transform:uppercase;line-height:1.1}
+.area-head p{font-size:16px;line-height:1.6;color:var(--lm-gray-700);margin:12px 0 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.cards.few{grid-template-columns:repeat(auto-fit,minmax(260px,340px));justify-content:center}
+.card{background:#fff;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s,transform .2s}
+.card:hover{border-color:var(--lm-green);box-shadow:var(--shadow-card);transform:translateY(-2px)}
+.card .cimg{height:150px;position:relative}
+.card .cbody{padding:18px 20px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .ct{font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.25}
+.card .more{margin-top:auto;padding-top:10px;display:flex;align-items:center;gap:8px;background:none;border:0;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--lm-green-dark);padding-left:0}
+.card .more .pl{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--lm-green);display:inline-flex;align-items:center;justify-content:center;font-size:15px;line-height:1;transition:transform .25s,background .2s}
+.card.open .more .pl{transform:rotate(45deg);background:var(--lm-green);color:#fff}
+.card .cd{max-height:0;overflow:hidden;transition:max-height .35s ease-out;font-size:14px;line-height:1.6;color:var(--lm-gray-700)}
+.card.open .cd{max-height:260px}
+.card .cd p{margin:8px 0 0}
+/* PILLARS */
+.pillars{background:var(--lm-green);color:#fff;padding:36px 0}
+.pillars .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.pillar .n{font-family:var(--font-display);font-size:12px;opacity:.7}
+.pillar .t{font-family:var(--font-display);font-weight:800;font-size:22px;text-transform:uppercase;margin:6px 0}
+.pillar .d{font-size:14px;line-height:1.5}
+/* NEWS */
+.news-top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:32px}
+.news{background:#fff;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.news .nimg{height:180px}
+.news .nb{padding:18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.news .src{font-family:var(--font-display);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--lm-green-dark);display:flex;justify-content:space-between}
+.news .src span:last-child{color:var(--lm-gray-500);letter-spacing:.04em}
+.news .nt{font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.3;color:var(--lm-black)}
+.news .nl{margin-top:auto;font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.news .del{float:right;background:none;border:0;color:var(--lm-gray-300);cursor:pointer;font-size:16px}
+.news .del:hover{color:var(--lm-danger)}
+.btn-ghost{font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:10px 16px;border-radius:8px;border:1px solid var(--lm-green);background:#fff;color:var(--lm-green-dark);cursor:pointer}
+.btn-ghost:hover{background:var(--lm-green-tint)}
+.feeds{margin-top:18px;font-size:12px;color:var(--lm-gray-500);line-height:1.6}
+.feeds b{color:var(--lm-gray-700)}
+/* modal */
+.mb{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:center;justify-content:center;z-index:100}
+.mb.show{display:flex}
+.modal{background:#fff;border-radius:14px;padding:26px;width:460px;max-width:92vw;display:flex;flex-direction:column;gap:10px}
+.modal h3{font-family:var(--font-display);font-size:15px;text-transform:uppercase;color:var(--lm-green-dark)}
+.modal label{font-family:var(--font-display);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--lm-gray-700)}
+.modal input,.modal select{width:100%;padding:9px 11px;border:1px solid var(--line-1);border-radius:7px;font-family:var(--font-body);font-size:14px;margin-top:4px}
+.modal .row{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+.modal .row button{padding:9px 16px;border-radius:7px;border:0;font-family:var(--font-display);font-weight:700;font-size:12px;text-transform:uppercase;cursor:pointer}
+.save{background:var(--lm-green);color:#fff}.cancel{background:var(--lm-gray-100)}
+/* ABOUT + CONTACT */
+.about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.about .img{aspect-ratio:4/5;border-radius:14px;overflow:hidden}
+.about ul{list-style:none;padding:0;margin:22px 0 0}
+.about li{padding:9px 0 9px 22px;border-bottom:1px solid var(--line-2);position:relative;font-size:15px}
+.about li::before{content:"";position:absolute;left:0;top:17px;width:8px;height:8px;background:var(--lm-green);border-radius:2px}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.clist{display:flex;flex-direction:column;gap:12px;margin-top:22px;font-size:15px}
+.clist div{display:flex;align-items:center;gap:10px}
+.form{background:#fff;border:1px solid var(--line-2);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.form label{display:flex;flex-direction:column;gap:6px;font-family:var(--font-display);font-size:12px;font-weight:600}
+.form input,.form select,.form textarea{font-family:var(--font-body);font-size:14px;padding:10px 12px;border:1px solid var(--line-1);border-radius:8px}
+.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--lm-green);box-shadow:var(--ring-brand)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chk{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--lm-gray-700)}
+.chk input{accent-color:var(--lm-green);margin-top:2px}
+.form button{background:var(--lm-green);color:#fff;border:0;padding:13px;border-radius:8px;font-family:var(--font-display);font-weight:700;font-size:14px;cursor:pointer}
+.form button:hover{background:var(--lm-green-dark)}
+/* FOOTER + SPONSORS */
+.sponsors{background:var(--lm-gray-50);border-top:1px solid var(--line-2);padding:28px 0}
+.sponsors .k{font-family:var(--font-display);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--lm-gray-500);text-align:center;font-weight:700}
+.sponsors .logos{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:16px}
+.sponsors .logos>div{width:150px;height:64px}
+body.no-sponsors .sponsors{display:none}
+footer{background:var(--lm-black);color:rgba(255,255,255,.8);padding:26px 0;text-align:center;font-size:12px;display:flex;flex-direction:column;gap:8px}
+footer .legal{display:flex;justify-content:center;gap:8px 22px;flex-wrap:wrap}
+footer .legal a{color:#fff;text-decoration:underline;text-underline-offset:3px}footer .legal a:hover{color:var(--lm-green)}
+footer .ia{font-size:11px;color:rgba(255,255,255,.65);max-width:640px;margin:0 auto;padding:0 16px}
+.form .rgpd{font-size:11.5px;line-height:1.5;color:var(--lm-gray-700);background:var(--lm-gray-50);border:1px solid var(--line-2);border-radius:8px;padding:10px 12px;margin:0}
+.form .rgpd a,.chk a{color:var(--lm-green-dark)}
+.to-top{position:fixed;right:22px;bottom:22px;z-index:60;width:48px;height:48px;border-radius:50%;border:0;background:var(--lm-green);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-3);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s,background .2s}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}.to-top:hover{background:var(--lm-green-dark)}.to-top:focus-visible{outline:3px solid var(--lm-green-tint);outline-offset:2px}
+footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:rgba(255,255,255,.55)}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:1000px){.about-logo{display:none!important}}
+@media (max-width:1080px){.hdr .wrap{grid-template-columns:1fr auto}.nav{display:none}.tile .cap{left:20px;right:20px;bottom:24px}.hero-card{top:28px;padding:20px 24px}}
+@media (max-width:900px){.hero{grid-template-columns:1fr;height:auto;max-height:none}.tile{height:300px}.hero-card{position:relative;left:auto;top:auto;transform:none;margin:24px auto;grid-row:1}.area-head,.about,.contact{grid-template-columns:1fr}.news-grid{grid-template-columns:1fr}.pillars .wrap{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body class="no-sponsors">
+
+<header class="hdr"><div class="wrap">
+  <a class="brand" href="#inicio"><img src="./img/logo-isotipo.png" alt="" style="width:84px;height:55px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
+  <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
+  <a class="cta" href="#contacto">Solicitar cita</a>
+</div></header>
+
+<section class="hero" id="inicio">
+  <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Asesoramiento técnico agrícola, cinegético y de maquinaria</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Soluciones técnicas para mejorar tu explotación agrícola.</span></b></p></div>
+  <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade" style="width:520px;height:811px"></div><div class="cap"><h2 style="color:#F3F1F1">Agrícola</h2><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
+  <div class="tile"><image-slot class="ph" id="hero-maquinaria" shape="rect" placeholder="Foto tractor / equipo de tratamiento" src="./hero-maquinaria.jpg"></image-slot><div class="shade" style="width:559px;height:808px;left:-37px;top:0px"></div><div class="cap"><h2 style="color:#F3F1F1">Maquinaria</h2><a class="go" href="#servicios" data-area="maquinaria">Ver servicios →</a></div></div>
+  <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./imagen-de-chatgpt-1-oct-2026-13_47_40-muph1q22-5oti.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1FC">Cinegética</h2><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
+</section>
+
+<section class="s" id="servicios"><div class="wrap">
+  <div class="eyebrow reveal">Servicios</div>
+  <p class="lede reveal">Resuelvo tus dudas técnicas y normativas para que tu explotación cumpla la legislación vigente, con la experiencia y el rigor que tu actividad requiere.</p>
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-area="agricola">Agrícola</button>
+    <button class="tab" data-area="maquinaria">Maquinaria</button>
+    <button class="tab" data-area="cinegetica">Cinegética</button>
+  </div>
+  <div id="areas"></div>
+</div><h2 class="h2 reveal" style="text-align:center">EN QUÉ TE PUEDO AYUDAR</h2></section>
+
+<section class="pillars"><div class="wrap">
+  <div class="pillar"><div class="t">Profesional</div><div class="d">Trabajo riguroso y normativa al día.</div></div>
+  <div class="pillar"><div class="t">Cercana</div><div class="d">Te ayudo a entender la burocracia agraria.</div></div>
+  <div class="pillar"><div class="t">Confianza</div><div class="d">Más de 15 años de experiencia en el sector.</div></div>
+  <div class="pillar"><div class="t">Resultados</div><div class="d">Mejora en la gestión de tu explotación.</div></div>
+</div></section>
+
+<section class="s soft noticias" id="noticias" aria-labelledby="noticias-titulo" data-json="./data/noticias.json" data-img-default="./img/noticia-default.jpg"><div class="wrap">
+  <div class="nt-top"><div><div class="eyebrow">Actualidad</div><h2 class="h2" id="noticias-titulo">Noticias del sector</h2></div><p class="nt-upd" id="nt-upd" aria-live="polite">Última actualización: —</p></div>
+  <div class="nc" id="nc" role="region" aria-roledescription="carrusel" aria-label="Noticias destacadas">
+    <div class="nc-viewport"><div class="nc-track" aria-live="off"><div class="nc-slide nc-skel" aria-hidden="true"></div></div></div>
+    <button type="button" class="nc-flecha nc-prev" aria-label="Noticia anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button type="button" class="nc-flecha nc-next" aria-label="Noticia siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+    <div class="nc-puntos" role="group" aria-label="Elegir noticia"></div>
+  </div>
+  <div class="nc-pie"><a class="nc-ver" href="./noticias.html">Ver todas las noticias <span aria-hidden="true">→</span></a></div>
+  <p class="nt-aviso">Las noticias pertenecen a sus respectivos medios. Aquí solo se muestra un extracto con enlace a la fuente original.</p>
+</div></section>
+
+<section class="s" id="sobre"><div class="wrap about">
+  <div class="img"><image-slot id="about-foto" shape="rect" placeholder="Tu foto profesional" src="./img/foto-laura.jpg"></image-slot></div>
+  <div>
+    <div class="eyebrow">Sobre mí</div>
+    <h2 class="h2">Laura Muñoz Socorro</h2>
+    <p class="lede">Ingeniera Técnica Agrícola colegiada nº 1140, con más de 15 años acompañando explotaciones agrícolas, cotos de caza y titulares de maquinaria en sus trámites técnicos y normativos.</p>
+    <div style="display:flex;align-items:stretch;gap:32px">
+    <ul style="flex:1;min-width:240px">
+      <li>Asesora acreditada en GIP y REGFER</li>
+      <li>Tramitación de ayudas, REGEPA y PAC</li>
+      <li>Planes técnicos de caza y gestión cinegética</li>
+      <li>ROMA e inspecciones ITEAF de equipos de tratamiento</li>
+      <li>Cuaderno de campo SIEX e informes agronómicos</li>
+    </ul>
+    <div class="about-logo" style="flex:0 1 28%;min-width:0;display:flex;align-items:center;justify-content:center"><img src="./img/logo-isotipo.png" alt="" style="width:100%;height:auto;max-height:260px;object-fit:contain;opacity:0.35"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="s soft" id="contacto"><div class="wrap contact">
+  <div>
+    <div class="eyebrow">Contacto</div>
+    <h2 class="h2">¿Hablamos?</h2>
+    <p class="lede">Cuéntame qué necesitas y te respondo lo antes posible.</p>
+    <div class="clist">
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>+34 661915900</div>
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#147A59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>laurams.consultoresagricolas@gmail.com</div>
+    </div>
+  </div>
+  <form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Enviado'">
+    <div class="two"><label>Nombre<input required></label><label>Teléfono<input type="tel" required></label></div>
+    <label>Email<input type="email"></label>
+    <label>Servicio que necesitas<select><option>Explotación cítricos</option><option>Explotación hortícola</option><option>Explotación de frutales</option><option>Subvenciones</option><option>Informes</option><option>Trámites</option><option>Cinegética / caza</option><option>Maquinaria / ROMA / ITEAF</option><option>Otros</option></select></label>
+    <label>Cuéntame<textarea rows="3"></textarea></label>
+    <div class="chk"><input type="checkbox" required> <span>He leído y acepto la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></div>
+    <div class="chk"><input type="checkbox"> Acepto recibir comunicaciones y ofertas relacionadas con los servicios</div>
+    <p class="rgpd"><b>Información básica sobre protección de datos.</b> Responsable: Laura Muñoz Socorro. Finalidad: atender tu consulta y, si lo autorizas, enviarte comunicaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos salvo obligación legal. Derechos: acceso, rectificación, supresión y demás en laurams.consultoresagricolas@gmail.com. Más información en la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</p>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</div></section>
+
+<div class="sponsors"><div class="wrap">
+  <div class="k">Colaboradores</div>
+  <div class="logos"><div><image-slot id="sp-1" placeholder="Logo 1" fit="contain"></image-slot></div><div><image-slot id="sp-2" placeholder="Logo 2" fit="contain"></image-slot></div><div><image-slot id="sp-3" placeholder="Logo 3" fit="contain"></image-slot></div><div><image-slot id="sp-4" placeholder="Logo 4" fit="contain"></image-slot></div></div>
+</div></div>
+
+<footer>
+  <span>© 2026 Laura Muñoz Socorro · Ingeniera Técnica Agrícola · Colegiada nº 1140</span>
+  <nav class="legal"><a href="./aviso-legal.html">Aviso legal</a><a href="./privacidad.html">Política de privacidad</a><a href="./cookies.html">Política de cookies</a></nav>
+  <span class="ia">Algunas imágenes de esta web han sido generadas o editadas con inteligencia artificial con fines ilustrativos.</span>
+  <span class="p">Profesional · Cercana · Confianza · Resultados</span>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="Volver al inicio" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+
+
+
+<script>
+const AREAS = {
+  asesoramiento:{t:'Asesoramiento técnico agrícola',d:'Seguimiento de cultivos, fertilización y control de plagas con criterio técnico y conforme a normativa.',items:[
+    ['Asesoramiento técnico integral','Seguimiento de cultivos, control de plagas, recomendaciones de fertilización y toma de decisiones agronómicas. Asesora acreditada en Gestión Integrada de Plagas (GIP) y fertilización (REGFER).'],
+    ['Planes de abonado','Cálculo de necesidades nutritivas, dosis y calendario adaptado al cultivo y producción.'],
+    ['Cuaderno de campo (SIEX)','Implantación y mantenimiento del cuaderno digital: registro de tratamientos, fertilizaciones y labores.'],
+    ['Informes agronómicos y periciales','Informes, valoraciones, declaraciones responsables y documentación técnica para trámites administrativos o legales.'],
+    ['Análisis de datos y viabilidad','Análisis de datos de la explotación y estudios de viabilidad técnico-económica para invertir, ampliar o reconvertir cultivos.'],
+    ['Soluciones IA para la gestión agrícola','Automatización de trámites documentales y herramientas a medida aplicadas al campo.']]},
+  normativa:{t:'Normativa, ayudas y subvenciones',d:'Te acompaño en la tramitación y el cumplimiento de la normativa agraria.',items:[
+    ['PEPAC, Ecorregímenes, REGEPA, REA y Condicionalidad','Tramitación de:<br>-Solicitud Única (PEPAC)+Ecorregímenes.<br>-REGEPA<br>-Registro de Explotaciones Agrícolas<br>-Cumplimiento Condicionalidad'],
+    ['Gestión documental agraria','Agricultura ecológica.<br>-Alegaciónes Sigpac<br>-Recursos de Reposición.<br>-Quemas de Rastrojos<br>-Sanidad en producción primária'],
+    ['Subvenciones y Ayudas','Revisión de convocatorias, preparación del expediente y seguimiento hasta la resolución. de:<br>- Ayuda joven agricultor,<br>- Modernización de explotaciones agrarias<br>- Plan Renove del parque de maquinaria agrícola.<br>- Ayuda Agricultura Ecológica']]},
+  cinegetica:{t:'Servicios cinegéticos',d:'Gestión técnica y documental de cotos y terrenos cinegéticos.',items:[
+    ['Planes técnicos e informes de caza','Redacción y tramitación de planes técnicos de caza adaptados al coto.'],
+    ['Solicitud de daños por Fauna Silvestre','Informes en materia de caza, medio ambiente y conservación de especies.'],
+    ['Recuperación de la caza menor','Diagnóstico del hábitat y propuesta de medidas para la recuperación de especies de caza menor.'],
+    ['Precintos digitales de caza','Gestión y tramitación de precintos digitales.'],
+    ['Censos','Realización de censos de especies cinegéticas.'],
+    ['Medidas de gestión','Propuesta y seguimiento de medidas de gestión del coto.<br>Márgenes multifuncionales con mezcla de semillas, comederos, chozos, bebederos, control de depredadores...'],
+    ['Revista de armas','Tramitación de la revista de armas.']]},
+  maquinaria:{t:'Maquinaria agrícola',d:'Trámites de registro e inspección de maquinaria y equipos de tratamiento.',items:[
+    ['Registro de Maquinaria Agrícola (ROMA)','Solicitud de duplicado del documento del Registro Oficial de Maquinaria Agrícola.'],
+      ['Inspección Técnica de Equipos de Aplicación Fitosanitaria<br>(ITEAF)','Revisión de los equipos de aplicación de fitosanitarios para pasar la inspección técnica ITEAF.']]}
+};
+const SLOT_SRC={'area-normativa':'./norm-area.jpg','card-normativa-0':'./norm-pac.jpg','card-normativa-1':'./norm-documental.jpg','card-normativa-2':'./norm-subvenciones.jpg','area-maquinaria':'./maq-area.jpg','card-maquinaria-0':'./maq-roma.png','card-maquinaria-1':'./maq-iteaf.png','area-cinegetica':'./cin-area.jpg','card-cinegetica-0':'./cin-planes.jpg','card-cinegetica-1':'./cin-danos.jpg','card-cinegetica-2':'./cin-recuperacion.jpg','card-cinegetica-3':'./cin-precintos.jpg','card-cinegetica-4':'./cin-censos.jpg','card-cinegetica-5':'./cin-medidas.jpg','card-cinegetica-6':'./cin-armas.jpg','area-asesoramiento':'./img/agricola.jpg','card-asesoramiento-0':'./img/asesoramiento-integral.jpg','card-asesoramiento-1':'./img/planes-abonado.jpg','card-asesoramiento-2':'./img/cuaderno-campo.jpg','card-asesoramiento-3':'./img/informes.jpg','card-asesoramiento-4':'./img/analisis-datos.jpg','card-asesoramiento-5':'./img/agritech.jpg'};
+const slotSrc=id=>SLOT_SRC[id]?` src="${SLOT_SRC[id]}"`:'';
+const areasEl=document.getElementById('areas');
+// Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
+const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']]];
+const blockHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
+  <div class="cards${a.items.length<3?' few':''}">${a.items.map((it,j)=>`<div class="card"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
+const CHIP_IMG={asesoramiento:SLOT_SRC['area-asesoramiento']||'./hero-asesoramiento.jpg',normativa:SLOT_SRC['area-normativa']||SLOT_SRC['card-asesoramiento-2']||'./hero-asesoramiento.jpg'};
+GROUPS.forEach(([g,keys],i)=>{
+  const div=document.createElement('div');div.className='area'+(i?'':' on');div.dataset.area=g;
+  if(keys.length>1){
+    // Dos círculos con imagen; al elegir uno se despliegan sus servicios
+    div.innerHTML=`<div class="chooser">${keys.map(k=>`<button class="chip-c" type="button" data-sub="${k}" aria-expanded="false" aria-controls="exp-${k}"><span class="circ"><img src="${CHIP_IMG[k]}" alt=""></span><span>${k==='asesoramiento'?'Asesoramiento técnico agrícola':'Normativa, ayudas y subvenciones'}</span><span class="hint-c">Ver servicios</span></button>`).join('')}</div>`+
+      keys.map(k=>`<div class="expand" id="exp-${k}" data-sub="${k}"><div><div id="bloque-${k}">${blockHtml(k,AREAS[k])}</div></div></div>`).join('');
+  } else {
+    div.innerHTML=keys.map(k=>`<div id="bloque-${k}">${blockHtml(k,AREAS[k])}</div>`).join('');
+  }
+  areasEl.appendChild(div);
+});
+function openSub(k){
+  document.querySelectorAll('.chip-c').forEach(c=>{const on=c.dataset.sub===k&&!c.classList.contains('on');c.classList.toggle('on',on);c.setAttribute('aria-expanded',on);c.querySelector('.hint-c').textContent=on?'Ocultar servicios':'Ver servicios';});
+  document.querySelectorAll('.expand').forEach(e=>e.classList.toggle('open',!!document.querySelector('.chip-c.on[data-sub="'+e.dataset.sub+'"]')));
+}
+areasEl.addEventListener('click',e=>{const c=e.target.closest('.chip-c');if(c)openSub(c.dataset.sub);});
+// Al abrir o cerrar «+ info», todas las tarjetas de la misma fila hacen lo mismo
+areasEl.addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;const c=b.closest('.card');const open=!c.classList.contains('open');const top=c.offsetTop;[...c.parentElement.children].filter(x=>Math.abs(x.offsetTop-top)<4).forEach(x=>{x.classList.toggle('open',open);const l=x.querySelector('.more .lbl');if(l)l.textContent=open?'Cerrar':'+ info';});});
+function showArea(k){if(k==='asesoramiento'||k==='normativa'){const s=k;k='agricola';setTimeout(()=>{if(!document.querySelector('.chip-c.on[data-sub="'+s+'"]')&&s==='normativa')openSub(s);},0);}document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.area===k));document.querySelectorAll('.area').forEach(a=>a.classList.toggle('on',a.dataset.area===k));}
+document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)showArea(t.dataset.area);});
+document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showArea(g.dataset.area)));
+
+
+
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Sponsors: hidden until enabled. Activar: añade ?patrocinadores=1 a la URL o ejecuta lmSponsors(true) */
+window.lmSponsors=on=>{localStorage.setItem('lm-sponsors',on?'1':'0');document.body.classList.toggle('no-sponsors',!on)};
+if(new URLSearchParams(location.search).get('patrocinadores')==='1'||localStorage.getItem('lm-sponsors')==='1')document.body.classList.remove('no-sponsors');
+</script>
+<script>/* Botón volver arriba: aparece al bajar */(function(){var b=document.getElementById("to-top");if(!b)return;function u(){b.classList.toggle("show",window.scrollY>window.innerHeight*0.8)}window.addEventListener("scroll",u,{passive:true});u();})();</script>
+<script src="./js/carrusel-noticias.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noticias del sector · Laura Muñoz Socorro</title>
+<meta name="description" content="Agregador de noticias del sector agrícola: cítricos, frutales, PAC, fitosanitarios, riego y mercados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/colors_and_type.css">
+<link rel="stylesheet" href="./css/noticias.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F7F7F5;color:#1A1A1A;font-family:'Open Sans',system-ui,sans-serif}
+a{color:#147A59}a:hover{color:#1FA67A}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.top{background:#fff;border-bottom:1px solid #EFEFEF}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1A1A1A}
+.marca img{height:44px;width:auto}
+.marca .pipe{width:1px;height:36px;background:#1FA67A}
+.marca b{display:block;font-family:Montserrat,sans-serif;font-weight:800;font-size:13px;text-transform:uppercase}
+.marca span span{font-size:11px;color:#147A59}
+.volver{font-family:Montserrat,sans-serif;font-weight:600;font-size:13px;text-decoration:none}
+main{padding:64px 0 80px}
+.eyebrow{font-family:Montserrat,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#147A59;font-weight:700}
+.h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(28px,3.4vw,42px);text-transform:uppercase;line-height:1.05;margin:10px 0 14px}
+@media (max-width:640px){.wrap{padding:0 18px}.marca span{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="marca" href="./index.html"><img src="./img/logo-isotipo.png" alt="Laura Muñoz Socorro"><i class="pipe"></i><span><b>Laura Muñoz Socorro</b><span>Ingeniera Técnica Agrícola</span></span></a>
+  <a class="volver" href="./index.html">← Volver a la web</a>
+</div></header>
+
+<main>
+<section class="noticias" id="noticias" aria-labelledby="noticias-titulo" data-json="./data/noticias.json" data-img-default="./img/noticia-default.jpg"><div class="wrap">
+  <div class="nt-top"><div><div class="eyebrow">Actualidad</div><h1 class="h2" id="noticias-titulo">Noticias del sector</h1></div><p class="nt-upd" id="nt-upd" aria-live="polite">Última actualización: —</p></div>
+  <div class="nt-tools"><div class="nt-filtros" id="nt-filtros" role="group" aria-label="Filtrar noticias por categoría"></div><label class="nt-buscar"><span class="sr">Buscar en las noticias</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><input type="search" id="nt-q" placeholder="Buscar por palabra clave…" autocomplete="off"></label></div>
+  <p class="nt-estado" id="nt-estado" role="status" hidden></p>
+  <div class="nt-grid" id="nt-grid"></div>
+  <div class="nt-mas-wrap"><button type="button" class="nt-mas" id="nt-mas" hidden>Cargar más</button></div>
+  <p class="nt-aviso">Las noticias pertenecen a sus respectivos medios. Aquí solo se muestra un extracto con enlace a la fuente original.</p>
+</div></section>
+</main>
+
+<script src="./js/noticias.js" defer></script>
+</body>
+</html>
