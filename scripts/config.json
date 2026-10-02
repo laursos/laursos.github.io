@@ -3,6 +3,37 @@
   "max_noticias": 300,
   "max_por_fuente": 15,
   "longitud_extracto": 250,
+  "excluir_si_contiene": [
+    "pesca",
+    "pesquer*",
+    "pescador*",
+    "pescado*",
+    "buque*",
+    "acuicultura",
+    "acuícola*",
+    "acuicola*",
+    "marisqueo",
+    "marisco*",
+    "marisquer*",
+    "caladero*",
+    "atún",
+    "merluza*",
+    "sardina*",
+    "boquerón",
+    "boquerones",
+    "cofradía* de pescadores",
+    "flota de arrastre",
+    "cuota* de captura*",
+    "oceanográf*"
+  ],
+  "ignorar_frases": [
+    "Agricultura, Pesca y Alimentación",
+    "Agricultura, Pesca, Alimentación",
+    "Agua, Agricultura, Ganadería y Pesca",
+    "Agricultura, Ganadería y Pesca",
+    "Agricultura, Ganadería, Pesca",
+    "Agricultura y Pesca"
+  ],
   "fuentes": [
     {
       "nombre": "ASAJA Alicante",
@@ -193,5 +224,6 @@
       "rehala*"
     ]
   },
-  "_ayuda": "Palabras clave: sin asterisco = palabra exacta; con * al final = cualquier palabra que empiece así. Una noticia recibe TODAS las categorías que coincidan; si no coincide ninguna, recibe 'General'."
+  "_ayuda": "Palabras clave: sin asterisco = palabra exacta; con * al final = cualquier palabra que empiece así. Una noticia recibe TODAS las categorías que coincidan; si no coincide ninguna, recibe 'General'.",
+  "_ayuda_exclusion": "excluir_si_contiene: noticias que se descartan (salvo si son de Caza). ignorar_frases: textos que se borran antes de comprobar (nombres de ministerios/consejerías que incluyen 'Pesca')."
 }

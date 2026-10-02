@@ -58,6 +58,29 @@ def categorizar(texto, categorias, por_defecto, siempre=None):
     return encontradas or [por_defecto]
 
 
+def compilar_exclusion(cfg):
+    """Prepara el filtro de temas descartados (p. ej. pesca).
+    'ignorar_frases' se borran antes de comprobar, para que el nombre del
+    Ministerio de Agricultura, Pesca y Alimentación no descarte noticias agrícolas."""
+    palabras = cfg.get("excluir_si_contiene", [])
+    if not palabras:
+        return None
+    patron = compilar_categorias({"_": palabras})[0][1]
+    frases = [re.compile(re.escape(f.lower())) for f in cfg.get("ignorar_frases", [])]
+    return patron, frases
+
+
+def es_excluida(texto, categorias_noticia, exclusion):
+    """True si la noticia trata de un tema descartado y no es de caza."""
+    if not exclusion or "Caza" in categorias_noticia:
+        return False
+    patron, frases = exclusion
+    texto = texto.lower()
+    for f in frases:
+        texto = f.sub(" ", texto)
+    return bool(patron.search(texto))
+
+
 def fecha_iso(entrada):
     """Fecha de la noticia; None si el feed no la trae (p. ej. MAPA)."""
     for campo in ("published_parsed", "updated_parsed", "created_parsed"):
@@ -82,7 +105,7 @@ def extraer_imagen(entrada):
     return html.unescape(m.group(1)) if m else None
 
 
-def leer_fuente(fuente, categorias, cfg):
+def leer_fuente(fuente, categorias, cfg, exclusion=None):
     resp = requests.get(fuente["url"], headers=HEADERS, timeout=30)
     resp.raise_for_status()
     feed = feedparser.parse(resp.content)
@@ -110,6 +133,12 @@ def leer_fuente(fuente, categorias, cfg):
         for f in filtros:
             resumen = re.sub(re.escape(f), "", resumen, flags=re.I).strip(" -|·")
 
+        cats = categorizar(f"{titulo} {resumen}", categorias,
+                           fuente.get("categoria_por_defecto", "General"),
+                           fuente.get("categoria_siempre"))
+        if es_excluida(f"{titulo} {resumen}", cats, exclusion):
+            continue
+
         noticias.append({
             "id": hashlib.sha1(url.encode()).hexdigest()[:16],
             "titulo": titulo,
@@ -118,9 +147,7 @@ def leer_fuente(fuente, categorias, cfg):
             "fuente": fuente["nombre"],
             "url": url,
             "imagen": extraer_imagen(e),
-            "categorias": categorizar(f"{titulo} {resumen}", categorias,
-                                      fuente.get("categoria_por_defecto", "General"),
-                                      fuente.get("categoria_siempre")),
+            "categorias": cats,
         })
     return noticias
 
@@ -128,21 +155,27 @@ def leer_fuente(fuente, categorias, cfg):
 def main():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     categorias = compilar_categorias(cfg["categorias"])
+    exclusion = compilar_exclusion(cfg)
 
     # Noticias anteriores (para acumular)
     anteriores = {}
     if SALIDA.exists():
         try:
             for n in json.loads(SALIDA.read_text(encoding="utf-8")).get("noticias", []):
-                if n.get("fuente") != "Ejemplo":  # descarta los datos de prueba
-                    anteriores[n["id"]] = n
+                if n.get("fuente") == "Ejemplo":  # descarta los datos de prueba
+                    continue
+                # Aplica también el filtro de temas a las noticias ya guardadas
+                if es_excluida(f"{n.get('titulo','')} {n.get('extracto','')}",
+                               n.get("categorias", []), exclusion):
+                    continue
+                anteriores[n["id"]] = n
         except (json.JSONDecodeError, KeyError):
             print("Aviso: noticias.json anterior no válido; se regenera.")
 
     errores = 0
     for fuente in cfg["fuentes"]:
         try:
-            nuevas = leer_fuente(fuente, categorias, cfg)
+            nuevas = leer_fuente(fuente, categorias, cfg, exclusion)
             for i, n in enumerate(nuevas):
                 if n["fecha"] is None:
                     # Sin fecha en el feed: se conserva la de la primera vez que se vio;
