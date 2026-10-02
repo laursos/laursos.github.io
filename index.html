@@ -159,7 +159,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .about-top{display:flex;align-items:center;justify-content:space-between;gap:28px}
 .about-top .lede{margin:0}
 .about-logo{flex:none}
-.about-logo img{width:clamp(130px,13vw,190px);height:auto;display:block}
+.about-logo img{width:clamp(120px,12vw,170px);height:auto;display:block}
 .cred{margin-top:28px;display:grid;gap:22px}
 .cred h4{margin:0 0 4px;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lm-green-dark)}
 .cred ul{margin:0}
@@ -211,7 +211,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .hdr .brand img{transition:width .3s ease,height .3s ease}
 .hdr.mini{box-shadow:0 6px 20px rgba(0,0,0,.06);background:rgba(255,255,255,.97)}
 .hdr.mini .wrap{height:60px}
-.hdr.mini .brand img{width:64px!important;height:42px!important}
+.hdr.mini .brand img{width:44px!important;height:55px!important}
 .prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--lm-green);transform-origin:left;transform:scaleX(0)}
 .nav a.act{color:var(--lm-green-dark)}
 .nav a.act::after{right:0}
@@ -247,7 +247,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
   /* Cabecera compacta */
   .hdr .wrap,.hdr.mini .wrap{height:64px}
   .brand{min-width:0;gap:8px}
-  .brand img,.hdr.mini .brand img{width:58px!important;height:38px!important}
+  .brand img,.hdr.mini .brand img{width:46px!important;height:57px!important}
   .brand .pipe{height:32px}
   .brand>span:last-child{min-width:0}
   .brand .n{font-size:12.5px;overflow:hidden;text-overflow:ellipsis}
@@ -289,18 +289,17 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 @media (max-width:760px){
   .hdr .wrap,.hdr.mini .wrap{height:68px;gap:8px}
   .brand{gap:7px}
-  .brand picture{display:flex;flex:none}
-  .brand img,.hdr.mini .brand img{width:42px!important;height:52px!important}
+  .brand img,.hdr.mini .brand img{width:46px!important;height:57px!important}
   .brand img{flex:none;object-fit:contain}
   .brand .pipe{height:40px;flex:none}
   .brand>span:last-child{display:block;min-width:0}
-  .brand .n{white-space:normal;font-size:12.5px;line-height:1.15;overflow:visible;text-overflow:clip}
+  .brand .n{white-space:normal;font-size:12.5px;line-height:1.15;overflow:visible;text-overflow:clip;max-width:13ch}
   .brand .r{font-size:10.5px;margin-top:2px;white-space:normal;line-height:1.2}
   .cta{padding:10px 13px;flex:none}
   .menu-btn{flex:none}
 }
 @media (max-width:380px){
-  .brand img,.hdr.mini .brand img{width:38px!important;height:47px!important}
+  .brand img,.hdr.mini .brand img{width:40px!important;height:50px!important}
   .brand .n{font-size:12px}
 }
 </style>
@@ -308,7 +307,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <body class="no-sponsors">
 
 <header class="hdr"><div class="wrap">
-  <a class="brand" href="#inicio"><picture><source media="(max-width:760px)" srcset="./img/logo-isotipo-recorte.png"><img src="./img/logo-isotipo.png" alt="Logotipo de Laura Muñoz Socorro" style="width:96px;height:63px"></picture><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
+  <a class="brand" href="#inicio"><img class="brand-logo" src="./img/logo-isotipo-recorte.png" alt="Logotipo de Laura Muñoz Socorro" style="width:54px;height:67px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
   <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
   <a class="cta" href="#contacto"><span class="cta-l">Solicitar cita</span><span class="cta-s">Cita</span></a>
   <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span><span></span></button>
@@ -362,7 +361,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
         <h2 class="h2">Laura Muñoz Socorro</h2>
         <p class="lede">Ingeniera Técnica Agrícola colegiada nº 1140. Desde 2006 acompaño a agricultores, cotos de caza y titulares de maquinaria en sus trámites técnicos y normativos, con rigor y la normativa siempre al día.</p>
       </div>
-      <div class="about-logo"><img src="./img/logo-isotipo.png" alt="Logotipo de Laura Muñoz Socorro"></div>
+      <div class="about-logo"><img src="./img/logo-isotipo-recorte.png" alt="Logotipo de Laura Muñoz Socorro"></div>
     </div>
     <div class="cred">
       <div><h4>Titulación</h4><ul>
