@@ -16,20 +16,20 @@ h1,h2,h3{margin:0}
 .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
 /* HEADER */
 .hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2)}
-.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;height:76px}
+.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;height:80px}
 .brand{display:flex;align-items:center;gap:8px;justify-self:start}
 .brand img{height:50px;width:auto}
 .brand .pipe{width:1px;height:40px;background:var(--lm-green)}
-.brand .n{font-family:var(--font-display);font-weight:800;font-size:13px;text-transform:uppercase;white-space:nowrap;line-height:1.2}
-.brand .r{font-size:11px;color:var(--lm-green-dark);white-space:nowrap}
-.nav{display:flex;gap:26px;font-family:var(--font-display);font-size:13px;font-weight:600}
+.brand .n{font-family:var(--font-display);font-weight:800;font-size:14.5px;text-transform:uppercase;white-space:nowrap;line-height:1.2}
+.brand .r{font-size:12.5px;color:var(--lm-green-dark);white-space:nowrap}
+.nav{display:flex;gap:28px;font-family:var(--font-display);font-size:14px;font-weight:600}
 .nav a{color:var(--lm-black);position:relative;padding:6px 0;white-space:nowrap}
 .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--lm-green);transition:right .25s ease-out}
 .nav a:hover::after{right:0}
 .cta{white-space:nowrap;justify-self:end;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:600;font-size:13px;padding:10px 18px;border-radius:8px;transition:background .15s}
 .cta:hover{background:var(--lm-green-dark);color:#fff}
 /* HERO MOSAIC */
-.hero{position:relative;height:calc(100vh - 76px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:#fff}
+.hero{position:relative;height:calc(100vh - 80px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:#fff}
 .tile{position:relative;overflow:hidden}
 .tile .ph{position:absolute;inset:0}
 .tile .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,30,.78) 0%,rgba(10,40,30,.15) 55%,transparent 75%);pointer-events:none;transition:opacity .3s}
@@ -166,6 +166,12 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .cred li b{display:block;font-weight:600;font-size:15px;line-height:1.35}
 .cred li span{display:block;font-size:13px;color:var(--lm-gray-500);margin-top:2px}
 @media (max-width:600px){.about-top{flex-direction:column-reverse;align-items:flex-start}.about-logo img{width:110px}}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.form{position:relative}
+.form button:disabled{opacity:.7;cursor:wait}
+.f-estado{margin:0;padding:10px 12px;border-radius:8px;font-size:14px;line-height:1.5}
+.f-estado.ok{background:var(--lm-green-tint);color:var(--lm-green-darker)}
+.f-estado.err{background:#FBEAEA;color:#8E2B25}
 /* ===== MEJORAS DE DINÁMICA (oct 2026) ===== */
 /* 1. Pestañas de área como tarjetas + indicador deslizante */
 .tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:36px 0 44px;position:relative;padding-bottom:14px}
@@ -215,7 +221,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <body class="no-sponsors">
 
 <header class="hdr"><div class="wrap">
-  <a class="brand" href="#inicio"><img src="./img/logo-isotipo.png" alt="" style="width:84px;height:55px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
+  <a class="brand" href="#inicio"><img src="./img/logo-isotipo.png" alt="" style="width:96px;height:63px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
   <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
   <a class="cta" href="#contacto">Solicitar cita</a>
 </div><div class="prog" id="prog" aria-hidden="true"></div></header>
@@ -301,15 +307,17 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
       <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#147A59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>laurams.consultoresagricolas@gmail.com</div>
     </div>
   </div>
-  <form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Enviado'">
-    <div class="two"><label>Nombre<input required></label><label>Teléfono<input type="tel" required></label></div>
-    <label>Email<input type="email"></label>
-    <label>Servicio que necesitas<select><option>Explotación cítricos</option><option>Explotación hortícola</option><option>Explotación de frutales</option><option>Subvenciones</option><option>Informes</option><option>Trámites</option><option>Cinegética / caza</option><option>Maquinaria / ROMA / ITEAF / Gasóleo B</option><option>Otros</option></select></label>
-    <label>Cuéntame<textarea rows="3"></textarea></label>
-    <div class="chk"><input type="checkbox" required> <span>He leído y acepto la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></div>
-    <div class="chk"><input type="checkbox"> Acepto recibir comunicaciones y ofertas relacionadas con los servicios</div>
-    <p class="rgpd"><b>Información básica sobre protección de datos.</b> Responsable: Laura Muñoz Socorro. Finalidad: atender tu consulta y, si lo autorizas, enviarte comunicaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos salvo obligación legal. Derechos: acceso, rectificación, supresión y demás en laurams.consultoresagricolas@gmail.com. Más información en la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</p>
+  <form class="form" id="form-contacto">
+    <div class="two"><label>Nombre<input name="nombre" required maxlength="120" autocomplete="name"></label><label>Teléfono<input name="telefono" type="tel" required maxlength="30" autocomplete="tel"></label></div>
+    <label>Email<input name="email" type="email" maxlength="160" autocomplete="email"></label>
+    <label>Servicio que necesitas<select name="servicio"><option>Explotación cítricos</option><option>Explotación hortícola</option><option>Explotación de frutales</option><option>Subvenciones</option><option>Informes</option><option>Trámites</option><option>Cinegética / caza</option><option>Maquinaria / ROMA / ITEAF / Gasóleo B</option><option>Otros</option></select></label>
+    <label>Cuéntame<textarea name="mensaje" rows="3" maxlength="3000" placeholder="Por favor, no incluyas datos de salud ni otros datos sensibles."></textarea></label>
+    <label class="hp" aria-hidden="true">No rellenar<input name="web" tabindex="-1" autocomplete="off"></label>
+    <div class="chk"><input type="checkbox" name="privacidad" value="si" required> <span>He leído y acepto la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></div>
+    <div class="chk"><input type="checkbox" name="comunicaciones" value="si"> Acepto recibir comunicaciones y ofertas relacionadas con los servicios</div>
+    <p class="rgpd"><b>Información básica sobre protección de datos.</b> Responsable: Laura Muñoz Socorro. Finalidad: atender tu consulta y, si lo autorizas, enviarte comunicaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos salvo obligación legal; Google actúa como proveedor técnico. Conservación: 12 meses si no hay contratación. Derechos: acceso, rectificación, supresión y demás en laurams.consultoresagricolas@gmail.com. Más información en la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</p>
     <button type="submit">Enviar mensaje</button>
+    <p class="f-estado" id="f-estado" role="status" aria-live="polite" hidden></p>
   </form>
 </div></section>
 
@@ -433,6 +441,20 @@ function claveArea(a){a=a.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
     renderAreas();actualizarContadores();moverIndicador();
   }catch(e){console.info('Servicios: se usan los datos guardados ('+e.message+')');}
 })();
+
+/* ===== FORMULARIO DE CONTACTO =====
+   Envía a un script de Google (Apps Script) de Laura, que guarda la solicitud en su
+   hoja "Solicitudes web (formulario de contacto)" y le manda un aviso por email. */
+const FORM_URL='';  // URL de la aplicación web de Apps Script (…/exec)
+(function(){const f=document.getElementById('form-contacto');if(!f)return;const est=document.getElementById('f-estado'),btn=f.querySelector('button[type=submit]');
+function msg(t,ok){est.textContent=t;est.className='f-estado '+(ok?'ok':'err');est.hidden=false;}
+f.addEventListener('submit',async e=>{e.preventDefault();if(!f.reportValidity())return;
+  if(!FORM_URL){msg('El formulario aún no está activo. Escríbeme a laurams.consultoresagricolas@gmail.com o por WhatsApp al +34 661915900.',false);return;}
+  btn.disabled=true;const txt=btn.textContent;btn.textContent='Enviando…';
+  try{await fetch(FORM_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))});
+    f.reset();msg('¡Gracias! He recibido tu solicitud y te responderé lo antes posible.',true);}
+  catch(err){msg('No se ha podido enviar. Inténtalo de nuevo o escríbeme a laurams.consultoresagricolas@gmail.com.',false);}
+  finally{btn.disabled=false;btn.textContent=txt;}});})();
 
 /* reveal on scroll */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
