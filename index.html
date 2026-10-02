@@ -151,10 +151,21 @@ footer .ia{font-size:11px;color:rgba(255,255,255,.65);max-width:640px;margin:0 a
 footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:rgba(255,255,255,.55)}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out}
 .reveal.in{opacity:1;transform:none}
-@media (max-width:1000px){.about-logo{display:none!important}}
+
 @media (max-width:1080px){.hdr .wrap{grid-template-columns:1fr auto}.nav{display:none}.tile .cap{left:20px;right:20px;bottom:24px}.hero-card{top:28px;padding:20px 24px}}
 @media (max-width:900px){.hero{grid-template-columns:1fr;height:auto;max-height:none}.tile{height:300px}.hero-card{position:relative;left:auto;top:auto;transform:none;margin:24px auto;grid-row:1}.area-head,.about,.contact{grid-template-columns:1fr}.news-grid{grid-template-columns:1fr}.pillars .wrap{grid-template-columns:1fr 1fr}}
 
+@media (min-width:901px){.about{align-items:start}.about .img{position:sticky;top:96px}}
+.about-top{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.about-top .lede{margin:0}
+.about-logo{flex:none}
+.about-logo img{width:clamp(130px,13vw,190px);height:auto;display:block}
+.cred{margin-top:28px;display:grid;gap:22px}
+.cred h4{margin:0 0 4px;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lm-green-dark)}
+.cred ul{margin:0}
+.cred li b{display:block;font-weight:600;font-size:15px;line-height:1.35}
+.cred li span{display:block;font-size:13px;color:var(--lm-gray-500);margin-top:2px}
+@media (max-width:600px){.about-top{flex-direction:column-reverse;align-items:flex-start}.about-logo img{width:110px}}
 /* ===== MEJORAS DE DINÁMICA (oct 2026) ===== */
 /* 1. Pestañas de área como tarjetas + indicador deslizante */
 .tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:36px 0 44px;position:relative;padding-bottom:14px}
@@ -231,7 +242,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <section class="pillars"><div class="wrap">
   <div class="pillar"><div class="t">Profesional</div><div class="d">Trabajo riguroso y normativa al día.</div></div>
   <div class="pillar"><div class="t">Cercana</div><div class="d">Te ayudo a entender la burocracia agraria.</div></div>
-  <div class="pillar"><div class="t">Confianza</div><div class="d">Más de 15 años de experiencia en el sector.</div></div>
+  <div class="pillar"><div class="t">Confianza</div><div class="d">Desde 2006 en el sector agrario.</div></div>
   <div class="pillar"><div class="t">Resultados</div><div class="d">Mejora en la gestión de tu explotación.</div></div>
 </div></section>
 
@@ -250,18 +261,32 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <section class="s" id="sobre"><div class="wrap about">
   <div class="img"><image-slot id="about-foto" shape="rect" placeholder="Tu foto profesional" src="./img/foto-laura.jpg"></image-slot></div>
   <div>
-    <div class="eyebrow">Sobre mí</div>
-    <h2 class="h2">Laura Muñoz Socorro</h2>
-    <p class="lede">Ingeniera Técnica Agrícola colegiada nº 1140, con más de 15 años acompañando explotaciones agrícolas, cotos de caza y titulares de maquinaria en sus trámites técnicos y normativos.</p>
-    <div style="display:flex;align-items:stretch;gap:32px">
-    <ul style="flex:1;min-width:240px">
-      <li>Asesora acreditada en GIP y REGFER</li>
-      <li>Tramitación de ayudas, REGEPA y PAC</li>
-      <li>Planes técnicos de caza y gestión cinegética</li>
-      <li>ROMA e inspecciones ITEAF de equipos de tratamiento</li>
-      <li>Cuaderno de campo SIEX e informes agronómicos</li>
-    </ul>
-    <div class="about-logo" style="flex:0 1 28%;min-width:0;display:flex;align-items:center;justify-content:center"><img src="./img/logo-isotipo.png" alt="" style="width:100%;height:auto;max-height:260px;object-fit:contain;opacity:0.35"></div>
+    <div class="about-top">
+      <div>
+        <div class="eyebrow">Sobre mí</div>
+        <h2 class="h2">Laura Muñoz Socorro</h2>
+        <p class="lede">Ingeniera Técnica Agrícola colegiada nº 1140. Desde 2006 acompaño a agricultores, cotos de caza y titulares de maquinaria en sus trámites técnicos y normativos, con rigor y la normativa siempre al día.</p>
+      </div>
+      <div class="about-logo"><img src="./img/logo-isotipo.png" alt="Logotipo de Laura Muñoz Socorro"></div>
+    </div>
+    <div class="cred">
+      <div><h4>Titulación</h4><ul>
+        <li><b>Ingeniera Técnica Agrícola</b><span>Colegiada nº 1140</span></li>
+        <li><b>Máster Universitario en Sistemas de Gestión Global en Organizaciones</b><span>Universidad CEU San Pablo</span></li>
+        <li><b>Técnico Superior en Prevención de Riesgos Laborales</b><span>Especialidad Seguridad en el Trabajo · 600 h</span></li>
+        <li><b>Experto en Inteligencia Artificial</b><span>Universidad Internacional Isabel I · 6 ECTS</span></li>
+      </ul></div>
+      <div><h4>Acreditaciones oficiales</h4><ul>
+        <li><b>Asesora en Gestión Integrada de Plagas</b><span>Inscrita en el ROPO</span></li>
+        <li><b>Asesora en fertilización</b><span>Inscrita en el REGFER</span></li>
+        <li><b>Inspectora de equipos de aplicación fitosanitaria (ITEAF)</b><span>Certificado de aptitud · Universitat Politècnica de València</span></li>
+        <li><b>Operadora agroambiental</b><span>CIFEA Torre Pacheco · Región de Murcia</span></li>
+      </ul></div>
+      <div><h4>Formación especializada</h4><ul>
+        <li><b>Asesoramiento a explotaciones agrícolas y ganaderas</b><span>Ministerio de Agricultura · 2016 y 2024</span></li>
+        <li><b>Agricultura ecológica en cítricos</b><span>ASAJA Alicante</span></li>
+        <li><b>Sistemas de gestión de calidad ISO 9001</b><span>Universidad Miguel Hernández</span></li>
+      </ul></div>
     </div>
   </div>
 </div></section>
@@ -337,8 +362,11 @@ const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquina
 const blockHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
   <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card" style="--i:${j}"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
 const CHIP_IMG={asesoramiento:SLOT_SRC['area-asesoramiento']||'./hero-asesoramiento.jpg',normativa:SLOT_SRC['area-normativa']||SLOT_SRC['card-asesoramiento-2']||'./hero-asesoramiento.jpg'};
+function renderAreas(){
+const activa=(document.querySelector('.tab.on')||{dataset:{area:'agricola'}}).dataset.area;
+areasEl.replaceChildren();
 GROUPS.forEach(([g,keys],i)=>{
-  const div=document.createElement('div');div.className='area'+(i?'':' on');div.dataset.area=g;
+  const div=document.createElement('div');div.className='area'+(g===activa?' on':'');div.dataset.area=g;
   if(keys.length>1){
     // Dos círculos con imagen; al elegir uno se despliegan sus servicios
     div.innerHTML=`<div class="chooser">${keys.map(k=>`<button class="chip-c" type="button" data-sub="${k}" aria-expanded="false" aria-controls="exp-${k}"><span class="circ"><img src="${CHIP_IMG[k]}" alt=""></span><span>${k==='asesoramiento'?'Asesoramiento técnico agrícola':'Normativa, ayudas y subvenciones'}</span><span class="hint-c">Ver servicios</span></button>`).join('')}</div>`+
@@ -348,6 +376,8 @@ GROUPS.forEach(([g,keys],i)=>{
   }
   areasEl.appendChild(div);
 });
+}
+renderAreas();
 function openSub(k){
   document.querySelectorAll('.chip-c').forEach(c=>{const on=c.dataset.sub===k&&!c.classList.contains('on');c.classList.toggle('on',on);c.setAttribute('aria-expanded',on);c.querySelector('.hint-c').textContent=on?'Ocultar servicios':'Ver servicios';});
   document.querySelectorAll('.expand').forEach(e=>e.classList.toggle('open',!!document.querySelector('.chip-c.on[data-sub="'+e.dataset.sub+'"]')));
@@ -364,7 +394,8 @@ document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showA
 
 /* ===== MEJORAS DE DINÁMICA ===== */
 // Nº de servicios en cada pestaña (se calcula solo)
-(function(){const n={};GROUPS.forEach(([g,keys])=>n[g]=keys.reduce((t,k)=>t+AREAS[k].items.length,0));document.querySelectorAll('.tab').forEach(t=>{const x=n[t.dataset.area];t.querySelector('.tn').textContent=x+(x===1?' servicio':' servicios');});})();
+function actualizarContadores(){const n={};GROUPS.forEach(([g,keys])=>n[g]=keys.reduce((t,k)=>t+AREAS[k].items.length,0));document.querySelectorAll('.tab').forEach(t=>{const x=n[t.dataset.area];t.querySelector('.tn').textContent=x+(x===1?' servicio':' servicios');});}
+actualizarContadores();
 // Indicador verde que se desliza bajo la pestaña activa
 function moverIndicador(){const t=document.querySelector('.tab.on'),ind=document.querySelector('.tab-ind');if(!t||!ind)return;ind.style.width=t.offsetWidth+'px';ind.style.transform='translateX('+t.offsetLeft+'px)';}
 window.addEventListener('resize',moverIndicador);window.addEventListener('load',moverIndicador);moverIndicador();
@@ -376,6 +407,31 @@ function upd(){const y=window.scrollY,max=document.documentElement.scrollHeight-
 addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();
 const links=[...document.querySelectorAll('.nav a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
 const secObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(sc=>secObs.observe(sc));
+})();
+
+/* ===== SERVICIOS DESDE HOJA DE GOOGLE =====
+   Laura edita la hoja "Web · Servicios (editar aquí)" y la web la lee al cargar.
+   Columnas: Área | Servicio | Texto del desplegable (+ info) | Imagen | Mostrar
+   Si la hoja no responde, se muestran los servicios guardados en este archivo. */
+const HOJA_SERVICIOS='1gUFJW0YgrTfwFFGpaT-C9bd9axpXOaojFFugbkzPaQU';
+function parseCSV(t){const r=[];let row=[],c='',q=false;for(let i=0;i<t.length;i++){const ch=t[i];if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++;}else q=false;}else c+=ch;}else if(ch==='"')q=true;else if(ch===','){row.push(c);c='';}else if(ch==='\n'||ch==='\r'){if(ch==='\r'&&t[i+1]==='\n')i++;row.push(c);r.push(row);row=[];c='';}else c+=ch;}if(c!==''||row.length){row.push(c);r.push(row);}return r;}
+const escH=x=>String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const conBr=x=>escH(x.trim()).replace(/\r?\n/g,'<br>');
+function claveArea(a){a=a.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');if(a.startsWith('asesor'))return'asesoramiento';if(a.startsWith('normat')||a.includes('ayuda'))return'normativa';if(a.startsWith('maquin'))return'maquinaria';if(a.startsWith('cineg')||a.startsWith('caza'))return'cinegetica';return null;}
+(async function(){
+  try{
+    const r=await fetch('https://docs.google.com/spreadsheets/d/'+HOJA_SERVICIOS+'/gviz/tq?tqx=out:csv&headers=1&_='+Date.now());
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const filas=parseCSV(await r.text()).slice(1).filter(f=>f.length>=3&&f[1]&&f[1].trim());
+    const nuevo={asesoramiento:[],normativa:[],maquinaria:[],cinegetica:[]},img={};
+    filas.forEach(f=>{const k=claveArea(f[0]||'');if(!k)return;if((f[4]||'').trim().toUpperCase().startsWith('N'))return;
+      const j=nuevo[k].length;nuevo[k].push([conBr(f[1]),conBr(f[2]||'')]);
+      let im=(f[3]||'').trim();img['card-'+k+'-'+j]=im?(/^https?:\/\//.test(im)?im:'./'+im.replace(/^\.?\//,'')):'./img/noticia-default.jpg';});
+    if(!Object.values(nuevo).some(a=>a.length))throw new Error('hoja vacía o sin acceso');
+    Object.keys(nuevo).forEach(k=>{AREAS[k].items=nuevo[k];});
+    Object.keys(SLOT_SRC).filter(id=>id.startsWith('card-')).forEach(id=>delete SLOT_SRC[id]);Object.assign(SLOT_SRC,img);
+    renderAreas();actualizarContadores();moverIndicador();
+  }catch(e){console.info('Servicios: se usan los datos guardados ('+e.message+')');}
 })();
 
 /* reveal on scroll */
