@@ -59,11 +59,12 @@ def categorizar(texto, categorias, por_defecto, siempre=None):
 
 
 def fecha_iso(entrada):
-    for campo in ("published_parsed", "updated_parsed"):
+    """Fecha de la noticia; None si el feed no la trae (p. ej. MAPA)."""
+    for campo in ("published_parsed", "updated_parsed", "created_parsed"):
         t = entrada.get(campo)
         if t:
             return datetime(*t[:6], tzinfo=timezone.utc)
-    return AHORA
+    return None
 
 
 def extraer_imagen(entrada):
@@ -89,8 +90,11 @@ def leer_fuente(fuente, categorias, cfg):
         raise ValueError("el feed no contiene noticias (¿no es RSS?)")
 
     filtros = fuente.get("solo_si_contiene", [])
+    limite = fuente.get("max_noticias", cfg.get("max_por_fuente", 15))
     noticias = []
     for e in feed.entries:
+        if len(noticias) >= limite:  # el feed viene de más reciente a más antigua
+            break
         url = e.get("link")
         titulo = limpiar_html(e.get("title"))
         if not url or not titulo:
@@ -110,7 +114,7 @@ def leer_fuente(fuente, categorias, cfg):
             "id": hashlib.sha1(url.encode()).hexdigest()[:16],
             "titulo": titulo,
             "extracto": recortar(resumen, cfg["longitud_extracto"]),
-            "fecha": fecha_iso(e).isoformat().replace("+00:00", "Z"),
+            "fecha": fecha_iso(e),  # datetime o None; se resuelve en main()
             "fuente": fuente["nombre"],
             "url": url,
             "imagen": extraer_imagen(e),
@@ -139,7 +143,14 @@ def main():
     for fuente in cfg["fuentes"]:
         try:
             nuevas = leer_fuente(fuente, categorias, cfg)
-            for n in nuevas:
+            for i, n in enumerate(nuevas):
+                if n["fecha"] is None:
+                    # Sin fecha en el feed: se conserva la de la primera vez que se vio;
+                    # si es nueva, "ahora" (restando minutos para mantener el orden del feed)
+                    previa = anteriores.get(n["id"], {}).get("fecha")
+                    n["fecha"] = previa or (AHORA - timedelta(minutes=i)).isoformat(timespec="seconds").replace("+00:00", "Z")
+                else:
+                    n["fecha"] = n["fecha"].isoformat().replace("+00:00", "Z")
                 anteriores[n["id"]] = n
             print(f"OK    {fuente['nombre']}: {len(nuevas)} noticias")
         except Exception as ex:  # una fuente caída no detiene el resto

@@ -1,6 +1,7 @@
 {
   "dias_conservar": 30,
   "max_noticias": 300,
+  "max_por_fuente": 15,
   "longitud_extracto": 250,
   "fuentes": [
     {
