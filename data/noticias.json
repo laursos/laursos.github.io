@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02T02:41:48Z",
+  "actualizado": "2026-10-02T02:48:24Z",
   "noticias": [
     {
       "id": "f85af07bf2950316",
@@ -11,30 +11,6 @@
       "imagen": null,
       "categorias": [
         "PAC y ayudas"
-      ]
-    },
-    {
-      "id": "f57aaa6db478c2d2",
-      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación completa la asignación de días de pesca y aumenta los límites de captura de gamba roja para la flota de arrastre del Mediterráneo",
-      "extracto": "La resolución completa la asignación del 100 % de los días de pesca atribuidos a España para 2026 a 549 buques de la flota de arrastre de fondo",
-      "fecha": "2026-10-02T02:40:48Z",
-      "fuente": "MAPA",
-      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-completa-la-asignaci-n-de-d-as-de-pesca-y-aumenta-los-l-mites-de-captura-de-gamba-roja-para-la-flota-de-arrastre-del-mediterr-neo/3d620806-b350-4e1f-bcf0-0f8e79a03680",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ]
-    },
-    {
-      "id": "2314ed87dfd1c79b",
-      "titulo": "España defiende una pesca rentable y con posibilidades de futuro",
-      "extracto": "El ministro Luis Planas defiende una mayor ambición financiera para el sector y un marco que permita modernizar y renovar los buques",
-      "fecha": "2026-10-02T02:39:48Z",
-      "fuente": "MAPA",
-      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/espa-a-defiende-una-pesca-rentable-y-con-posibilidades-de-futuro/c5de3f4e-1901-42f3-8568-c8a1d7b03ffe",
-      "imagen": null,
-      "categorias": [
-        "General"
       ]
     },
     {
@@ -74,6 +50,18 @@
       ]
     },
     {
+      "id": "4dee8fc974f3bd42",
+      "titulo": "Luis Planas destaca el potencial de España para desarrollar tecnologías agroalimentarias innovadoras",
+      "extracto": "El ministro remarca que “somos una gran potencia agroalimentaria y, para seguir siéndolo, tenemos que apostar por la tecnología y un uso eficiente de los recursos”",
+      "fecha": "2026-10-02T02:36:24Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-destaca-el-potencial-de-espa-a-para-desarrollar-tecnolog-as-agroalimentarias-innovadoras/dacdd603-f138-44aa-9d39-d7d7a25938ae",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
       "id": "f1c002cfe741cfd3",
       "titulo": "Luis Planas sitúa la cooperación entre España y América Latina y Caribe como clave para afrontar los grandes retos agroalimentarios",
       "extracto": "El ministro destaca el cambio climático, la volatilidad de los mercados, la sanidad o el relevo generacional como algunos de los desafíos comunes y ofrece la experiencia española para avanzar en soluciones compartidas",
@@ -86,15 +74,28 @@
       ]
     },
     {
-      "id": "f2185725484572f3",
-      "titulo": "El buque escuela Intermares imparte formación a un centenar de profesionales del sector marítimo-pesquero de Mauritania",
-      "extracto": "",
-      "fecha": "2026-10-02T02:34:48Z",
+      "id": "d35e19e111545b8e",
+      "titulo": "Luis Planas reivindica la ciencia como motor de innovación del sector agroalimentario",
+      "extracto": "El Gobierno refuerza la innovación y la tecnología para garantizar la seguridad alimentaria y la rentabilidad de las explotaciones en un contexto de cambio climático",
+      "fecha": "2026-10-02T02:35:24Z",
       "fuente": "MAPA",
-      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-buque-escuela-intermares-imparte-formaci-n-a-un-centenar-de-profesionales-del-sector-mar-timo-pesquero-de-mauritania/97bc4a78-c5a2-435d-bdfe-662e27e159f8",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-reivindica-la-ciencia-como-motor-de-innovaci-n-del-sector-agroalimentario/8220f656-fb03-45ea-8cff-c46ea2e8acae",
       "imagen": null,
       "categorias": [
         "General"
+      ]
+    },
+    {
+      "id": "6cf312f359b76306",
+      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación entrega a los regantes del Tajo-Segura nuevas infraestructuras por valor de 59,29 millones de euros",
+      "extracto": "La modernización beneficia a 6.169 regantes que cultivan 13.894 hectáreas en Librilla y Totana",
+      "fecha": "2026-10-02T02:34:24Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-entrega-a-los-regantes-del-tajo-segura-nuevas-infraestructuras-por-valor-de-59-29-millones-de-euros-/3cc9aa87-fe9d-4566-8fc3-4d461c300b40",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua",
+        "PAC y ayudas"
       ]
     },
     {
