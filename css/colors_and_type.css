@@ -1,0 +1,182 @@
+/* ============================================================
+   Laura Muñoz Socorro — Brand foundations
+   Ingeniera Técnica Agrícola · Hortofrutícola y Jardinería
+   ============================================================ */
+
+/* --- Web fonts ---------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ============================================================
+     COLORS — taken directly from the brand identity sheet
+     ============================================================ */
+
+  /* Brand greens */
+  --lm-green:        #1FA67A;   /* Verde principal (primary) */
+  --lm-green-dark:   #147A59;   /* Verde oscuro (deep / hover) */
+  --lm-green-darker: #0E5A41;   /* For text on light backgrounds */
+  --lm-green-tint:   #E8F5EF;   /* Soft tint for surfaces, backgrounds */
+  --lm-green-soft:   #D2EBE0;   /* Slightly stronger tint */
+
+  /* Neutrals */
+  --lm-black:        #1A1A1A;   /* Negro — primary text */
+  --lm-gray-900:     #2B2B2B;
+  --lm-gray-700:     #4A4A4A;
+  --lm-gray-500:     #6B6B6B;   /* Gris (muted text) */
+  --lm-gray-300:     #B8B8B8;
+  --lm-gray-200:     #D9D9D9;
+  --lm-gray-100:     #EFEFEF;
+  --lm-gray-50:      #F7F7F5;   /* Off-white surface */
+  --lm-white:        #FFFFFF;
+
+  /* Earth accents (used sparingly — print, illustrations, photo overlays) */
+  --lm-earth:        #C9A87C;   /* Trigo dorado — warm accent */
+  --lm-earth-dark:   #8C6F47;
+  --lm-leaf:         #6B9A5B;   /* Verde sembrado — secondary natural green */
+
+  /* Semantic */
+  --lm-success:      var(--lm-green);
+  --lm-warning:      #D69A2D;
+  --lm-danger:       #C0463E;
+  --lm-info:         #2E7CB8;
+
+  /* Foreground / background tokens */
+  --fg-1:            var(--lm-black);
+  --fg-2:            var(--lm-gray-700);
+  --fg-3:            var(--lm-gray-500);
+  --fg-on-green:     var(--lm-white);
+  --fg-brand:        var(--lm-green);
+  --fg-brand-strong: var(--lm-green-dark);
+
+  --bg-1:            var(--lm-white);
+  --bg-2:            var(--lm-gray-50);
+  --bg-3:            var(--lm-gray-100);
+  --bg-brand:        var(--lm-green);
+  --bg-brand-soft:   var(--lm-green-tint);
+
+  --line-1:          var(--lm-gray-200);
+  --line-2:          var(--lm-gray-100);
+  --line-brand:      var(--lm-green);
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+  --font-display: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-body:    'Open Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale — print + screen friendly */
+  --t-display:    clamp(2.75rem, 5vw, 4rem);     /* @kind font */ /* 44–64px */
+  --t-h1:         clamp(2rem, 3.5vw, 2.75rem);   /* @kind font */ /* 32–44px */
+  --t-h2:         clamp(1.5rem, 2.5vw, 2rem);    /* @kind font */ /* 24–32px */
+  --t-h3:         1.25rem;                       /* 20px */
+  --t-h4:         1.0625rem;                     /* 17px */
+  --t-body:       1rem;                          /* 16px */
+  --t-small:      0.875rem;                      /* 14px */
+  --t-micro:      0.75rem;                       /* 12px */
+  --t-eyebrow:    0.6875rem;                     /* 11px UPPERCASE */
+
+  --lh-tight:     1.1; /* @kind font */
+  --lh-snug:      1.25; /* @kind font */
+  --lh-normal:    1.5; /* @kind font */
+  --lh-relaxed:   1.65; /* @kind font */
+
+  --ls-tight:     -0.015em;
+  --ls-normal:    0; /* @kind font */
+  --ls-wide:      0.04em;
+  --ls-eyebrow:   0.14em;
+
+  /* ============================================================
+     SPACING / RADIUS / SHADOW
+     ============================================================ */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   14px;
+  --r-xl:   20px;
+  --r-pill: 999px;
+
+  --shadow-1: 0 1px 2px rgba(20, 122, 89, 0.06), 0 1px 1px rgba(0,0,0,0.04);
+  --shadow-2: 0 4px 12px rgba(20, 122, 89, 0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-3: 0 12px 32px rgba(20, 122, 89, 0.12), 0 4px 8px rgba(0,0,0,0.06);
+  --shadow-card: 0 2px 8px rgba(20, 122, 89, 0.08);
+
+  --ring-brand: 0 0 0 3px rgba(31, 166, 122, 0.25);
+}
+
+/* ============================================================
+   SEMANTIC ELEMENTS — drop-in defaults
+   ============================================================ */
+body {
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  line-height: var(--lh-normal);
+  color: var(--fg-1);
+  background: var(--bg-1);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--fg-1);
+  letter-spacing: var(--ls-tight);
+  line-height: var(--lh-tight);
+  margin: 0;
+  text-transform: uppercase; /* Brand uses UPPERCASE for headings */
+}
+
+h1 { font-size: var(--t-h1); }
+h2 { font-size: var(--t-h2); }
+h3 { font-size: var(--t-h3); text-transform: none; letter-spacing: 0; }
+h4 { font-size: var(--t-h4); text-transform: none; letter-spacing: 0; font-weight: 600; }
+
+p  { margin: 0 0 var(--s-4) 0; line-height: var(--lh-relaxed); color: var(--fg-2); }
+
+a  { color: var(--fg-brand-strong); text-decoration: none; }
+a:hover { color: var(--lm-green); text-decoration: underline; text-underline-offset: 2px; }
+
+small { font-size: var(--t-small); color: var(--fg-3); }
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--bg-2);
+  padding: 0.1em 0.3em;
+  border-radius: var(--r-sm);
+}
+
+/* Utility classes the rest of the system uses */
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--t-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-eyebrow);
+  font-weight: 700;
+  color: var(--fg-brand-strong);
+}
+
+.lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--fg-brand-strong);
+  font-size: 1.0625rem;
+}
+
+.divider-brand {
+  height: 1px;
+  background: linear-gradient(to right, var(--lm-green), var(--lm-green-tint) 60%, transparent);
+  border: 0;
+  margin: var(--s-4) 0;
+}
