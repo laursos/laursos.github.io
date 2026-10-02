@@ -42,7 +42,7 @@
     const img = document.createElement('img');
     img.alt = ''; img.decoding = 'async';
     img.loading = i === 0 ? 'eager' : 'lazy';
-    img.src = imagenTema(n);
+    img.src = urlSegura(n.imagen) || IMG_DEFECTO;
     img.addEventListener('error', () => { if (!img.src.endsWith(IMG_DEFECTO.replace('./', ''))) img.src = IMG_DEFECTO; });
     a.appendChild(img);
     const t = crear('div', 'nc-txt');

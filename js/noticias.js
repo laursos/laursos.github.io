@@ -138,7 +138,7 @@
     img.loading = 'lazy';
     img.decoding = 'async';
     img.alt = '';
-    img.src = imagenTema(n);
+    img.src = urlSegura(n.imagen) || IMG_DEFECTO;
     img.addEventListener('error', function () {
       if (!img.src.endsWith(IMG_DEFECTO.replace('./', ''))) img.src = IMG_DEFECTO;
     });
