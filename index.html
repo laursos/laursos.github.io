@@ -216,6 +216,65 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .nav a.act{color:var(--lm-green-dark)}
 .nav a.act::after{right:0}
 @media (prefers-reduced-motion:reduce){.brand img,.brand .pipe,.brand .n,.brand .r,#areas.vis .card{animation:none!important}.tab-ind,.tab,.card,.card .cimg image-slot{transition:none}}
+
+/* ===== ADAPTACIÓN A MÓVIL Y TABLET (no afecta al escritorio > 1080 px) ===== */
+.menu-btn,.menu-movil,.cta-s{display:none}
+@media (max-width:1080px){
+  .hdr .wrap{grid-template-columns:minmax(0,1fr) auto auto;gap:10px}
+  .menu-btn{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:1px solid var(--line-1);border-radius:10px;background:#fff;cursor:pointer}
+  .menu-btn span{display:block;height:2px;border-radius:2px;background:var(--lm-green-dark);transition:transform .25s,opacity .2s}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .menu-movil{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line-2);box-shadow:0 12px 24px rgba(0,0,0,.08);padding:6px 20px 14px;transform-origin:top;transform:scaleY(.96);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s}
+  .menu-movil.open{opacity:1;transform:none;visibility:visible}
+  .menu-movil a{font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--lm-black);padding:14px 4px;border-bottom:1px solid var(--line-2)}
+  .menu-movil a:last-child{border-bottom:0}
+  .menu-movil a.act{color:var(--lm-green-dark)}
+}
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  section.s{padding:64px 0}
+  /* Cabecera compacta */
+  .hdr .wrap,.hdr.mini .wrap{height:64px}
+  .brand{min-width:0;gap:8px}
+  .brand img,.hdr.mini .brand img{width:58px!important;height:38px!important}
+  .brand .pipe{height:32px}
+  .brand>span:last-child{min-width:0}
+  .brand .n{font-size:12.5px;overflow:hidden;text-overflow:ellipsis}
+  .brand .r{font-size:11px}
+  .cta{padding:10px 14px;font-size:13px}
+  .cta-l{display:none}.cta-s{display:inline}
+  .hero{height:auto;max-height:none}
+  .hero-card{width:calc(100% - 40px);padding:20px 18px;margin:20px auto}
+  .hero-card h1 span{font-size:21px!important}
+  .tile{height:240px}
+  .h2{font-size:28px}
+  .lede{font-size:16px}
+  .area-head{gap:18px;margin-bottom:24px}
+  .area-head .img{height:200px}
+  .area-head h3{font-size:22px}
+  .cards,.cards.few{grid-template-columns:minmax(0,1fr)}
+  .chooser{gap:24px}
+  .chip-c .circ{width:140px}
+  .pillars{padding:14px 0}
+  .pillars .wrap{gap:14px 16px}
+  .about{gap:28px}
+  .about .img{aspect-ratio:1/1;max-width:420px}
+  .about-top{gap:16px}
+  .contact{grid-template-columns:minmax(0,1fr);gap:28px}
+  .clist div{overflow-wrap:anywhere}
+  .form{padding:20px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .form input,.form select,.form textarea{font-size:16px}  /* evita el zoom automático del iPhone */
+  .form button{padding:15px}
+  .to-top{right:16px;bottom:16px;width:44px;height:44px}
+  footer{padding:24px 0}
+}
+@media (max-width:380px){
+  .brand .r{display:none}
+  .brand .n{font-size:12px}
+}
 </style>
 </head>
 <body class="no-sponsors">
@@ -223,13 +282,15 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <header class="hdr"><div class="wrap">
   <a class="brand" href="#inicio"><img src="./img/logo-isotipo.png" alt="" style="width:96px;height:63px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
   <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
-  <a class="cta" href="#contacto">Solicitar cita</a>
-</div><div class="prog" id="prog" aria-hidden="true"></div></header>
+  <a class="cta" href="#contacto"><span class="cta-l">Solicitar cita</span><span class="cta-s">Cita</span></a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span><span></span></button>
+</div>
+<nav class="menu-movil" id="menu-movil" aria-label="Menú"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav><div class="prog" id="prog" aria-hidden="true"></div></header>
 
 <section class="hero" id="inicio">
   <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Asesoramiento técnico agrícola, cinegético y de maquinaria</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Soluciones técnicas para mejorar tu explotación agrícola.</span></b></p></div>
-  <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade" style="width:520px;height:811px"></div><div class="cap"><h2 style="color:#F3F1F1">Agrícola</h2><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
-  <div class="tile"><image-slot class="ph" id="hero-maquinaria" shape="rect" placeholder="Foto tractor / equipo de tratamiento" src="./hero-maquinaria.jpg"></image-slot><div class="shade" style="width:559px;height:808px;left:-37px;top:0px"></div><div class="cap"><h2 style="color:#F3F1F1">Maquinaria</h2><a class="go" href="#servicios" data-area="maquinaria">Ver servicios →</a></div></div>
+  <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1">Agrícola</h2><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
+  <div class="tile"><image-slot class="ph" id="hero-maquinaria" shape="rect" placeholder="Foto tractor / equipo de tratamiento" src="./hero-maquinaria.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1">Maquinaria</h2><a class="go" href="#servicios" data-area="maquinaria">Ver servicios →</a></div></div>
   <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./imagen-de-chatgpt-1-oct-2026-13_47_40-muph1q22-5oti.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1FC">Cinegética</h2><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
 </section>
 
@@ -455,6 +516,17 @@ f.addEventListener('submit',async e=>{e.preventDefault();if(!f.reportValidity())
     f.reset();msg('¡Gracias! He recibido tu solicitud y te responderé lo antes posible.',true);}
   catch(err){msg('No se ha podido enviar. Inténtalo de nuevo o escríbeme a laurams.consultoresagricolas@gmail.com.',false);}
   finally{btn.disabled=false;btn.textContent=txt;}});})();
+
+/* Menú móvil */
+(function(){const b=document.getElementById('menu-btn'),m=document.getElementById('menu-movil');if(!b||!m)return;
+function set(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');}
+b.addEventListener('click',()=>set(!m.classList.contains('open')));
+m.addEventListener('click',e=>{if(e.target.closest('a'))set(false);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false);});
+document.addEventListener('click',e=>{if(!e.target.closest('.hdr'))set(false);});
+const secs=[...m.querySelectorAll('a')].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const mo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)m.querySelectorAll('a').forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(sc=>mo.observe(sc));
+})();
 
 /* reveal on scroll */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
