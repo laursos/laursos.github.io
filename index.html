@@ -85,11 +85,11 @@ section.soft{background:var(--lm-gray-50)}
 .card.open .cd{max-height:260px}
 .card .cd p{margin:8px 0 0}
 /* PILLARS */
-.pillars{background:var(--lm-green);color:#fff;padding:36px 0}
-.pillars .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+.pillars{background:var(--lm-green-tint);color:var(--lm-green-darker);padding:16px 0;border-top:1px solid var(--lm-green-soft);border-bottom:1px solid var(--lm-green-soft)}
+.pillars .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;text-align:center}
 .pillar .n{font-family:var(--font-display);font-size:12px;opacity:.7}
-.pillar .t{font-family:var(--font-display);font-weight:800;font-size:22px;text-transform:uppercase;margin:6px 0}
-.pillar .d{font-size:14px;line-height:1.5}
+.pillar .t{font-family:var(--font-display);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 2px}
+.pillar .d{font-size:13px;line-height:1.45;color:var(--lm-gray-700)}
 /* NEWS */
 .news-top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
 .news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:32px}
@@ -289,7 +289,7 @@ const areasEl=document.getElementById('areas');
 // Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
 const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']]];
 const blockHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
-  <div class="cards${a.items.length<3?' few':''}">${a.items.map((it,j)=>`<div class="card"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
+  <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
 const CHIP_IMG={asesoramiento:SLOT_SRC['area-asesoramiento']||'./hero-asesoramiento.jpg',normativa:SLOT_SRC['area-normativa']||SLOT_SRC['card-asesoramiento-2']||'./hero-asesoramiento.jpg'};
 GROUPS.forEach(([g,keys],i)=>{
   const div=document.createElement('div');div.className='area'+(i?'':' on');div.dataset.area=g;
