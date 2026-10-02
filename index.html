@@ -435,7 +435,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
   <div class="tabs" id="tabs" role="tablist" aria-label="Servicios agrícolas">
     <button class="tab on" data-sub="asesoramiento" role="tab" aria-selected="true"><span class="tim"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Asesoramiento técnico</b><small>Cultivos, fertilización, plagas y cuaderno de campo</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
     <button class="tab" data-sub="normativa" role="tab" aria-selected="false"><span class="tim"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Normativa y ayudas</b><small>PAC, registros, subvenciones y trámites</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
-    <button class="tab" data-sub="catastro" role="tab" aria-selected="false"><span class="tim"><img src="./hero-asesoramiento.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Mediciones y catastro</b><small>Mediciones, Catastro y segregaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab" data-sub="catastro" role="tab" aria-selected="false"><span class="tim"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Mediciones y catastro</b><small>Mediciones, Catastro y segregaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
     <span class="tab-ind" aria-hidden="true"></span>
   </div>
   <div id="areas"></div>
@@ -592,7 +592,7 @@ const FONDOS={asesoramiento:['./img/agricola.jpg','./hero-asesoramiento.jpg','./
   normativa:['./norm-pac.jpg','./norm-area.jpg','./norm-subvenciones.jpg','./norm-documental.jpg'],
   maquinaria:['./maq-area.jpg','./hero-maquinaria.jpg','./img/maquinaria.jpg'],
   cinegetica:['./cin-hero.jpg','./cin-area.jpg','./cin-planes.jpg','./cin-recuperacion.jpg','./cin-danos.jpg','./cin-medidas.jpg','./cin-censos.jpg'],
-  catastro:['./cat-fondo.jpg','./hero-asesoramiento.jpg','./img/agricola.jpg','./img/planes-abonado.jpg'],
+  catastro:['./cat-fondo.jpg'],
   medioambiente:['./ma-fondo.jpg','./hero-asesoramiento.jpg','./img/planes-abonado.jpg','./cin-recuperacion.jpg']};
 const fondos=k=>(FONDOS[k]||[]).map((u,n)=>`<img src="${u}" alt="" ${n?'loading="lazy"':''} class="${n?'':'on'}" onerror="if(this.classList.contains('on')&&this.nextElementSibling)this.nextElementSibling.classList.add('on');this.remove()">`).join('');
 const ICO_IMG=[[/roma|registro de maq/,'./img/ico-roma.png'],[/iteaf|inspecc/,'./img/ico-iteaf.png'],[/gasoleo/,'./img/ico-gasoleo.png']];
