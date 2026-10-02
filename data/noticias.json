@@ -1,13 +1,197 @@
 {
-  "actualizado": "2026-10-01T08:00:00Z",
+  "actualizado": "2026-10-02T02:41:48Z",
   "noticias": [
     {
-      "id": "ejemplo-01",
-      "titulo": "[EJEMPLO FICTICIO] La campaña de naranja temprana arranca con calibres medios en la Vega Baja",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-10-01T06:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-1",
+      "id": "f85af07bf2950316",
+      "titulo": "Begoña García Bernal: “La próxima PAC blindará dinero para la juventud y obligará a todos los países a apoyar su incorporación al campo”",
+      "extracto": "La secretaria de Estado de Agricultura y Alimentación defiende que la juventud participe en la decisión del futuro de la alimentación y destaca que las propuestas de este foro llegarán en octubre a la FAO",
+      "fecha": "2026-10-02T02:41:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/bego-a-garc-a-bernal---la-pr-xima-pac-blindar--dinero-para-la-juventud-y-obligar--a-todos-los-pa-ses-a-apoyar-su-incorporaci-n-al-campo-/eb323c69-3f51-46b1-a0fb-5ce2a02ee42d",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "f57aaa6db478c2d2",
+      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación completa la asignación de días de pesca y aumenta los límites de captura de gamba roja para la flota de arrastre del Mediterráneo",
+      "extracto": "La resolución completa la asignación del 100 % de los días de pesca atribuidos a España para 2026 a 549 buques de la flota de arrastre de fondo",
+      "fecha": "2026-10-02T02:40:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-completa-la-asignaci-n-de-d-as-de-pesca-y-aumenta-los-l-mites-de-captura-de-gamba-roja-para-la-flota-de-arrastre-del-mediterr-neo/3d620806-b350-4e1f-bcf0-0f8e79a03680",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "2314ed87dfd1c79b",
+      "titulo": "España defiende una pesca rentable y con posibilidades de futuro",
+      "extracto": "El ministro Luis Planas defiende una mayor ambición financiera para el sector y un marco que permita modernizar y renovar los buques",
+      "fecha": "2026-10-02T02:39:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/espa-a-defiende-una-pesca-rentable-y-con-posibilidades-de-futuro/c5de3f4e-1901-42f3-8568-c8a1d7b03ffe",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "2b9a9b0ce237d7ef",
+      "titulo": "Luis Planas destaca la importancia del multilateralimo en la XII Conferencia Iberoamericana de Ministros de Agricultura y Pesca que se celebra en Córdoba",
+      "extracto": "",
+      "fecha": "2026-10-02T02:38:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-destaca-la-importancia-del-multilateralimo-en-la-xii-conferencia-iberoamericana-de-ministros-de-agricultura-y-pesca-que-se-celebra-en-c-rdoba/100f1368-397e-41e8-b02a-2b5d44c3d2b4",
+      "imagen": null,
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "f80c6d745513e443",
+      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación reconoce tres nuevos viñedos singulares de la Denominación de Origen Calificada Rioja",
+      "extracto": "El término viñedo singular resalta la calidad excepcional de sus vinos y el compromiso con la sostenibilidad, la innovación y el desarrollo rural",
+      "fecha": "2026-10-02T02:37:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-reconoce-tres-nuevos-vi-edos-singulares-de-la-denominaci-n-de-origen-calificada-rioja/1b544609-fa7f-485c-8017-40931557fef7",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "a1b0cc0cfad967cf",
+      "titulo": "Luis Planas se reúne con el ministro de Medio Ambiente, Agricultura y Ganadería de Andorra",
+      "extracto": "",
+      "fecha": "2026-10-02T02:36:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-se-re-ne-con-el-ministro-de-medio-ambiente--agricultura-y-ganader-a-de-andorra/54c54017-a6df-4e9c-a80a-4b91cf261448",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "f1c002cfe741cfd3",
+      "titulo": "Luis Planas sitúa la cooperación entre España y América Latina y Caribe como clave para afrontar los grandes retos agroalimentarios",
+      "extracto": "El ministro destaca el cambio climático, la volatilidad de los mercados, la sanidad o el relevo generacional como algunos de los desafíos comunes y ofrece la experiencia española para avanzar en soluciones compartidas",
+      "fecha": "2026-10-02T02:35:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-sit-a-la-cooperaci-n-entre-espa-a-y-am-rica-latina-y-caribe-como-clave-para-afrontar-los-grandes-retos-agroalimentarios/be8c1616-174b-432b-b1ec-8da151b1be87",
+      "imagen": null,
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "f2185725484572f3",
+      "titulo": "El buque escuela Intermares imparte formación a un centenar de profesionales del sector marítimo-pesquero de Mauritania",
+      "extracto": "",
+      "fecha": "2026-10-02T02:34:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-buque-escuela-intermares-imparte-formaci-n-a-un-centenar-de-profesionales-del-sector-mar-timo-pesquero-de-mauritania/97bc4a78-c5a2-435d-bdfe-662e27e159f8",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "765828044807e96a",
+      "titulo": "Luis Planas: El sector agrario es estratégico para el Gobierno y contará con los apoyos necesarios",
+      "extracto": " El ministro anuncia la disposición del Gobierno a prolongar la compensación los sobrecostes del gasóleo agrícola",
+      "fecha": "2026-10-02T02:33:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas--el-sector-agrario-es-estrat-gico-para-el-gobierno-y-contar--con-los-apoyos-necesarios/5d380766-80a0-4917-b8bd-7b9f57aee632",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas",
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "75907ed08564c0d3",
+      "titulo": "El Gobierno traslada al sector agroalimentario la voluntad de seguir apoyándolo una vez que finalice la vigencia del actual plan de respuesta al conflicto en Oriente Medio",
+      "extracto": "",
+      "fecha": "2026-10-02T02:32:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-traslada-al-sector-agroalimentario-la-voluntad-de-seguir-apoy-ndolo-una-vez-que-finalice-la-vigencia-del-actual-plan-de-respuesta-al-conflicto-en-oriente-medio-/3b6750a7-fa20-4114-b9c7-b1f28200accd",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "5bc12892dacae7f5",
+      "titulo": "Luis Planas destaca que España es un socio estratégico en innovación agroalimentaria para Iberoamérica",
+      "extracto": " Regadío inteligente, agricultura y ganadería de precisión son algunos de los ámbitos en los que España puede compartir conocimiento y soluciones con los países de la región",
+      "fecha": "2026-10-02T02:31:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-destaca-que-espa-a-es-un-socio-estrat-gico-en-innovaci-n-agroalimentaria-para-iberoam-rica/431e998b-a49d-448a-a8bb-c4cddb2aad8c",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "e5ad09df98d469b5",
+      "titulo": "Luis Planas destaca el compromiso del Gobierno de España con el futuro del campo de Castilla y León, con inversiones de 1.100 millones de euros para modernizar regadíos",
+      "extracto": "El ministro visita las obras de modernización de 2.451 hectáreas de regadío de la vallisoletana Comunidad de regantes del Canal de Macías Picavea, que benefician a 308 agricultores",
+      "fecha": "2026-10-02T02:30:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-destaca-el-compromiso-del-gobierno-de-espa-a-con-el-futuro-del-campo-de-castilla-y-le-n--con-inversiones-de-1.100-millones-de-euros-para-modernizar-regad-os/e718ddeb-522c-4ce6-89d9-4c706c4440bc",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua",
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "fe8d97f90652808e",
+      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación prevé un aforo inicial de 5,74 millones de toneladas para la campaña de cítricos 2026/27",
+      "extracto": "La producción será un 1,1 % superior a la de la pasada temporada, aunque la producción seguirá un 4,2% por debajo de la media de los últimos cinco años",
+      "fecha": "2026-10-02T02:29:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-prev--un-aforo-inicial-de-5-74-millones-de-toneladas-para-la-campa-a-de-c-tricos-2026-27/c92a0f09-83d3-41a8-855b-8fc8a259d4dd",
+      "imagen": null,
+      "categorias": [
+        "Cítricos"
+      ]
+    },
+    {
+      "id": "7e414fbca6682f09",
+      "titulo": "Los agricultores de Castilla-La Mancha han recibido 98,6 millones de euros de las ayudas para la compra de fertilizantes",
+      "extracto": "",
+      "fecha": "2026-10-02T02:28:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/los-agricultores-de-castilla-la-mancha-han-recibido-98-6-millones-de-euros-de-las-ayudas-para-la-compra-de-fertilizantes/7a8a0ae8-58a9-4c98-860f-55ac80074f68",
+      "imagen": null,
+      "categorias": [
+        "Fertilización",
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "3dcabc35a8bc4937",
+      "titulo": "Los agricultores de Murcia han recibido 8,4 millones de euros de las ayudas para la compra de fertilizantes",
+      "extracto": "",
+      "fecha": "2026-10-02T02:27:48Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/los-agricultores-de-murcia-han-recibido-8-4-millones-de-euros-de-las-ayudas-para-la-compra-de-fertilizantes-/3b065048-1610-4b75-a96d-0aea62d0c73e",
+      "imagen": null,
+      "categorias": [
+        "Fertilización",
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "bf6beff85f675d53",
+      "titulo": "ASAJA Alicante denuncia que la industria presiona al agricultor con precios a la baja pese a la gran demanda de zumo de limón",
+      "extracto": "“Reclamamos a la industria contratos plurianuales que aporten estabilidad y seguridad al sector, sobre todo al agricultor”. ASAJA Alicante informa que la demanda de zumo de limón se encuentra en niveles muy elevados tanto en el mercado nacional como…",
+      "fecha": "2026-10-01T15:53:57Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-alicante-denuncia-que-la-industria-presiona-al-agricultor-con-precios-a-la-baja-pese-a-la-gran-demanda-de-zumo-de-limon/",
       "imagen": null,
       "categorias": [
         "Cítricos",
@@ -15,181 +199,489 @@
       ]
     },
     {
-      "id": "ejemplo-02",
-      "titulo": "[EJEMPLO FICTICIO] Publicado el calendario de pagos anticipados de la PAC para este otoño",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-30T21:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-2",
-      "imagen": "https://picsum.photos/seed/lm-noticia-2/800/450",
+      "id": "fe43b539bdf6a201",
+      "titulo": "Alberto Català: «La prevención de incendios debe trabajarse durante todo el año y los cazadores podemos aportar mucho»",
+      "extracto": "El delegado de la Federación de Caza en Castellón afronta sus primeros meses al frente de la delegación tras un verano marcado por los fuegos que han afectado a más de 11.000 ha de acotados en la provincia Alberto, llevas unos meses al frente de la…",
+      "fecha": "2026-10-01T07:44:22Z",
+      "fuente": "Federación de Caza Comunidad Valenciana",
+      "url": "https://federacioncazacv.com/prensa/alberto-catala-la-prevencion-de-incendios-debe-trabajarse-durante-todo-el-ano-y-los-cazadores-podemos-aportar-mucho/",
+      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-01-at-09.28.12.jpeg",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "2dfcb6de591d881b",
+      "titulo": "El Gobierno regional invierte 344.000 euros en la mejora de la red de saneamiento de La Unión",
+      "extracto": "El consejero de Agricultura destaca la renovación de 600 metros de conducciones con el uso de una tecnología sin zanja que reduce tiempos y molestias a los vecinos La inversión acumulada del Ejecutivo autonómico en el municipio en renovación de…",
+      "fecha": "2026-09-30T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126240&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "c64d71dc5cc1d240",
+      "titulo": "Miguel Esteban acogerá el VII Campeonato de España de Caza Menor con Perro Adaptada",
+      "extracto": "La prueba reunirá los días 23 y 24 de octubre a deportistas de distintos puntos de España en una nueva cita con la inclusión, el esfuerzo y la pasión por la caza La localidad toledana de Miguel Esteban acogerá los próximos 23 y 24 de octubre el VII…",
+      "fecha": "2026-09-30T09:00:50Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/miguel-esteban-acogera-el-vii-campeonato-de-espana-de-caza-menor-con-perro-adaptada/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "c0c775f17752f895",
+      "titulo": "El Gobierno regional invierte 50.000 euros en rehabilitar el Castillo de Don Mario de Archena",
+      "extracto": "La obra supone una mejora energética y de la digitalización, y un refuerzo de los servicios de atención ciudadana, el emprendimiento y la cooperación en el territorio El director general de Agricultura y Política Agraria Común inaugura el inmueble…",
+      "fecha": "2026-09-29T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126230&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
       "categorias": [
         "PAC y ayudas"
       ]
     },
     {
-      "id": "ejemplo-03",
-      "titulo": "[EJEMPLO FICTICIO] Nuevas restricciones de uso para una materia activa en frutales de hueso",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-30T12:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-3",
-      "imagen": "https://picsum.photos/seed/lm-noticia-3/800/450",
+      "id": "4743b7f9dff2f379",
+      "titulo": "La Comunidad saca a licitación la mejora del camino de Ainas en Ricote",
+      "extracto": "La inversión prevista para la actuación, con la que se acondicionarán 3,5 kilómetros, es de 529.000 euros y las ofertas se pueden presentar hasta el 19 de octubre El consejero de Agricultura destaca que \"esta actuación mejorará una infraestructura…",
+      "fecha": "2026-09-29T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126227&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
       "categorias": [
-        "Fitosanitarios",
+        "General"
+      ]
+    },
+    {
+      "id": "a431cb3424f8f7b0",
+      "titulo": "ASAJA Alicante informa sobre las nuevas medidas aprobadas por el Gobierno sobre el gasóleo agrícola",
+      "extracto": "El Gobierno prorroga el real decreto de marzo y mantiene la ayuda al gasóleo agrícola en 20 céntimos por litro, la misma cifra de hace seis meses, mientras el precio del combustible encadena una escalada creciente y se mantiene en niveles altísimos…",
+      "fecha": "2026-09-29T14:16:01Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-afirma-que-mantiene-las-movilizaciones-las-medidas-aprobadas-no-se-ajustan-a-la-realidad-del-sector/",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas",
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "b0c0621feb416d8b",
+      "titulo": "Castillejo de Robledo se estrena como sede del Campeonato de España de Field Target",
+      "extracto": "Cerca de 80 tiradores de distintos puntos de España se darán cita los días 24 y 25 de octubre en las instalaciones de la Real Federación Española de Caza en la localidad soriana Los próximos 24 y 25 de octubre, las instalaciones de la Real…",
+      "fecha": "2026-09-29T12:36:47Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/castillejo-de-robledo-se-estrena-como-sede-del-campeonato-de-espana-de-field-target/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "23bece3382b2bffa",
+      "titulo": "El calor reduce la cosecha de uva del vino en Alicante a 13 millones de kilos",
+      "extracto": "La vendimia más temprana que se ha registrado nunca en la provincia motivada por el exceso de calor ha arrojado unos pobres resultados en cuanto a producción, unos 13 millones de kilos, como consecuencia del intenso calor, profundizando en la…",
+      "fecha": "2026-09-29T09:32:36Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/el-calor-reduce-la-cosecha-de-uva-del-vino-en-alicante-a-13-millones-de-kilos/",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "765437404317d286",
+      "titulo": "La Escuela Española de Caza organiza en Méntrida un nuevo curso de iniciación y perfeccionamiento de tiro con escopeta",
+      "extracto": "La formación tendrá lugar el próximo 24 de octubre en las instalaciones del Campo de Tiro Fuente de la Dehesa La Escuela Española de Caza (EEC) de la Real Federación Española de Caza (RFEC) organiza el próximo 24 de octubre de 2026 una nueva edición…",
+      "fecha": "2026-09-29T09:08:30Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-escuela-espanola-de-caza-organiza-en-mentrida-un-nuevo-curso-de-iniciacion-y-perfeccionamiento-de-tiro-con-escopeta/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "431e159d111a7b05",
+      "titulo": "CAMPEONATO AUTONÓMICO CAZA CON PERROS DE MADRIGUERA",
+      "extracto": "🦊 CAMPEONATO AUTONÓMICO CAZA CON PERROS DE MADRIGUERA. 📆 Próximos 17 y 18 de octubre de 2026. 📍 Mazarrón – Murcia. 📞 699804421 The post CAMPEONATO AUTONÓMICO CAZA CON PERROS DE MADRIGUERA appeared first on Federación de Caza de la Región de Murcia .",
+      "fecha": "2026-09-29T06:57:26Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/campeonato-autonomico-caza-con-perros-de-madriguera/?utm_source=rss&utm_medium=rss&utm_campaign=campeonato-autonomico-caza-con-perros-de-madriguera",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f98a.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "d379f72f5aeec7d4",
+      "titulo": "Rafael Villa y Alberto Martín, campeones de España de Hunter Field Target en Archidona",
+      "extracto": "Rafael Villa se impuso en PCP con 135 puntos, solo uno más que Alfredo Márquez, mientras que Alberto Martín logró el título nacional de Pistón con 119 puntos El V Campeonato de España de Hunter Field Target ha reunido este fin de semana en Archidona…",
+      "fecha": "2026-09-28T08:46:46Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/rafael-villa-y-alberto-martin-campeones-de-espana-de-hunter-field-target-en-archidona/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "256475606a2680da",
+      "titulo": "El mejor tiro con arco cinegético nacional se cita en Colunga",
+      "extracto": "Un total de 70 arqueros procedentes de diferentes comunidades autónomas han participado en una prueba disputada en las instalaciones del Club de Tiro con Arco Los Valles El municipio asturiano de Colunga ha acogido este sábado el XXVIII Campeonato…",
+      "fecha": "2026-09-28T08:12:55Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/el-mejor-tiro-con-arco-cinegetico-nacional-se-cita-en-colunga/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "ba2456eee61c1041",
+      "titulo": "EL AGILITY, UN DEPORTE QUE TAMBIÉN UNE Y ACERCA",
+      "extracto": "El pasado viernes 18 de septiembre, el Centro Penitenciario Murcia II acogió una exhibición de Agility con motivo de los actos conmemorativos de la festividad de Nuestra Señora de La Merced. En esta jornada participaron dos representantes del Club…",
+      "fecha": "2026-09-28T07:34:10Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/el-agility-un-deporte-que-tambien-une-y-acerca/?utm_source=rss&utm_medium=rss&utm_campaign=el-agility-un-deporte-que-tambien-une-y-acerca",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f91d.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "c35ce4bdb823632b",
+      "titulo": "El Gobierno regional propone a la Organización Internacional de la Viña y el Vino nuevas vías de colaboración científica a través del Imida",
+      "extracto": "El consejero de Agricultura se reúne con responsables de la organización para estudiar futuras alianzas y proyectos comunes a partir del trabajo que ya se desarrolla en el instituto",
+      "fecha": "2026-09-27T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126202&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "326507d7eae1d3f5",
+      "titulo": "La granada mollar de Elche prevé 50 millones de kg de producción, aunque el calor eleva hasta el 15% los frutos afectados",
+      "extracto": "La granada mollar de Elche encara una nueva campaña con una cifra que apenas cambia respecto al año pasado, pero con una diferencia que se notará cuando la fruta llegue al mercado: será una granada de mayor calibre y calidad. La previsión de la…",
+      "fecha": "2026-09-25T07:45:15Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/la-granada-mollar-de-elche-preve-50-millones-de-kg-de-produccion-aunque-el-calor-eleva-hasta-el-15-los-frutos-afectados/",
+      "imagen": null,
+      "categorias": [
+        "Frutales",
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "0ea4495a29265b2a",
+      "titulo": "El Banco Mundial de Semillas de Noruega guarda la memoria genética de la huerta de la Región de Murcia",
+      "extracto": "El consejero de Agricultura destaca que la incorporación de las variedades tradicionales murcianas al \"arca de Noé\" vegetal del Ártico supone un reconocimiento internacional a un patrimonio estratégico El Banco de Germoplasma del IMIDA custodia…",
+      "fecha": "2026-09-24T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126176&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "8ed376ba407d1287",
+      "titulo": "ASAJA MURCIA VALORA POSITIVAMENTE EL COMPROMISO DEL GOBIERNO REGIONAL DE DESTINAR DOCE MILLONES DE EUROS AL SECTOR AGRARIO.",
+      "extracto": "La organización agraria destaca el compromiso alcanzado con el presidente López Miras y reclama que las ayudas se pongan en marcha con la máxima agilidad y lleguen de forma efectiva a agricultores y ganaderos",
+      "fecha": "2026-09-22T09:40:43Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202609/22/asaja-murcia-valora-positivamente-el-compromiso-del-gobierno-regional-de-destinar",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "6ed18877f03760c0",
+      "titulo": "LA UVA EMBOLSADA DEL VINALOPÓ: UN LUJO CADA VEZ MÁS DIFÍCIL DE ASUMIR",
+      "extracto": "Cada verano, en los siete municipios que forman el corazón del Vinalopó —Agost, Aspe, Hondón de las Nieves, Hondón de los Frailes, Monforte del Cid, Novelda y La Romana—, miles de manos envuelven racimo a racimo en pequeñas bolsas de papel. Es un…",
+      "fecha": "2026-09-22T09:19:55Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/la-uva-embolsada-del-vinalopo-un-lujo-cada-vez-mas-dificil-de-asumir/",
+      "imagen": null,
+      "categorias": [
         "Frutales"
       ]
     },
     {
-      "id": "ejemplo-04",
-      "titulo": "[EJEMPLO FICTICIO] Bonificación del gasóleo agrícola y nuevas dotaciones de riego",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-30T03:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-4",
+      "id": "1c542137ea90bf86",
+      "titulo": "🏹 CURSO ARQUERO CUALIFICADO T2",
+      "extracto": "Inscripción: https://forms.gle/zsv4B9fyRn372SUx7 The post 🏹 CURSO ARQUERO CUALIFICADO T2 appeared first on Federación de Caza de la Región de Murcia .",
+      "fecha": "2026-09-22T08:50:02Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9-curso-arquero-cualificado-t2-2/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9-curso-arquero-cualificado-t2-2",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "d21783461f716211",
+      "titulo": "Prueba Open Agility",
+      "extracto": "🐾 ¡TODO LISTO PARA UN GRAN FIN DE SEMANA DE AGILITY! 🏆 26 y 27 de septiembre📍 Club Agility Mediterráneo Este fin de semana llega una nueva cita de Agility RFEC, con dos jornadas cargadas de velocidad, emoción, competición y, sobre todo, mucha pasión…",
+      "fecha": "2026-09-22T07:22:22Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/prueba-open-agility/?utm_source=rss&utm_medium=rss&utm_campaign=prueba-open-agility",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f43e.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "5b032042567372a0",
+      "titulo": "I Encuentro Nacional de Jóvenes Cazadores",
+      "extracto": "El relevo generacional de la caza se da cita en Badajoz en el I Encuentro Nacional de Jóvenes Cazadores Del 17 al 20 de septiembre, el recinto ferial de Ifeba, en Badajoz, acogió el I Encuentro Nacional de Jóvenes Cazadores, un evento pionero que…",
+      "fecha": "2026-09-21T07:52:48Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/i-encuentro-nacional-de-jovenes-cazadores/?utm_source=rss&utm_medium=rss&utm_campaign=i-encuentro-nacional-de-jovenes-cazadores",
+      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-20-at-18.11.00-948x1024.jpeg",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "dc5dc2652efda92b",
+      "titulo": "El precio del gasóleo agrícola se dispara un 48% en España: ASAJA pide una reunión urgente con Planas y anuncia movilizaciones",
+      "extracto": "ASAJA Alicante reclama una respuesta inmediata del Gobierno ante la descomunal escalada que ha experimentado el precio del gasóleo agrícola desde finales de febrero, coincidiendo con la crisis energética derivada del conflicto en Oriente Medio. La…",
+      "fecha": "2026-09-18T10:59:34Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/el-precio-del-gasoleo-agricola-se-dispara-un-48-en-espana-asaja-pide-una-reunion-urgente-con-planas-y-anuncia-movilizaciones/",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas",
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "0ab8821b968b0021",
+      "titulo": "XXI CAMPEONATO AUTONÓMICO DE CETRERÍA",
+      "extracto": "🦅🦅 XXI CAMPEONATO AUTONÓMICO DE CETRERÍA 🦅🦅 📆 31 DE OCTUBRE Y 1 DE NOVIEMBRE DE 2026 📍MAZARRÓN – MURCIA 📋Inscripciones hasta el 14 de octubre en: The post XXI CAMPEONATO AUTONÓMICO DE CETRERÍA appeared first on Federación de Caza de la Región de…",
+      "fecha": "2026-09-18T10:01:21Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/xxi-campeonato-autonomico-de-cetreria/?utm_source=rss&utm_medium=rss&utm_campaign=xxi-campeonato-autonomico-de-cetreria",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f985.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "45684a0063b0003c",
+      "titulo": "Malas noticias para el arroz bombón de Pego: las 40 hectáreas sembradas se quedarán sin segar",
+      "extracto": "Pese a las buenas expectativas de los primeros años, que permitieron que se ganara en superficie cultivada de bombón en el Parque Natural del Marjal de Pego-Oliva, las cosas se han torcido y este año no se segarán las 40 hectáreas cultivadas. El…",
+      "fecha": "2026-09-18T06:53:32Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/malas-noticias-para-el-arroz-bombon-de-pego/",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ]
+    },
+    {
+      "id": "349d0a9a1866b17e",
+      "titulo": "FECHA APLAZADA – ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D.",
+      "extracto": "📢FECHA APLAZADA!! Por condiciones meteorológicas a sábado 3 de octubre. 🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D. 🗓️ 3 octubre – 9:30 horas. 📝 Inscripciones hasta 17 de septiembre en: https://forms.gle/eGDNq6wxnHTn8PLK7 The post FECHA…",
+      "fecha": "2026-09-17T08:16:15Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/fecha-aplazada-ultima-tirada-liga-autonomica-recorridos-de-monte-3d/?utm_source=rss&utm_medium=rss&utm_campaign=fecha-aplazada-ultima-tirada-liga-autonomica-recorridos-de-monte-3d",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4e2.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "5391693761b5f3e3",
+      "titulo": "ASAJA reclama una protección europea para evitar que las subidas de los fertilizantes recaigan sobre los agricultores",
+      "extracto": "El Parlamento Europeo rechaza una protección para los agricultores ante subidas excepcionales de los fertilizantes. ASAJA lamenta el resultado de la votación celebrada ayer en el Parlamento Europeo sobre la revisión del Mecanismo de Ajuste en…",
+      "fecha": "2026-09-16T11:29:59Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-reclama-una-proteccion-europea-para-evitar-que-las-subidas-de-los-fertilizantes-recaigan-sobre-los-agricultores/",
+      "imagen": null,
+      "categorias": [
+        "Fertilización"
+      ]
+    },
+    {
+      "id": "1f5755bef48095d9",
+      "titulo": "VI CAMPEONATO AUTONÓMICO DE PODENCO IBICENCO A DIENTE",
+      "extracto": "El pasado sábado 12 de septiembre, Campos del Río se convirtió en el punto de encuentro de la afición al podenco ibicenco con la celebración del VI Campeonato Autonómico de Podenco Ibicenco a Diente de la Región de Murcia. Una jornada marcada por la…",
+      "fecha": "2026-09-16T08:15:38Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/vi-campeonato-autonomico-de-podenco-ibicenco-a-diente/?utm_source=rss&utm_medium=rss&utm_campaign=vi-campeonato-autonomico-de-podenco-ibicenco-a-diente",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3c6.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "24e442dab54ac4af",
+      "titulo": "El plazo para solicitar las ayudas por el fomento de la caza del jabalí se abre el 16 de septiembre",
+      "extracto": "La Federación de Caza de la Comunitat Valenciana recuerda a estas entidades que podrán presentar la solicitud, justificación y petición de pago hasta el próximo 30 de septiembre y recomienda no esperar a los últimos días para completar la…",
+      "fecha": "2026-09-16T07:53:38Z",
+      "fuente": "Federación de Caza Comunidad Valenciana",
+      "url": "https://federacioncazacv.com/prensa/plazo-ayudas-clubs-sociedades-abatimiento-retirada-jabalies-16-septiembre/",
+      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/09/AYUDAS-TRAMITES.jpg",
+      "categorias": [
+        "PAC y ayudas",
+        "Caza"
+      ]
+    },
+    {
+      "id": "2c2142daab0f677c",
+      "titulo": "La Escuela Española de Caza cierra con éxito una nueva edición del Curso de Instructor-Adiestrador de Perros de Caza",
+      "extracto": "Los alumnos han completado 80 horas de formación teórica y práctica durante seis fines de semana en Castillejo de Robledo (Soria) Un año más, la localidad soriana de Castillejo de Robledo ha acogido el Curso de Instructor-Adiestrador de Perros de…",
+      "fecha": "2026-09-15T10:39:49Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-escuela-espanola-de-caza-cierra-con-exito-una-nueva-edicion-del-curso-de-instructor-adiestrador-de-perros-de-caza/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "b04e23f4e9e4f1c4",
+      "titulo": "DE VERTEDERO A PARQUE NATURAL: 36 AÑOS",
+      "extracto": "La semana pasada, el Consell aprobó la declaración de Parque Natural de la Sierra de Escalona y la Dehesa de Campoamor, un espacio que incluye también la Sierra del Cristo, Pujálvarez y el embalse de La Pedrera. Son cerca de nueve mil hectáreas de…",
+      "fecha": "2026-09-15T10:14:41Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/de-vertedero-a-parque-natural-36-anos/",
       "imagen": null,
       "categorias": [
         "Riego y agua"
       ]
     },
     {
-      "id": "ejemplo-05",
-      "titulo": "[EJEMPLO FICTICIO] El precio en origen del limón se estabiliza tras varias semanas de subidas",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-29T18:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-5",
-      "imagen": "https://picsum.photos/seed/lm-noticia-5/800/450",
+      "id": "d7bc16e61468e1ad",
+      "titulo": "Óscar Corbí: «Los cazadores debemos conseguir que las decisiones se tomen desde criterios técnicos»",
+      "extracto": "El delegado de la Federación de Caza en la provincia de Alicante afronta una nueva etapa tras más de ocho años al frente de la delegación, con la cercanía a los clubes y el futuro de la actividad como principales prioridades Óscar, este año has sido…",
+      "fecha": "2026-09-14T07:47:55Z",
+      "fuente": "Federación de Caza Comunidad Valenciana",
+      "url": "https://federacioncazacv.com/prensa/oscar-corbi-cazadores-gobiernos-decisiones-criterios-tecnicos/",
+      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/09/oscar-caza.jpeg",
       "categorias": [
-        "Mercados y precios",
-        "Cítricos"
+        "Caza"
       ]
     },
     {
-      "id": "ejemplo-06",
-      "titulo": "[EJEMPLO FICTICIO] Recomendaciones para la poda de invierno en melocotonero y nectarina",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-29T09:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-6",
-      "imagen": "https://picsum.photos/seed/lm-noticia-6/800/450",
+      "id": "3b0d6422184d5f02",
+      "titulo": "La Federación de Caza condena los disparos contra dos cazadores en un coto de Torreblanca",
+      "extracto": "La FCCV se ha puesto en contacto con la Sociedad de Caza El Lince para ofrecer asistencia jurídica y apoyo a los afectados tras el ataque, ocurrido cuando ambos practicaban la actividad cinegética La Federación de Caza de la Comunitat Valenciana ha…",
+      "fecha": "2026-09-14T07:35:23Z",
+      "fuente": "Federación de Caza Comunidad Valenciana",
+      "url": "https://federacioncazacv.com/prensa/federacion-caza-condena-disparos-dos-cazadores-coto-torreblanca/",
+      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/09/FOTO-COTO-.jpeg",
       "categorias": [
-        "Frutales"
+        "Caza"
       ]
     },
     {
-      "id": "ejemplo-07",
-      "titulo": "[EJEMPLO FICTICIO] Seguimiento del cotonet en mandarina: umbrales y momentos de muestreo",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-29T00:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-7",
+      "id": "7bf82e48a6d4510e",
+      "titulo": "La caza menor femenina nacional se cita en Munera el próximo 10 de octubre",
+      "extracto": "Cerca de 40 cazadoras de toda España competirán por el título nacional en la XIII edición del Campeonato de España Femenino de Caza Menor con Perro La localidad albaceteña de Munera será escenario el próximo 10 de octubre del XIII Campeonato de…",
+      "fecha": "2026-09-11T12:30:56Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-caza-menor-femenina-nacional-se-cita-en-munera-el-proximo-10-de-octubre/",
       "imagen": null,
       "categorias": [
-        "Cítricos",
-        "Fitosanitarios"
+        "Caza"
       ]
     },
     {
-      "id": "ejemplo-08",
-      "titulo": "[EJEMPLO FICTICIO] Abierta la convocatoria de ayudas a la modernización de explotaciones",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-28T15:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-8",
-      "imagen": "https://picsum.photos/seed/lm-noticia-8/800/450",
-      "categorias": [
-        "PAC y ayudas",
-        "Maquinaria"
-      ]
-    },
-    {
-      "id": "ejemplo-09",
-      "titulo": "[EJEMPLO FICTICIO] Recordatorio: inspección ITEAF obligatoria para equipos de aplicación",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-28T06:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-9",
-      "imagen": "https://picsum.photos/seed/lm-noticia-9/800/450",
-      "categorias": [
-        "Maquinaria",
-        "Fitosanitarios"
-      ]
-    },
-    {
-      "id": "ejemplo-10",
-      "titulo": "[EJEMPLO FICTICIO] Guía práctica para revisar caudales y presiones en riego por goteo",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-27T21:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-10",
+      "id": "cd254001e2dbe13b",
+      "titulo": "Boletín ayudas y normativas Nº 301",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 4 al 11 de septiembre de 2026",
+      "fecha": "2026-09-11T07:09:19Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-301/",
       "imagen": null,
       "categorias": [
-        "Riego y agua",
-        "Hortalizas"
+        "PAC y ayudas"
       ]
     },
     {
-      "id": "ejemplo-11",
-      "titulo": "[EJEMPLO FICTICIO] Las exportaciones de cítricos crecen en el primer trimestre de la campaña",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-27T12:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-11",
-      "imagen": "https://picsum.photos/seed/lm-noticia-11/800/450",
+      "id": "3a681d5e54e65d99",
+      "titulo": "Más de 2.600 cazadores españoles se suman al segundo censo simultáneo nacional de codorniz",
+      "extracto": "El segundo ‘Coturnix Challenge’, celebrado los días 15 y 23 de agosto, ha superado los datos de la primera edición de esta pionera iniciativa que busca estimar el tamaño de la población de la especie en España Más de 2.600 cazadores españoles se…",
+      "fecha": "2026-09-10T08:53:53Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/mas-de-2-600-cazadores-espanoles-se-suman-al-segundo-censo-simultaneo-nacional-de-codorniz/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/challenge-municipios-1024x724.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "5e8d4db1526b4f0a",
+      "titulo": "🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D",
+      "extracto": "🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D. 🗓️ 19 septiembre – 9:30 horas. 📝 Inscripciones hasta 17 de septiembre en: https://forms.gle/eGDNq6wxnHTn8PLK7 Ubicación: https://maps.app.goo.gl/sWFPY3t6J9BCYFBg7 The post 🏹 ÚLTIMA TIRADA LIGA…",
+      "fecha": "2026-09-09T09:54:10Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9-ultima-tirada-liga-autonomica-recorridos-de-monte-3d/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9-ultima-tirada-liga-autonomica-recorridos-de-monte-3d",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3f9.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "ed7e5e20044e6112",
+      "titulo": "La Cueta volverá a reunir a los mejores perros de muestra en montaña de España",
+      "extracto": "La localidad leonesa acogerá los días 3 y 4 de octubre el III Campeonato de España y la V Copa de España de Perros de Muestra en Montaña Cerca de 60 deportistas participarán junto a sus perros en dos de las principales pruebas nacionales de esta…",
+      "fecha": "2026-09-08T08:30:32Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-cueta-volvera-a-reunir-a-los-mejores-perros-de-muestra-en-montana-de-espana/",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "0477b5cbb42a28f1",
+      "titulo": "ASAJA destaca el respaldo del CESE a una ganadería europea rentable, sostenible y protegida frente a importaciones sin reciprocidad.",
+      "extracto": "La organización agraria considera que la estrategia europea debe garantizar rentabilidad, seguridad jurídica y competitividad para los ganaderos ASAJA Murcia valora positivamente el dictamen del Comité Económico y Social Europeo (CESE) sobre la…",
+      "fecha": "2026-09-07T10:12:23Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202609/07/asaja-destaca-el-respaldo-del-cese-una-ganaderia-europea-rentable-sostenible-y",
+      "imagen": null,
       "categorias": [
         "Mercados y precios"
       ]
     },
     {
-      "id": "ejemplo-12",
-      "titulo": "[EJEMPLO FICTICIO] El granado cierra una campaña con buena calidad de fruto",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-27T03:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-12",
-      "imagen": "https://picsum.photos/seed/lm-noticia-12/800/450",
-      "categorias": [
-        "Frutales",
-        "Agricultura ecológica"
-      ]
-    },
-    {
-      "id": "ejemplo-13",
-      "titulo": "[EJEMPLO FICTICIO] Cambios en la condicionalidad reforzada: lo que conviene revisar",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-26T18:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-13",
+      "id": "8d20c802b43ceb03",
+      "titulo": "ASAJA MURCIA PREVÉ UN RETRASO DE AL MENOS UN MES EN EL INICIO DE LA CAMPAÑA DEL LIMÓN FINO POR EL ESCASO CALIBRE Y LOS PROBLEMAS DE CALIDAD",
+      "extracto": "La organización agraria confirma sobre el terreno el aforo adelantado en julio y advierte de que una mayor cantidad de fruta podría terminar en la industria por las dificultades de calibre y calidad Murcia, septiembre de 2026.– ASAJA Región de…",
+      "fecha": "2026-09-04T10:45:47Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202609/04/asaja-murcia-preve-un-retraso-de-al-menos-un-mes-en-el-inicio-de-la-campana-del",
       "imagen": null,
       "categorias": [
-        "PAC y ayudas",
-        "Gestión de la explotación"
-      ]
-    },
-    {
-      "id": "ejemplo-14",
-      "titulo": "[EJEMPLO FICTICIO] Ensayos de cubiertas vegetales en parcelas de naranjo",
-      "extracto": "Noticia de prueba creada para comprobar el diseño de la sección. No corresponde a ningún hecho real; el texto real llegará desde la GitHub Action con el extracto del medio original.",
-      "fecha": "2026-09-26T09:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-14",
-      "imagen": "https://picsum.photos/seed/lm-noticia-14/800/450",
-      "categorias": [
         "Cítricos",
-        "Agricultura ecológica"
+        "Mercados y precios"
       ]
     },
     {
-      "id": "ejemplo-15",
-      "titulo": "[EJEMPLO FICTICIO] Cuaderno digital SIEX: plazos de registro de tratamientos",
-      "extracto": "",
-      "fecha": "2026-09-26T00:00:00Z",
-      "fuente": "Ejemplo",
-      "url": "https://example.com/noticia-15",
-      "imagen": "https://picsum.photos/seed/lm-noticia-15/800/450",
+      "id": "c1495ebb64d9afc4",
+      "titulo": "📢 COMUNICADO IMPORTANTE: ALERTA POR BROTE DE TRIQUINOSIS EN YESTE",
+      "extracto": "Desde la Federación de Caza de la Región de Murcia, emitimos un aviso urgente a todos los cazadores, vecinos y consumidores tras detectarse un foco de triquinosis en Yeste (Albacete). Para frenar la propagación y proteger la salud de todos, queremos…",
+      "fecha": "2026-09-04T10:29:22Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%93%a2-comunicado-importante-alerta-por-brote-de-triquinosis-en-yeste/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2593%25a2-comunicado-importante-alerta-por-brote-de-triquinosis-en-yeste",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png",
       "categorias": [
-        "Gestión de la explotación",
-        "Fitosanitarios"
+        "Mercados y precios",
+        "Caza"
       ]
     }
   ]
