@@ -445,7 +445,7 @@ function claveArea(a){a=a.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 /* ===== FORMULARIO DE CONTACTO =====
    Envía a un script de Google (Apps Script) de Laura, que guarda la solicitud en su
    hoja "Solicitudes web (formulario de contacto)" y le manda un aviso por email. */
-const FORM_URL='';  // URL de la aplicación web de Apps Script (…/exec)
+const FORM_URL='https://script.google.com/macros/s/AKfycbwU7c0fxZ05bGVNln0wfegNOpcXupFk1K9m3kO-ofOkoEcbA5UWJONvKnCFxPeyeQ/exec';  // URL de la aplicación web de Apps Script (…/exec)
 (function(){const f=document.getElementById('form-contacto');if(!f)return;const est=document.getElementById('f-estado'),btn=f.querySelector('button[type=submit]');
 function msg(t,ok){est.textContent=t;est.className='f-estado '+(ok?'ok':'err');est.hidden=false;}
 f.addEventListener('submit',async e=>{e.preventDefault();if(!f.reportValidity())return;
