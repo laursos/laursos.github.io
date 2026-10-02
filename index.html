@@ -315,7 +315,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .panel .bgs{position:absolute;inset:0;z-index:-2;background:#0e3a2c}
 .panel .bgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity 1.6s ease,transform 7s ease-out;filter:saturate(.9)}
 .panel .bgs img.on{opacity:1;transform:scale(1)}
-.sv-i .ic img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
+.sv-i .ic img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
 .panel .sv.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .sv.c3 .sv-i{grid-template-columns:minmax(0,1fr);justify-items:center;align-content:start;text-align:center;gap:14px}
 .sv.c3 .sv-i .ic{width:96px;height:96px;border-width:2px}
@@ -613,7 +613,7 @@ const cardsHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="
   <div class="pcta solo"><a href="#contacto">Solicitar presupuesto</a></div>`;
 const blockHtml=(k,a)=>`<div class="panel t-${k}"><div class="bgs" aria-hidden="true">${fondos(k)}</div><div class="pin">
   <h3 class="ph-t">${a.t}</h3><p class="ph-d">${a.d}</p><div class="bar"></div>
-  <div class="sv${a.items.length===3?' c3':''}${(k==='asesoramiento'||k==='normativa')?' colflow':''}" style="--filas:${Math.ceil(a.items.length/2)}">${a.items.map((it,j)=>`<div class="sv-i" style="--i:${j}"><span class="ic">${iconoServ(k,it[0])}</span><div><h4>${it[0].replace(/<br>/g,' ')}</h4><p>${it[1]}</p></div></div>`).join('')}</div>
+  <div class="sv${(k==='asesoramiento'||k==='normativa')?' colflow':''}" style="--filas:${Math.ceil(a.items.length/2)}">${a.items.map((it,j)=>`<div class="sv-i" style="--i:${j}"><span class="ic">${iconoServ(k,it[0])}</span><div><h4>${it[0].replace(/<br>/g,' ')}</h4><p>${it[1]}</p></div></div>`).join('')}</div>
   <div class="pcta"><a href="#contacto">Solicitar presupuesto</a></div></div></div>`;
 function renderAreas(){
 const activa=(document.querySelector('.ab.on')||{dataset:{area:'agricola'}}).dataset.area;const subActiva=(document.querySelector('.tab.on')||{dataset:{sub:'asesoramiento'}}).dataset.sub;
