@@ -284,12 +284,31 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
   .brand .r{display:none}
   .brand .n{font-size:12px}
 }
+
+/* Cabecera móvil: logo más grande y nombre en dos líneas sin pisar el botón */
+@media (max-width:760px){
+  .hdr .wrap,.hdr.mini .wrap{height:68px;gap:8px}
+  .brand{gap:7px}
+  .brand picture{display:flex;flex:none}
+  .brand img,.hdr.mini .brand img{width:42px!important;height:52px!important}
+  .brand img{flex:none;object-fit:contain}
+  .brand .pipe{height:40px;flex:none}
+  .brand>span:last-child{display:block;min-width:0}
+  .brand .n{white-space:normal;font-size:12.5px;line-height:1.15;overflow:visible;text-overflow:clip}
+  .brand .r{font-size:10.5px;margin-top:2px;white-space:normal;line-height:1.2}
+  .cta{padding:10px 13px;flex:none}
+  .menu-btn{flex:none}
+}
+@media (max-width:380px){
+  .brand img,.hdr.mini .brand img{width:38px!important;height:47px!important}
+  .brand .n{font-size:12px}
+}
 </style>
 </head>
 <body class="no-sponsors">
 
 <header class="hdr"><div class="wrap">
-  <a class="brand" href="#inicio"><img src="./img/logo-isotipo.png" alt="" style="width:96px;height:63px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
+  <a class="brand" href="#inicio"><picture><source media="(max-width:760px)" srcset="./img/logo-isotipo-recorte.png"><img src="./img/logo-isotipo.png" alt="Logotipo de Laura Muñoz Socorro" style="width:96px;height:63px"></picture><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
   <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
   <a class="cta" href="#contacto"><span class="cta-l">Solicitar cita</span><span class="cta-s">Cita</span></a>
   <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span><span></span></button>
