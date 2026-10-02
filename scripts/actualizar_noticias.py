@@ -105,6 +105,23 @@ def extraer_imagen(entrada):
     return html.unescape(m.group(1)) if m else None
 
 
+def imagen_de_pagina(url):
+    """Si el feed no trae imagen, busca la imagen de portada de la noticia
+    (etiqueta og:image / twitter:image que el propio medio publica para compartirla)."""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        r.raise_for_status()
+        cab = r.text[:200000]
+        for patron in (r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image)(?::src)?["\'][^>]*content=["\']([^"\']+)',
+                       r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\'](?:og:image|twitter:image)'):
+            m = re.search(patron, cab, re.I)
+            if m:
+                return requests.compat.urljoin(url, html.unescape(m.group(1)).strip())
+    except Exception:
+        pass
+    return None
+
+
 def leer_fuente(fuente, categorias, cfg, exclusion=None):
     resp = requests.get(fuente["url"], headers=HEADERS, timeout=30)
     resp.raise_for_status()
@@ -177,6 +194,10 @@ def main():
         try:
             nuevas = leer_fuente(fuente, categorias, cfg, exclusion)
             for i, n in enumerate(nuevas):
+                if not n.get("imagen"):
+                    previa = anteriores.get(n["id"], {})
+                    n["imagen"] = previa.get("imagen") if "imagen_buscada" in previa else imagen_de_pagina(n["url"])
+                    n["imagen_buscada"] = True
                 if n["fecha"] is None:
                     # Sin fecha en el feed: se conserva la de la primera vez que se vio;
                     # si es nueva, "ahora" (restando minutos para mantener el orden del feed)
