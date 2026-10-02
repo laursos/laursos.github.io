@@ -24,6 +24,12 @@
   const RUTA_JSON = seccion.dataset.json || './data/noticias.json';
   const IMG_DEFECTO = seccion.dataset.imgDefault || './img/noticia-default.jpg';
   const POR_PAGINA = 6;
+  // Imagen propia por tema (no se usan las fotos de los medios: evita problemas de derechos de autor)
+  const IMG_TEMA = {'Cítricos':'./img/agricola.jpg','Hortalizas':'./img/planes-abonado.jpg','Frutales':'./img/informes.jpg','Fitosanitarios':'./hero-maquinaria.jpg','Fertilización':'./img/planes-abonado.jpg','Riego y agua':'./img/planes-abonado.jpg','PAC y ayudas':'./norm-pac.jpg','Maquinaria':'./maq-area.jpg','Gestión de la explotación':'./img/cuaderno-campo.jpg','Agricultura ecológica':'./img/agricola.jpg','Mercados y precios':'./img/analisis-datos.jpg','Caza':'./cin-area.jpg'};
+  function imagenTema(n){const c=(Array.isArray(n.categorias)&&n.categorias.length?n.categorias:[n.categoria||'General']);for(const x of c){if(IMG_TEMA[x])return IMG_TEMA[x];}return IMG_DEFECTO;}
+  // Extracto breve (cita corta con enlace a la fuente)
+  function corto(t,max){t=String(t||'').trim();if(t.length<=max)return t;return t.slice(0,max).replace(/\s+\S*$/,'').replace(/[.,;:]$/,'')+'…';}
+
   // Lista de categorías (nombres exactos que genera el script externo)
   const CATEGORIAS = ['Todas', 'Cítricos', 'Hortalizas', 'Frutales', 'Fitosanitarios', 'Fertilización', 'Riego y agua', 'PAC y ayudas', 'Maquinaria', 'Gestión de la explotación', 'Agricultura ecológica', 'Mercados y precios', 'Caza', 'General'];
 
@@ -131,8 +137,8 @@
     const img = document.createElement('img');
     img.loading = 'lazy';
     img.decoding = 'async';
-    img.alt = 'Imagen ilustrativa de la noticia';
-    img.src = urlSegura(n.imagen) || IMG_DEFECTO;
+    img.alt = '';
+    img.src = imagenTema(n);
     img.addEventListener('error', function () {
       if (!img.src.endsWith(IMG_DEFECTO.replace('./', ''))) img.src = IMG_DEFECTO;
     });
@@ -152,7 +158,7 @@
     cuerpo.appendChild(meta);
     cuerpo.appendChild(crear('h3', 'nt-tit', n.titulo || ''));
     // Si el extracto viene vacío, no se muestra el bloque
-    if (n.extracto && String(n.extracto).trim()) cuerpo.appendChild(crear('p', 'nt-ext', n.extracto));
+    if (n.extracto && String(n.extracto).trim()) cuerpo.appendChild(crear('p', 'nt-ext', corto(n.extracto, 140)));
     const pie = crear('div', 'nt-pie');
     pie.appendChild(crear('span', 'nt-fuente', n.fuente || ''));
     pie.appendChild(crear('span', 'nt-leer', 'Seguir leyendo →'));

@@ -14,6 +14,12 @@
   const RUTA_JSON = sec.dataset.json || './data/noticias.json';
   const IMG_DEFECTO = sec.dataset.imgDefault || './img/noticia-default.jpg';
   const NUM = 5, INTERVALO = 6000;
+  // Imagen propia por tema (no se usan las fotos de los medios: evita problemas de derechos de autor)
+  const IMG_TEMA = {'Cítricos':'./img/agricola.jpg','Hortalizas':'./img/planes-abonado.jpg','Frutales':'./img/informes.jpg','Fitosanitarios':'./hero-maquinaria.jpg','Fertilización':'./img/planes-abonado.jpg','Riego y agua':'./img/planes-abonado.jpg','PAC y ayudas':'./norm-pac.jpg','Maquinaria':'./maq-area.jpg','Gestión de la explotación':'./img/cuaderno-campo.jpg','Agricultura ecológica':'./img/agricola.jpg','Mercados y precios':'./img/analisis-datos.jpg','Caza':'./cin-area.jpg'};
+  function imagenTema(n){const c=(Array.isArray(n.categorias)&&n.categorias.length?n.categorias:[n.categoria||'General']);for(const x of c){if(IMG_TEMA[x])return IMG_TEMA[x];}return IMG_DEFECTO;}
+  // Extracto breve (cita corta con enlace a la fuente)
+  function corto(t,max){t=String(t||'').trim();if(t.length<=max)return t;return t.slice(0,max).replace(/\s+\S*$/,'').replace(/[.,;:]$/,'')+'…';}
+
   const sinMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const elTrack = raiz.querySelector('.nc-track');
@@ -36,7 +42,7 @@
     const img = document.createElement('img');
     img.alt = ''; img.decoding = 'async';
     img.loading = i === 0 ? 'eager' : 'lazy';
-    img.src = urlSegura(n.imagen) || IMG_DEFECTO;
+    img.src = imagenTema(n);
     img.addEventListener('error', () => { if (!img.src.endsWith(IMG_DEFECTO.replace('./', ''))) img.src = IMG_DEFECTO; });
     a.appendChild(img);
     const t = crear('div', 'nc-txt');
@@ -45,7 +51,7 @@
     m.appendChild(crear('span', null, [fecha(n.fecha), n.fuente].filter(Boolean).join(' · ')));
     t.appendChild(m);
     t.appendChild(crear('h3', 'nc-tit', n.titulo || ''));
-    if (n.extracto && String(n.extracto).trim()) t.appendChild(crear('p', 'nc-ext', n.extracto));
+    if (n.extracto && String(n.extracto).trim()) t.appendChild(crear('p', 'nc-ext', corto(n.extracto, 140)));
     t.appendChild(crear('span', 'nc-leer', 'Leer noticia →'));
     a.appendChild(t);
     return a;
