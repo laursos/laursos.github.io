@@ -217,6 +217,15 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .nav a.act::after{right:0}
 @media (prefers-reduced-motion:reduce){.brand img,.brand .pipe,.brand .n,.brand .r,#areas.vis .card{animation:none!important}.tab-ind,.tab,.card,.card .cimg image-slot{transition:none}}
 
+
+/* Portada: bloques enteros clicables y "Ver servicios" más visible */
+.tile{cursor:pointer}
+.tile .cap{bottom:72px}
+.tile .cap h2{transition:transform .25s ease}
+.tile:hover .cap h2{transform:translateY(-3px)}
+.tile .cap .go{margin-top:16px;padding:11px 20px;border:1.5px solid rgba(255,255,255,.9);border-radius:999px;font-size:13px;letter-spacing:.08em;background:rgba(10,40,30,.35);backdrop-filter:blur(4px);transition:background .2s,color .2s,border-color .2s}
+.tile:hover .cap .go,.tile .cap .go:focus-visible{background:var(--lm-green);border-color:var(--lm-green);color:#fff}
+@media (max-width:760px){.tile .cap{bottom:28px}.tile .cap .go{padding:10px 18px}}
 /* ===== ADAPTACIÓN A MÓVIL Y TABLET (no afecta al escritorio > 1080 px) ===== */
 .menu-btn,.menu-movil,.cta-s{display:none}
 @media (max-width:1080px){
@@ -527,6 +536,9 @@ document.addEventListener('click',e=>{if(!e.target.closest('.hdr'))set(false);})
 const secs=[...m.querySelectorAll('a')].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
 const mo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)m.querySelectorAll('a').forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(sc=>mo.observe(sc));
 })();
+
+/* Portada: clic en cualquier parte del bloque (nombre, foto o botón) lleva a su pestaña */
+document.querySelectorAll('.tile').forEach(t=>{const g=t.querySelector('.go');if(!g)return;t.addEventListener('click',e=>{if(e.target.closest('.go'))return;g.click();});});
 
 /* reveal on scroll */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
