@@ -1,6 +1,59 @@
 {
-  "actualizado": "2026-10-02T03:45:55Z",
+  "actualizado": "2026-10-02T12:36:56Z",
   "noticias": [
+    {
+      "id": "8cd3a89929a6d79c",
+      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación entrega obras de modernización de regadíos del embalse de Peñarroya (Ciudad Real) por valor de 25,6 millones de euros",
+      "extracto": " La actuación beneficia a 2.000 regantes que cultivan 7.842 hectáreas en Argamasilla de Alba, Tomelloso y Campo de Criptana",
+      "fecha": "2026-10-02T12:24:56Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-entrega-obras-de-modernizaci-n-de-regad-os-del-embalse-de-pe-arroya--ciudad-real--por-valor-de-25-6-millones-de-euros/41d379d8-cda7-4296-8073-c00dbeaf2bf9",
+      "imagen": "https://www.mapa.gob.es/.imaging/default/dam/mapa/contenido/prensa/notas-de-prensa/imagenes/altos-cargos/begona-garcia-bernal/caballero-regantes-pe-arroya-6-jpg.jpeg/jcr:content.jpeg",
+      "categorias": [
+        "Riego y agua",
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "3a78779ec82d8bc7",
+      "titulo": "Luis Planas señala que Europa debe ampliar y diversificar la producción de proteínas para asegurar su autonomía alimentaria",
+      "extracto": " España apuesta por un plan proteico y una estrategia de ganadería que reduzca dependencias externas refuerce la autonomía europea para…",
+      "fecha": "2026-10-02T12:22:56Z",
+      "fuente": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-se-ala-que-europa-debe-ampliar-y-diversificar-la-producci-n-de-prote-nas-para-asegurar-su-autonom-a-alimentaria/49d6212c-fd8f-4176-aa40-46e67ae700e8",
+      "imagen": "https://www.mapa.gob.es/.imaging/default/dam/mapa/contenido/prensa/notas-de-prensa/imagenes/altos-cargos/ministro-luis-planas/2026/08-09-2026-agrifish-saludo-presidencia-irlandesa.jpg/jcr:content.jpg",
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "5d37c6ab658b7d9f",
+      "titulo": "Cerca de 600 perros se darán cita en Arcos de la Frontera en el XII Campeonato de España de Agility",
+      "extracto": "La localidad gaditana acogerá del 30 de octubre al 2 de noviembre una de las grandes citas nacionales de la modalidad, que reunirá a…",
+      "fecha": "2026-10-02T09:10:31Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/cerca-de-600-perros-se-daran-cita-en-arcos-de-la-frontera-en-el-xii-campeonato-de-espana-de-agility/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/XII-CAMPEONATO-DE-ESPANA-DE-AGILITY-.png",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "6dedd8b99753b99c",
+      "titulo": "Boletín ayudas y normativas Nº 302",
+      "extracto": "Últimas novedades para el sector agrario. Resumen 25 de septiembre al 2 de octubre de 2026",
+      "fecha": "2026-10-02T07:49:40Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-302/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/WhatsApp-Image-2026-10-02-at-09.36.24.jpeg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "f85af07bf2950316",
       "titulo": "Begoña García Bernal: “La próxima PAC blindará dinero para la juventud y obligará a todos los países a apoyar su incorporación al campo”",
@@ -202,9 +255,22 @@
       "imagen_buscada": true
     },
     {
+      "id": "e0bd67e1e3c5bef0",
+      "titulo": "La Región de Murcia exhibirá en la Feria Fruit Attraction su liderazgo con la participación de 123 empresas",
+      "extracto": "La delegación murciana estará encabezada un año más por el presidente del Gobierno regional, Fernando López Miras El consejero de  destaca…",
+      "fecha": "2026-10-01T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126252&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
       "id": "bf6beff85f675d53",
       "titulo": "ASAJA Alicante denuncia que la industria presiona al agricultor con precios a la baja pese a la gran demanda de zumo de limón",
-      "extracto": "“Reclamamos a la industria contratos plurianuales que aporten estabilidad y seguridad al sector, sobre todo al agricultor”. ASAJA Alicante…",
+      "extracto": "“Reclamamos contratos plurianuales que aporten estabilidad y seguridad a toda la cadena del limón, sobre todo al agricultor en un contexto…",
       "fecha": "2026-10-01T15:53:57Z",
       "fuente": "ASAJA Alicante",
       "url": "https://alicanteasaja.com/asaja-alicante-denuncia-que-la-industria-presiona-al-agricultor-con-precios-a-la-baja-pese-a-la-gran-demanda-de-zumo-de-limon/",
