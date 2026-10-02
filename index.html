@@ -302,6 +302,39 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
   .brand img,.hdr.mini .brand img{width:40px!important;height:50px!important}
   .brand .n{font-size:12px}
 }
+
+/* ===== SERVICIOS: PANEL CON COLLAGE E ICONOS ===== */
+.panel{position:relative;border-radius:18px;overflow:hidden;color:#fff;margin-bottom:28px;isolation:isolate}
+.panel .collage{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr;z-index:-2}
+.panel .collage img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85)}
+.panel::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,90,65,.90),rgba(10,60,44,.93))}
+.panel.t-maquinaria::before{background:linear-gradient(180deg,rgba(26,34,30,.88),rgba(14,90,65,.90))}
+.panel.t-cinegetica::before{background:linear-gradient(180deg,rgba(38,30,18,.86),rgba(30,24,14,.92))}
+.panel .pin{padding:clamp(36px,5vw,64px) clamp(20px,5vw,72px)}
+.panel .ph-t{text-align:center;font-family:var(--font-display);font-weight:600;font-size:clamp(24px,3vw,36px);line-height:1.15;margin:0;color:#fff}
+.panel .ph-d{text-align:center;max-width:640px;margin:12px auto 0;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.85)}
+.panel .bar{width:120px;height:3px;background:var(--lm-earth);margin:22px auto 40px;border-radius:2px}
+.panel .sv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 56px;max-width:1080px;margin:0 auto}
+.sv-i{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;align-items:start}
+.sv-i .ic{width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .25s,border-color .25s,transform .25s}
+.sv-i:hover .ic{background:var(--lm-earth);border-color:var(--lm-earth);transform:scale(1.06)}
+.sv-i h4{margin:4px 0 6px;font-family:var(--font-display);font-weight:600;font-size:19px;line-height:1.25;color:#fff}
+.sv-i p{margin:0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.82)}
+.panel .pcta{text-align:center;margin-top:44px}
+.panel .pcta a{display:inline-block;background:var(--lm-earth);color:#1a1a1a;font-family:var(--font-display);font-weight:700;font-size:14px;padding:13px 26px;border-radius:8px;transition:background .2s,transform .2s}
+.panel .pcta a:hover{background:#fff;color:var(--lm-green-darker);transform:translateY(-2px)}
+#areas.vis .area.on .sv-i{animation:cardIn .55s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(var(--i,0)*70ms)}
+@media (max-width:760px){
+  .panel{border-radius:14px;margin-left:-4px;margin-right:-4px}
+  .panel .collage{grid-template-columns:repeat(2,1fr)}
+  .panel .sv{grid-template-columns:minmax(0,1fr);gap:26px}
+  .panel .bar{margin:18px auto 28px}
+  .sv-i{grid-template-columns:42px minmax(0,1fr);gap:14px}
+  .sv-i .ic{width:42px;height:42px}.sv-i .ic svg{width:20px;height:20px}
+  .sv-i h4{font-size:17px;margin-top:2px}
+  .panel .pcta{margin-top:32px}.panel .pcta a{display:block}
+}
+@media (prefers-reduced-motion:reduce){#areas.vis .sv-i{animation:none!important}}
 </style>
 </head>
 <body class="no-sponsors">
@@ -455,21 +488,39 @@ const slotSrc=id=>SLOT_SRC[id]?` src="${SLOT_SRC[id]}"`:'';
 const areasEl=document.getElementById('areas');
 // Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
 const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']]];
-const blockHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
-  <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card" style="--i:${j}"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct"${k==='maquinaria'?' style="text-align:center"':''}>${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>`;
-const CHIP_IMG={asesoramiento:SLOT_SRC['area-asesoramiento']||'./hero-asesoramiento.jpg',normativa:SLOT_SRC['area-normativa']||SLOT_SRC['card-asesoramiento-2']||'./hero-asesoramiento.jpg'};
+const ICO={
+hoja:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+gota:'<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/>',
+cuaderno:'<path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M16 2v20"/>',
+doc:'<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',
+grafica:'<path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>',
+ia:'<rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/>',
+check:'<rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
+carpeta:'<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>',
+euro:'<path d="M4 10h12"/><path d="M4 14h9"/><path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"/>',
+tractor:'<path d="M3 4h9l1 7"/><path d="M4 11V4"/><path d="M8 10V4"/><path d="M18 5c-.6 0-1 .4-1 1v5.6"/><path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1"/><circle cx="7" cy="15" r="5"/><path d="M16 18h-5"/><circle cx="18" cy="18" r="2"/>',
+escudo:'<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+fuel:'<path d="M3 22h12"/><path d="M4 9h10"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/>',
+mapa:'<path d="M14.1 4.6a2 2 0 0 0 1.8 0l3.6-1.8A1 1 0 0 1 21 3.7v12.8a1 1 0 0 1-.6.9l-4.5 2.2a2 2 0 0 1-1.8 0l-4.2-2.1a2 2 0 0 0-1.8 0l-3.6 1.8A1 1 0 0 1 3 18.4V5.6a1 1 0 0 1 .6-.9l4.5-2.2a2 2 0 0 1 1.8 0z"/><path d="M15 5.8v15"/><path d="M9 3.2v15"/>',
+alerta:'<path d="m21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+brote:'<path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>',
+etiqueta:'<path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/>',
+prismatico:'<path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.85c0-1.36-.71-2.6-1.83-3.33A1 1 0 0 1 20 11V7H4v4a1 1 0 0 1-.17.82C2.71 12.55 2 13.79 2 15.15V19a2 2 0 0 0 2 2Z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/>',
+arbol:'<path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/>',
+diana:'<circle cx="12" cy="12" r="10"/><path d="M22 12h-4"/><path d="M6 12H2"/><path d="M12 6V2"/><path d="M12 22v-4"/>'};
+const REGLAS=[[/integral|asesor/,'hoja'],[/abonad|fertil/,'gota'],[/cuaderno|siex/,'cuaderno'],[/informe|pericial/,'doc'],[/dato|viabil/,'grafica'],[/\bia\b|inteligencia/,'ia'],[/pepac|ecorreg|regepa|condicional/,'check'],[/document/,'carpeta'],[/subvenc|ayuda/,'euro'],[/roma|registro de maq/,'tractor'],[/iteaf|inspecc/,'escudo'],[/gasoleo/,'fuel'],[/plan.*tecnic|plan.*caza/,'mapa'],[/dano|fauna/,'alerta'],[/recuperac/,'brote'],[/precinto/,'etiqueta'],[/censo/,'prismatico'],[/medida|gestion/,'arbol'],[/arma/,'diana']];
+const icono=t=>{const n=t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/<[^>]*>/g,' ');const r=REGLAS.find(([re])=>re.test(n));return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICO[r?r[1]:'check']}</svg>`;};
+const collage=k=>{const im=AREAS[k].items.map((_,j)=>SLOT_SRC['card-'+k+'-'+j]).filter(Boolean);if(SLOT_SRC['area-'+k])im.unshift(SLOT_SRC['area-'+k]);while(im.length&&im.length<6)im.push(...im.slice(0,6-im.length));return im.slice(0,6).map(u=>`<img src="${u}" alt="" loading="lazy">`).join('');};
+const blockHtml=(k,a)=>`<div class="panel t-${k}"><div class="collage" aria-hidden="true">${collage(k)}</div><div class="pin">
+  <h3 class="ph-t">${a.t}</h3><p class="ph-d">${a.d}</p><div class="bar"></div>
+  <div class="sv">${a.items.map((it,j)=>`<div class="sv-i" style="--i:${j}"><span class="ic">${icono(it[0])}</span><div><h4>${it[0].replace(/<br>/g,' ')}</h4><p>${it[1]}</p></div></div>`).join('')}</div>
+  <div class="pcta"><a href="#contacto">Solicitar presupuesto</a></div></div></div>`;
 function renderAreas(){
 const activa=(document.querySelector('.tab.on')||{dataset:{area:'agricola'}}).dataset.area;
 areasEl.replaceChildren();
-GROUPS.forEach(([g,keys],i)=>{
+GROUPS.forEach(([g,keys])=>{
   const div=document.createElement('div');div.className='area'+(g===activa?' on':'');div.dataset.area=g;
-  if(keys.length>1){
-    // Dos círculos con imagen; al elegir uno se despliegan sus servicios
-    div.innerHTML=`<div class="chooser">${keys.map(k=>`<button class="chip-c" type="button" data-sub="${k}" aria-expanded="false" aria-controls="exp-${k}"><span class="circ"><img src="${CHIP_IMG[k]}" alt=""></span><span>${k==='asesoramiento'?'Asesoramiento técnico agrícola':'Normativa, ayudas y subvenciones'}</span><span class="hint-c">Ver servicios</span></button>`).join('')}</div>`+
-      keys.map(k=>`<div class="expand" id="exp-${k}" data-sub="${k}"><div><div id="bloque-${k}">${blockHtml(k,AREAS[k])}</div></div></div>`).join('');
-  } else {
-    div.innerHTML=keys.map(k=>`<div id="bloque-${k}">${blockHtml(k,AREAS[k])}</div>`).join('');
-  }
+  div.innerHTML=keys.map(k=>`<div id="bloque-${k}">${blockHtml(k,AREAS[k])}</div>`).join('');
   areasEl.appendChild(div);
 });
 }
@@ -481,7 +532,7 @@ function openSub(k){
 areasEl.addEventListener('click',e=>{const c=e.target.closest('.chip-c');if(c)openSub(c.dataset.sub);});
 // Al abrir o cerrar «+ info», todas las tarjetas de la misma fila hacen lo mismo
 areasEl.addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;const c=b.closest('.card');const open=!c.classList.contains('open');const top=c.offsetTop;[...c.parentElement.children].filter(x=>Math.abs(x.offsetTop-top)<4).forEach(x=>{x.classList.toggle('open',open);const l=x.querySelector('.more .lbl');if(l)l.textContent=open?'Cerrar':'+ info';});});
-function showArea(k){if(k==='asesoramiento'||k==='normativa'){const s=k;k='agricola';setTimeout(()=>{if(!document.querySelector('.chip-c.on[data-sub="'+s+'"]')&&s==='normativa')openSub(s);},0);}document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.area===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});moverIndicador();document.querySelectorAll('.area').forEach(a=>a.classList.toggle('on',a.dataset.area===k));}
+function showArea(k){if(k==='asesoramiento'||k==='normativa'){const s=k;k='agricola';}document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.area===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});moverIndicador();document.querySelectorAll('.area').forEach(a=>a.classList.toggle('on',a.dataset.area===k));}
 document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)showArea(t.dataset.area);});
 document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showArea(g.dataset.area)));
 
