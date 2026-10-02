@@ -174,7 +174,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .f-estado.err{background:#FBEAEA;color:#8E2B25}
 /* ===== MEJORAS DE DINÁMICA (oct 2026) ===== */
 /* 1. Pestañas de área como tarjetas + indicador deslizante */
-.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:36px 0 44px;position:relative;padding-bottom:14px}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:36px 0 44px;position:relative;padding-bottom:14px}
 .tabs::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:var(--line-2)}
 .tab-ind{position:absolute;bottom:0;left:0;height:3px;width:0;border-radius:3px;background:var(--lm-green);transition:transform .45s cubic-bezier(.65,0,.35,1),width .45s cubic-bezier(.65,0,.35,1)}
 .tab{display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:14px;border:1px solid var(--line-1);background:#fff;color:var(--lm-black);text-align:left;font-weight:400;transition:border-color .25s,box-shadow .25s,transform .25s}
@@ -189,7 +189,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .tab.on .ti{background:var(--lm-green);color:#fff}
 .tab.on .tn{background:var(--lm-green);color:#fff}
 .tab:focus-visible{outline:3px solid var(--lm-green-tint);outline-offset:2px}
-@media (max-width:760px){.tabs{gap:8px}.tab{flex-direction:column;text-align:center;gap:8px;padding:14px 8px}.tab small,.tab .tn{display:none}.tab b{font-size:13px}.tab .ti{width:44px;height:44px}}
+@media (max-width:760px){.tabs{gap:6px}.tab .tt b{font-size:12px;hyphens:auto}.tab{flex-direction:column;text-align:center;gap:8px;padding:14px 8px}.tab small,.tab .tn{display:none}.tab b{font-size:13px}.tab .ti{width:44px;height:44px}}
 /* 2. Tarjetas de servicio: entrada escalonada + zoom suave */
 .card .cimg{overflow:hidden}
 .card .cimg image-slot{display:block;width:100%;height:100%;transition:transform .6s ease}
@@ -320,7 +320,8 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .sv-i:hover .ic{background:var(--lm-earth);border-color:var(--lm-earth);transform:scale(1.06)}
 .sv-i h4{margin:4px 0 6px;font-family:var(--font-display);font-weight:600;font-size:19px;line-height:1.25;color:#fff}
 .sv-i p{margin:0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.82)}
-.panel .pcta{text-align:center;margin-top:44px}
+.panel .pcta,.pcta.solo{text-align:center;margin-top:44px}
+.pcta.solo{margin:32px 0 8px}.pcta.solo a{display:inline-block;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;padding:13px 26px;border-radius:8px;transition:background .2s,transform .2s}.pcta.solo a:hover{background:var(--lm-green-dark);transform:translateY(-2px)}
 .panel .pcta a{display:inline-block;background:var(--lm-earth);color:#1a1a1a;font-family:var(--font-display);font-weight:700;font-size:14px;padding:13px 26px;border-radius:8px;transition:background .2s,transform .2s}
 .panel .pcta a:hover{background:#fff;color:var(--lm-green-darker);transform:translateY(-2px)}
 #areas.vis .area.on .sv-i{animation:cardIn .55s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(var(--i,0)*70ms)}
@@ -361,6 +362,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
     <button class="tab on" data-area="agricola" role="tab" aria-selected="true"><span class="ti"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><span class="tt"><b>Agrícola</b><small>Asesoramiento técnico, normativa y ayudas</small></span><span class="tn"></span></button>
     <button class="tab" data-area="maquinaria" role="tab" aria-selected="false"><span class="ti"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h9l1 7"/><path d="M4 11V4"/><path d="M8 10V4"/><path d="M18 5c-.6 0-1 .4-1 1v5.6"/><path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1"/><circle cx="7" cy="15" r=".5"/><circle cx="7" cy="15" r="5"/><path d="M16 18h-5"/><circle cx="18" cy="18" r="2"/></svg></span><span class="tt"><b>Maquinaria</b><small>ROMA, ITEAF y gasóleo bonificado</small></span><span class="tn"></span></button>
     <button class="tab" data-area="cinegetica" role="tab" aria-selected="false"><span class="ti"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg></span><span class="tt"><b>Cinegética</b><small>Gestión técnica y documental de cotos</small></span><span class="tn"></span></button>
+    <button class="tab" data-area="medioambiente" role="tab" aria-selected="false"><span class="ti"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></span><span class="tt"><b>Medio ambiente</b><small>Impacto ambiental y huella de carbono</small></span><span class="tn"></span></button>
     <span class="tab-ind" aria-hidden="true"></span>
   </div>
   <div id="areas"></div>
@@ -431,7 +433,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
   <form class="form" id="form-contacto">
     <div class="two"><label>Nombre<input name="nombre" required maxlength="120" autocomplete="name"></label><label>Teléfono<input name="telefono" type="tel" required maxlength="30" autocomplete="tel"></label></div>
     <label>Email<input name="email" type="email" maxlength="160" autocomplete="email"></label>
-    <label>Servicio que necesitas<select name="servicio"><option>Explotación cítricos</option><option>Explotación hortícola</option><option>Explotación de frutales</option><option>Subvenciones</option><option>Informes</option><option>Trámites</option><option>Cinegética / caza</option><option>Maquinaria / ROMA / ITEAF / Gasóleo B</option><option>Otros</option></select></label>
+    <label>Servicio que necesitas<select name="servicio"><option>Explotación cítricos</option><option>Explotación hortícola</option><option>Explotación de frutales</option><option>Subvenciones</option><option>Informes</option><option>Trámites</option><option>Cinegética / caza</option><option>Maquinaria / ROMA / ITEAF / Gasóleo B</option><option>Medio ambiente / huella de carbono</option><option>Otros</option></select></label>
     <label>Cuéntame<textarea name="mensaje" rows="3" maxlength="3000" placeholder="Por favor, no incluyas datos de salud ni otros datos sensibles."></textarea></label>
     <label class="hp" aria-hidden="true">No rellenar<input name="web" tabindex="-1" autocomplete="off"></label>
     <div class="chk"><input type="checkbox" name="privacidad" value="si" required> <span>He leído y acepto la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></div>
@@ -478,16 +480,23 @@ const AREAS = {
     ['Censos','Realización de censos de especies cinegéticas.'],
     ['Medidas de gestión','Propuesta y seguimiento de medidas de gestión del coto.<br>Márgenes multifuncionales con mezcla de semillas, comederos, chozos, bebederos, control de depredadores...'],
     ['Revista de armas','Tramitación de la revista de armas.']]},
+  medioambiente:{t:'Medio ambiente y sostenibilidad',d:'Estudios y documentación ambiental para que tu proyecto o explotación cumpla la normativa y gane en eficiencia.',items:[
+    ['Estudios de impacto ambiental','Evaluación ambiental de proyectos agrarios: naves y construcciones rurales, transformación de secano a regadío o cambios de uso del suelo.'],
+    ['Estudios de integración paisajística','Documento exigido por ayuntamientos o la Generalitat para justificar que la actuación encaja en el paisaje.'],
+    ['Huella de carbono de la explotación','Cálculo de las emisiones a partir de gasóleo, electricidad, fertilización nitrogenada y otras entradas de la explotación.'],
+    ['Plan de reducción de emisiones','Medidas priorizadas por coste y beneficio: eficiencia energética, fertilización ajustada y gestión de residuos.'],
+    ['Documentación ambiental para ayudas','Memorias y justificación técnica para ayudas que exigen criterios ambientales o de sostenibilidad.'],
+    ['Informes para certificaciones de sostenibilidad','Respaldo técnico para certificaciones y para los requisitos de cooperativas y clientes.']]},
   maquinaria:{t:'Maquinaria agrícola',d:'Trámites de registro e inspección de maquinaria y equipos de tratamiento.',items:[
     ['Registro de Maquinaria Agrícola (ROMA)','Solicitud de duplicado del documento del Registro Oficial de Maquinaria Agrícola.'],
       ['Inspección Técnica de Equipos de Aplicación Fitosanitaria<br>(ITEAF)','Revisión de los equipos de aplicación de fitosanitarios para pasar la inspección técnica ITEAF.'],
       ['Gasóleo Agrícola Bonificado<br>(Gasóleo B)','Tramitación de la documentación necesaria para el uso y suministro de gasóleo agrícola bonificado (gasóleo B) en tu explotación.']]}
 };
-const SLOT_SRC={'area-normativa':'./norm-area.jpg','card-normativa-0':'./norm-pac.jpg','card-normativa-1':'./norm-documental.jpg','card-normativa-2':'./norm-subvenciones.jpg','area-maquinaria':'./maq-area.jpg','card-maquinaria-0':'./maq-roma.png','card-maquinaria-1':'./maq-iteaf.png','card-maquinaria-2':'./maq-gasoleo.png','area-cinegetica':'./cin-area.jpg','card-cinegetica-0':'./cin-planes.jpg','card-cinegetica-1':'./cin-danos.jpg','card-cinegetica-2':'./cin-recuperacion.jpg','card-cinegetica-3':'./cin-precintos.jpg','card-cinegetica-4':'./cin-censos.jpg','card-cinegetica-5':'./cin-medidas.jpg','card-cinegetica-6':'./cin-armas.jpg','area-asesoramiento':'./img/agricola.jpg','card-asesoramiento-0':'./img/asesoramiento-integral.jpg','card-asesoramiento-1':'./img/planes-abonado.jpg','card-asesoramiento-2':'./img/cuaderno-campo.jpg','card-asesoramiento-3':'./img/informes.jpg','card-asesoramiento-4':'./img/analisis-datos.jpg','card-asesoramiento-5':'./img/agritech.jpg'};
+const SLOT_SRC={'area-medioambiente':'./img/agricola.jpg','card-medioambiente-0':'./norm-area.jpg','card-medioambiente-1':'./hero-asesoramiento.jpg','card-medioambiente-2':'./img/analisis-datos.jpg','card-medioambiente-3':'./img/planes-abonado.jpg','card-medioambiente-4':'./norm-subvenciones.jpg','card-medioambiente-5':'./img/informes.jpg','area-normativa':'./norm-area.jpg','card-normativa-0':'./norm-pac.jpg','card-normativa-1':'./norm-documental.jpg','card-normativa-2':'./norm-subvenciones.jpg','area-maquinaria':'./maq-area.jpg','card-maquinaria-0':'./maq-roma.png','card-maquinaria-1':'./maq-iteaf.png','card-maquinaria-2':'./maq-gasoleo.png','area-cinegetica':'./cin-area.jpg','card-cinegetica-0':'./cin-planes.jpg','card-cinegetica-1':'./cin-danos.jpg','card-cinegetica-2':'./cin-recuperacion.jpg','card-cinegetica-3':'./cin-precintos.jpg','card-cinegetica-4':'./cin-censos.jpg','card-cinegetica-5':'./cin-medidas.jpg','card-cinegetica-6':'./cin-armas.jpg','area-asesoramiento':'./img/agricola.jpg','card-asesoramiento-0':'./img/asesoramiento-integral.jpg','card-asesoramiento-1':'./img/planes-abonado.jpg','card-asesoramiento-2':'./img/cuaderno-campo.jpg','card-asesoramiento-3':'./img/informes.jpg','card-asesoramiento-4':'./img/analisis-datos.jpg','card-asesoramiento-5':'./img/agritech.jpg'};
 const slotSrc=id=>SLOT_SRC[id]?` src="${SLOT_SRC[id]}"`:'';
 const areasEl=document.getElementById('areas');
 // Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
-const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']]];
+const GROUPS=[['agricola',['asesoramiento','normativa']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']],['medioambiente',['medioambiente']]];
 const ICO={
 hoja:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
 gota:'<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/>',
@@ -508,10 +517,13 @@ etiqueta:'<path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1
 prismatico:'<path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.85c0-1.36-.71-2.6-1.83-3.33A1 1 0 0 1 20 11V7H4v4a1 1 0 0 1-.17.82C2.71 12.55 2 13.79 2 15.15V19a2 2 0 0 0 2 2Z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/>',
 arbol:'<path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/>',
 diana:'<circle cx="12" cy="12" r="10"/><path d="M22 12h-4"/><path d="M6 12H2"/><path d="M12 6V2"/><path d="M12 22v-4"/>'};
-const REGLAS=[[/integral|asesor/,'hoja'],[/abonad|fertil/,'gota'],[/cuaderno|siex/,'cuaderno'],[/informe|pericial/,'doc'],[/dato|viabil/,'grafica'],[/\bia\b|inteligencia/,'ia'],[/pepac|ecorreg|regepa|condicional/,'check'],[/document/,'carpeta'],[/subvenc|ayuda/,'euro'],[/roma|registro de maq/,'tractor'],[/iteaf|inspecc/,'escudo'],[/gasoleo/,'fuel'],[/plan.*tecnic|plan.*caza/,'mapa'],[/dano|fauna/,'alerta'],[/recuperac/,'brote'],[/precinto/,'etiqueta'],[/censo/,'prismatico'],[/medida|gestion/,'arbol'],[/arma/,'diana']];
+const REGLAS=[[/integral|asesor/,'hoja'],[/abonad|fertil/,'gota'],[/cuaderno|siex/,'cuaderno'],[/informe|pericial/,'doc'],[/dato|viabil/,'grafica'],[/\bia\b|inteligencia/,'ia'],[/impacto/,'mapa'],[/paisaj/,'arbol'],[/huella|carbono/,'hoja'],[/emision/,'grafica'],[/ambiental para/,'euro'],[/certific|sostenib/,'escudo'],[/pepac|ecorreg|regepa|condicional/,'check'],[/document/,'carpeta'],[/subvenc|ayuda/,'euro'],[/roma|registro de maq/,'tractor'],[/iteaf|inspecc/,'escudo'],[/gasoleo/,'fuel'],[/plan.*tecnic|plan.*caza/,'mapa'],[/dano|fauna/,'alerta'],[/recuperac/,'brote'],[/precinto/,'etiqueta'],[/censo/,'prismatico'],[/medida|gestion/,'arbol'],[/arma/,'diana']];
 const icono=t=>{const n=t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/<[^>]*>/g,' ');const r=REGLAS.find(([re])=>re.test(n));return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICO[r?r[1]:'check']}</svg>`;};
 const collage=k=>{const im=AREAS[k].items.map((_,j)=>SLOT_SRC['card-'+k+'-'+j]).filter(Boolean);if(SLOT_SRC['area-'+k])im.unshift(SLOT_SRC['area-'+k]);while(im.length&&im.length<6)im.push(...im.slice(0,6-im.length));return im.slice(0,6).map(u=>`<img src="${u}" alt="" loading="lazy">`).join('');};
-const blockHtml=(k,a)=>`<div class="panel t-${k}"><div class="collage" aria-hidden="true">${collage(k)}</div><div class="pin">
+const cardsHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
+  <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card" style="--i:${j}"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct" style="text-align:center">${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>
+  <div class="pcta solo"><a href="#contacto">Solicitar presupuesto</a></div>`;
+const blockHtml=(k,a)=>k==='maquinaria'?cardsHtml(k,a):`<div class="panel t-${k}"><div class="collage" aria-hidden="true">${collage(k)}</div><div class="pin">
   <h3 class="ph-t">${a.t}</h3><p class="ph-d">${a.d}</p><div class="bar"></div>
   <div class="sv">${a.items.map((it,j)=>`<div class="sv-i" style="--i:${j}"><span class="ic">${icono(it[0])}</span><div><h4>${it[0].replace(/<br>/g,' ')}</h4><p>${it[1]}</p></div></div>`).join('')}</div>
   <div class="pcta"><a href="#contacto">Solicitar presupuesto</a></div></div></div>`;
@@ -564,19 +576,19 @@ const HOJA_SERVICIOS='1gUFJW0YgrTfwFFGpaT-C9bd9axpXOaojFFugbkzPaQU';
 function parseCSV(t){const r=[];let row=[],c='',q=false;for(let i=0;i<t.length;i++){const ch=t[i];if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++;}else q=false;}else c+=ch;}else if(ch==='"')q=true;else if(ch===','){row.push(c);c='';}else if(ch==='\n'||ch==='\r'){if(ch==='\r'&&t[i+1]==='\n')i++;row.push(c);r.push(row);row=[];c='';}else c+=ch;}if(c!==''||row.length){row.push(c);r.push(row);}return r;}
 const escH=x=>String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const conBr=x=>escH(x.trim()).replace(/\r?\n/g,'<br>');
-function claveArea(a){a=a.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');if(a.startsWith('asesor'))return'asesoramiento';if(a.startsWith('normat')||a.includes('ayuda'))return'normativa';if(a.startsWith('maquin'))return'maquinaria';if(a.startsWith('cineg')||a.startsWith('caza'))return'cinegetica';return null;}
+function claveArea(a){a=a.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');if(a.startsWith('asesor'))return'asesoramiento';if(a.startsWith('normat')||a.includes('ayuda'))return'normativa';if(a.startsWith('maquin'))return'maquinaria';if(a.startsWith('cineg')||a.startsWith('caza'))return'cinegetica';if(a.startsWith('medio')||a.includes('ambient')||a.includes('sostenib'))return'medioambiente';return null;}
 (async function(){
   try{
     const r=await fetch('https://docs.google.com/spreadsheets/d/'+HOJA_SERVICIOS+'/gviz/tq?tqx=out:csv&headers=1&_='+Date.now());
     if(!r.ok)throw new Error('HTTP '+r.status);
     const filas=parseCSV(await r.text()).slice(1).filter(f=>f.length>=3&&f[1]&&f[1].trim());
-    const nuevo={asesoramiento:[],normativa:[],maquinaria:[],cinegetica:[]},img={};
+    const nuevo={asesoramiento:[],normativa:[],maquinaria:[],cinegetica:[],medioambiente:[]},img={};
     filas.forEach(f=>{const k=claveArea(f[0]||'');if(!k)return;if((f[4]||'').trim().toUpperCase().startsWith('N'))return;
       const j=nuevo[k].length;nuevo[k].push([conBr(f[1]),conBr(f[2]||'')]);
       let im=(f[3]||'').trim();img['card-'+k+'-'+j]=im?(/^https?:\/\//.test(im)?im:'./'+im.replace(/^\.?\//,'')):'./img/noticia-default.jpg';});
     if(!Object.values(nuevo).some(a=>a.length))throw new Error('hoja vacía o sin acceso');
-    Object.keys(nuevo).forEach(k=>{AREAS[k].items=nuevo[k];});
-    Object.keys(SLOT_SRC).filter(id=>id.startsWith('card-')).forEach(id=>delete SLOT_SRC[id]);Object.assign(SLOT_SRC,img);
+    const conFilas=Object.keys(nuevo).filter(k=>nuevo[k].length);conFilas.forEach(k=>{AREAS[k].items=nuevo[k];});
+    Object.keys(SLOT_SRC).filter(id=>conFilas.some(k=>id.startsWith('card-'+k+'-'))).forEach(id=>delete SLOT_SRC[id]);Object.assign(SLOT_SRC,img);
     renderAreas();actualizarContadores();moverIndicador();
   }catch(e){console.info('Servicios: se usan los datos guardados ('+e.message+')');}
 })();
