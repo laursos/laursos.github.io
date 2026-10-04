@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-04T05:54:52Z",
+  "actualizado": "2026-10-04T12:23:32Z",
   "noticias": [
     {
       "id": "8cd3a89929a6d79c",
@@ -765,33 +765,6 @@
         "Mercados y precios"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "8d20c802b43ceb03",
-      "titulo": "ASAJA MURCIA PREVÉ UN RETRASO DE AL MENOS UN MES EN EL INICIO DE LA CAMPAÑA DEL LIMÓN FINO POR EL ESCASO CALIBRE Y LOS PROBLEMAS DE CALIDAD",
-      "extracto": "La organización agraria confirma sobre el terreno el aforo adelantado en julio y advierte de que una mayor cantidad de fruta podría…",
-      "fecha": "2026-09-04T10:45:47Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202609/04/asaja-murcia-preve-un-retraso-de-al-menos-un-mes-en-el-inicio-de-la-campana-del",
-      "imagen": null,
-      "categorias": [
-        "Cítricos",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "c1495ebb64d9afc4",
-      "titulo": "📢 COMUNICADO IMPORTANTE: ALERTA POR BROTE DE TRIQUINOSIS EN YESTE",
-      "extracto": "Desde la Federación de Caza de la Región de Murcia, emitimos un aviso urgente a todos los cazadores, vecinos y consumidores tras detectarse…",
-      "fecha": "2026-09-04T10:29:22Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/%f0%9f%93%a2-comunicado-importante-alerta-por-brote-de-triquinosis-en-yeste/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2593%25a2-comunicado-importante-alerta-por-brote-de-triquinosis-en-yeste",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png",
-      "categorias": [
-        "Mercados y precios",
-        "Caza"
-      ]
     }
   ]
 }
