@@ -1,6 +1,43 @@
 {
-  "actualizado": "2026-10-05T05:42:21Z",
+  "actualizado": "2026-10-05T14:42:02Z",
   "noticias": [
+    {
+      "id": "87ac6bd8440baf84",
+      "titulo": "ABANILLA ACOGE EL XLIV CAMPEONATO DE ESPAÑA DE SAN HUBERTO",
+      "extracto": "Los días 3 y 4 de octubre, Abanilla ha sido el escenario del XLIV Campeonato de España de San Huberto, una de las grandes citas nacionales…",
+      "fecha": "2026-10-05T10:14:42Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/abanilla-acoge-el-xliv-campeonato-de-espana-de-san-huberto/?utm_source=rss&utm_medium=rss&utm_campaign=abanilla-acoge-el-xliv-campeonato-de-espana-de-san-huberto",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3c6.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "88a7e76529d1f321",
+      "titulo": "Juan José Canosa, María Fernández y Juan Antonio Bernal, campeones de España de San Huberto en Abanilla",
+      "extracto": "Extremadura firma una destacada actuación con dos títulos nacionales y un pleno en el podio de la categoría de levantadores Juan José…",
+      "fecha": "2026-10-05T09:02:10Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/juan-jose-canosa-maria-fernandez-y-juan-antonio-bernal-campeones-de-espana-de-san-huberto-en-abanilla/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/san-huberto-2-1024x768.jpeg",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "85157368209e7dd4",
+      "titulo": "El Gobierno regional presenta junto a Agrupal el plan de acción de la industria alimentaria hasta 2028 con 25 acciones para la mejora del sector",
+      "extracto": "El consejero Joaquín Buendía destaca que la industria alimentaria regional \"es un sector sólido que factura al año más de 8.800 millones de…",
+      "fecha": "2026-10-04T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126268&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "8cd3a89929a6d79c",
       "titulo": "El Ministerio de Agricultura, Pesca y Alimentación entrega obras de modernización de regadíos del embalse de Peñarroya (Ciudad Real) por valor de 25,6 millones de euros",
