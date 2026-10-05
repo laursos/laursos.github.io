@@ -29,7 +29,7 @@ h1,h2,h3{margin:0}
 .cta{white-space:nowrap;justify-self:end;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:600;font-size:13px;padding:10px 18px;border-radius:8px;transition:background .15s}
 .cta:hover{background:var(--lm-green-dark);color:#fff}
 /* HERO MOSAIC */
-.hero{position:relative;height:calc(100vh - 80px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:#fff}
+.hero{position:relative;height:calc(100vh - 80px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;background:#fff}
 .tile{position:relative;overflow:hidden}
 .tile .ph{position:absolute;inset:0}
 .tile .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,30,.78) 0%,rgba(10,40,30,.15) 55%,transparent 75%);pointer-events:none;transition:opacity .3s}
@@ -417,6 +417,25 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .panel .ph-l{list-style:none;padding:0;margin:16px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px}
 .panel .ph-l li{font-size:13.5px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 14px}
 .panel .ph-l li::before{content:"✓ ";color:var(--lm-earth)}
+
+/* ===== SERVICIOS EN DOS GRUPOS DE TARJETAS ===== */
+.grupos{margin:34px 0 40px}
+.grupo+.grupo{margin-top:34px}
+.g-t{display:flex;align-items:center;gap:14px;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--lm-green-dark);margin:0 0 18px}
+.g-t::after{content:"";flex:1;height:1px;background:var(--line-2)}
+.grupos .tabs{display:grid;gap:22px;margin:0;padding:0;align-items:start}
+.grupos .tabs.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grupos .tabs.g2{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grupos .tabs.g2 .tab:first-child{grid-column:2}
+.grupos .tab .tim{height:190px}
+.grupos .tab.sh-l .tim{border-radius:62% 14px 14px 14px/85% 14px 14px 14px}
+.grupos .tab.sh-a .tim{border-radius:999px 999px 14px 14px}
+.grupos .tab.sh-r .tim{border-radius:14px 62% 14px 14px/14px 85% 14px 14px}
+.grupos .tab .tbox{margin:-50px 14px 0;padding:14px 12px 12px}
+.grupos .tab .tbox b{font-size:16px}
+.grupos .tab .tbox small{font-size:12.5px}
+@media (max-width:900px){.grupos .tabs.g4,.grupos .tabs.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.grupos .tabs.g2 .tab:first-child{grid-column:auto}}
+@media (max-width:760px){.grupos .tabs{gap:10px}.grupos .tab .tim{height:110px}.grupos .tab .tbox{margin:-26px 4px 0;padding:10px 6px 8px}.grupos .tab .tbox b{font-size:13px}.g-t{font-size:11.5px;margin-bottom:12px}.grupo+.grupo{margin-top:22px}}
 </style>
 </head>
 <body class="no-sponsors">
@@ -432,20 +451,22 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 <section class="hero" id="inicio">
   <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Asesoramiento técnico agrícola, cinegético y de maquinaria</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Soluciones técnicas para mejorar tu explotación agrícola.</span></b></p></div>
   <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1">Agrícola</h2><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
-  <div class="tile"><image-slot class="ph" id="hero-maquinaria" shape="rect" placeholder="Foto tractor / equipo de tratamiento" src="./hero-maquinaria.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1">Maquinaria</h2><a class="go" href="#servicios" data-area="maquinaria">Ver servicios →</a></div></div>
-  <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./cin-hero.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1FC">Cinegética</h2><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
+    <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./cin-hero.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1FC">Cinegética y medio ambiente</h2><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
 </section>
 
 <section class="s" id="servicios"><div class="wrap">
   <div class="sv-head reveal"><div class="eyebrow">Servicios</div><h2 class="sv-h">En qué te puedo ayudar</h2><p>Asesoramiento técnico, gestión de trámites agrarios, cinegéticos y de maquinaria. Cercano, riguroso y al día de la normativa.</p></div>
-  <div class="areabar" id="areabar" role="tablist" aria-label="Áreas de servicio">
-    <button class="ab on" data-area="agricola" role="tab" aria-selected="true">Agrícola</button><button class="ab" data-area="maquinaria" role="tab" aria-selected="false">Maquinaria</button><button class="ab" data-area="cinegetica" role="tab" aria-selected="false">Cinegética</button><button class="ab" data-area="medioambiente" role="tab" aria-selected="false">Medio ambiente</button>
-  </div>
-  <div class="tabs" id="tabs" role="tablist" aria-label="Servicios agrícolas">
-    <button class="tab on" data-sub="asesoramiento" role="tab" aria-selected="true"><span class="tim"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Asesoramiento técnico</b><small>Cultivos, fertilización, CUE, ecológico y certificaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
-    <button class="tab" data-sub="normativa" role="tab" aria-selected="false"><span class="tim"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Normativa y ayudas</b><small>PEPAC, REA, Ayuda Joven Agricultor, Ayudas a inversiones en modernización...</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
-    <button class="tab" data-sub="catastro" role="tab" aria-selected="false"><span class="tim"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Mediciones y catastro</b><small>Mediciones, Catastro y segregaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
-    <span class="tab-ind" aria-hidden="true"></span>
+  <div id="tabs" class="grupos" role="tablist" aria-label="Servicios">
+    <div class="grupo"><h3 class="g-t">Agrícola</h3><div class="tabs g4">
+    <button class="tab sh-l on" data-sub="asesoramiento" role="tab" aria-selected="true"><span class="tim"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Asesoramiento técnico</b><small>Cultivos, fertilización, CUE, ecológico y certificaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-a" data-sub="normativa" role="tab" aria-selected="false"><span class="tim"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Normativa y ayudas</b><small>PEPAC, REA, Ayuda Joven Agricultor, Ayudas a inversiones en modernización...</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-a" data-sub="catastro" role="tab" aria-selected="false"><span class="tim"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Mediciones y catastro</b><small>Mediciones, Catastro y segregaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-r" data-sub="maquinaria" role="tab" aria-selected="false"><span class="tim"><img src="./maq-area.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Maquinaria agrícola</b><small>ROMA, ITEAF y gasóleo bonificado</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    </div></div>
+    <div class="grupo"><h3 class="g-t">Cinegética y medio ambiente</h3><div class="tabs g2">
+    <button class="tab sh-l" data-sub="cinegetica" role="tab" aria-selected="false"><span class="tim"><img src="./cin-area.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Gestión cinegética</b><small>Planes técnicos, censos, daños y mejoras del coto</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-r" data-sub="medioambiente" role="tab" aria-selected="false"><span class="tim"><img src="./img/planes-abonado.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Medio ambiente</b><small>Impacto ambiental, paisaje y huella de carbono</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    </div></div>
   </div>
   <div id="areas"></div>
 </div></section>
@@ -568,13 +589,13 @@ const AREAS = {
   cinegetica:{t:'Servicios cinegéticos',d:'Gestión técnica y documental de cotos y terrenos cinegéticos.',items:[["Planes técnicos de caza", "Redacción y tramitación del plan técnico del coto, con inventario de especies y aprovechamientos adaptados al terreno."], ["Daños por fauna silvestre", "Valoración e informe técnico de los daños causados en cultivos por jabalí, conejo u otras especies, para reclamar o pedir medidas de control."], ["Recuperación de la caza menor", "Diagnóstico del hábitat y plan de medidas para recuperar la perdiz, el conejo y otras especies de caza menor."], ["Precintos digitales de caza", "Gestión y tramitación de los precintos digitales del coto."], ["Censos", "Censos de especies cinegéticas para conocer la población real del coto y justificar el plan técnico."], ["Medidas de gestión", "Diseño y seguimiento de mejoras en el coto: márgenes multifuncionales, siembras para la fauna, comederos, bebederos, refugios y control de predadores."], ["Revista de armas", "Tramitación de la revista de armas ante la Intervención de Armas de la Guardia Civil."]]},
   catastro:{t:'Mediciones, catastro y segregaciones',d:'Superficies reales, Catastro al día y fincas divididas o agrupadas con respaldo técnico.',items:[["Mediciones de parcelas", "Medición con GPS y planos de la superficie real de la finca."], ["Trámites de Catastro", "Cambios de titularidad o de cultivo y corrección de superficies y linderos."], ["Segregaciones y agrupaciones", "Informe técnico para dividir o unir fincas, comprobando la unidad mínima de cultivo."], ["Coordinación Catastro–SIGPAC", "Hacer que coincidan Catastro y SIGPAC, y alegaciones cuando no coinciden."]]},
   medioambiente:{t:'Medio ambiente y sostenibilidad',d:'Estudios y documentación ambiental para que tu proyecto o explotación cumpla la normativa y gane en eficiencia.',items:[["Estudios de impacto ambiental", "Evaluación ambiental de proyectos agrarios: naves y construcciones rurales, transformación de secano a regadío o cambios de uso del suelo."], ["Estudios de integración paisajística", "Documento exigido por ayuntamientos o la Generalitat para justificar que la actuación encaja en el paisaje."], ["Huella de carbono de la explotación", "Cálculo de las emisiones a partir de gasóleo, electricidad, fertilización nitrogenada y otras entradas de la explotación."], ["Plan de reducción de emisiones", "Medidas priorizadas por coste y beneficio: eficiencia energética, fertilización ajustada y gestión de residuos."], ["Documentación ambiental para ayudas", "Memorias y justificación técnica para ayudas que exigen criterios ambientales o de sostenibilidad."], ["Informes para certificaciones de sostenibilidad", "Respaldo técnico para certificaciones y para los requisitos de cooperativas y clientes."]]},
-  maquinaria:{t:'Maquinaria agrícola',d:'Registro, inspección y documentación de tu maquinaria al día.',items:[["Registro de Maquinaria Agrícola (ROMA)", "Inscripción de maquinaria nueva o usada, cambios de titularidad, bajas y duplicados en el Registro Oficial de Maquinaria Agrícola."], ["Inspección Técnica de Equipos de Aplicación Fitosanitaria (ITEAF)", "Revisión previa del equipo y acompañamiento en la inspección obligatoria de pulverizadores y atomizadores. Inspectora con certificado de aptitud ITEAF."], ["Gasóleo Agrícola Bonificado (Gasóleo B)", "Documentación para acceder al gasóleo agrícola bonificado y justificar su uso en tu explotación."]]}
+  maquinaria:{t:'Maquinaria agrícola',d:'Registro, inspección y documentación de tu maquinaria al día.',items:[["Registro de Maquinaria Agrícola (ROMA)", "Inscripción de maquinaria nueva o usada, cambios de titularidad, bajas y duplicados en el Registro Oficial de Maquinaria Agrícola."], ["Inspección Técnica de Equipos de Aplicación Fitosanitaria (ITEAF)", "Revisión previa del equipo y acompañamiento en la inspección obligatoria de pulverizadores y atomizadores."], ["Gasóleo Agrícola Bonificado (Gasóleo B)", "Documentación para acceder al gasóleo agrícola bonificado y justificar su uso en tu explotación."]]}
 };
 const SLOT_SRC={'area-medioambiente':'./img/agricola.jpg','card-medioambiente-0':'./norm-area.jpg','card-medioambiente-1':'./hero-asesoramiento.jpg','card-medioambiente-2':'./img/analisis-datos.jpg','card-medioambiente-3':'./img/planes-abonado.jpg','card-medioambiente-4':'./norm-subvenciones.jpg','card-medioambiente-5':'./img/informes.jpg','area-normativa':'./norm-area.jpg','card-normativa-0':'./norm-pac.jpg','card-normativa-1':'./norm-documental.jpg','card-normativa-2':'./norm-subvenciones.jpg','area-maquinaria':'./maq-area.jpg','card-maquinaria-0':'./maq-roma.png','card-maquinaria-1':'./maq-iteaf.png','card-maquinaria-2':'./maq-gasoleo.png','area-cinegetica':'./cin-area.jpg','card-cinegetica-0':'./cin-planes.jpg','card-cinegetica-1':'./cin-danos.jpg','card-cinegetica-2':'./cin-recuperacion.jpg','card-cinegetica-3':'./cin-precintos.jpg','card-cinegetica-4':'./cin-censos.jpg','card-cinegetica-5':'./cin-medidas.jpg','card-cinegetica-6':'./cin-armas.jpg','area-asesoramiento':'./img/agricola.jpg','card-asesoramiento-0':'./img/asesoramiento-integral.jpg','card-asesoramiento-1':'./img/planes-abonado.jpg','card-asesoramiento-2':'./img/cuaderno-campo.jpg','card-asesoramiento-3':'./img/informes.jpg','card-asesoramiento-4':'./img/analisis-datos.jpg','card-asesoramiento-5':'./img/agritech.jpg'};
 const slotSrc=id=>SLOT_SRC[id]?` src="${SLOT_SRC[id]}"`:'';
 const areasEl=document.getElementById('areas');
 // Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
-const GROUPS=[['agricola',['asesoramiento','normativa','catastro']],['maquinaria',['maquinaria']],['cinegetica',['cinegetica']],['medioambiente',['medioambiente']]];
+const GROUPS=[['todos',['asesoramiento','normativa','catastro','maquinaria','cinegetica','medioambiente']]];
 const ICO={
 hoja:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
 gota:'<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/>',
@@ -620,11 +641,11 @@ const blockHtml=(k,a)=>`<div class="panel t-${k}"><div class="bgs" aria-hidden="
   <div class="sv${(k==='asesoramiento'||k==='normativa')?' colflow':''}" style="--filas:${Math.ceil(a.items.length/2)}">${a.items.map((it,j)=>`<div class="sv-i" style="--i:${j}"><span class="ic">${iconoServ(k,it[0])}</span><div><h4>${it[0].replace(/<br>/g,' ')}</h4><p>${it[1]}</p></div></div>`).join('')}</div>
   <div class="pcta"><a href="#contacto">Solicitar presupuesto</a></div></div></div>`;
 function renderAreas(){
-const activa=(document.querySelector('.ab.on')||{dataset:{area:'agricola'}}).dataset.area;const subActiva=(document.querySelector('.tab.on')||{dataset:{sub:'asesoramiento'}}).dataset.sub;
+const activa='todos';const subActiva=(document.querySelector('.tab.on')||{dataset:{sub:'asesoramiento'}}).dataset.sub;
 areasEl.replaceChildren();
 GROUPS.forEach(([g,keys])=>{
   const div=document.createElement('div');div.className='area'+(g===activa?' on':'');div.dataset.area=g;
-  div.innerHTML=keys.map((k,n)=>`<div id="bloque-${k}" class="blk${(keys.length===1||k===subActiva)?' on':''}" data-sub="${k}">${blockHtml(k,AREAS[k])}</div>`).join('');
+  div.innerHTML=keys.map((k,n)=>`<div id="bloque-${k}" class="blk${k===subActiva?' on':''}" data-sub="${k}">${blockHtml(k,AREAS[k])}</div>`).join('');
   areasEl.appendChild(div);
 });
 }
@@ -637,10 +658,9 @@ function openSub(k){
 areasEl.addEventListener('click',e=>{const c=e.target.closest('.chip-c');if(c)openSub(c.dataset.sub);});
 // Al abrir o cerrar «+ info», todas las tarjetas de la misma fila hacen lo mismo
 areasEl.addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;const c=b.closest('.card');const open=!c.classList.contains('open');const top=c.offsetTop;[...c.parentElement.children].filter(x=>Math.abs(x.offsetTop-top)<4).forEach(x=>{x.classList.toggle('open',open);const l=x.querySelector('.more .lbl');if(l)l.textContent=open?'Cerrar':'+ info';});});
-function showSub(k){document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.sub===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});document.querySelectorAll('#areas .area[data-area="agricola"] .blk').forEach(b=>b.classList.toggle('on',b.dataset.sub===k));moverIndicador();}
-function showArea(k){if(k==='asesoramiento'||k==='normativa'||k==='catastro'){showSub(k);k='agricola';}document.querySelectorAll('.ab').forEach(t=>{const on=t.dataset.area===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});document.getElementById('tabs').classList.toggle('oculto',k!=='agricola');document.querySelectorAll('.area').forEach(a=>a.classList.toggle('on',a.dataset.area===k));moverIndicador();}
-document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)showSub(t.dataset.sub);});
-document.getElementById('areabar').addEventListener('click',e=>{const t=e.target.closest('.ab');if(t)showArea(t.dataset.area);});
+function showSub(k){if(!AREAS[k])return;document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.sub===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});document.querySelectorAll('#areas .blk').forEach(b=>b.classList.toggle('on',b.dataset.sub===k));}
+function showArea(k){showSub(({agricola:'asesoramiento'})[k]||k);}
+document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;showSub(t.dataset.sub);const b=document.querySelector('#areas .blk.on');if(b){const y=b.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}});
 document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showArea(g.dataset.area)));
 
 
