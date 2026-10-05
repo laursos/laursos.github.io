@@ -447,6 +447,26 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .ot-i img{width:100%;height:100%;object-fit:cover;display:block}
 .ot.on{display:none}
 @media (max-width:760px){.otros{padding:16px 10px}.otros-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.otros-g{grid-column:1/-1}.ot{font-size:12px;line-height:1.2;padding:4px 8px 4px 4px;gap:8px;text-align:left;width:100%}.ot-i{width:32px;height:32px}}
+.op-dlg{border:0;border-radius:16px;padding:0;max-width:520px;width:calc(100% - 32px);box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.op-dlg::backdrop{background:rgba(20,40,30,.55)}
+.op-form{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px 26px 24px}
+.op-form h3{margin:0;font-family:var(--font-display);font-size:22px}
+.op-sub{margin:0 0 4px;font-size:14px;color:var(--lm-gray-500);line-height:1.5}
+.op-form label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--lm-gray-900)}
+.op-form label small{font-weight:400;color:var(--lm-gray-500)}
+.op-form input:not([type=radio]):not([type=checkbox]),.op-form textarea{font:inherit;font-weight:400;font-size:15px;padding:10px 12px;border:1px solid var(--line-2);border-radius:8px}
+.op-form input:focus,.op-form textarea:focus{outline:2px solid var(--lm-green-soft);border-color:var(--lm-green)}
+.op-form .chk{display:flex;gap:8px;align-items:flex-start;font-size:12.5px}.op-form .chk label{display:inline;font-weight:400}
+.op-x{position:absolute;top:10px;right:12px;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:var(--lm-gray-500)}
+.op-stars{border:0;padding:0;margin:0;display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px}
+.op-lbl{font-size:13px;font-weight:600;color:var(--lm-gray-900);margin-bottom:-8px}
+.op-stars input{position:absolute;opacity:0}
+.op-stars label{font-size:28px;color:#D9D9D9;cursor:pointer;flex-direction:row}
+.op-stars input:checked~label,.op-stars label:hover,.op-stars label:hover~label{color:#E3A92B}
+.op-stars input:focus-visible+label{outline:2px solid var(--lm-green);border-radius:4px}
+.op-msg{margin:0;font-size:13.5px}.op-msg.ok{color:var(--lm-green-dark)}.op-msg.err{color:var(--lm-danger)}
+.op-enviar{align-self:flex-start;border:0;cursor:pointer}
+button.op-btn{border:0;cursor:pointer}
 </style>
 </head>
 <body class="no-sponsors">
@@ -584,9 +604,27 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 
 <section class="opiniones" id="opiniones"><div class="wrap">
   <div class="sv-head"><div class="eyebrow">Opiniones</div><h2 class="sv-h">Lo que dicen mis clientes</h2></div>
-  <div class="grid" id="op-grid"><div class="op op-vacio"><p>Muy pronto compartiré aquí las opiniones de las personas con las que trabajo.</p><p>¿Ya has trabajado conmigo? Me encantará conocer tu experiencia.</p><a class="op-btn" href="mailto:laurams.consultoresagricolas@gmail.com?subject=Mi%20opini%C3%B3n%20sobre%20tu%20trabajo">Dejar mi opinión</a></div></div>
+  <div class="grid" id="op-grid"><div class="op op-vacio"><p>Muy pronto compartiré aquí las opiniones de las personas con las que trabajo.</p><p>¿Ya has trabajado conmigo? Me encantará conocer tu experiencia.</p><button type="button" class="op-btn" id="op-abrir">Dejar mi opinión</button></div></div>
 </div></section>
 
+<dialog class="op-dlg" id="op-dlg" aria-labelledby="op-dlg-t">
+  <form class="op-form" id="op-form" method="dialog" novalidate>
+    <button type="button" class="op-x" id="op-cerrar" aria-label="Cerrar">×</button>
+    <h3 id="op-dlg-t">Cuéntame tu experiencia</h3>
+    <p class="op-sub">Tu opinión ayuda a otros agricultores y cazadores a conocer mi trabajo. La reviso antes de publicarla.</p>
+    <input type="hidden" name="tipo" value="opinion">
+    <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Web<input name="web" tabindex="-1" autocomplete="off"></label></div>
+    <label>Nombre<input name="nombre" required maxlength="80" autocomplete="name" placeholder="Ej.: Antonio G."></label>
+    <label><span>Localidad o cultivo <small>(opcional)</small></span><input name="detalle" maxlength="80" placeholder="Ej.: Cítricos · Orihuela"></label>
+    <span class="op-lbl" id="op-val">Valoración</span><fieldset class="op-stars" aria-labelledby="op-val">
+      <input type="radio" id="st5" name="valoracion" value="5" checked><label for="st5" title="5">★</label><input type="radio" id="st4" name="valoracion" value="4"><label for="st4" title="4">★</label><input type="radio" id="st3" name="valoracion" value="3"><label for="st3" title="3">★</label><input type="radio" id="st2" name="valoracion" value="2"><label for="st2" title="2">★</label><input type="radio" id="st1" name="valoracion" value="1"><label for="st1" title="1">★</label>
+    </fieldset>
+    <label>Tu opinión<textarea name="opinion" required maxlength="800" rows="4"></textarea></label>
+    <div class="chk"><input type="checkbox" name="publicar" value="si" id="op-pub" required> <label for="op-pub">Acepto que se publique mi opinión con mi nombre y localidad, según la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</label></div>
+    <p class="op-msg" id="op-msg" role="status"></p>
+    <button type="submit" class="op-btn op-enviar">Enviar opinión</button>
+  </form>
+</dialog>
 <footer>
   <span>© 2026 Laura Muñoz Socorro · Ingeniera Técnica Agrícola · Colegiada nº 1140</span>
   <nav class="legal"><a href="./aviso-legal.html">Aviso legal</a><a href="./privacidad.html">Política de privacidad</a><a href="./cookies.html">Política de cookies</a><a href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener">LinkedIn</a></nav>
@@ -747,6 +785,20 @@ f.addEventListener('submit',async e=>{e.preventDefault();if(!f.reportValidity())
     f.reset();msg('¡Gracias! He recibido tu solicitud y te responderé lo antes posible.',true);}
   catch(err){msg('No se ha podido enviar. Inténtalo de nuevo o escríbeme a laurams.consultoresagricolas@gmail.com.',false);}
   finally{btn.disabled=false;btn.textContent=txt;}});})();
+
+/* Opiniones: ventana con formulario */
+(function(){const d=document.getElementById('op-dlg'),f=document.getElementById('op-form'),m=document.getElementById('op-msg');if(!d)return;
+document.getElementById('op-abrir').addEventListener('click',()=>{m.textContent='';m.className='op-msg';d.showModal?d.showModal():d.setAttribute('open','');});
+document.getElementById('op-cerrar').addEventListener('click',()=>d.close());
+d.addEventListener('click',e=>{if(e.target===d)d.close();});
+f.addEventListener('submit',async e=>{e.preventDefault();
+  if(!f.nombre.value.trim()||!f.opinion.value.trim()){m.textContent='Escribe tu nombre y tu opinión.';m.className='op-msg err';return;}
+  if(!f.publicar.checked){m.textContent='Marca la casilla para que pueda publicar tu opinión.';m.className='op-msg err';return;}
+  const b=f.querySelector('.op-enviar');b.disabled=true;b.textContent='Enviando…';
+  try{await fetch(FORM_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))});
+    f.reset();m.textContent='¡Muchas gracias! He recibido tu opinión; la publicaré tras revisarla.';m.className='op-msg ok';}
+  catch(err){m.textContent='No se ha podido enviar. Inténtalo de nuevo más tarde.';m.className='op-msg err';}
+  finally{b.disabled=false;b.textContent='Enviar opinión';}});})();
 
 /* Menú móvil */
 (function(){const b=document.getElementById('menu-btn'),m=document.getElementById('menu-movil');if(!b||!m)return;
