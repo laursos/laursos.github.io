@@ -436,6 +436,17 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 .grupos .tab .tbox small{font-size:12.5px}
 @media (max-width:900px){.grupos .tabs.g4,.grupos .tabs.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.grupos .tabs.g2 .tab:first-child{grid-column:auto}}
 @media (max-width:760px){.grupos .tabs{gap:10px}.grupos .tab .tim{height:110px}.grupos .tab .tbox{margin:-26px 4px 0;padding:10px 6px 8px}.grupos .tab .tbox b{font-size:13px}.g-t{font-size:11.5px;margin-bottom:12px}.grupo+.grupo{margin-top:22px}}
+/* ===== OTROS SERVICIOS BAJO EL PANEL ===== */
+.otros{margin:8px 0 0;padding:22px 20px;border:1px solid var(--line-2);border-radius:16px;background:var(--lm-gray-50)}
+.otros-t{margin:0 0 14px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--lm-black)}
+.otros-l{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 14px}
+.otros-g{flex-basis:100%;text-align:center;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lm-green-dark);margin-top:4px}
+.ot{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border:1px solid var(--line-2);border-radius:999px;background:#fff;cursor:pointer;font-family:var(--font-display);font-weight:600;font-size:13.5px;color:var(--lm-black);transition:border-color .2s,box-shadow .2s,transform .2s}
+.ot:hover{border-color:var(--lm-green);box-shadow:var(--shadow-2);transform:translateY(-2px)}
+.ot-i{width:40px;height:40px;border-radius:50%;overflow:hidden;flex:none}
+.ot-i img{width:100%;height:100%;object-fit:cover;display:block}
+.ot.on{display:none}
+@media (max-width:760px){.otros{padding:16px 10px}.otros-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.otros-g{grid-column:1/-1}.ot{font-size:12px;line-height:1.2;padding:4px 8px 4px 4px;gap:8px;text-align:left;width:100%}.ot-i{width:32px;height:32px}}
 </style>
 </head>
 <body class="no-sponsors">
@@ -469,6 +480,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
     </div></div>
   </div>
   <div id="areas"></div>
+  <nav class="otros" id="otros" aria-label="Otros servicios"><p class="otros-t">¿Buscas otro servicio?</p><div class="otros-l"><span class="otros-g">Agrícola</span><button type="button" class="ot" data-sub="asesoramiento"><span class="ot-i"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="ot-t">Asesoramiento técnico</span></button><button type="button" class="ot" data-sub="normativa"><span class="ot-i"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="ot-t">Normativa y ayudas</span></button><button type="button" class="ot" data-sub="catastro"><span class="ot-i"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="ot-t">Mediciones y catastro</span></button><button type="button" class="ot" data-sub="maquinaria"><span class="ot-i"><img src="./maq-area.jpg" alt="" loading="lazy"></span><span class="ot-t">Maquinaria agrícola</span></button><span class="otros-g">Cinegética y medio ambiente</span><button type="button" class="ot" data-sub="cinegetica"><span class="ot-i"><img src="./cin-area.jpg" alt="" loading="lazy"></span><span class="ot-t">Gestión cinegética</span></button><button type="button" class="ot" data-sub="medioambiente"><span class="ot-i"><img src="./img/planes-abonado.jpg" alt="" loading="lazy"></span><span class="ot-t">Medio ambiente</span></button></div></nav>
 </div></section>
 
 <section class="cifras" aria-label="Cifras"><div class="wrap">
@@ -658,8 +670,11 @@ function openSub(k){
 areasEl.addEventListener('click',e=>{const c=e.target.closest('.chip-c');if(c)openSub(c.dataset.sub);});
 // Al abrir o cerrar «+ info», todas las tarjetas de la misma fila hacen lo mismo
 areasEl.addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;const c=b.closest('.card');const open=!c.classList.contains('open');const top=c.offsetTop;[...c.parentElement.children].filter(x=>Math.abs(x.offsetTop-top)<4).forEach(x=>{x.classList.toggle('open',open);const l=x.querySelector('.more .lbl');if(l)l.textContent=open?'Cerrar':'+ info';});});
-function showSub(k){if(!AREAS[k])return;document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.sub===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});document.querySelectorAll('#areas .blk').forEach(b=>b.classList.toggle('on',b.dataset.sub===k));}
+function showSub(k){if(!AREAS[k])return;document.querySelectorAll('.ot').forEach(o=>o.classList.toggle('on',o.dataset.sub===k));document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.sub===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});document.querySelectorAll('#areas .blk').forEach(b=>b.classList.toggle('on',b.dataset.sub===k));}
 function showArea(k){showSub(({agricola:'asesoramiento'})[k]||k);}
+showSub((document.querySelector('.tab.on')||{dataset:{sub:'asesoramiento'}}).dataset.sub);
+const irAPanel=()=>{const b=document.querySelector('#areas .blk.on');if(b){const y=b.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}};
+document.getElementById('otros').addEventListener('click',e=>{const o=e.target.closest('.ot');if(!o)return;showSub(o.dataset.sub);irAPanel();});
 document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;showSub(t.dataset.sub);const b=document.querySelector('#areas .blk.on');if(b){const y=b.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}});
 document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showArea(g.dataset.area)));
 
