@@ -21,6 +21,11 @@ a{color:#147A59}a:hover{color:#1FA67A}
 .marca b{display:block;font-family:Montserrat,sans-serif;font-weight:800;font-size:13px;text-transform:uppercase}
 .marca span span{font-size:11px;color:#147A59}
 .volver{font-family:Montserrat,sans-serif;font-weight:600;font-size:13px;text-decoration:none}
+.menu{display:flex;gap:28px;font-family:Montserrat,sans-serif;font-size:14px;font-weight:600}
+.menu a{color:#1A1A1A;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;white-space:nowrap}
+.menu a:hover,.menu a[aria-current]{border-bottom-color:#1FA67A}
+@media (max-width:900px){.menu{gap:16px;font-size:13px}.volver{display:none}}
+@media (max-width:640px){.top .wrap{flex-wrap:wrap}.menu{width:100%;justify-content:space-between}}
 main{padding:64px 0 80px}
 .eyebrow{font-family:Montserrat,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#147A59;font-weight:700}
 .h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(28px,3.4vw,42px);text-transform:uppercase;line-height:1.05;margin:10px 0 14px}
@@ -40,6 +45,7 @@ main{padding:64px 0 80px}
 <body>
 <header class="top"><div class="wrap">
   <a class="marca" href="./index.html"><img src="./img/logo-isotipo-recorte.png" alt="Laura Muñoz Socorro"><i class="pipe"></i><span><b>Laura Muñoz Socorro</b><span>Ingeniera Técnica Agrícola</span></span></a>
+  <nav class="menu" aria-label="Menú principal"><a href="./index.html#servicios">Servicios</a><a href="./noticias.html" aria-current="page">Noticias</a><a href="./index.html#sobre">Sobre mí</a><a href="./index.html#contacto">Contacto</a></nav>
   <a class="volver" href="./index.html">← Volver a la web</a>
 </div></header>
 

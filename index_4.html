@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laura Muñoz Socorro · Ingeniera Técnica Agrícola</title>
+<link rel="stylesheet" href="./css/colors_and_type.css">
+<script src="./js/image-slot.js"></script>
+<link rel="stylesheet" href="./css/noticias.css">
+<link rel="stylesheet" href="./css/carrusel.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--lm-black);font-family:var(--font-body)}
+a{color:var(--lm-green-dark);text-decoration:none}a:hover{color:var(--lm-green)}
+h1,h2,h3{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+/* HEADER */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2)}
+.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;height:80px}
+.brand{display:flex;align-items:center;gap:8px;justify-self:start}
+.brand img{height:50px;width:auto}
+.brand .pipe{width:1px;height:40px;background:var(--lm-green)}
+.brand .n{font-family:var(--font-display);font-weight:800;font-size:14.5px;text-transform:uppercase;white-space:nowrap;line-height:1.2}
+.brand .r{font-size:12.5px;color:var(--lm-green-dark);white-space:nowrap}
+.nav{display:flex;gap:28px;font-family:var(--font-display);font-size:14px;font-weight:600}
+.nav a{color:var(--lm-black);position:relative;padding:6px 0;white-space:nowrap}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--lm-green);transition:right .25s ease-out}
+.nav a:hover::after{right:0}
+.cta{white-space:nowrap;justify-self:end;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:600;font-size:13px;padding:10px 18px;border-radius:8px;transition:background .15s}
+.cta:hover{background:var(--lm-green-dark);color:#fff}
+/* HERO MOSAIC */
+.hero{position:relative;height:calc(100vh - 80px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;background:#fff}
+.tile{position:relative;overflow:hidden}
+.tile .ph{position:absolute;inset:0}
+.tile .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,30,.78) 0%,rgba(10,40,30,.15) 55%,transparent 75%);pointer-events:none;transition:opacity .3s}
+.tile .cap{position:absolute;left:28px;right:28px;bottom:32px;color:#fff;pointer-events:none}
+.tile .cap .k{font-family:var(--font-display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;opacity:.9}
+.tile .cap h2{font-family:var(--font-display);font-weight:800;font-size:clamp(24px,2.6vw,36px);text-transform:uppercase;line-height:1.05;margin-top:8px}
+.tile .cap .go{pointer-events:auto;display:inline-flex;gap:8px;align-items:center;margin-top:14px;color:#fff;font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:3px}
+.hero-card{position:absolute;left:50%;top:44px;transform:translateX(-50%);background:#fff;padding:26px 34px;border-radius:14px;box-shadow:var(--shadow-3);text-align:center;max-width:620px;width:calc(100% - 64px);z-index:2}
+.hero-card h1{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,2.4vw,32px);text-transform:uppercase;line-height:1.1}
+.hero-card p{margin:10px 0 0;font-family:var(--font-display);font-style:italic;color:var(--lm-green-dark);font-size:16px}
+/* SECTIONS */
+section.s{padding:96px 0}
+section.soft{background:var(--lm-gray-50)}
+.eyebrow{font-family:var(--font-display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--lm-green-dark);font-weight:700}
+.h2{font-family:var(--font-display);font-weight:800;font-size:clamp(28px,3.4vw,42px);text-transform:uppercase;line-height:1.05;margin:10px 0 14px}
+.lede{max-width:640px;font-size:17px;line-height:1.6;color:var(--lm-gray-700);text-wrap:pretty}
+/* AREA TABS */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:36px 0 28px}
+.tab{font-family:var(--font-display);font-size:13px;font-weight:600;padding:10px 18px;border-radius:999px;border:1px solid var(--line-1);background:#fff;cursor:pointer;color:var(--lm-black);transition:all .15s}
+.tab:hover{border-color:var(--lm-green)}
+.tab.on{background:var(--lm-green);border-color:var(--lm-green);color:#fff}
+.area-sub{margin-top:56px;padding-top:44px;border-top:1px solid var(--line-1)}
+/* Selector circular del área Agrícola */
+.chooser{display:flex;justify-content:center;gap:clamp(28px,6vw,80px);flex-wrap:wrap;margin:8px 0 36px}
+.chip-c{background:none;border:0;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:16px;font-family:var(--font-display);font-weight:800;font-size:16px;line-height:1.2;text-transform:uppercase;color:var(--lm-black);max-width:240px;text-align:center}
+.chip-c .circ{width:clamp(150px,18vw,210px);aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid #fff;box-shadow:var(--shadow-2);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;pointer-events:none}
+.chip-c .circ img{width:100%;height:100%;object-fit:cover;display:block}
+.chip-c:hover .circ,.chip-c:focus-visible .circ{transform:scale(1.04)}
+.chip-c:focus-visible{outline:0}
+.chip-c.on{color:var(--lm-green-dark)}
+.chip-c.on .circ{border-color:var(--lm-green);box-shadow:0 0 0 6px var(--lm-green-tint),var(--shadow-3)}
+.chip-c .hint-c{font-family:var(--font-body);font-weight:600;font-size:12px;text-transform:none;color:var(--lm-green-dark)}
+.expand{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .6s ease,opacity .45s ease}
+.expand>div{overflow:hidden;min-height:0}
+.expand.open{grid-template-rows:1fr;opacity:1}
+.area{display:none}.area.on{display:block;animation:rise .45s ease-out}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.area-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center;margin-bottom:32px}
+.area-head .img{height:320px;border-radius:14px;overflow:hidden}
+.area-head h3{font-family:var(--font-display);font-weight:800;font-size:28px;text-transform:uppercase;line-height:1.1}
+.area-head p{font-size:16px;line-height:1.6;color:var(--lm-gray-700);margin:12px 0 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.cards.few{grid-template-columns:repeat(auto-fit,minmax(260px,340px));justify-content:center}
+.card{background:#fff;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s,transform .2s}
+.card:hover{border-color:var(--lm-green);box-shadow:var(--shadow-card);transform:translateY(-2px)}
+.card .cimg{height:150px;position:relative}
+.card .cbody{padding:18px 20px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .ct{font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.25}
+.card .more{margin-top:auto;padding-top:10px;display:flex;align-items:center;gap:8px;background:none;border:0;cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--lm-green-dark);padding-left:0}
+.card .more .pl{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--lm-green);display:inline-flex;align-items:center;justify-content:center;font-size:15px;line-height:1;transition:transform .25s,background .2s}
+.card.open .more .pl{transform:rotate(45deg);background:var(--lm-green);color:#fff}
+.card .cd{max-height:0;overflow:hidden;transition:max-height .35s ease-out;font-size:14px;line-height:1.6;color:var(--lm-gray-700)}
+.card.open .cd{max-height:260px}
+.card .cd p{margin:8px 0 0}
+/* PILLARS */
+.pillars{background:var(--lm-green-tint);color:var(--lm-green-darker);padding:16px 0;border-top:1px solid var(--lm-green-soft);border-bottom:1px solid var(--lm-green-soft)}
+.pillars .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;text-align:center}
+.pillar .n{font-family:var(--font-display);font-size:12px;opacity:.7}
+.pillar .t{font-family:var(--font-display);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 2px}
+.pillar .d{font-size:13px;line-height:1.45;color:var(--lm-gray-700)}
+/* NEWS */
+.news-top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:32px}
+.news{background:#fff;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.news .nimg{height:180px}
+.news .nb{padding:18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.news .src{font-family:var(--font-display);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--lm-green-dark);display:flex;justify-content:space-between}
+.news .src span:last-child{color:var(--lm-gray-500);letter-spacing:.04em}
+.news .nt{font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.3;color:var(--lm-black)}
+.news .nl{margin-top:auto;font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+.news .del{float:right;background:none;border:0;color:var(--lm-gray-300);cursor:pointer;font-size:16px}
+.news .del:hover{color:var(--lm-danger)}
+.btn-ghost{font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:10px 16px;border-radius:8px;border:1px solid var(--lm-green);background:#fff;color:var(--lm-green-dark);cursor:pointer}
+.btn-ghost:hover{background:var(--lm-green-tint)}
+.feeds{margin-top:18px;font-size:12px;color:var(--lm-gray-500);line-height:1.6}
+.feeds b{color:var(--lm-gray-700)}
+/* modal */
+.mb{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:center;justify-content:center;z-index:100}
+.mb.show{display:flex}
+.modal{background:#fff;border-radius:14px;padding:26px;width:460px;max-width:92vw;display:flex;flex-direction:column;gap:10px}
+.modal h3{font-family:var(--font-display);font-size:15px;text-transform:uppercase;color:var(--lm-green-dark)}
+.modal label{font-family:var(--font-display);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--lm-gray-700)}
+.modal input,.modal select{width:100%;padding:9px 11px;border:1px solid var(--line-1);border-radius:7px;font-family:var(--font-body);font-size:14px;margin-top:4px}
+.modal .row{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+.modal .row button{padding:9px 16px;border-radius:7px;border:0;font-family:var(--font-display);font-weight:700;font-size:12px;text-transform:uppercase;cursor:pointer}
+.save{background:var(--lm-green);color:#fff}.cancel{background:var(--lm-gray-100)}
+/* ABOUT + CONTACT */
+.about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.about .img{aspect-ratio:4/5;border-radius:14px;overflow:hidden}
+.about ul{list-style:none;padding:0;margin:22px 0 0}
+.about li{padding:9px 0 9px 22px;border-bottom:1px solid var(--line-2);position:relative;font-size:15px}
+.about li::before{content:"";position:absolute;left:0;top:17px;width:8px;height:8px;background:var(--lm-green);border-radius:2px}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.clist{display:flex;flex-direction:column;gap:12px;margin-top:22px;font-size:15px}
+.clist div{display:flex;align-items:center;gap:10px}
+.form{background:#fff;border:1px solid var(--line-2);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.form label{display:flex;flex-direction:column;gap:6px;font-family:var(--font-display);font-size:12px;font-weight:600}
+.form input,.form select,.form textarea{font-family:var(--font-body);font-size:14px;padding:10px 12px;border:1px solid var(--line-1);border-radius:8px}
+.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--lm-green);box-shadow:var(--ring-brand)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chk{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--lm-gray-700)}
+.chk input{accent-color:var(--lm-green);margin-top:2px}
+.form button{background:var(--lm-green);color:#fff;border:0;padding:13px;border-radius:8px;font-family:var(--font-display);font-weight:700;font-size:14px;cursor:pointer}
+.form button:hover{background:var(--lm-green-dark)}
+/* FOOTER + SPONSORS */
+.sponsors{background:var(--lm-gray-50);border-top:1px solid var(--line-2);padding:28px 0}
+.sponsors .k{font-family:var(--font-display);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--lm-gray-500);text-align:center;font-weight:700}
+.sponsors .logos{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:16px}
+.sponsors .logos>div{width:150px;height:64px}
+body.no-sponsors .sponsors{display:none}
+footer{background:var(--lm-black);color:rgba(255,255,255,.8);padding:26px 0;text-align:center;font-size:12px;display:flex;flex-direction:column;gap:8px}
+footer .legal{display:flex;justify-content:center;gap:8px 22px;flex-wrap:wrap}
+footer .legal a{color:#fff;text-decoration:underline;text-underline-offset:3px}footer .legal a:hover{color:var(--lm-green)}
+footer .ia{font-size:11px;color:rgba(255,255,255,.65);max-width:640px;margin:0 auto;padding:0 16px}
+.form .rgpd{font-size:11.5px;line-height:1.5;color:var(--lm-gray-700);background:var(--lm-gray-50);border:1px solid var(--line-2);border-radius:8px;padding:10px 12px;margin:0}
+.form .rgpd a,.chk a{color:var(--lm-green-dark)}
+.to-top{position:fixed;right:22px;bottom:22px;z-index:60;width:48px;height:48px;border-radius:50%;border:0;background:var(--lm-green);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-3);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s,background .2s}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}.to-top:hover{background:var(--lm-green-dark)}.to-top:focus-visible{outline:3px solid var(--lm-green-tint);outline-offset:2px}
+footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:rgba(255,255,255,.55)}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1080px){.hdr .wrap{grid-template-columns:1fr auto}.nav{display:none}.tile .cap{left:20px;right:20px;bottom:24px}.hero-card{top:28px;padding:20px 24px}}
+@media (max-width:900px){.hero{grid-template-columns:1fr;height:auto;max-height:none}.tile{height:300px}.hero-card{position:relative;left:auto;top:auto;transform:none;margin:24px auto;grid-row:1}.area-head,.about,.contact{grid-template-columns:1fr}.news-grid{grid-template-columns:1fr}.pillars .wrap{grid-template-columns:1fr 1fr}}
+
+@media (min-width:901px){.about{align-items:start}.about .img{position:sticky;top:96px}}
+.about-top{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.about-top .lede{margin:0}
+.about-logo{flex:none}
+.about-logo img{width:clamp(120px,12vw,170px);height:auto;display:block}
+.cred{margin-top:28px;display:grid;gap:22px}
+.cred h4{margin:0 0 4px;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lm-green-dark)}
+.cred ul{margin:0}
+.cred li b{display:block;font-weight:600;font-size:15px;line-height:1.35}
+.cred li span{display:block;font-size:13px;color:var(--lm-gray-500);margin-top:2px}
+@media (max-width:600px){.about-top{flex-direction:column-reverse;align-items:flex-start}.about-logo img{width:110px}}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.form{position:relative}
+.form button:disabled{opacity:.7;cursor:wait}
+.f-estado{margin:0;padding:10px 12px;border-radius:8px;font-size:14px;line-height:1.5}
+.f-estado.ok{background:var(--lm-green-tint);color:var(--lm-green-darker)}
+.f-estado.err{background:#FBEAEA;color:#8E2B25}
+/* ===== MEJORAS DE DINÁMICA (oct 2026) ===== */
+.areabar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:30px auto 0;padding:5px;border-radius:999px;background:var(--lm-green-tint);width:max-content;max-width:100%}
+.ab{border:0;background:transparent;padding:10px 20px;border-radius:999px;font-family:var(--font-display);font-weight:700;font-size:13.5px;letter-spacing:.02em;color:var(--lm-green-darker);cursor:pointer;transition:background .25s,color .25s}
+.ab:hover{background:#fff}.ab.on{background:var(--lm-green);color:#fff;box-shadow:0 4px 12px rgba(20,122,89,.25)}
+.ab:focus-visible{outline:3px solid var(--lm-green-soft);outline-offset:2px}
+.tabs.oculto{display:none}
+#areas .blk{display:none}#areas .blk.on{display:block;animation:rise .45s ease-out}
+@media (max-width:760px){.areabar{width:100%;border-radius:14px;display:grid;grid-template-columns:1fr 1fr;gap:4px}.ab{padding:10px 8px;font-size:13px;border-radius:10px}}
+/* 1. Pestañas de área como tarjetas + indicador deslizante */
+.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:36px 0 44px;position:relative;padding-bottom:14px}
+.tabs::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:var(--line-2)}
+.tab-ind{position:absolute;bottom:0;left:0;height:3px;width:0;border-radius:3px;background:var(--lm-green);transition:transform .45s cubic-bezier(.65,0,.35,1),width .45s cubic-bezier(.65,0,.35,1)}
+.tab{display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:14px;border:1px solid var(--line-1);background:#fff;color:var(--lm-black);text-align:left;font-weight:400;transition:border-color .25s,box-shadow .25s,transform .25s}
+.tab .ti{flex:none;width:52px;height:52px;border-radius:12px;display:grid;place-items:center;background:var(--lm-green-tint);color:var(--lm-green-dark);transition:background .25s,color .25s,transform .35s}
+.tab .tt{min-width:0}
+.tab b{display:block;font-family:var(--font-display);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em}
+.tab small{display:block;margin-top:3px;font-family:var(--font-body);font-size:12.5px;line-height:1.35;color:var(--lm-gray-500)}
+.tab .tn{margin-left:auto;flex:none;font-family:var(--font-display);font-size:11px;font-weight:700;color:var(--lm-green-dark);background:var(--lm-green-tint);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.tab:hover{border-color:var(--lm-green);transform:translateY(-2px);box-shadow:var(--shadow-2)}
+.tab:hover .ti{transform:rotate(-6deg) scale(1.06)}
+.tab.on{background:#fff;color:var(--lm-black);border-color:var(--lm-green);box-shadow:0 10px 28px rgba(20,122,89,.15)}
+.tab.on .ti{background:var(--lm-green);color:#fff}
+.tab.on .tn{background:var(--lm-green);color:#fff}
+.tab:focus-visible{outline:3px solid var(--lm-green-tint);outline-offset:2px}
+@media (max-width:760px){.tabs{gap:6px}.tab .tt b{font-size:12px;hyphens:auto}.tab{flex-direction:column;text-align:center;gap:8px;padding:14px 8px}.tab small,.tab .tn{display:none}.tab b{font-size:13px}.tab .ti{width:44px;height:44px}}
+/* 2. Tarjetas de servicio: entrada escalonada + zoom suave */
+.card .cimg{overflow:hidden}
+.card .cimg image-slot{display:block;width:100%;height:100%;transition:transform .6s ease}
+.card:hover{border-color:var(--lm-green);box-shadow:var(--shadow-2);transform:translateY(-3px)}
+.card:hover .cimg image-slot{transform:scale(1.05)}
+@keyframes cardIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+#areas.vis .area.on>[id^="bloque"] .card,#areas.vis .expand.open .card{animation:cardIn .55s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(var(--i,0)*80ms)}
+/* 3. Firma: el logo se revela como un trazo al cargar */
+@keyframes firma{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes pipeIn{from{transform:scaleY(0)}to{transform:none}}
+@keyframes txtIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.brand img{animation:firma 1.5s cubic-bezier(.65,0,.35,1) .15s both}
+.brand .pipe{transform-origin:top;animation:pipeIn .45s ease-out 1.2s both}
+.brand .n{animation:txtIn .5s ease-out 1.4s both}
+.brand .r{animation:txtIn .5s ease-out 1.55s both}
+/* 4. Cabecera que se compacta + barra de progreso + sección activa */
+.hdr{transition:box-shadow .3s,background .3s}
+.hdr .wrap{transition:height .3s ease}
+.hdr .brand img{transition:width .3s ease,height .3s ease}
+.hdr.mini{box-shadow:0 6px 20px rgba(0,0,0,.06);background:rgba(255,255,255,.97)}
+.hdr.mini .wrap{height:60px}
+.hdr.mini .brand img{width:44px!important;height:55px!important}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--lm-green);transform-origin:left;transform:scaleX(0)}
+.nav a.act{color:var(--lm-green-dark)}
+.nav a.act::after{right:0}
+@media (prefers-reduced-motion:reduce){.brand img,.brand .pipe,.brand .n,.brand .r,#areas.vis .card{animation:none!important}.tab-ind,.tab,.card,.card .cimg image-slot{transition:none}}
+
+
+/* Portada: bloques enteros clicables y "Ver servicios" más visible */
+.tile{cursor:pointer}
+.tile .cap{bottom:72px}
+.tile .cap h2{transition:transform .25s ease}
+.tile:hover .cap h2{transform:translateY(-3px)}
+.tile .cap .go{margin-top:16px;padding:11px 20px;border:1.5px solid rgba(255,255,255,.9);border-radius:999px;font-size:13px;letter-spacing:.08em;background:rgba(10,40,30,.35);backdrop-filter:blur(4px);transition:background .2s,color .2s,border-color .2s}
+.tile:hover .cap .go,.tile .cap .go:focus-visible{background:var(--lm-green);border-color:var(--lm-green);color:#fff}
+.tile .cap{text-align:center;display:flex;flex-direction:column;align-items:center}
+@media (max-width:760px){.tile .cap{bottom:28px}.tile .cap .go{padding:10px 18px}}
+/* ===== ADAPTACIÓN A MÓVIL Y TABLET (no afecta al escritorio > 1080 px) ===== */
+.menu-btn,.menu-movil,.cta-s{display:none}
+@media (max-width:1080px){
+  .hdr .wrap{grid-template-columns:minmax(0,1fr) auto auto;gap:10px}
+  .menu-btn{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:1px solid var(--line-1);border-radius:10px;background:#fff;cursor:pointer}
+  .menu-btn span{display:block;height:2px;border-radius:2px;background:var(--lm-green-dark);transition:transform .25s,opacity .2s}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .menu-movil{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line-2);box-shadow:0 12px 24px rgba(0,0,0,.08);padding:6px 20px 14px;transform-origin:top;transform:scaleY(.96);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s}
+  .menu-movil.open{opacity:1;transform:none;visibility:visible}
+  .menu-movil a{font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--lm-black);padding:14px 4px;border-bottom:1px solid var(--line-2)}
+  .menu-movil a:last-child{border-bottom:0}
+  .menu-movil a.act{color:var(--lm-green-dark)}
+}
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  section.s{padding:64px 0}
+  /* Cabecera compacta */
+  .hdr .wrap,.hdr.mini .wrap{height:64px}
+  .brand{min-width:0;gap:8px}
+  .brand img,.hdr.mini .brand img{width:46px!important;height:57px!important}
+  .brand .pipe{height:32px}
+  .brand>span:last-child{min-width:0}
+  .brand .n{font-size:12.5px;overflow:hidden;text-overflow:ellipsis}
+  .brand .r{font-size:11px}
+  .cta{padding:10px 14px;font-size:13px}
+  .cta-l{display:none}.cta-s{display:inline}
+  .hero{height:auto;max-height:none}
+  .hero-card{width:calc(100% - 40px);padding:20px 18px;margin:20px auto}
+  .hero-card h1 span{font-size:21px!important}
+  .tile{height:240px}
+  .h2{font-size:28px}
+  .lede{font-size:16px}
+  .area-head{gap:18px;margin-bottom:24px}
+  .area-head .img{height:200px}
+  .area-head h3{font-size:22px}
+  .cards,.cards.few{grid-template-columns:minmax(0,1fr)}
+  .chooser{gap:24px}
+  .chip-c .circ{width:140px}
+  .pillars{padding:14px 0}
+  .pillars .wrap{gap:14px 16px}
+  .about{gap:28px}
+  .about .img{aspect-ratio:1/1;max-width:420px}
+  .about-top{gap:16px}
+  .contact{grid-template-columns:minmax(0,1fr);gap:28px}
+  .clist div{overflow-wrap:anywhere}
+  .form{padding:20px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .form input,.form select,.form textarea{font-size:16px}  /* evita el zoom automático del iPhone */
+  .form button{padding:15px}
+  .to-top{right:16px;bottom:16px;width:44px;height:44px}
+  footer{padding:24px 0}
+}
+@media (max-width:380px){
+  .brand .r{display:none}
+  .brand .n{font-size:12px}
+}
+
+/* Cabecera móvil: logo más grande y nombre en dos líneas sin pisar el botón */
+@media (max-width:760px){
+  .hdr .wrap,.hdr.mini .wrap{height:68px;gap:8px}
+  .brand{gap:7px}
+  .brand img,.hdr.mini .brand img{width:46px!important;height:57px!important}
+  .brand img{flex:none;object-fit:contain}
+  .brand .pipe{height:40px;flex:none}
+  .brand>span:last-child{display:block;min-width:0}
+  .brand .n{white-space:normal;font-size:12.5px;line-height:1.15;overflow:visible;text-overflow:clip;max-width:13ch}
+  .brand .r{font-size:10.5px;margin-top:2px;white-space:normal;line-height:1.2}
+  .cta{padding:10px 13px;flex:none}
+  .menu-btn{flex:none}
+}
+@media (max-width:380px){
+  .brand img,.hdr.mini .brand img{width:40px!important;height:50px!important}
+  .brand .n{font-size:12px}
+}
+
+/* ===== SERVICIOS: PANEL CON COLLAGE E ICONOS ===== */
+.panel{position:relative;border-radius:18px;overflow:hidden;color:#fff;margin-bottom:28px;isolation:isolate}
+.panel .bgs{position:absolute;inset:0;z-index:-2;background:#0e3a2c}
+.panel .bgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity 1.6s ease,transform 7s ease-out;filter:saturate(.9)}
+.panel .bgs img.on{opacity:1;transform:scale(1)}
+.sv-i .ic img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
+.panel .sv.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sv.c3 .sv-i{grid-template-columns:minmax(0,1fr);justify-items:center;align-content:start;text-align:center;gap:14px}
+.sv.c3 .sv-i .ic{width:96px;height:96px;border-width:2px}
+.sv.c3 .sv-i .ic img{width:66px;height:66px}
+@media (max-width:760px){.sv.c3 .sv-i .ic{width:80px;height:80px}.sv.c3 .sv-i .ic img{width:54px;height:54px}}
+.sv-i .ic svg{filter:drop-shadow(0 1px 2px rgba(0,0,0,.4))}
+.panel::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,90,65,.66),rgba(10,60,44,.78))}
+.panel.t-maquinaria::before{background:linear-gradient(180deg,rgba(26,34,30,.62),rgba(14,90,65,.76))}
+.panel.t-cinegetica::before{background:linear-gradient(180deg,rgba(38,30,18,.60),rgba(30,24,14,.76))}
+.panel .pin{text-shadow:0 1px 3px rgba(0,0,0,.45);padding:clamp(36px,5vw,64px) clamp(20px,5vw,72px)}
+.panel .ph-t{text-align:center;font-family:var(--font-display);font-weight:600;font-size:clamp(24px,3vw,36px);line-height:1.15;margin:0;color:#fff}
+.panel .ph-d{text-align:center;max-width:640px;margin:12px auto 0;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,.85)}
+.panel .bar{width:120px;height:3px;background:var(--lm-earth);margin:22px auto 40px;border-radius:2px}
+.panel .sv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 56px;max-width:1080px;margin:0 auto}
+.sv-i{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;align-items:start}
+.sv-i .ic{width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;color:#fff;transition:background .25s,border-color .25s,transform .25s}
+.sv-i:hover .ic{background:var(--lm-earth);border-color:var(--lm-earth);transform:scale(1.06)}
+.sv-i h4{margin:4px 0 6px;font-family:var(--font-display);font-weight:600;font-size:19px;line-height:1.25;color:#fff}
+.sv-i p{margin:0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.82)}
+.panel .pcta,.pcta.solo{text-align:center;margin-top:44px}
+.pcta.solo{margin:32px 0 8px}.pcta.solo a{display:inline-block;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;padding:13px 26px;border-radius:8px;transition:background .2s,transform .2s}.pcta.solo a:hover{background:var(--lm-green-dark);transform:translateY(-2px)}
+.panel .pcta a{display:inline-block;background:var(--lm-earth);color:#1a1a1a;font-family:var(--font-display);font-weight:700;font-size:14px;padding:13px 26px;border-radius:8px;transition:background .2s,transform .2s}
+.panel .pcta a:hover{background:#fff;color:var(--lm-green-darker);transform:translateY(-2px)}
+#areas.vis .area.on .sv-i{animation:cardIn .55s cubic-bezier(.22,.61,.36,1) both;animation-delay:calc(var(--i,0)*70ms)}
+@media (max-width:760px){
+  .panel{border-radius:14px;margin-left:-4px;margin-right:-4px}
+  .panel .sv,.panel .sv.c3{grid-template-columns:minmax(0,1fr);gap:26px}
+  .sv-i .ic img{width:28px;height:28px}
+  .panel .bar{margin:18px auto 28px}
+  .sv-i{grid-template-columns:42px minmax(0,1fr);gap:14px}
+  .sv-i .ic{width:42px;height:42px}.sv-i .ic svg{width:20px;height:20px}
+  .sv-i h4{font-size:17px;margin-top:2px}
+  .panel .pcta{margin-top:32px}.panel .pcta a{display:block}
+}
+@media (prefers-reduced-motion:reduce){#areas.vis .sv-i{animation:none!important}.panel .bgs img{transition:none;transform:none}}
+
+/* ===== CABECERA DE SERVICIOS + TARJETAS EN ARCO ===== */
+.sv-head{text-align:center;max-width:720px;margin:0 auto}
+.sv-head .sv-h{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.15;margin:10px 0 12px;color:var(--lm-black);text-transform:none;letter-spacing:0}
+.sv-head p{margin:0 auto;font-size:16.5px;line-height:1.6;color:var(--lm-gray-500);max-width:600px}
+.tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-bottom:0;margin:36px 0 40px;align-items:start}
+.tabs::before,.tab-ind{display:none}
+.tabs .tab{display:block;position:relative;padding:0;border:0;background:none;box-shadow:none;text-align:center;cursor:pointer;transform:none}
+.tabs .tab:hover{transform:none;box-shadow:none}
+.tab .tim{display:block;height:230px;overflow:hidden;border-radius:14px}
+.tab .tim img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+.tab:nth-child(1) .tim{border-radius:62% 14px 14px 14px/85% 14px 14px 14px}
+.tab:nth-child(2) .tim{border-radius:999px 999px 14px 14px}
+.tab:nth-child(3) .tim{border-radius:14px 62% 14px 14px/14px 85% 14px 14px}
+.tab:hover .tim img{transform:scale(1.06)}
+.tab .tbox{display:block;position:relative;margin:-58px 22px 0;background:#fff;border-radius:16px 16px 0 0;padding:18px 18px 16px;border-bottom:3px solid transparent;transition:border-color .3s}
+.tab .tbox b{font-family:var(--font-display);font-weight:700;font-size:18px;text-transform:none;letter-spacing:0;color:var(--lm-black)}
+.tab .tbox small{display:block;margin:8px 0 10px;font-size:13.5px;line-height:1.5;color:var(--lm-gray-500)}
+.tab .tver{font-family:var(--font-display);font-size:12.5px;font-weight:700;color:var(--lm-green-dark)}
+.tab .tver .tn{display:inline;margin:0;padding:0;background:none;font-weight:400;color:var(--lm-gray-500)}
+.tab .tver .tn:not(:empty)::before{content:"· "}
+.tab.on .tbox{border-bottom-color:var(--lm-green)}
+.tab.on .tver{color:var(--lm-green)}
+.tab:not(.on) .tim img{filter:saturate(.75)}
+.tab:focus-visible{outline:3px solid var(--lm-green-soft);outline-offset:4px;border-radius:16px}
+@media (max-width:760px){
+  .tabs{gap:10px;margin:24px 0 28px}
+  .tab .tim{height:110px}
+  .tab .tbox{margin:-26px 4px 0;padding:10px 6px 8px;border-radius:12px 12px 0 0}
+  .tab .tbox b{font-size:13px;line-height:1.2;display:block}
+  .tab .tbox small{display:none}
+  .tab .tver{display:none}
+  .sv-head p{font-size:15px}.sv-head .sv-h{font-size:26px}
+}
+/* ===== CIFRAS ===== */
+.cifras{padding:8px 0 56px}
+.cifras .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:900px}
+.cifra{border:1px solid var(--line-2);border-radius:16px;padding:22px 14px;text-align:center;background:#fff}
+.cifra .num{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,3vw,38px);color:var(--lm-green-dark);line-height:1}
+.cifra .lab{margin-top:8px;font-size:13.5px;color:var(--lm-gray-700)}
+@media (max-width:760px){.cifras .wrap{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.cifra .lab{font-size:12px}.cifra{padding:16px 8px}}
+/* ===== OPINIONES ===== */
+.opiniones{background:#F8F5EE;padding:64px 0}
+.opiniones .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:28px}
+.op{background:#fff;border:1px solid var(--line-2);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px}
+.op q{font-size:15px;line-height:1.6;color:var(--lm-gray-700);quotes:"«" "»"}
+.op .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.op .av{width:42px;height:42px;border-radius:50%;background:var(--lm-green-tint);color:var(--lm-green-dark);display:grid;place-items:center;font-family:var(--font-display);font-weight:700}
+.op .who b{display:block;font-size:14.5px}.op .who small{color:var(--lm-gray-500);font-size:12.5px}
+.form details.rgpd summary{cursor:pointer;list-style:none;position:relative;padding-right:22px}
+.form details.rgpd summary::-webkit-details-marker{display:none}
+.form details.rgpd summary::after{content:"+";position:absolute;right:0;top:-1px;font-weight:700;font-size:15px;color:var(--lm-green-dark)}
+.form details.rgpd[open] summary::after{content:"–"}
+.form details.rgpd dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:10px 0 6px}
+.form details.rgpd dt{font-weight:700;color:var(--lm-gray-900)}.form details.rgpd dd{margin:0}
+.form details.rgpd p{margin:0}
+@media (max-width:480px){.form details.rgpd dl{grid-template-columns:1fr}.form details.rgpd dd{margin-bottom:4px}}
+.op-vacio{grid-column:1/-1;max-width:560px;margin:0 auto;text-align:center;align-items:center;gap:8px}
+.op-vacio p{margin:0;color:var(--lm-gray-700);line-height:1.6}
+.op-btn{margin-top:10px;display:inline-block;background:var(--lm-green);color:#fff!important;font-family:var(--font-display);font-weight:700;font-size:14px;padding:12px 22px;border-radius:8px}
+.op-btn:hover{background:var(--lm-green-dark)}
+.li-btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:9px 16px;border:1.5px solid #0A66C2;border-radius:8px;color:#0A66C2!important;font-family:var(--font-display);font-weight:600;font-size:13.5px;transition:background .2s,color .2s}.li-btn:hover{background:#0A66C2;color:#fff!important}
+@media (min-width:761px){.panel .sv.colflow{grid-auto-flow:column;grid-template-rows:repeat(var(--filas),auto)}}
+.panel .ph-l{list-style:none;padding:0;margin:16px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px}
+.panel .ph-l li{font-size:13.5px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 14px}
+.panel .ph-l li::before{content:"✓ ";color:var(--lm-earth)}
+
+/* ===== SERVICIOS EN DOS GRUPOS DE TARJETAS ===== */
+.grupos{margin:34px 0 40px}
+.grupo+.grupo{margin-top:34px}
+.g-t{display:flex;align-items:center;gap:14px;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--lm-green-dark);margin:0 0 18px}
+.g-t::after{content:"";flex:1;height:1px;background:var(--line-2)}
+.grupos .tabs{display:grid;gap:22px;margin:0;padding:0;align-items:start}
+.grupos .tabs.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grupos .tabs.g2{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grupos .tabs.g2 .tab:first-child{grid-column:2}
+.grupos .tab .tim{height:190px}
+.grupos .tab.sh-l .tim{border-radius:62% 14px 14px 14px/85% 14px 14px 14px}
+.grupos .tab.sh-a .tim{border-radius:999px 999px 14px 14px}
+.grupos .tab.sh-r .tim{border-radius:14px 62% 14px 14px/14px 85% 14px 14px}
+.grupos .tab .tbox{margin:-50px 14px 0;padding:14px 12px 12px}
+.grupos .tab .tbox b{font-size:16px}
+.grupos .tab .tbox small{font-size:12.5px}
+@media (max-width:900px){.grupos .tabs.g4,.grupos .tabs.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.grupos .tabs.g2 .tab:first-child{grid-column:auto}}
+@media (max-width:760px){.grupos .tabs{gap:10px}.grupos .tab .tim{height:110px}.grupos .tab .tbox{margin:-26px 4px 0;padding:10px 6px 8px}.grupos .tab .tbox b{font-size:13px}.g-t{font-size:11.5px;margin-bottom:12px}.grupo+.grupo{margin-top:22px}}
+/* ===== OTROS SERVICIOS BAJO EL PANEL ===== */
+.otros{margin:8px 0 0;padding:22px 20px;border:1px solid var(--line-2);border-radius:16px;background:var(--lm-gray-50)}
+.otros-t{margin:0 0 14px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:15px;color:var(--lm-black)}
+.otros-l{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 14px}
+.otros-g{flex-basis:100%;text-align:center;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lm-green-dark);margin-top:4px}
+.ot{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border:1px solid var(--line-2);border-radius:999px;background:#fff;cursor:pointer;font-family:var(--font-display);font-weight:600;font-size:13.5px;color:var(--lm-black);transition:border-color .2s,box-shadow .2s,transform .2s}
+.ot:hover{border-color:var(--lm-green);box-shadow:var(--shadow-2);transform:translateY(-2px)}
+.ot-i{width:40px;height:40px;border-radius:50%;overflow:hidden;flex:none}
+.ot-i img{width:100%;height:100%;object-fit:cover;display:block}
+.ot.on{display:none}
+@media (max-width:760px){.otros{padding:16px 10px}.otros-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.otros-g{grid-column:1/-1}.ot{font-size:12px;line-height:1.2;padding:4px 8px 4px 4px;gap:8px;text-align:left;width:100%}.ot-i{width:32px;height:32px}}
+.op-dlg{border:0;border-radius:16px;padding:0;max-width:520px;width:calc(100% - 32px);box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.op-dlg::backdrop{background:rgba(20,40,30,.55)}
+.op-form{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px 26px 24px}
+.op-form h3{margin:0;font-family:var(--font-display);font-size:22px}
+.op-sub{margin:0 0 4px;font-size:14px;color:var(--lm-gray-500);line-height:1.5}
+.op-form label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--lm-gray-900)}
+.op-form label small{font-weight:400;color:var(--lm-gray-500)}
+.op-form input:not([type=radio]):not([type=checkbox]),.op-form textarea{font:inherit;font-weight:400;font-size:15px;padding:10px 12px;border:1px solid var(--line-2);border-radius:8px}
+.op-form input:focus,.op-form textarea:focus{outline:2px solid var(--lm-green-soft);border-color:var(--lm-green)}
+.op-form .chk{display:flex;gap:8px;align-items:flex-start;font-size:12.5px}.op-form .chk label{display:inline;font-weight:400}
+.op-x{position:absolute;top:10px;right:12px;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:var(--lm-gray-500)}
+.op-stars{border:0;padding:0;margin:0;display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px}
+.op-lbl{font-size:13px;font-weight:600;color:var(--lm-gray-900);margin-bottom:-8px}
+.op-stars input{position:absolute;opacity:0}
+.op-stars label{font-size:28px;color:#D9D9D9;cursor:pointer;flex-direction:row}
+.op-stars input:checked~label,.op-stars label:hover,.op-stars label:hover~label{color:#E3A92B}
+.op-stars input:focus-visible+label{outline:2px solid var(--lm-green);border-radius:4px}
+.op-msg{margin:0;font-size:13.5px}.op-msg.ok{color:var(--lm-green-dark)}.op-msg.err{color:var(--lm-danger)}
+.op-enviar{align-self:flex-start;border:0;cursor:pointer}
+button.op-btn{border:0;cursor:pointer}
+</style>
+</head>
+<body class="no-sponsors">
+
+<header class="hdr"><div class="wrap">
+  <a class="brand" href="#sobre" title="Sobre mí"><img class="brand-logo" src="./img/logo-isotipo-recorte.png" alt="Logotipo de Laura Muñoz Socorro" style="width:54px;height:67px"><span class="pipe"></span><span><span class="n" style="display:block">Laura Muñoz Socorro</span><span class="r">Ingeniera Técnica Agrícola</span></span></a>
+  <nav class="nav"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav>
+  <a class="cta" href="#contacto"><span class="cta-l">Solicitar cita</span><span class="cta-s">Cita</span></a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span><span></span></button>
+</div>
+<nav class="menu-movil" id="menu-movil" aria-label="Menú"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav><div class="prog" id="prog" aria-hidden="true"></div></header>
+
+<section class="hero" id="inicio">
+  <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Asesoramiento técnico agrícola, cinegético y de maquinaria</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Soluciones técnicas para mejorar tu explotación agrícola.</span></b></p></div>
+  <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1">Agrícola</h2><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
+    <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./cin-hero.jpg"></image-slot><div class="shade"></div><div class="cap"><h2 style="color:#F3F1F1FC">Cinegética y medio ambiente</h2><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
+</section>
+
+<section class="s" id="servicios"><div class="wrap">
+  <div class="sv-head reveal"><div class="eyebrow">Servicios</div><h2 class="sv-h">En qué te puedo ayudar</h2><p>Asesoramiento técnico, gestión de trámites agrarios, cinegéticos y de maquinaria. Cercano, riguroso y al día de la normativa.</p></div>
+  <div id="tabs" class="grupos" role="tablist" aria-label="Servicios">
+    <div class="grupo"><h3 class="g-t">Agrícola</h3><div class="tabs g4">
+    <button class="tab sh-l on" data-sub="asesoramiento" role="tab" aria-selected="true"><span class="tim"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Asesoramiento técnico</b><small>Cultivos, fertilización, CUE, ecológico y certificaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-a" data-sub="normativa" role="tab" aria-selected="false"><span class="tim"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Normativa y ayudas</b><small>PEPAC, REA, Ayuda Joven Agricultor, Ayudas a inversiones en modernización...</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-a" data-sub="catastro" role="tab" aria-selected="false"><span class="tim"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Mediciones y catastro</b><small>Mediciones, Catastro y segregaciones</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-r" data-sub="maquinaria" role="tab" aria-selected="false"><span class="tim"><img src="./maq-area.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Maquinaria agrícola</b><small>ROMA, ITEAF y gasóleo bonificado</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    </div></div>
+    <div class="grupo"><h3 class="g-t">Cinegética y medio ambiente</h3><div class="tabs g2">
+    <button class="tab sh-l" data-sub="cinegetica" role="tab" aria-selected="false"><span class="tim"><img src="./img/ciervo.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Gestión cinegética</b><small>Planes técnicos, censos, daños y mejoras del coto</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    <button class="tab sh-r" data-sub="medioambiente" role="tab" aria-selected="false"><span class="tim"><img src="./img/tortola.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Medio ambiente</b><small>Impacto ambiental, paisaje y huella de carbono</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
+    </div></div>
+  </div>
+  <div id="areas"></div>
+  <nav class="otros" id="otros" aria-label="Otros servicios"><p class="otros-t">¿Buscas otro servicio?</p><div class="otros-l"><span class="otros-g">Agrícola</span><button type="button" class="ot" data-sub="asesoramiento"><span class="ot-i"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="ot-t">Asesoramiento técnico</span></button><button type="button" class="ot" data-sub="normativa"><span class="ot-i"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="ot-t">Normativa y ayudas</span></button><button type="button" class="ot" data-sub="catastro"><span class="ot-i"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="ot-t">Mediciones y catastro</span></button><button type="button" class="ot" data-sub="maquinaria"><span class="ot-i"><img src="./maq-area.jpg" alt="" loading="lazy"></span><span class="ot-t">Maquinaria agrícola</span></button><span class="otros-g">Cinegética y medio ambiente</span><button type="button" class="ot" data-sub="cinegetica"><span class="ot-i"><img src="./img/ciervo.jpg" alt="" loading="lazy"></span><span class="ot-t">Gestión cinegética</span></button><button type="button" class="ot" data-sub="medioambiente"><span class="ot-i"><img src="./img/tortola.jpg" alt="" loading="lazy"></span><span class="ot-t">Medio ambiente</span></button></div></nav>
+</div></section>
+
+<section class="cifras" aria-label="Cifras"><div class="wrap">
+  <div class="cifra"><div class="num" data-n="" id="c-anios">20+</div><div class="lab">Años en el sector agrario</div></div>
+  <div class="cifra"><div class="num" id="c-serv">—</div><div class="lab">Servicios especializados</div></div>
+  <div class="cifra"><div class="num">4</div><div class="lab">Áreas de trabajo</div></div>
+</div></section>
+
+
+<section class="pillars"><div class="wrap">
+  <div class="pillar"><div class="t">Profesional</div><div class="d">Trabajo riguroso y normativa al día.</div></div>
+  <div class="pillar"><div class="t">Cercana</div><div class="d">Te ayudo a entender la burocracia agraria.</div></div>
+  <div class="pillar"><div class="t">Confianza</div><div class="d">Desde 2006 en el sector agrario.</div></div>
+  <div class="pillar"><div class="t">Resultados</div><div class="d">Mejora en la gestión de tu explotación.</div></div>
+</div></section>
+
+<section class="s soft noticias" id="noticias" aria-labelledby="noticias-titulo" data-json="./data/noticias.json" data-img-default="./img/noticia-default.jpg"><div class="wrap">
+  <div class="nt-top"><div><div class="eyebrow">Actualidad</div><h2 class="h2" id="noticias-titulo">Noticias del sector</h2></div><p class="nt-upd" id="nt-upd" aria-live="polite">Última actualización: —</p></div>
+  <div class="nc" id="nc" role="region" aria-roledescription="carrusel" aria-label="Noticias destacadas">
+    <div class="nc-viewport"><div class="nc-track" aria-live="off"><div class="nc-slide nc-skel" aria-hidden="true"></div></div></div>
+    <button type="button" class="nc-flecha nc-prev" aria-label="Noticia anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button type="button" class="nc-flecha nc-next" aria-label="Noticia siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+    <div class="nc-puntos" role="group" aria-label="Elegir noticia"></div>
+  </div>
+  <div class="nc-pie"><a class="nc-ver" href="./noticias.html">Ver todas las noticias <span aria-hidden="true">→</span></a></div>
+  <p class="nt-aviso">Las noticias pertenecen a sus respectivos medios. Aquí solo se muestra un extracto con enlace a la fuente original.</p>
+</div></section>
+
+<section class="s" id="sobre"><div class="wrap about">
+  <div class="img"><image-slot id="about-foto" shape="rect" placeholder="Tu foto profesional" src="./img/foto-laura.jpg"></image-slot></div>
+  <div>
+    <div class="about-top">
+      <div>
+        <div class="eyebrow">Sobre mí</div>
+        <h2 class="h2">Laura Muñoz Socorro</h2>
+        <p class="lede">Ingeniera Técnica Agrícola colegiada nº 1140. Desde 2006 acompaño a agricultores, cotos de caza y titulares de maquinaria en sus trámites técnicos y normativos, con rigor y la normativa siempre al día.</p>
+        <a class="li-btn" href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> Ver mi perfil en LinkedIn</a>
+      </div>
+      <div class="about-logo"><img src="./img/logo-isotipo-recorte.png" alt="Logotipo de Laura Muñoz Socorro"></div>
+    </div>
+    <div class="cred">
+      <div><h4>Titulación</h4><ul>
+        <li><b>Ingeniera Técnica Agrícola</b><span>Colegiada nº 1140</span></li>
+        <li><b>Máster Universitario en Sistemas de Gestión Global en Organizaciones</b></li>
+      </ul></div>
+      <div><h4>Acreditaciones oficiales</h4><ul>
+        <li><b>Asesora en Gestión Integrada de Plagas</b></li>
+        <li><b>Asesora en fertilización</b></li>
+        <li><b>Inscrita en el ROPO</b><span>Registro Oficial de Productores y Operadores de Medios de Defensa Fitosanitaria</span></li>
+        <li><b>Inspectora de equipos de aplicación fitosanitaria (ITEAF)</b></li>
+        <li><b>Operadora agroambiental</b></li>
+      </ul></div>
+      <div><h4>Formación especializada</h4><ul>
+        <li><b>Asesoramiento a explotaciones agrícolas y ganaderas</b></li>
+        <li><b>Agricultura ecológica en cítricos</b></li>
+        <li><b>Sistemas de gestión de calidad ISO 9001</b></li>
+      </ul></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="s soft" id="contacto"><div class="wrap contact">
+  <div>
+    <div class="eyebrow">Contacto</div>
+    <h2 class="h2">¿Hablamos?</h2>
+    <p class="lede">Cuéntame qué necesitas y te respondo lo antes posible.</p>
+    <div class="clist">
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>+34 661915900</div>
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#147A59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>laurams.consultoresagricolas@gmail.com</div>
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><a href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener">LinkedIn · Laura Muñoz</a></div>
+    </div>
+  </div>
+  <form class="form" id="form-contacto">
+    <div class="two"><label>Nombre<input name="nombre" required maxlength="120" autocomplete="name"></label><label>Teléfono<input name="telefono" type="tel" required maxlength="30" autocomplete="tel"></label></div>
+    <label>Email<input name="email" type="email" maxlength="160" autocomplete="email"></label>
+    <label>Servicio que necesitas<select name="servicio"><option value="">Elige una opción</option>
+      <optgroup label="Agrícola"><option data-k="asesoramiento">Asesoramiento técnico de cultivos</option><option data-k="asesoramiento">Certificaciones (GLOBALG.A.P., ecológico, exportación)</option><option data-k="asesoramiento">Cuaderno de campo (CUE) y plan de abonado</option><option data-k="normativa">PAC, ayudas y subvenciones</option><option data-k="normativa">Registros y trámites (REA, REGEPA, alegaciones, quemas)</option><option data-k="catastro">Mediciones, Catastro y segregaciones</option><option data-k="maquinaria">Maquinaria (ROMA, ITEAF, gasóleo B)</option></optgroup>
+      <optgroup label="Cinegética y medio ambiente"><option data-k="cinegetica">Gestión cinegética (planes, censos, daños)</option><option data-k="medioambiente">Medio ambiente (impacto, paisaje, huella de carbono)</option></optgroup>
+      <option>Otra consulta</option></select></label>
+    <label>Cuéntame<textarea name="mensaje" rows="3" maxlength="3000" placeholder="Por favor, no incluyas datos de salud ni otros datos sensibles."></textarea></label>
+    <label class="hp" aria-hidden="true">No rellenar<input name="web" tabindex="-1" autocomplete="off"></label>
+    <div class="chk"><input type="checkbox" name="privacidad" value="si" required> <span>He leído y acepto la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a></span></div>
+    <div class="chk"><input type="checkbox" name="comunicaciones" value="si"> Acepto recibir comunicaciones y ofertas relacionadas con los servicios</div>
+    <details class="rgpd"><summary><b>Información básica sobre protección de datos</b> · Tus datos solo se usan para responder a tu consulta.</summary>
+      <dl><dt>Responsable</dt><dd>Laura Muñoz Socorro</dd>
+      <dt>Finalidad</dt><dd>Atender tu consulta y, si lo autorizas, enviarte información de mis servicios.</dd>
+      <dt>Legitimación</dt><dd>Tu consentimiento, que puedes retirar en cualquier momento.</dd>
+      <dt>Destinatarios</dt><dd>No se ceden datos salvo obligación legal. Google (formulario y correo) actúa como encargado del tratamiento, acogido al Marco de Privacidad de Datos UE-EE. UU.</dd>
+      <dt>Conservación</dt><dd>12 meses si no llegamos a trabajar juntos.</dd>
+      <dt>Derechos</dt><dd>Acceso, rectificación, supresión, oposición, limitación y portabilidad en laurams.consultoresagricolas@gmail.com. Puedes reclamar ante la AEPD.</dd></dl>
+      <p>Más información en la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</p></details>
+    <button type="submit">Enviar mensaje</button>
+    <p class="f-estado" id="f-estado" role="status" aria-live="polite" hidden></p>
+  </form>
+</div></section>
+
+<div class="sponsors"><div class="wrap">
+  <div class="k">Colaboradores</div>
+  <div class="logos"><div><image-slot id="sp-1" placeholder="Logo 1" fit="contain"></image-slot></div><div><image-slot id="sp-2" placeholder="Logo 2" fit="contain"></image-slot></div><div><image-slot id="sp-3" placeholder="Logo 3" fit="contain"></image-slot></div><div><image-slot id="sp-4" placeholder="Logo 4" fit="contain"></image-slot></div></div>
+</div></div>
+
+<section class="opiniones" id="opiniones"><div class="wrap">
+  <div class="sv-head"><div class="eyebrow">Opiniones</div><h2 class="sv-h">Lo que dicen mis clientes</h2></div>
+  <div class="grid" id="op-grid"><div class="op op-vacio"><p>Muy pronto compartiré aquí las opiniones de las personas con las que trabajo.</p><p>¿Ya has trabajado conmigo? Me encantará conocer tu experiencia.</p><button type="button" class="op-btn" id="op-abrir">Dejar mi opinión</button></div></div>
+</div></section>
+
+<dialog class="op-dlg" id="op-dlg" aria-labelledby="op-dlg-t">
+  <form class="op-form" id="op-form" method="dialog" novalidate>
+    <button type="button" class="op-x" id="op-cerrar" aria-label="Cerrar">×</button>
+    <h3 id="op-dlg-t">Cuéntame tu experiencia</h3>
+    <p class="op-sub">Tu opinión ayuda a otros agricultores y cazadores a conocer mi trabajo. La reviso antes de publicarla.</p>
+    <input type="hidden" name="tipo" value="opinion">
+    <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Web<input name="web" tabindex="-1" autocomplete="off"></label></div>
+    <label>Nombre<input name="nombre" required maxlength="80" autocomplete="name" placeholder="Ej.: Antonio G."></label>
+    <label><span>Localidad o cultivo <small>(opcional)</small></span><input name="detalle" maxlength="80" placeholder="Ej.: Cítricos · Orihuela"></label>
+    <span class="op-lbl" id="op-val">Valoración</span><fieldset class="op-stars" aria-labelledby="op-val">
+      <input type="radio" id="st5" name="valoracion" value="5" checked><label for="st5" title="5">★</label><input type="radio" id="st4" name="valoracion" value="4"><label for="st4" title="4">★</label><input type="radio" id="st3" name="valoracion" value="3"><label for="st3" title="3">★</label><input type="radio" id="st2" name="valoracion" value="2"><label for="st2" title="2">★</label><input type="radio" id="st1" name="valoracion" value="1"><label for="st1" title="1">★</label>
+    </fieldset>
+    <label>Tu opinión<textarea name="opinion" required maxlength="800" rows="4"></textarea></label>
+    <div class="chk"><input type="checkbox" name="publicar" value="si" id="op-pub" required> <label for="op-pub">Acepto que se publique mi opinión con mi nombre y localidad, según la <a href="./privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</label></div>
+    <p class="op-msg" id="op-msg" role="status"></p>
+    <button type="submit" class="op-btn op-enviar">Enviar opinión</button>
+  </form>
+</dialog>
+<footer>
+  <span>© 2026 Laura Muñoz Socorro · Ingeniera Técnica Agrícola · Colegiada nº 1140</span>
+  <nav class="legal"><a href="./aviso-legal.html">Aviso legal</a><a href="./privacidad.html">Política de privacidad</a><a href="./cookies.html">Política de cookies</a><a href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener">LinkedIn</a></nav>
+  <span class="ia">Algunas imágenes de esta web han sido generadas o editadas con inteligencia artificial con fines ilustrativos.</span>
+  <span class="p">Profesional · Cercana · Confianza · Resultados</span>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="Volver al inicio" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+
+
+
+<script>
+const AREAS = {
+  asesoramiento:{t:'Asesoramiento técnico agrícola',d:'Seguimiento técnico de tus cultivos para producir más y mejor, cumpliendo la normativa y lo que exige el mercado.',l:['Asesora en Gestión Integrada de Plagas (GIP)','Alta en el ROPO','Asesora en fertilización (REGFER)'],items:[["Asesoramiento técnico integral", "Visitas periódicas a las explotaciones asesorando para mejorar los rendimientos y la productividad de las cosechas."], ["Análisis de datos y viabilidad", "Estudio de los datos de la explotación y de su viabilidad técnico-económica antes de invertir, ampliar o cambiar de cultivo."], ["Cuaderno de campo (CUE)", "Puesta en marcha y mantenimiento del cuaderno digital: tratamientos, fertilizaciones y labores registrados en plazo y listos para cualquier control."], ["Planes de abonado", "Plan de abonado previo anual ajustado a la normativa de nitratos u otras posibles limitaciones de normativas aplicables a la explotación."], ["Certificación GLOBALG.A.P. y GRASP", "Preparación de la explotación para GLOBALG.A.P. y su módulo social GRASP: documentación, autoevaluación y acompañamiento durante la auditoría."], ["Certificaciones para exportación", "Apoyo en los protocolos que piden la distribución y los mercados de exportación: Residuo Cero, producción integrada, SPRING (uso sostenible del agua) y huella de carbono."], ["Agricultura ecológica", "Acompañamiento en la conversión y la certificación ecológica: plan de manejo, insumos permitidos y documentación para el organismo de control."], ["Digitalización de la explotación", "Creación de apps funcionales a medida para tu explotación: registro de datos en campo, control de existencias y avisos, además de la automatización de trámites para mejorar la eficiencia."]]},
+  normativa:{t:'Normativa y ayudas',d:'Tramitación de la PAC, registros, controles y subvenciones de tu explotación, en plazo y sin errores.',items:[["Solicitud Única de la PAC", "Preparación y presentación de la Solicitud Única, con los ecorregímenes que mejor encajan en tu explotación y seguimiento hasta el cobro."], ["Condicionalidad y controles", "Revisión previa de los requisitos de la PAC y de higiene en producción primaria, para que una inspección no termine en penalización."], ["Registros REA y REGEPA", "Alta y actualización de la explotación en los registros obligatorios, para que tus datos coincidan en todas las administraciones."], ["Subvenciones y ayudas", "Búsqueda de la convocatoria adecuada, preparación del expediente y seguimiento hasta la resolución: incorporación de jóvenes, modernización de explotaciones o Plan Renove de maquinaria."], ["Autorizaciones de quema", "Tramitación del permiso para quemar restos de poda y cosecha, en plazo y con las condiciones que fija la normativa."], ["Alegaciones y recursos", "Corrección de recintos SIGPAC y defensa de tus intereses con alegaciones y recursos de reposición ante la Administración."]]},
+  cinegetica:{t:'Servicios cinegéticos',d:'Gestión técnica y documental de cotos y terrenos cinegéticos.',items:[["Planes técnicos de caza", "Redacción y tramitación del plan técnico del coto, con inventario de especies y aprovechamientos adaptados al terreno."], ["Daños por fauna silvestre", "Valoración e informe técnico de los daños causados en cultivos por jabalí, conejo u otras especies, para reclamar o pedir medidas de control."], ["Recuperación de la caza menor", "Diagnóstico del hábitat y plan de medidas para recuperar la perdiz, el conejo y otras especies de caza menor."], ["Precintos digitales de caza", "Gestión y tramitación de los precintos digitales del coto."], ["Censos", "Censos de especies cinegéticas para conocer la población real del coto y justificar el plan técnico."], ["Medidas de gestión", "Diseño y seguimiento de mejoras en el coto: márgenes multifuncionales, siembras para la fauna, comederos, bebederos, refugios y control de predadores."], ["Revista de armas", "Tramitación de la revista de armas ante la Intervención de Armas de la Guardia Civil."]]},
+  catastro:{t:'Mediciones, catastro y segregaciones',d:'Superficies reales, Catastro al día y fincas divididas o agrupadas con respaldo técnico.',items:[["Mediciones de parcelas", "Medición con GPS y planos de la superficie real de la finca."], ["Trámites de Catastro", "Cambios de titularidad o de cultivo y corrección de superficies y linderos."], ["Segregaciones y agrupaciones", "Informe técnico para dividir o unir fincas, comprobando la unidad mínima de cultivo."], ["Coordinación Catastro–SIGPAC", "Hacer que coincidan Catastro y SIGPAC, y alegaciones cuando no coinciden."]]},
+  medioambiente:{t:'Medio ambiente y sostenibilidad',d:'Estudios y documentación ambiental para que tu proyecto o explotación cumpla la normativa y gane en eficiencia.',items:[["Estudios de impacto ambiental", "Evaluación ambiental de proyectos agrarios: naves y construcciones rurales, transformación de secano a regadío o cambios de uso del suelo."], ["Estudios de integración paisajística", "Documento exigido por ayuntamientos o la Generalitat para justificar que la actuación encaja en el paisaje."], ["Huella de carbono de la explotación", "Cálculo de las emisiones a partir de gasóleo, electricidad, fertilización nitrogenada y otras entradas de la explotación."], ["Plan de reducción de emisiones", "Medidas priorizadas por coste y beneficio: eficiencia energética, fertilización ajustada y gestión de residuos."], ["Documentación ambiental para ayudas", "Memorias y justificación técnica para ayudas que exigen criterios ambientales o de sostenibilidad."], ["Informes para certificaciones de sostenibilidad", "Respaldo técnico para certificaciones y para los requisitos de cooperativas y clientes."]]},
+  maquinaria:{t:'Maquinaria agrícola',d:'Registro, inspección y documentación de tu maquinaria al día.',items:[["Registro de Maquinaria Agrícola (ROMA)", "Inscripción de maquinaria nueva o usada, cambios de titularidad, bajas y duplicados en el Registro Oficial de Maquinaria Agrícola."], ["Inspección Técnica de Equipos de Aplicación Fitosanitaria (ITEAF)", "Revisión previa del equipo y acompañamiento en la inspección obligatoria de pulverizadores y atomizadores."], ["Gasóleo Agrícola Bonificado (Gasóleo B)", "Documentación para acceder al gasóleo agrícola bonificado y justificar su uso en tu explotación."]]}
+};
+const SLOT_SRC={'area-medioambiente':'./img/agricola.jpg','card-medioambiente-0':'./norm-area.jpg','card-medioambiente-1':'./hero-asesoramiento.jpg','card-medioambiente-2':'./img/analisis-datos.jpg','card-medioambiente-3':'./img/planes-abonado.jpg','card-medioambiente-4':'./norm-subvenciones.jpg','card-medioambiente-5':'./img/informes.jpg','area-normativa':'./norm-area.jpg','card-normativa-0':'./norm-pac.jpg','card-normativa-1':'./norm-documental.jpg','card-normativa-2':'./norm-subvenciones.jpg','area-maquinaria':'./maq-area.jpg','card-maquinaria-0':'./maq-roma.png','card-maquinaria-1':'./maq-iteaf.png','card-maquinaria-2':'./maq-gasoleo.png','area-cinegetica':'./cin-area.jpg','card-cinegetica-0':'./cin-planes.jpg','card-cinegetica-1':'./cin-danos.jpg','card-cinegetica-2':'./cin-recuperacion.jpg','card-cinegetica-3':'./cin-precintos.jpg','card-cinegetica-4':'./cin-censos.jpg','card-cinegetica-5':'./cin-medidas.jpg','card-cinegetica-6':'./cin-armas.jpg','area-asesoramiento':'./img/agricola.jpg','card-asesoramiento-0':'./img/asesoramiento-integral.jpg','card-asesoramiento-1':'./img/planes-abonado.jpg','card-asesoramiento-2':'./img/cuaderno-campo.jpg','card-asesoramiento-3':'./img/informes.jpg','card-asesoramiento-4':'./img/analisis-datos.jpg','card-asesoramiento-5':'./img/agritech.jpg'};
+const slotSrc=id=>SLOT_SRC[id]?` src="${SLOT_SRC[id]}"`:'';
+const areasEl=document.getElementById('areas');
+// Las pestañas siguen el mismo orden que la portada: Agrícola (asesoramiento + normativa), Maquinaria y Cinegética
+const GROUPS=[['todos',['asesoramiento','normativa','catastro','maquinaria','cinegetica','medioambiente']]];
+const ICO={
+hoja:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+gota:'<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/>',
+cuaderno:'<path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M16 2v20"/>',
+doc:'<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',
+grafica:'<path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>',
+ia:'<rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/>',
+check:'<rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
+carpeta:'<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>',
+euro:'<path d="M4 10h12"/><path d="M4 14h9"/><path d="M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"/>',
+tractor:'<path d="M3 4h9l1 7"/><path d="M4 11V4"/><path d="M8 10V4"/><path d="M18 5c-.6 0-1 .4-1 1v5.6"/><path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1"/><circle cx="7" cy="15" r="5"/><path d="M16 18h-5"/><circle cx="18" cy="18" r="2"/>',
+escudo:'<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+fuel:'<path d="M3 22h12"/><path d="M4 9h10"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/>',
+mapa:'<path d="M14.1 4.6a2 2 0 0 0 1.8 0l3.6-1.8A1 1 0 0 1 21 3.7v12.8a1 1 0 0 1-.6.9l-4.5 2.2a2 2 0 0 1-1.8 0l-4.2-2.1a2 2 0 0 0-1.8 0l-3.6 1.8A1 1 0 0 1 3 18.4V5.6a1 1 0 0 1 .6-.9l4.5-2.2a2 2 0 0 1 1.8 0z"/><path d="M15 5.8v15"/><path d="M9 3.2v15"/>',
+alerta:'<path d="m21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+brote:'<path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>',
+etiqueta:'<path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/>',
+prismatico:'<path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.85c0-1.36-.71-2.6-1.83-3.33A1 1 0 0 1 20 11V7H4v4a1 1 0 0 1-.17.82C2.71 12.55 2 13.79 2 15.15V19a2 2 0 0 0 2 2Z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/>',
+arbol:'<path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/>',
+regla:'<path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/>',
+catastro:'<path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="m12 2 8 5H4z"/>',
+segrega:'<rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/><path d="m8 9-3 3 3 3"/><path d="m16 9 3 3-3 3"/>',
+capas:'<path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>',
+llama:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
+pulveriz:'<rect x="2" y="8" width="12" height="8" rx="3"/><path d="M5 8V6h6v2"/><circle cx="6" cy="18.5" r="2"/><path d="M14 12h3"/><path d="m17 12 4-3.5"/><path d="M17 12h5"/><path d="m17 12 4 3.5"/><path d="m5 12 1.5 1.5L9.5 10.5"/>',
+diana:'<circle cx="12" cy="12" r="10"/><path d="M22 12h-4"/><path d="M6 12H2"/><path d="M12 6V2"/><path d="M12 22v-4"/>'};
+const REGLAS=[[/globalg|grasp/,'escudo'],[/exportac/,'check'],[/solicitud unica/,'check'],[/registros rea/,'carpeta'],[/controles/,'escudo'],[/alegaciones y recursos/,'doc'],[/solicitud unica|ecorreg/,'check'],[/registros de explot/,'carpeta'],[/condicional|sanidad/,'escudo'],[/alegac/,'doc'],[/agricultura ecologica/,'brote'],[/quema/,'llama'],[/digitaliz/,'ia'],[/coordinac|catastro.*sigpac/,'capas'],[/medicion/,'regla'],[/segregac|agrupac/,'segrega'],[/catastro/,'catastro'],[/integral|asesor/,'hoja'],[/abonad|fertil/,'gota'],[/cuaderno|siex/,'cuaderno'],[/informe|pericial/,'doc'],[/dato|viabil/,'grafica'],[/\bia\b|inteligencia/,'ia'],[/impacto/,'mapa'],[/paisaj/,'arbol'],[/huella|carbono/,'hoja'],[/emision/,'grafica'],[/ambiental para/,'euro'],[/certific|sostenib/,'escudo'],[/pepac|ecorreg|regepa|condicional/,'check'],[/document/,'carpeta'],[/subvenc|ayuda/,'euro'],[/roma|registro de maq/,'tractor'],[/iteaf|inspecc/,'pulveriz'],[/gasoleo/,'fuel'],[/plan.*tecnic|plan.*caza/,'mapa'],[/dano|fauna/,'alerta'],[/recuperac/,'brote'],[/precinto/,'etiqueta'],[/censo/,'prismatico'],[/medida|gestion/,'arbol'],[/arma/,'diana']];
+const icono=t=>{const n=t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/<[^>]*>/g,' ');const r=REGLAS.find(([re])=>re.test(n));return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICO[r?r[1]:'check']}</svg>`;};
+const FONDOS={asesoramiento:['./img/agricola.jpg','./hero-asesoramiento.jpg','./img/asesoramiento-integral.jpg','./img/planes-abonado.jpg','./img/informes.jpg'],
+  normativa:['./norm-pac.jpg','./norm-area.jpg','./norm-subvenciones.jpg','./norm-documental.jpg'],
+  maquinaria:['./maq-area.jpg','./hero-maquinaria.jpg','./img/maquinaria.jpg'],
+  cinegetica:['./cin-hero.jpg','./cin-area.jpg','./cin-planes.jpg','./cin-recuperacion.jpg','./cin-danos.jpg','./cin-medidas.jpg','./cin-censos.jpg'],
+  catastro:['./cat-fondo.jpg'],
+  medioambiente:['./ma-fondo.jpg','./hero-asesoramiento.jpg','./img/planes-abonado.jpg','./cin-recuperacion.jpg']};
+const fondos=k=>(FONDOS[k]||[]).map((u,n)=>`<img src="${u}" alt="" ${n?'loading="lazy"':''} class="${n?'':'on'}" onerror="if(this.classList.contains('on')&&this.nextElementSibling)this.nextElementSibling.classList.add('on');this.remove()">`).join('');
+const ICO_IMG=[[/roma|registro de maq/,'./img/ico-roma.png'],[/iteaf|inspecc/,'./img/ico-iteaf.png'],[/gasoleo/,'./img/ico-gasoleo.png']];
+const iconoServ=(k,t)=>{if(false){const n=t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');const m=ICO_IMG.find(([re])=>re.test(n));if(m)return `<img src="${m[1]}" alt="">`;}return icono(t);};
+const cardsHtml=(k,a)=>`<div class="area-head"><div class="img"><image-slot id="area-${k}"${slotSrc('area-'+k)} shape="rect" placeholder="Imagen · ${a.t}"></image-slot></div><div><h3>${a.t}</h3><p>${a.d}</p></div></div>
+  <div class="cards${a.items.length<4?' few':''}">${a.items.map((it,j)=>`<div class="card" style="--i:${j}"><div class="cimg"><image-slot id="card-${k}-${j}"${slotSrc('card-'+k+'-'+j)} shape="rect" placeholder="Imagen"></image-slot></div><div class="cbody"><div class="ct" style="text-align:center">${it[0]}</div><div class="cd"><p>${it[1]}</p></div><button class="more" type="button"><span class="pl">+</span><span class="lbl">+ info</span></button></div></div>`).join('')}</div>
+  <div class="pcta solo"><a href="#contacto">Solicitar presupuesto</a></div>`;
+const blockHtml=(k,a)=>`<div class="panel t-${k}"><div class="bgs" aria-hidden="true">${fondos(k)}</div><div class="pin">
+  <h3 class="ph-t">${a.t}</h3><p class="ph-d">${a.d}</p>${a.l?`<ul class="ph-l">${a.l.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<div class="bar"></div>
+  <div class="sv${(k==='asesoramiento'||k==='normativa')?' colflow':''}" style="--filas:${Math.ceil(a.items.length/2)}">${a.items.map((it,j)=>`<div class="sv-i" style="--i:${j}"><span class="ic">${iconoServ(k,it[0])}</span><div><h4>${it[0].replace(/<br>/g,' ')}</h4><p>${it[1]}</p></div></div>`).join('')}</div>
+  <div class="pcta"><a href="#contacto">Solicitar presupuesto</a></div></div></div>`;
+function renderAreas(){
+const activa='todos';const subActiva=(document.querySelector('.tab.on')||{dataset:{sub:'asesoramiento'}}).dataset.sub;
+areasEl.replaceChildren();
+GROUPS.forEach(([g,keys])=>{
+  const div=document.createElement('div');div.className='area'+(g===activa?' on':'');div.dataset.area=g;
+  div.innerHTML=keys.map((k,n)=>`<div id="bloque-${k}" class="blk${k===subActiva?' on':''}" data-sub="${k}">${blockHtml(k,AREAS[k])}</div>`).join('');
+  areasEl.appendChild(div);
+});
+}
+setInterval(()=>{if(document.hidden||matchMedia('(prefers-reduced-motion: reduce)').matches)return;document.querySelectorAll('.area.on .bgs').forEach(b=>{const r=b.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const im=[...b.children];if(im.length<2)return;const i=im.findIndex(x=>x.classList.contains('on'));im[i<0?0:i].classList.remove('on');im[(i+1)%im.length].classList.add('on');});},5000);
+renderAreas();
+function openSub(k){
+  document.querySelectorAll('.chip-c').forEach(c=>{const on=c.dataset.sub===k&&!c.classList.contains('on');c.classList.toggle('on',on);c.setAttribute('aria-expanded',on);c.querySelector('.hint-c').textContent=on?'Ocultar servicios':'Ver servicios';});
+  document.querySelectorAll('.expand').forEach(e=>e.classList.toggle('open',!!document.querySelector('.chip-c.on[data-sub="'+e.dataset.sub+'"]')));
+}
+areasEl.addEventListener('click',e=>{const c=e.target.closest('.chip-c');if(c)openSub(c.dataset.sub);});
+// Al abrir o cerrar «+ info», todas las tarjetas de la misma fila hacen lo mismo
+areasEl.addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;const c=b.closest('.card');const open=!c.classList.contains('open');const top=c.offsetTop;[...c.parentElement.children].filter(x=>Math.abs(x.offsetTop-top)<4).forEach(x=>{x.classList.toggle('open',open);const l=x.querySelector('.more .lbl');if(l)l.textContent=open?'Cerrar':'+ info';});});
+function showSub(k){if(!AREAS[k])return;document.querySelectorAll('.ot').forEach(o=>o.classList.toggle('on',o.dataset.sub===k));document.querySelectorAll('.tab').forEach(t=>{const on=t.dataset.sub===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on);});document.querySelectorAll('#areas .blk').forEach(b=>b.classList.toggle('on',b.dataset.sub===k));}
+function showArea(k){showSub(({agricola:'asesoramiento'})[k]||k);}
+showSub((document.querySelector('.tab.on')||{dataset:{sub:'asesoramiento'}}).dataset.sub);
+document.getElementById('areas').addEventListener('click',e=>{const a=e.target.closest('.pcta a');if(!a)return;const b=a.closest('.blk');const sel=document.querySelector('#form-contacto select[name=servicio]');if(b&&sel){const o=sel.querySelector('option[data-k="'+b.dataset.sub+'"]');if(o)sel.value=o.value||o.textContent;}});
+const irAPanel=()=>{const b=document.querySelector('#areas .blk.on');if(b){const y=b.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}};
+document.getElementById('otros').addEventListener('click',e=>{const o=e.target.closest('.ot');if(!o)return;showSub(o.dataset.sub);irAPanel();});
+document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;showSub(t.dataset.sub);const b=document.querySelector('#areas .blk.on');if(b){const y=b.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}});
+document.querySelectorAll('.go').forEach(g=>g.addEventListener('click',()=>showArea(g.dataset.area)));
+
+
+
+
+/* ===== MEJORAS DE DINÁMICA ===== */
+// Nº de servicios en cada pestaña (se calcula solo)
+function actualizarContadores(){document.querySelectorAll('.tab').forEach(t=>{const x=AREAS[t.dataset.sub].items.length;t.querySelector('.tn').textContent=x+(x===1?' servicio':' servicios');});}
+actualizarContadores();
+/* Cifras: años desde 2006 y nº de servicios (se calculan solos) */
+function actualizarCifras(){const a=document.getElementById('c-anios'),sv=document.getElementById('c-serv');if(a)a.textContent=(new Date().getFullYear()-2006)+'+';if(sv)sv.textContent=Object.values(AREAS).reduce((t,x)=>t+x.items.length,0);}
+actualizarCifras();
+/* Opiniones reales de clientes (con su permiso). La sección solo aparece si hay alguna.
+   Formato: {texto:'...', nombre:'Nombre A.', detalle:'Cítricos · Orihuela'} */
+const OPINIONES=[];
+(function(){if(!OPINIONES.length)return;const escH=x=>String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));const g=document.getElementById('op-grid');g.innerHTML=OPINIONES.map(o=>`<figure class="op"><q>${escH(o.texto)}</q><figcaption class="who"><span class="av">${escH(o.nombre.trim()[0]||'')}</span><span><b>${escH(o.nombre)}</b><small>${escH(o.detalle||'')}</small></span></figcaption></figure>`).join('');})();
+// Indicador verde que se desliza bajo la pestaña activa
+function moverIndicador(){const t=document.querySelector('.tab.on'),ind=document.querySelector('.tab-ind');if(!t||!ind)return;ind.style.width=t.offsetWidth+'px';ind.style.transform='translateX('+t.offsetLeft+'px)';}
+window.addEventListener('resize',moverIndicador);window.addEventListener('load',moverIndicador);moverIndicador();
+// Las tarjetas entran escalonadas cuando la sección se ve
+(function(){const el=document.getElementById('areas');new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){el.classList.add('vis');o.disconnect();}}),{threshold:.1}).observe(el);})();
+// Cabecera compacta + barra de progreso + sección activa en el menú
+(function(){const h=document.querySelector('.hdr'),p=document.getElementById('prog');let tick=false;
+function upd(){const y=window.scrollY,max=document.documentElement.scrollHeight-innerHeight;h.classList.toggle('mini',y>40);if(p)p.style.transform='scaleX('+(max>0?Math.min(y/max,1):0)+')';tick=false;}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});upd();
+const links=[...document.querySelectorAll('.nav a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const secObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(sc=>secObs.observe(sc));
+})();
+
+/* ===== SERVICIOS DESDE HOJA DE GOOGLE =====
+   Laura edita la hoja "Web · Servicios (editar aquí)" y la web la lee al cargar.
+   Columnas: Área | Servicio | Texto del desplegable (+ info) | Imagen | Mostrar
+   Si la hoja no responde, se muestran los servicios guardados en este archivo. */
+const HOJA_SERVICIOS='1gUFJW0YgrTfwFFGpaT-C9bd9axpXOaojFFugbkzPaQU';
+function parseCSV(t){const r=[];let row=[],c='',q=false;for(let i=0;i<t.length;i++){const ch=t[i];if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++;}else q=false;}else c+=ch;}else if(ch==='"')q=true;else if(ch===','){row.push(c);c='';}else if(ch==='\n'||ch==='\r'){if(ch==='\r'&&t[i+1]==='\n')i++;row.push(c);r.push(row);row=[];c='';}else c+=ch;}if(c!==''||row.length){row.push(c);r.push(row);}return r;}
+const escH=x=>String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const conBr=x=>escH(x.trim()).replace(/\r?\n/g,'<br>');
+function claveArea(a){a=a.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');if(a.startsWith('asesor'))return'asesoramiento';if(a.startsWith('normat')||a.includes('ayuda'))return'normativa';if(a.startsWith('maquin'))return'maquinaria';if(a.startsWith('cineg')||a.startsWith('caza'))return'cinegetica';if(a.startsWith('medic')||a.includes('catastro')||a.includes('segreg'))return'catastro';if(a.startsWith('medio')||a.includes('ambient')||a.includes('sostenib'))return'medioambiente';return null;}
+(async function(){
+  try{
+    const r=await fetch('https://docs.google.com/spreadsheets/d/'+HOJA_SERVICIOS+'/gviz/tq?tqx=out:csv&headers=1&_='+Date.now());
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const filas=parseCSV(await r.text()).slice(1).filter(f=>f.length>=3&&f[1]&&f[1].trim());
+    const nuevo={asesoramiento:[],normativa:[],maquinaria:[],cinegetica:[],medioambiente:[],catastro:[]},img={};
+    filas.forEach(f=>{const k=claveArea(f[0]||'');if(!k)return;if((f[4]||'').trim().toUpperCase().startsWith('N'))return;
+      const j=nuevo[k].length;nuevo[k].push([conBr(f[1]),conBr(f[2]||'')]);
+      let im=(f[3]||'').trim();img['card-'+k+'-'+j]=im?(/^https?:\/\//.test(im)?im:'./'+im.replace(/^\.?\//,'')):'./img/noticia-default.jpg';});
+    if(!Object.values(nuevo).some(a=>a.length))throw new Error('hoja vacía o sin acceso');
+    const conFilas=Object.keys(nuevo).filter(k=>nuevo[k].length);conFilas.forEach(k=>{AREAS[k].items=nuevo[k];});
+    Object.keys(SLOT_SRC).filter(id=>conFilas.some(k=>id.startsWith('card-'+k+'-'))).forEach(id=>delete SLOT_SRC[id]);Object.assign(SLOT_SRC,img);
+    renderAreas();actualizarContadores();actualizarCifras();moverIndicador();
+  }catch(e){console.info('Servicios: se usan los datos guardados ('+e.message+')');}
+})();
+
+/* ===== FORMULARIO DE CONTACTO =====
+   Envía a un script de Google (Apps Script) de Laura, que guarda la solicitud en su
+   hoja "Solicitudes web (formulario de contacto)" y le manda un aviso por email. */
+const FORM_URL='https://script.google.com/macros/s/AKfycbwU7c0fxZ05bGVNln0wfegNOpcXupFk1K9m3kO-ofOkoEcbA5UWJONvKnCFxPeyeQ/exec';  // URL de la aplicación web de Apps Script (…/exec)
+(function(){const f=document.getElementById('form-contacto');if(!f)return;const est=document.getElementById('f-estado'),btn=f.querySelector('button[type=submit]');
+function msg(t,ok){est.textContent=t;est.className='f-estado '+(ok?'ok':'err');est.hidden=false;}
+f.addEventListener('submit',async e=>{e.preventDefault();if(!f.reportValidity())return;
+  if(!FORM_URL){msg('El formulario aún no está activo. Escríbeme a laurams.consultoresagricolas@gmail.com o por WhatsApp al +34 661915900.',false);return;}
+  btn.disabled=true;const txt=btn.textContent;btn.textContent='Enviando…';
+  try{await fetch(FORM_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))});
+    f.reset();msg('¡Gracias! He recibido tu solicitud y te responderé lo antes posible.',true);}
+  catch(err){msg('No se ha podido enviar. Inténtalo de nuevo o escríbeme a laurams.consultoresagricolas@gmail.com.',false);}
+  finally{btn.disabled=false;btn.textContent=txt;}});})();
+
+/* Opiniones: ventana con formulario */
+(function(){const d=document.getElementById('op-dlg'),f=document.getElementById('op-form'),m=document.getElementById('op-msg');if(!d)return;
+document.getElementById('op-abrir').addEventListener('click',()=>{m.textContent='';m.className='op-msg';d.showModal?d.showModal():d.setAttribute('open','');});
+document.getElementById('op-cerrar').addEventListener('click',()=>d.close());
+d.addEventListener('click',e=>{if(e.target===d)d.close();});
+f.addEventListener('submit',async e=>{e.preventDefault();
+  if(!f.nombre.value.trim()||!f.opinion.value.trim()){m.textContent='Escribe tu nombre y tu opinión.';m.className='op-msg err';return;}
+  if(!f.publicar.checked){m.textContent='Marca la casilla para que pueda publicar tu opinión.';m.className='op-msg err';return;}
+  const b=f.querySelector('.op-enviar');b.disabled=true;b.textContent='Enviando…';
+  try{await fetch(FORM_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))});
+    f.reset();m.textContent='¡Muchas gracias! He recibido tu opinión; la publicaré tras revisarla.';m.className='op-msg ok';}
+  catch(err){m.textContent='No se ha podido enviar. Inténtalo de nuevo más tarde.';m.className='op-msg err';}
+  finally{b.disabled=false;b.textContent='Enviar opinión';}});})();
+
+/* Menú móvil */
+(function(){const b=document.getElementById('menu-btn'),m=document.getElementById('menu-movil');if(!b||!m)return;
+function set(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');}
+b.addEventListener('click',()=>set(!m.classList.contains('open')));
+m.addEventListener('click',e=>{if(e.target.closest('a'))set(false);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false);});
+document.addEventListener('click',e=>{if(!e.target.closest('.hdr'))set(false);});
+const secs=[...m.querySelectorAll('a')].map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const mo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)m.querySelectorAll('a').forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});secs.forEach(sc=>mo.observe(sc));
+})();
+
+/* Portada: clic en cualquier parte del bloque (nombre, foto o botón) lleva a su pestaña */
+document.querySelectorAll('.tile').forEach(t=>{const g=t.querySelector('.go');if(!g)return;t.addEventListener('click',e=>{if(e.target.closest('.go'))return;g.click();});});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Sponsors: hidden until enabled. Activar: añade ?patrocinadores=1 a la URL o ejecuta lmSponsors(true) */
+window.lmSponsors=on=>{localStorage.setItem('lm-sponsors',on?'1':'0');document.body.classList.toggle('no-sponsors',!on)};
+if(new URLSearchParams(location.search).get('patrocinadores')==='1'||localStorage.getItem('lm-sponsors')==='1')document.body.classList.remove('no-sponsors');
+</script>
+<script>/* Botón volver arriba: aparece al bajar */(function(){var b=document.getElementById("to-top");if(!b)return;function u(){b.classList.toggle("show",window.scrollY>window.innerHeight*0.8)}window.addEventListener("scroll",u,{passive:true});u();})();</script>
+<script src="./js/carrusel-noticias.js" defer></script>
+</body>
+</html>
