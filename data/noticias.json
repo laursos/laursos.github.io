@@ -1,6 +1,30 @@
 {
-  "actualizado": "2026-10-06T06:22:28Z",
+  "actualizado": "2026-10-06T18:23:10Z",
   "noticias": [
+    {
+      "id": "93344efa7888d033",
+      "titulo": "Dendaberri Zoiro se proclama campeón de España de Perros de Muestra en Montaña en La Cueta",
+      "extracto": "Castilla y León copa el podio del III Campeonato de España con Dendaberri Belton y Sira de la Barrera en segunda y tercera posición El…",
+      "fecha": "2026-10-06T09:23:41Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/dendaberri-zoiro-se-proclama-campeon-de-espana-de-perros-de-muestra-en-montana-en-la-cueta/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/Dendaberri-Zoiro-y-Pablo-Rodriguez-ganadores-del-III-Campeonato-de-Espana-de-Montana-de-Perros-de-Muestra-1024x768.jpg",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "5750861cd52b9c41",
+      "titulo": "📢FECHA APLAZADA – ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D.",
+      "extracto": "📢FECHA APLAZADA!! Por condiciones meteorológicas a sábado 10 de octubre. 🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D. 🗓️ 10…",
+      "fecha": "2026-10-06T08:31:37Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%93%a2fecha-aplazada-ultima-tirada-liga-autonomica-recorridos-de-monte-3d/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2593%25a2fecha-aplazada-ultima-tirada-liga-autonomica-recorridos-de-monte-3d",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4e2.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
     {
       "id": "87ac6bd8440baf84",
       "titulo": "ABANILLA ACOGE EL XLIV CAMPEONATO DE ESPAÑA DE SAN HUBERTO",
