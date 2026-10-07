@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-07T13:25:53Z",
+  "actualizado": "2026-10-07T23:06:15Z",
   "noticias": [
     {
       "id": "67e02e022aaeb08f",
@@ -51,6 +51,20 @@
       "imagen": "https://alicanteasaja.com/wp-content/uploads/JV.jpg",
       "categorias": [
         "Maquinaria"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "cea8b19b93088974",
+      "titulo": "Las exportaciones regionales de tecnología agrícola crecen un 12,4 por ciento en el primer semestre de 2026",
+      "extracto": "La tecnología de riego impulsa estas exportaciones con un crecimiento del 45,9 por ciento y ya representa casi la mitad de las ventas al…",
+      "fecha": "2026-10-06T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126293&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua",
+        "Mercados y precios"
       ],
       "imagen_buscada": true
     },
