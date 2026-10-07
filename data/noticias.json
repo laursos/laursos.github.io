@@ -1,6 +1,59 @@
 {
-  "actualizado": "2026-10-07T06:01:57Z",
+  "actualizado": "2026-10-07T13:25:53Z",
   "noticias": [
+    {
+      "id": "67e02e022aaeb08f",
+      "titulo": "ASAJA MURCIA SOLICITA LA REDUCCIÓN DE LAS TASAS DE HELADA Y PEDRISCO EN DETERMINADOS POLÍGONOS DE LA COMARCA RÍO SEGURA",
+      "extracto": "La organización agraria reclama revisar unas primas que, en el caso de la helada, son aproximadamente un 71% superiores a las aplicadas en…",
+      "fecha": "2026-10-07T10:07:39Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202610/07/asaja-murcia-solicita-la-reduccion-de-las-tasas-de-helada-y-pedrisco-en",
+      "imagen": null,
+      "categorias": [
+        "Cítricos",
+        "Gestión de la explotación"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "836d76d02c4a662a",
+      "titulo": "Boletín ayudas y normativas Nº 303",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 2 al 8 de octubre de 2026",
+      "fecha": "2026-10-07T08:40:06Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-303/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/WhatsApp-Image-2026-06-19-at-09.55.35-3-e1782818643468.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "e9a1d0e53dced012",
+      "titulo": "ASAJA entregará a la distinción Mujer Rural 2026 a las propietarias del Nugolat y el de trayectoria al agricultor Pascual Román",
+      "extracto": "“Premiamos el emprendimiento y el esfuerzo incansable de las propietarias del Restaurante Nugolat y rendimos homenaje a los 91 años de…",
+      "fecha": "2026-10-07T07:01:24Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-entregara-a-la-distincion-mujer-rural-2026-a-las-propietarias-del-restaurante-nugolat-y-el-de-trayectoria-al-agricultor-de-91-anos-pascual-roman/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-noticia-fireta.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "1465cee89fdec21c",
+      "titulo": "SE ACABÓ EL TRIGO",
+      "extracto": "Hace unos días viajé a Ciudad Real y hubo algo que me llamó especialmente la atención: no vi tractores labrando los rastrojos del cereal ni…",
+      "fecha": "2026-10-07T06:14:50Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/se-acabo-el-trigo/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/JV.jpg",
+      "categorias": [
+        "Maquinaria"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "93344efa7888d033",
       "titulo": "Dendaberri Zoiro se proclama campeón de España de Perros de Muestra en Montaña en La Cueta",
@@ -811,19 +864,6 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/09/1.jpg",
       "categorias": [
         "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "0477b5cbb42a28f1",
-      "titulo": "ASAJA destaca el respaldo del CESE a una ganadería europea rentable, sostenible y protegida frente a importaciones sin reciprocidad.",
-      "extracto": "La organización agraria considera que la estrategia europea debe garantizar rentabilidad, seguridad jurídica y competitividad para los…",
-      "fecha": "2026-09-07T10:12:23Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202609/07/asaja-destaca-el-respaldo-del-cese-una-ganaderia-europea-rentable-sostenible-y",
-      "imagen": null,
-      "categorias": [
-        "Mercados y precios"
       ],
       "imagen_buscada": true
     }
