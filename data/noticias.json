@@ -1,6 +1,32 @@
 {
-  "actualizado": "2026-10-08T06:06:10Z",
+  "actualizado": "2026-10-08T13:31:44Z",
   "noticias": [
+    {
+      "id": "cdb89a9b47d7deba",
+      "titulo": "La producción de miel cae un 11,5% y España pierde 360.000 colmenas desde 2020",
+      "extracto": "El Ministerio de Agricultura publica los indicadores económicos del sector apícola de 2025. España mantiene el mayor censo de colmenas de…",
+      "fecha": "2026-10-08T11:37:15Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/la-produccion-de-miel-cae-un-115-y-espana-pierde-360-000-colmenas-desde-2020/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/Apicultura-MAHIQUES-3.jpg",
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "8a28cbc15924dd8f",
+      "titulo": "La Comunidad presenta en Fruit Attraction el desarrollo de nuevas variedades del Imida",
+      "extracto": "El consejero Joaquín Buendía destaca que los 50 años de trayectoria del Instituto Murciano de Investigación y Desarrollo Agrario y…",
+      "fecha": "2026-10-07T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126296&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "67e02e022aaeb08f",
       "titulo": "ASAJA MURCIA SOLICITA LA REDUCCIÓN DE LAS TASAS DE HELADA Y PEDRISCO EN DETERMINADOS POLÍGONOS DE LA COMARCA RÍO SEGURA",
@@ -867,19 +893,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "ed7e5e20044e6112",
-      "titulo": "La Cueta volverá a reunir a los mejores perros de muestra en montaña de España",
-      "extracto": "La localidad leonesa acogerá los días 3 y 4 de octubre el III Campeonato de España y la V Copa de España de Perros de Muestra en Montaña…",
-      "fecha": "2026-09-08T08:30:32Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/la-cueta-volvera-a-reunir-a-los-mejores-perros-de-muestra-en-montana-de-espana/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/1.jpg",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
