@@ -1,6 +1,31 @@
 {
-  "actualizado": "2026-10-09T13:19:03Z",
+  "actualizado": "2026-10-09T22:39:31Z",
   "noticias": [
+    {
+      "id": "49dd7f5edc1c39a8",
+      "titulo": "La RFEC actuará contra la suspensión cautelar de la caza de nueve especies en Madrid",
+      "extracto": "La Federación se personará en el procedimiento judicial para defender los intereses de los cazadores y evitar que actuaciones similares…",
+      "fecha": "2026-10-09T13:54:39Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-rfec-actuara-contra-la-suspension-cautelar-de-la-caza-de-nueve-especies-en-madrid/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/NOTAS-DE-PRENSA.png",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "a954961d57ef7df7",
+      "titulo": "CAMPEONATO AUTONÓMICO DE CAZA MENOR CON PERRO 2026",
+      "extracto": "❌ CAMPEONATO AUTONÓMICO DE CAZA MENOR CON PERRO 2026❌ 📝 INSCRIPCIÓN Y DECLARACIÓN RESPONSABLE EN NUESTRA PÁGINA WEB…",
+      "fecha": "2026-10-09T09:37:53Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/campeonato-autonomico-de-caza-menor-con-perro-2026/?utm_source=rss&utm_medium=rss&utm_campaign=campeonato-autonomico-de-caza-menor-con-perro-2026",
+      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/10/CM-26-1024x1024.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
     {
       "id": "68f134580e53d25d",
       "titulo": "Las empresas regionales en Fruit Attraction superan los 15.000 contactos comerciales y consolidan su proyección internacional",
