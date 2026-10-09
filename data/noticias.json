@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-09T06:10:23Z",
+  "actualizado": "2026-10-09T13:19:03Z",
   "noticias": [
+    {
+      "id": "68f134580e53d25d",
+      "titulo": "Las empresas regionales en Fruit Attraction superan los 15.000 contactos comerciales y consolidan su proyección internacional",
+      "extracto": "El balance de la delegación murciana en la feria refleja una intensa actividad por parte de los productores, cooperativas e industrias…",
+      "fecha": "2026-10-08T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126307&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "cdb89a9b47d7deba",
       "titulo": "La producción de miel cae un 11,5% y España pierde 360.000 colmenas desde 2020",
@@ -878,18 +891,6 @@
       "fuente": "Real Federación Española de Caza",
       "url": "https://fecaza.com/mas-de-2-600-cazadores-espanoles-se-suman-al-segundo-censo-simultaneo-nacional-de-codorniz/",
       "imagen": "https://fecaza.com/wp-content/uploads/2026/09/challenge-municipios-1024x724.png",
-      "categorias": [
-        "Caza"
-      ]
-    },
-    {
-      "id": "5e8d4db1526b4f0a",
-      "titulo": "🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D",
-      "extracto": "🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D. 🗓️ 19 septiembre – 9:30 horas. 📝 Inscripciones hasta 17 de septiembre en…",
-      "fecha": "2026-09-09T09:54:10Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9-ultima-tirada-liga-autonomica-recorridos-de-monte-3d/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9-ultima-tirada-liga-autonomica-recorridos-de-monte-3d",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3f9.png",
       "categorias": [
         "Caza"
       ]
