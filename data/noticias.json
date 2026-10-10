@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-10T05:54:12Z",
+  "actualizado": "2026-10-10T12:33:40Z",
   "noticias": [
     {
       "id": "49dd7f5edc1c39a8",
@@ -907,18 +907,6 @@
         "PAC y ayudas"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "3a681d5e54e65d99",
-      "titulo": "Más de 2.600 cazadores españoles se suman al segundo censo simultáneo nacional de codorniz",
-      "extracto": "El segundo ‘Coturnix Challenge’, celebrado los días 15 y 23 de agosto, ha superado los datos de la primera edición de esta pionera…",
-      "fecha": "2026-09-10T08:53:53Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/mas-de-2-600-cazadores-espanoles-se-suman-al-segundo-censo-simultaneo-nacional-de-codorniz/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/challenge-municipios-1024x724.png",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
