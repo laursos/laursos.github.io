@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-11T05:48:26Z",
+  "actualizado": "2026-10-11T12:52:00Z",
   "noticias": [
     {
       "id": "49dd7f5edc1c39a8",
@@ -881,32 +881,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "7bf82e48a6d4510e",
-      "titulo": "La caza menor femenina nacional se cita en Munera el próximo 10 de octubre",
-      "extracto": "Cerca de 40 cazadoras de toda España competirán por el título nacional en la XIII edición del Campeonato de España Femenino de Caza Menor…",
-      "fecha": "2026-09-11T12:30:56Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/la-caza-menor-femenina-nacional-se-cita-en-munera-el-proximo-10-de-octubre/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/1-1.png",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "cd254001e2dbe13b",
-      "titulo": "Boletín ayudas y normativas Nº 301",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 4 al 11 de septiembre de 2026",
-      "fecha": "2026-09-11T07:09:19Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-301/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-67.jpg",
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
