@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-11T21:58:57Z",
+  "actualizado": "2026-10-12T05:59:49Z",
   "noticias": [
     {
       "id": "49dd7f5edc1c39a8",
@@ -9,6 +9,19 @@
       "fuente": "Real Federación Española de Caza",
       "url": "https://fecaza.com/la-rfec-actuara-contra-la-suspension-cautelar-de-la-caza-de-nueve-especies-en-madrid/",
       "imagen": "https://fecaza.com/wp-content/uploads/2026/10/NOTAS-DE-PRENSA.png",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "445e4af8bea57af2",
+      "titulo": "La RFEC y CAZAVISIÓN acuerdan una tarifa exclusiva para los cazadores federados",
+      "extracto": "Los federados podrán acceder a la plataforma por 69,99 euros al año gracias al acuerdo de colaboración suscrito entre ambas entidades Con…",
+      "fecha": "2026-10-09T09:50:36Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-rfec-y-cazavision-acuerdan-una-tarifa-exclusiva-para-los-cazadores-federados/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/RFEC-y-CAZAVISION.webp",
       "categorias": [
         "Caza"
       ],
