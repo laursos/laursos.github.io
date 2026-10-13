@@ -1,6 +1,32 @@
 {
-  "actualizado": "2026-10-13T00:41:19Z",
+  "actualizado": "2026-10-13T14:13:31Z",
   "noticias": [
+    {
+      "id": "c36aa6abc5e830e1",
+      "titulo": "La Federación de Caza de la Región de Murcia informa sobre las modificaciones pendientes de la Orden de Vedas",
+      "extracto": "La Federación de Caza de la Región de Murcia informa de que, a fecha de hoy, todavía no se ha publicado en el Boletín Oficial de la Región…",
+      "fecha": "2026-10-13T09:30:25Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/la-federacion-de-caza-de-la-region-de-murcia-informa-sobre-las-modificaciones-pendientes-de-la-orden-de-vedas/?utm_source=rss&utm_medium=rss&utm_campaign=la-federacion-de-caza-de-la-region-de-murcia-informa-sobre-las-modificaciones-pendientes-de-la-orden-de-vedas",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "ed5f48c9df65780e",
+      "titulo": "54 empresas de la industria alimentaria regional participarán a partir del próximo domingo en la feria SIAL París",
+      "extracto": "El consejero de  destaca que el evento supone un punto de encuentro internacional para las empresas agroalimentarias",
+      "fecha": "2026-10-12T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126339&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "49dd7f5edc1c39a8",
       "titulo": "La RFEC actuará contra la suspensión cautelar de la caza de nueve especies en Madrid",
