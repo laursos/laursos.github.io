@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-15T04:41:01Z",
+  "actualizado": "2026-10-15T11:31:21Z",
   "noticias": [
+    {
+      "id": "230a24c1d4f7cfcc",
+      "titulo": "Leire Egaña revalida el título de campeona de España de Caza Menor con Perro en Munera",
+      "extracto": "La cazadora vasca se impone con 2.600 puntos en el XIII Campeonato de España Femenino de Caza Menor con Perro, celebrado en la localidad…",
+      "fecha": "2026-10-15T07:01:10Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/leire-egana-revalida-el-titulo-de-campeona-de-espana-de-caza-menor-con-perro-en-munera/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-10-at-14.49.09-1.jpeg",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "c37fd8575fce78e0",
       "titulo": "ASAJA Alicante participará en la gran protesta-tractorada frente al Ministerio de Agricultura en Madrid el 28 de octubre",
@@ -36,6 +49,19 @@
       "fuente": "Federación de Caza Región de Murcia",
       "url": "https://www.federacioncaza.com/la-federacion-de-caza-de-la-region-de-murcia-informa-sobre-las-modificaciones-pendientes-de-la-orden-de-vedas/?utm_source=rss&utm_medium=rss&utm_campaign=la-federacion-de-caza-de-la-region-de-murcia-informa-sobre-las-modificaciones-pendientes-de-la-orden-de-vedas",
       "imagen": null,
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "a7928e1516b5482a",
+      "titulo": "Cazadores de toda España volverán a aportar datos científicos al proyecto Zorzales",
+      "extracto": "Gracias a la colaboración de más de 2.500 cazadores del país, se han obtenido ya datos de más de 12.000 jornadas de caza y se han realizado…",
+      "fecha": "2026-10-13T09:00:00Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/cazadores-de-toda-espana-volveran-a-aportar-datos-cientificos-al-proyecto-zorzales/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/zorzal-foto-amado.jpg",
       "categorias": [
         "Caza"
       ],
@@ -897,32 +923,6 @@
         "PAC y ayudas",
         "Caza"
       ]
-    },
-    {
-      "id": "2c2142daab0f677c",
-      "titulo": "La Escuela Española de Caza cierra con éxito una nueva edición del Curso de Instructor-Adiestrador de Perros de Caza",
-      "extracto": "Los alumnos han completado 80 horas de formación teórica y práctica durante seis fines de semana en Castillejo de Robledo (Soria) Un año…",
-      "fecha": "2026-09-15T10:39:49Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/la-escuela-espanola-de-caza-cierra-con-exito-una-nueva-edicion-del-curso-de-instructor-adiestrador-de-perros-de-caza/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/NOTAS-DE-PRENSA-819x1024.png",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "b04e23f4e9e4f1c4",
-      "titulo": "DE VERTEDERO A PARQUE NATURAL: 36 AÑOS",
-      "extracto": "La semana pasada, el Consell aprobó la declaración de Parque Natural de la Sierra de Escalona y la Dehesa de Campoamor, un espacio que…",
-      "fecha": "2026-09-15T10:14:41Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/de-vertedero-a-parque-natural-36-anos/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/sierra-escalona.jpg",
-      "categorias": [
-        "Riego y agua"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
