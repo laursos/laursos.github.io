@@ -1,6 +1,20 @@
 {
-  "actualizado": "2026-10-15T11:31:21Z",
+  "actualizado": "2026-10-15T17:02:18Z",
   "noticias": [
+    {
+      "id": "9a0520dfc988d622",
+      "titulo": "La RFEC y Grupo V acuerdan un precio especial de la revista Caza Mayor para los cazadores federados",
+      "extracto": "Los federados podrán adquirir cada ejemplar de Caza Mayor por 5 euros más gastos de envío, frente a los 9,95 euros de su precio habitual El…",
+      "fecha": "2026-10-15T12:00:17Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-rfec-y-grupo-v-acuerdan-un-precio-especial-de-la-revista-caza-mayor-para-los-cazadores-federados/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/NOTAS-DE-PRENSA-1.png",
+      "categorias": [
+        "Mercados y precios",
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "230a24c1d4f7cfcc",
       "titulo": "Leire Egaña revalida el título de campeona de España de Caza Menor con Perro en Munera",
@@ -15,9 +29,22 @@
       "imagen_buscada": true
     },
     {
+      "id": "eb3674c40330c6fb",
+      "titulo": "La Región es la tercera comunidad con más mujeres menores de 40 años beneficiarias de ayudas de la PAC",
+      "extracto": "El consejero de Agricultura destajado en el día de la Mujer Rural que \"el 30 por ciento de las explotaciones agrarias regionales tienen a…",
+      "fecha": "2026-10-14T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126360&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
       "id": "c37fd8575fce78e0",
       "titulo": "ASAJA Alicante participará en la gran protesta-tractorada frente al Ministerio de Agricultura en Madrid el 28 de octubre",
-      "extracto": "ASAJA, COAG y Unión de Uniones de Agricultores y Ganaderos han acordado convocar una gran tractorada en Madrid el próximo miércoles 28 de…",
+      "extracto": "La organización agraria llama a agricultores y ganaderos a movilizarse frente al Ministerio de Agricultura ante el incremento de los costes…",
       "fecha": "2026-10-14T11:23:41Z",
       "fuente": "ASAJA Alicante",
       "url": "https://alicanteasaja.com/asaja-alicante-participara-en-la-gran-protesta-tractorada-frente-al-ministerio-de-agricultura-en-madrid-el-28-de-octubre/",
