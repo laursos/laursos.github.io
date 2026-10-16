@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-16T04:33:33Z",
+  "actualizado": "2026-10-16T11:26:02Z",
   "noticias": [
+    {
+      "id": "007caa2a49ca3645",
+      "titulo": "Boletín ayudas y normativas Nº 304",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 8 al 16 de octubre de 2026",
+      "fecha": "2026-10-16T08:06:54Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-304/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/couleur-grapes-1611089_1920.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "9a0520dfc988d622",
       "titulo": "La RFEC y Grupo V acuerdan un precio especial de la revista Caza Mayor para los cazadores federados",
@@ -925,31 +938,6 @@
         "Fertilización"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "1f5755bef48095d9",
-      "titulo": "VI CAMPEONATO AUTONÓMICO DE PODENCO IBICENCO A DIENTE",
-      "extracto": "El pasado sábado 12 de septiembre, Campos del Río se convirtió en el punto de encuentro de la afición al podenco ibicenco con la…",
-      "fecha": "2026-09-16T08:15:38Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/vi-campeonato-autonomico-de-podenco-ibicenco-a-diente/?utm_source=rss&utm_medium=rss&utm_campaign=vi-campeonato-autonomico-de-podenco-ibicenco-a-diente",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3c6.png",
-      "categorias": [
-        "Caza"
-      ]
-    },
-    {
-      "id": "24e442dab54ac4af",
-      "titulo": "El plazo para solicitar las ayudas por el fomento de la caza del jabalí se abre el 16 de septiembre",
-      "extracto": "La Federación de Caza de la Comunitat Valenciana recuerda a estas entidades que podrán presentar la solicitud, justificación y petición de…",
-      "fecha": "2026-09-16T07:53:38Z",
-      "fuente": "Federación de Caza Comunidad Valenciana",
-      "url": "https://federacioncazacv.com/prensa/plazo-ayudas-clubs-sociedades-abatimiento-retirada-jabalies-16-septiembre/",
-      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/09/AYUDAS-TRAMITES.jpg",
-      "categorias": [
-        "PAC y ayudas",
-        "Caza"
-      ]
     }
   ]
 }
