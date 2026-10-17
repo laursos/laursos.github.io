@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-17T04:28:11Z",
+  "actualizado": "2026-10-17T10:46:16Z",
   "noticias": [
     {
       "id": "007caa2a49ca3645",
@@ -926,18 +926,6 @@
         "General"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "349d0a9a1866b17e",
-      "titulo": "FECHA APLAZADA – ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D.",
-      "extracto": "📢FECHA APLAZADA!! Por condiciones meteorológicas a sábado 3 de octubre. 🏹 ÚLTIMA TIRADA LIGA AUTONÓMICA RECORRIDOS DE MONTE 3D. 🗓️ 3…",
-      "fecha": "2026-09-17T08:16:15Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/fecha-aplazada-ultima-tirada-liga-autonomica-recorridos-de-monte-3d/?utm_source=rss&utm_medium=rss&utm_campaign=fecha-aplazada-ultima-tirada-liga-autonomica-recorridos-de-monte-3d",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4e2.png",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
