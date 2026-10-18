@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T04:35:51Z",
+  "actualizado": "2026-10-18T11:07:14Z",
   "noticias": [
     {
       "id": "007caa2a49ca3645",
@@ -887,45 +887,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "dc5dc2652efda92b",
-      "titulo": "El precio del gasóleo agrícola se dispara un 48% en España: ASAJA pide una reunión urgente con Planas y anuncia movilizaciones",
-      "extracto": "ASAJA Alicante reclama una respuesta inmediata del Gobierno ante la descomunal escalada que ha experimentado el precio del gasóleo agrícola…",
-      "fecha": "2026-09-18T10:59:34Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/el-precio-del-gasoleo-agricola-se-dispara-un-48-en-espana-asaja-pide-una-reunion-urgente-con-planas-y-anuncia-movilizaciones/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/tractor-en-campo-de-cultivo-web.jpeg",
-      "categorias": [
-        "PAC y ayudas",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "0ab8821b968b0021",
-      "titulo": "XXI CAMPEONATO AUTONÓMICO DE CETRERÍA",
-      "extracto": "🦅🦅 XXI CAMPEONATO AUTONÓMICO DE CETRERÍA 🦅🦅 📆 31 DE OCTUBRE Y 1 DE NOVIEMBRE DE 2026 📍MAZARRÓN – MURCIA 📋Inscripciones hasta el 14 de…",
-      "fecha": "2026-09-18T10:01:21Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/xxi-campeonato-autonomico-de-cetreria/?utm_source=rss&utm_medium=rss&utm_campaign=xxi-campeonato-autonomico-de-cetreria",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f985.png",
-      "categorias": [
-        "Caza"
-      ]
-    },
-    {
-      "id": "45684a0063b0003c",
-      "titulo": "Malas noticias para el arroz bombón de Pego: las 40 hectáreas sembradas se quedarán sin segar",
-      "extracto": "Pese a las buenas expectativas de los primeros años, que permitieron que se ganara en superficie cultivada de bombón en el Parque Natural…",
-      "fecha": "2026-09-18T06:53:32Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/malas-noticias-para-el-arroz-bombon-de-pego/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/dominguis-web.jpg",
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
