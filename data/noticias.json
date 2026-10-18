@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-18T11:07:14Z",
+  "actualizado": "2026-10-18T15:53:22Z",
   "noticias": [
+    {
+      "id": "d1127e2f4a5cb2aa",
+      "titulo": "54 empresas de la industria alimentaria regional buscan mejorar su posición internacional en la feria SIAL de París",
+      "extracto": "El consejero Joaquín Buendía acompaña a la delegación regional que estará hasta el próximo jueves presentando sus productos a los cerca de…",
+      "fecha": "2026-10-17T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126386&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "007caa2a49ca3645",
       "titulo": "Boletín ayudas y normativas Nº 304",
