@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-19T04:42:28Z",
+  "actualizado": "2026-10-19T13:18:15Z",
   "noticias": [
+    {
+      "id": "a7fb7d22073b8a55",
+      "titulo": "Francia se mantiene como principal destino de los productos de las industria alimentaria regional",
+      "extracto": "El consejero Joaquín Buendía ha destacado la fortaleza del sector durante un acto organizado por Agrupal durante la celebración de la feria…",
+      "fecha": "2026-10-18T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126397&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "d1127e2f4a5cb2aa",
       "titulo": "54 empresas de la industria alimentaria regional buscan mejorar su posición internacional en la feria SIAL de París",
