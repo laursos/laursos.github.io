@@ -1,6 +1,32 @@
 {
-  "actualizado": "2026-10-20T11:38:55Z",
+  "actualizado": "2026-10-20T17:08:34Z",
   "noticias": [
+    {
+      "id": "8016f1cf0ea7090f",
+      "titulo": "Los regantes de Ascoy, Benís y Carrasquilla ahorrarán 3.244 megavatios hora al año con energía solar y nuevos bombeos",
+      "extracto": "La Consejería de Agua financia con 850.000 euros de fondos europeos una balsa de 177.177 metros cúbicos, una planta fotovoltaica y nuevos…",
+      "fecha": "2026-10-19T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126414&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "8b8557d3cad718db",
+      "titulo": "La Comunidad licita por casi 400.000 euros la mejora del camino de Los Tollos, que se corta al tráfico con las lluvias fuertes",
+      "extracto": "La obra, que cuenta con cofinanciación europea, permitirá reforzar el firme de sus 1.840 metros y actuará sobre los puntos bajos donde el…",
+      "fecha": "2026-10-19T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126413&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "a7fb7d22073b8a55",
       "titulo": "Francia se mantiene como principal destino de los productos de las industria alimentaria regional",
