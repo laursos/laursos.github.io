@@ -1,6 +1,18 @@
 {
-  "actualizado": "2026-10-21T04:49:54Z",
+  "actualizado": "2026-10-21T11:50:47Z",
   "noticias": [
+    {
+      "id": "0c3abd48c2f72575",
+      "titulo": "La RFEC presenta diez compromisos políticos para el futuro de la caza y pide a los partidos que los incorporen a sus programas electorales",
+      "extracto": "«La Caza También Vota» se sustenta en un documento de propuestas estructurado en seis ejes estratégicos para el futuro de la actividad…",
+      "fecha": "2026-10-21T11:05:31Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-rfec-presenta-diez-compromisos-politicos-para-el-futuro-de-la-caza-y-pide-a-los-partidos-que-los-incorporen-a-sus-programas-electorales/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/IMG_8158-1024x683.jpg",
+      "categorias": [
+        "Caza"
+      ]
+    },
     {
       "id": "8016f1cf0ea7090f",
       "titulo": "Los regantes de Ascoy, Benís y Carrasquilla ahorrarán 3.244 megavatios hora al año con energía solar y nuevos bombeos",
@@ -924,18 +936,6 @@
       "fuente": "Federación de Caza Región de Murcia",
       "url": "https://www.federacioncaza.com/prueba-open-agility/?utm_source=rss&utm_medium=rss&utm_campaign=prueba-open-agility",
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f43e.png",
-      "categorias": [
-        "Caza"
-      ]
-    },
-    {
-      "id": "5b032042567372a0",
-      "titulo": "I Encuentro Nacional de Jóvenes Cazadores",
-      "extracto": "El relevo generacional de la caza se da cita en Badajoz en el I Encuentro Nacional de Jóvenes Cazadores Del 17 al 20 de septiembre, el…",
-      "fecha": "2026-09-21T07:52:48Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/i-encuentro-nacional-de-jovenes-cazadores/?utm_source=rss&utm_medium=rss&utm_campaign=i-encuentro-nacional-de-jovenes-cazadores",
-      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-20-at-18.11.00-948x1024.jpeg",
       "categorias": [
         "Caza"
       ]
