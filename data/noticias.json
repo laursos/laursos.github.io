@@ -1,6 +1,32 @@
 {
-  "actualizado": "2026-10-22T04:48:33Z",
+  "actualizado": "2026-10-22T11:54:35Z",
   "noticias": [
+    {
+      "id": "343692a7ab98a7e2",
+      "titulo": "ASAJA Alicante alerta de los daños agrarios de la DANA Adam en la Marina Alta, con más de mil colmenas arrasadas",
+      "extracto": "Numerosos agricultores y apicultores no pueden acceder a sus explotaciones por la destrucción de caminos y las inundaciones. En Pego, los…",
+      "fecha": "2026-10-22T10:18:10Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-alicante-alerta-de-los-danos-agrarios-de-la-dana-adam-en-la-marina-alta-con-mas-de-mil-colmenas-arrasadas/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/colmenas-web.jpeg",
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "187f15057e56db71",
+      "titulo": "COMUNICADO OFICIAL: MUNDIAL DE SAN HUBERTO",
+      "extracto": "La falta de respuesta de la RSCE deja a España sin representación en el Mundial de San Huberto de Serbia La RFEC denuncia que la Real…",
+      "fecha": "2026-10-22T07:51:25Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/comunicado-oficial-mundial-de-san-huberto/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2024/08/LOGO-RFECLEYENDA.png",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "0c3abd48c2f72575",
       "titulo": "La RFEC presenta diez compromisos políticos para el futuro de la caza y pide a los partidos que los incorporen a sus programas electorales",
@@ -41,14 +67,14 @@
     },
     {
       "id": "a7fb7d22073b8a55",
-      "titulo": "Francia se mantiene como principal destino de los productos de las industria alimentaria regional",
-      "extracto": "El consejero Joaquín Buendía ha destacado la fortaleza del sector durante un acto organizado por Agrupal durante la celebración de la feria…",
+      "titulo": "Francia se mantiene como principal destino de los productos de la industria alimentaria de la Región de Murcia",
+      "extracto": "El consejero Joaquín Buendía destaca la fortaleza del sector en un acto organizado por Agrupal durante la celebración de la feria…",
       "fecha": "2026-10-18T22:00:00Z",
       "fuente": "CARM - Agricultura",
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126397&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
       "imagen": null,
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "imagen_buscada": true
     },
@@ -888,57 +914,6 @@
         "General"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "8ed376ba407d1287",
-      "titulo": "ASAJA MURCIA VALORA POSITIVAMENTE EL COMPROMISO DEL GOBIERNO REGIONAL DE DESTINAR DOCE MILLONES DE EUROS AL SECTOR AGRARIO.",
-      "extracto": "La organización agraria destaca el compromiso alcanzado con el presidente López Miras y reclama que las ayudas se pongan en marcha con la…",
-      "fecha": "2026-09-22T09:40:43Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202609/22/asaja-murcia-valora-positivamente-el-compromiso-del-gobierno-regional-de-destinar",
-      "imagen": null,
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "6ed18877f03760c0",
-      "titulo": "LA UVA EMBOLSADA DEL VINALOPÓ: UN LUJO CADA VEZ MÁS DIFÍCIL DE ASUMIR",
-      "extracto": "Cada verano, en los siete municipios que forman el corazón del Vinalopó —Agost, Aspe, Hondón de las Nieves, Hondón de los Frailes, Monforte…",
-      "fecha": "2026-09-22T09:19:55Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/la-uva-embolsada-del-vinalopo-un-lujo-cada-vez-mas-dificil-de-asumir/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/Jose-Antonio-Martinez-Cazorla-ASAJA.jpeg",
-      "categorias": [
-        "Frutales"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "1c542137ea90bf86",
-      "titulo": "🏹 CURSO ARQUERO CUALIFICADO T2",
-      "extracto": "Inscripción: https://forms.gle/zsv4B9fyRn372SUx7 The post 🏹 CURSO ARQUERO CUALIFICADO T2 appeared first on Federación de Caza de la Región…",
-      "fecha": "2026-09-22T08:50:02Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9-curso-arquero-cualificado-t2-2/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9-curso-arquero-cualificado-t2-2",
-      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-20-at-19.31.59.jpeg",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "d21783461f716211",
-      "titulo": "Prueba Open Agility",
-      "extracto": "🐾 ¡TODO LISTO PARA UN GRAN FIN DE SEMANA DE AGILITY! 🏆 26 y 27 de septiembre📍 Club Agility Mediterráneo Este fin de semana llega una nueva…",
-      "fecha": "2026-09-22T07:22:22Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/prueba-open-agility/?utm_source=rss&utm_medium=rss&utm_campaign=prueba-open-agility",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f43e.png",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
