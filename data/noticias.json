@@ -1,6 +1,36 @@
 {
-  "actualizado": "2026-10-24T04:38:21Z",
+  "actualizado": "2026-10-24T11:02:44Z",
   "noticias": [
+    {
+      "id": "7f9f2830225a90e6",
+      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia",
+      "extracto": "La Región cuenta con casi 5.000 operadores certificados y 40.000 hectáreas de almendro ecológico que representan el 60 por ciento de la…",
+      "fecha": "2026-10-23T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126445&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Frutales",
+        "Agricultura ecológica",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "7bc28ce36c20f8d7",
+      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia",
+      "extracto": "La Región cuenta con casi 5.000 operadores certificados y 40.000 hectáreas de almendro ecológico que representan el 60 por ciento de la…",
+      "fecha": "2026-10-23T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126447&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Frutales",
+        "Agricultura ecológica",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "b3f10bd3a62431b1",
       "titulo": "Campeonato de Caza con Perros de Madriguera 2026",
