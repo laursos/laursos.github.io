@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-25T04:42:48Z",
+  "actualizado": "2026-10-25T11:31:57Z",
   "noticias": [
+    {
+      "id": "074970a918a34f5d",
+      "titulo": "Sale a licitación la mejora del camino rural Valdepino de Cehegín",
+      "extracto": "Cuenta con un presupuesto de cerca de 635.000 euros y las empresas interesadas pueden presentar sus ofertas hasta el 16 de noviembre",
+      "fecha": "2026-10-24T22:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126455&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "7f9f2830225a90e6",
       "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia",
@@ -978,20 +991,6 @@
       "imagen": null,
       "categorias": [
         "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "326507d7eae1d3f5",
-      "titulo": "La granada mollar de Elche prevé 50 millones de kg de producción, aunque el calor eleva hasta el 15% los frutos afectados",
-      "extracto": "La granada mollar de Elche encara una nueva campaña con una cifra que apenas cambia respecto al año pasado, pero con una diferencia que se…",
-      "fecha": "2026-09-25T07:45:15Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/la-granada-mollar-de-elche-preve-50-millones-de-kg-de-produccion-aunque-el-calor-eleva-hasta-el-15-los-frutos-afectados/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/granada-mollar-2.jpg",
-      "categorias": [
-        "Frutales",
-        "Mercados y precios"
       ],
       "imagen_buscada": true
     }
