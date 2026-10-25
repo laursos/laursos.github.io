@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T20:51:11Z",
+  "actualizado": "2026-10-25T04:42:48Z",
   "noticias": [
     {
       "id": "7f9f2830225a90e6",
@@ -992,19 +992,6 @@
       "categorias": [
         "Frutales",
         "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "0ea4495a29265b2a",
-      "titulo": "El Banco Mundial de Semillas de Noruega guarda la memoria genética de la huerta de la Región de Murcia",
-      "extracto": "El consejero de Agricultura destaca que la incorporación de las variedades tradicionales murcianas al \"arca de Noé\" vegetal del Ártico…",
-      "fecha": "2026-09-24T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126176&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
       ],
       "imagen_buscada": true
     }
