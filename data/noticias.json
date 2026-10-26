@@ -1,6 +1,95 @@
 {
-  "actualizado": "2026-10-26T04:48:51Z",
+  "actualizado": "2026-10-26T13:05:08Z",
   "noticias": [
+    {
+      "id": "b9b42e4efe4c017c",
+      "titulo": "ASAJA presenta a la CE una solicitud para activar la cláusula de salvaguardia por las mandarinas de Sudáfrica",
+      "extracto": "ASAJA presenta ante la Comisión Europea una solicitud para la activación de la cláusula bilateral de salvaguardia prevista en el artículo…",
+      "fecha": "2026-10-26T11:21:42Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-presenta-a-la-ce-una-solicitud-para-activar-la-clausula-de-salvaguardia-por-las-mandarinas-de-sudafrica/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/mandarina-sudafrica.jpeg",
+      "categorias": [
+        "Cítricos",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "77b2aeb48a5a02f0",
+      "titulo": "Montería La Perdiz Roja",
+      "extracto": "La Sociedad de Cazadores “La Perdiz Roja” de Santo Ángel, organiza una montería el próximo día 6 de diciembre de 2026. The post Montería La…",
+      "fecha": "2026-10-26T10:10:23Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/monteria-la-perdiz-roja/?utm_source=rss&utm_medium=rss&utm_campaign=monteria-la-perdiz-roja",
+      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-26-at-10.39.59.jpeg",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "99fa10b5ef8ffe66",
+      "titulo": "🏆🐾 MIRIAM GARCÍA GÓMEZ, DISTINGUIDA EN LA V GALA DEL DEPORTE DE LA REGIÓN DE MURCIA",
+      "extracto": "La deportista de Agility Miriam García Gómez ha sido distinguida en la V Gala del Deporte de la Región de Murcia, celebrada el pasado 24 de…",
+      "fecha": "2026-10-26T09:45:33Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%8f%86%f0%9f%90%be-miriam-garcia-gomez-distinguida-en-la-v-gala-del-deporte-de-la-region-de-murcia/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%2586%25f0%259f%2590%25be-miriam-garcia-gomez-distinguida-en-la-v-gala-del-deporte-de-la-region-de-murcia",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "d7f060cf079bce60",
+      "titulo": "Semifinal del Campeonato Autonómico de Caza Menor con Perro de la Región de Murcia",
+      "extracto": "🔴 El pasado sábado 24 de octubre se celebró en la Sierra de la Tercia la Semifinal del Campeonato Autonómico de Caza Menor con Perro de la…",
+      "fecha": "2026-10-26T09:08:38Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/semifinal-del-campeonato-autonomico-de-caza-menor-con-perro-de-la-region-de-murcia-4/?utm_source=rss&utm_medium=rss&utm_campaign=semifinal-del-campeonato-autonomico-de-caza-menor-con-perro-de-la-region-de-murcia-4",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f534.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "67dedd2c46e4aec1",
+      "titulo": "Redondo y Peter Adam se proclaman campeones de España de Field Target en Castillejo de Robledo",
+      "extracto": "Más de 65 tiradores participaron en la séptima edición del campeonato nacional, celebrada por primera vez en las instalaciones de la RFEC…",
+      "fecha": "2026-10-26T09:07:05Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/redondo-y-peter-adam-se-proclaman-campeones-de-espana-de-field-target-en-castillejo-de-robledo/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/88-1024x576.jpg",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "d0200c6ddf9881fb",
+      "titulo": "La Escuela Española de Caza forma a once alumnos en un nuevo curso de tiro con escopeta en Méntrida",
+      "extracto": "La jornada, celebrada en el Campo de Tiro Fuente de la Dehesa, combinó formación teórica y práctica para mejorar la técnica y fomentar el…",
+      "fecha": "2026-10-26T08:31:18Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-escuela-espanola-de-caza-forma-a-once-alumnos-en-un-nuevo-curso-de-tiro-con-escopeta-en-mentrida/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/IMG_4219-1024x768.jpg",
+      "categorias": [
+        "Mercados y precios",
+        "Caza"
+      ]
+    },
+    {
+      "id": "d9a239f6a6a79031",
+      "titulo": "Montería El Conejo de Monte",
+      "extracto": "La Sociedad de Cazadores “El Conejo de Monte” de Cieza, organiza una montería el próximo día 20 de diciembre de 2026. The post Montería El…",
+      "fecha": "2026-10-26T07:55:59Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/monteria-el-conejo-de-monte/?utm_source=rss&utm_medium=rss&utm_campaign=monteria-el-conejo-de-monte",
+      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-24-at-12.42.20.jpeg",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "074970a918a34f5d",
       "titulo": "Sale a licitación la mejora del camino rural Valdepino de Cehegín",
