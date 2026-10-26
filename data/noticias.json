@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-10-26T13:05:08Z",
+  "actualizado": "2026-10-26T22:41:02Z",
   "noticias": [
+    {
+      "id": "4c1eab91f351289b",
+      "titulo": "Las plagas y la subida de costes merman la apicultura de la provincia",
+      "extracto": "El presidente de la sectorial apícola de Asaja Alicante, Guillermo Rosell, no duda a la hora de señalar que el sector al que representa se…",
+      "fecha": "2026-10-26T13:42:16Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/las-plagas-y-la-subida-de-costes-merman-la-apicultura-de-la-provincia/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/rosa-colmenas.jpg",
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "b9b42e4efe4c017c",
       "titulo": "ASAJA presenta a la CE una solicitud para activar la cláusula de salvaguardia por las mandarinas de Sudáfrica",
