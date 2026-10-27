@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T18:02:05Z",
+  "actualizado": "2026-10-27T22:15:05Z",
   "noticias": [
     {
       "id": "4c1eab91f351289b",
@@ -1082,19 +1082,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "c35ce4bdb823632b",
-      "titulo": "El Gobierno regional propone a la Organización Internacional de la Viña y el Vino nuevas vías de colaboración científica a través del Imida",
-      "extracto": "El consejero de Agricultura se reúne con responsables de la organización para estudiar futuras alianzas y proyectos comunes a partir del…",
-      "fecha": "2026-09-27T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126202&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
