@@ -1,6 +1,18 @@
 {
-  "actualizado": "2026-10-28T05:43:53Z",
+  "actualizado": "2026-10-28T12:56:24Z",
   "noticias": [
+    {
+      "id": "dac6875095045249",
+      "titulo": "David Larrondo se proclama campeón de España de Caza Menor con Perro Adaptada en Miguel Esteban",
+      "extracto": "El representante de Navarra se impuso con 2.900 puntos en una competición que reunió a 12 deportistas en la localidad toledana Pablo…",
+      "fecha": "2026-10-28T10:56:44Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/david-larrondo-se-proclama-campeon-de-espana-de-caza-menor-con-perro-adaptada-en-miguel-esteban/",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f947.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
     {
       "id": "4c1eab91f351289b",
       "titulo": "Las plagas y la subida de costes merman la apicultura de la provincia",
@@ -1041,44 +1053,6 @@
       "fuente": "Federación de Caza Región de Murcia",
       "url": "https://www.federacioncaza.com/campeonato-autonomico-caza-con-perros-de-madriguera/?utm_source=rss&utm_medium=rss&utm_campaign=campeonato-autonomico-caza-con-perros-de-madriguera",
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f98a.png",
-      "categorias": [
-        "Caza"
-      ]
-    },
-    {
-      "id": "d379f72f5aeec7d4",
-      "titulo": "Rafael Villa y Alberto Martín, campeones de España de Hunter Field Target en Archidona",
-      "extracto": "Rafael Villa se impuso en PCP con 135 puntos, solo uno más que Alfredo Márquez, mientras que Alberto Martín logró el título nacional de…",
-      "fecha": "2026-09-28T08:46:46Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/rafael-villa-y-alberto-martin-campeones-de-espana-de-hunter-field-target-en-archidona/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-28-at-10.37.14-3-scaled.jpeg",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "256475606a2680da",
-      "titulo": "El mejor tiro con arco cinegético nacional se cita en Colunga",
-      "extracto": "Un total de 70 arqueros procedentes de diferentes comunidades autónomas han participado en una prueba disputada en las instalaciones del…",
-      "fecha": "2026-09-28T08:12:55Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/el-mejor-tiro-con-arco-cinegetico-nacional-se-cita-en-colunga/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/ARCO-1-scaled.jpeg",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "ba2456eee61c1041",
-      "titulo": "EL AGILITY, UN DEPORTE QUE TAMBIÉN UNE Y ACERCA",
-      "extracto": "El pasado viernes 18 de septiembre, el Centro Penitenciario Murcia II acogió una exhibición de Agility con motivo de los actos…",
-      "fecha": "2026-09-28T07:34:10Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/el-agility-un-deporte-que-tambien-une-y-acerca/?utm_source=rss&utm_medium=rss&utm_campaign=el-agility-un-deporte-que-tambien-une-y-acerca",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f91d.png",
       "categorias": [
         "Caza"
       ]
