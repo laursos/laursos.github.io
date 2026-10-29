@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29T13:03:14Z",
+  "actualizado": "2026-10-29T22:45:47Z",
   "noticias": [
     {
       "id": "6eca37d6dac2745a",
@@ -39,6 +39,19 @@
       "imagen": "https://alicanteasaja.com/wp-content/uploads/Asaja-protesta-bruselas.jpg",
       "categorias": [
         "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "f9dc8f053c9e19a9",
+      "titulo": "La FCRM traslada su apoyo y solidaridad a los afectados por el accidente ferroviario de Toledo",
+      "extracto": "Desde la Federación de Caza de la Región de Murcia, queremos trasladar nuestro más sentido pésame a los familiares y allegados de las…",
+      "fecha": "2026-10-29T07:36:49Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/la-fcrm-traslada-su-apoyo-y-solidaridad-a-los-afectados-por-el-accidente-ferroviario-de-toledo/?utm_source=rss&utm_medium=rss&utm_campaign=la-fcrm-traslada-su-apoyo-y-solidaridad-a-los-afectados-por-el-accidente-ferroviario-de-toledo",
+      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/10/Copia-de-Jovenes-cazadores_as-de-la-FCRM.png",
+      "categorias": [
+        "Caza"
       ],
       "imagen_buscada": true
     },
@@ -171,8 +184,8 @@
     },
     {
       "id": "7f9f2830225a90e6",
-      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia, con 5.000 operarios certificados",
-      "extracto": "La Región cuenta con 40.000 hectáreas de almendro ecológico, el 60 por ciento de este cultivo. El director general de Agricultura y…",
+      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región, con 5.000 operarios certificados",
+      "extracto": "La Región cuenta con 40.000 hectáreas de almendro ecológico, el 60 por ciento de este cultivo. El director general de Agricultura señala…",
       "fecha": "2026-10-23T22:00:00Z",
       "fuente": "CARM - Agricultura",
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126445&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
@@ -1004,46 +1017,6 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/09/1-1.jpg",
       "categorias": [
         "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "c0c775f17752f895",
-      "titulo": "El Gobierno regional invierte 50.000 euros en rehabilitar el Castillo de Don Mario de Archena",
-      "extracto": "La obra supone una mejora energética y de la digitalización, y un refuerzo de los servicios de atención ciudadana, el emprendimiento y la…",
-      "fecha": "2026-09-29T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126230&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "4743b7f9dff2f379",
-      "titulo": "La Comunidad saca a licitación la mejora del camino de Ainas en Ricote",
-      "extracto": "La inversión prevista para la actuación, con la que se acondicionarán 3,5 kilómetros, es de 529.000 euros y las ofertas se pueden presentar…",
-      "fecha": "2026-09-29T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126227&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "a431cb3424f8f7b0",
-      "titulo": "ASAJA Alicante informa sobre las nuevas medidas aprobadas por el Gobierno sobre el gasóleo agrícola",
-      "extracto": "El Gobierno prorroga el real decreto de marzo y mantiene la ayuda al gasóleo agrícola en 20 céntimos por litro, la misma cifra de hace seis…",
-      "fecha": "2026-09-29T14:16:01Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-afirma-que-mantiene-las-movilizaciones-las-medidas-aprobadas-no-se-ajustan-a-la-realidad-del-sector/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/tractor-working-in-the-field_reducida.png",
-      "categorias": [
-        "PAC y ayudas",
-        "Mercados y precios"
       ],
       "imagen_buscada": true
     }
