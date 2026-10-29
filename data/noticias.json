@@ -1,6 +1,47 @@
 {
-  "actualizado": "2026-10-29T05:50:01Z",
+  "actualizado": "2026-10-29T13:03:14Z",
   "noticias": [
+    {
+      "id": "6eca37d6dac2745a",
+      "titulo": "ASAJA REGIÓN DE MURCIA EXIGE MEDIDAS URGENTES PARA SALVAR LA RENTABILIDAD DEL CAMPO, AUNQUE EL GOBIERNO ESTÉ EN FUNCIONES",
+      "extracto": "La organización reclama ayudas frente al aumento de los costes, medidas contra la competencia desleal de Marruecos, Sudáfrica y Mercosur y…",
+      "fecha": "2026-10-29T12:40:02Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202610/29/asaja-region-de-murcia-exige-medidas-urgentes-para-salvar-la-rentabilidad-del",
+      "imagen": null,
+      "categorias": [
+        "Fitosanitarios",
+        "PAC y ayudas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "7252c745e501ebb3",
+      "titulo": "ASAJA agradece el comportamiento ejemplar del campo desplazado a Madrid y estudiará un nuevo calendario de movilizaciones",
+      "extracto": "Ayer, ante el gravísimo accidente ferroviario, ASAJA, COAG y Unión de Uniones decidieron desconvocar la Gran Tractorada prevista en Madrid…",
+      "fecha": "2026-10-29T11:54:26Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-agradece-el-comportamiento-ejemplar-del-campo-de-todo-el-pais-desplazado-a-madrid-y-estudiara-un-nuevo-calendario-de-movilizaciones/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/np-manifestacion.jpeg",
+      "categorias": [
+        "Maquinaria"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "8965b9ccd3fe8e1c",
+      "titulo": "ASAJA advierte de que no hay motivos para celebrar el acuerdo sobre la PAC sin un presupuesto suficiente",
+      "extracto": "ASAJA considera que el acuerdo alcanzado por el Consejo de Ministros de Agricultura sobre la futura PAC es únicamente un avance parcial y…",
+      "fecha": "2026-10-29T11:07:05Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-advierte-de-que-no-hay-motivos-para-celebrar-el-acuerdo-sobre-la-pac-sin-un-presupuesto-suficiente/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/Asaja-protesta-bruselas.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "dac6875095045249",
       "titulo": "David Larrondo se proclama campeón de España de Caza Menor con Perro Adaptada en Miguel Esteban",
@@ -130,8 +171,8 @@
     },
     {
       "id": "7f9f2830225a90e6",
-      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia",
-      "extracto": "La Región cuenta con casi 5.000 operadores certificados y 40.000 hectáreas de almendro ecológico que representan el 60 por ciento de la…",
+      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia, con 5.000 operarios certificados",
+      "extracto": "La Región cuenta con 40.000 hectáreas de almendro ecológico, el 60 por ciento de este cultivo. El director general de Agricultura y…",
       "fecha": "2026-10-23T22:00:00Z",
       "fuente": "CARM - Agricultura",
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126445&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
@@ -1005,57 +1046,6 @@
         "Mercados y precios"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "b0c0621feb416d8b",
-      "titulo": "Castillejo de Robledo se estrena como sede del Campeonato de España de Field Target",
-      "extracto": "Cerca de 80 tiradores de distintos puntos de España se darán cita los días 24 y 25 de octubre en las instalaciones de la Real Federación…",
-      "fecha": "2026-09-29T12:36:47Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/castillejo-de-robledo-se-estrena-como-sede-del-campeonato-de-espana-de-field-target/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/VII-CAMPEONATO-DE-ESPANA-DE-FIELD-TARGET-.jpg",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "23bece3382b2bffa",
-      "titulo": "El calor reduce la cosecha de uva del vino en Alicante a 13 millones de kilos",
-      "extracto": "La vendimia más temprana que se ha registrado nunca en la provincia motivada por el exceso de calor ha arrojado unos pobres resultados en…",
-      "fecha": "2026-09-29T09:32:36Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/el-calor-reduce-la-cosecha-de-uva-del-vino-en-alicante-a-13-millones-de-kilos/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/vid.jpg",
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "765437404317d286",
-      "titulo": "La Escuela Española de Caza organiza en Méntrida un nuevo curso de iniciación y perfeccionamiento de tiro con escopeta",
-      "extracto": "La formación tendrá lugar el próximo 24 de octubre en las instalaciones del Campo de Tiro Fuente de la Dehesa La Escuela Española de Caza…",
-      "fecha": "2026-09-29T09:08:30Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/la-escuela-espanola-de-caza-organiza-en-mentrida-un-nuevo-curso-de-iniciacion-y-perfeccionamiento-de-tiro-con-escopeta/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/CARTELES-CURSOS-Post-de-Instagram-45.png",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "431e159d111a7b05",
-      "titulo": "CAMPEONATO AUTONÓMICO CAZA CON PERROS DE MADRIGUERA",
-      "extracto": "🦊 CAMPEONATO AUTONÓMICO CAZA CON PERROS DE MADRIGUERA. 📆 Próximos 17 y 18 de octubre de 2026. 📍 Mazarrón – Murcia. 📞 699804421 The post…",
-      "fecha": "2026-09-29T06:57:26Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/campeonato-autonomico-caza-con-perros-de-madriguera/?utm_source=rss&utm_medium=rss&utm_campaign=campeonato-autonomico-caza-con-perros-de-madriguera",
-      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f98a.png",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
