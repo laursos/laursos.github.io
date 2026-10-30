@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-30T12:57:02Z",
+  "actualizado": "2026-10-30T22:21:32Z",
   "noticias": [
     {
       "id": "0f3d6489cc91d617",
@@ -49,6 +49,19 @@
       "categorias": [
         "Mercados y precios",
         "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "2d687f9d19d7f734",
+      "titulo": "El Cifea de Lorca forma en el manejo de colmenas a profesionales del sector agrario, agroalimentario y forestal",
+      "extracto": "El consejero de Agricultura señala que \"la formación en apicultura ofrece una vía para diversificar la actividad agraria y contribuye a…",
+      "fecha": "2026-10-29T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126495&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
       ],
       "imagen_buscada": true
     },
@@ -1044,19 +1057,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "2dfcb6de591d881b",
-      "titulo": "El Gobierno regional invierte 344.000 euros en la mejora de la red de saneamiento de La Unión",
-      "extracto": "El consejero de Agricultura destaca la renovación de 600 metros de conducciones con el uso de una tecnología sin zanja que reduce tiempos y…",
-      "fecha": "2026-09-30T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126240&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
