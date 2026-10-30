@@ -1,6 +1,57 @@
 {
-  "actualizado": "2026-10-30T05:50:43Z",
+  "actualizado": "2026-10-30T12:57:02Z",
   "noticias": [
+    {
+      "id": "0f3d6489cc91d617",
+      "titulo": "Boletín ayudas y normativas Nº 306",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 23 al 30 de octubre de 2026",
+      "fecha": "2026-10-30T12:33:30Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-306/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/olive-1027542_1280.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "b7766a1569c48066",
+      "titulo": "🏹🏆 CAMPEONATO AUTONÓMICO DE RECORRIDOS DE MONTE 3D 2026",
+      "extracto": "El pasado sábado, 10 de octubre, Cartagena acogió la última prueba de la Liga Autonómica de Recorridos de Monte 3D, poniendo el broche…",
+      "fecha": "2026-10-30T09:35:10Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9%f0%9f%8f%86-campeonato-autonomico-de-recorridos-de-monte-3d-2026/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9%25f0%259f%258f%2586-campeonato-autonomico-de-recorridos-de-monte-3d-2026",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "8bad8ee712eac9ef",
+      "titulo": "🐾🏆 ¡EL AGILITY MURCIANO YA ESTÁ EN EL CAMPEONATO DE ESPAÑA!",
+      "extracto": "Nuestros representantes de Agility ya se encuentran en Arcos de la Frontera, preparados para disputar el Campeonato de España de Agility…",
+      "fecha": "2026-10-30T07:58:58Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%90%be%f0%9f%8f%86-el-agility-murciano-ya-esta-en-el-campeonato-de-espana/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2590%25be%25f0%259f%258f%2586-el-agility-murciano-ya-esta-en-el-campeonato-de-espana",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f49a.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "5b529e46a9f2e6a3",
+      "titulo": "Toledo acogerá el XXXV Campeonato de España de Perros de Muestra y la II Copa de España de Spaniels Levantadores",
+      "extracto": "Fuensalida será el punto de encuentro de los participantes los días 13 y 14 de noviembre, con la celebración de dos importantes citas del…",
+      "fecha": "2026-10-30T07:00:47Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/toledo-acogera-el-xxxv-campeonato-de-espana-de-perros-de-muestra-y-la-ii-copa-de-espana-de-spaniels-levantadores/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/1.jpg",
+      "categorias": [
+        "Mercados y precios",
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "6eca37d6dac2745a",
       "titulo": "ASAJA REGIÓN DE MURCIA EXIGE MEDIDAS URGENTES PARA SALVAR LA RENTABILIDAD DEL CAMPO, AUNQUE EL GOBIERNO ESTÉ EN FUNCIONES",
@@ -184,7 +235,7 @@
     },
     {
       "id": "7f9f2830225a90e6",
-      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región, con 5.000 operarios certificados",
+      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región y roza los 5.000 operarios certificados",
       "extracto": "La Región cuenta con 40.000 hectáreas de almendro ecológico, el 60 por ciento de este cultivo. El director general de Agricultura señala…",
       "fecha": "2026-10-23T22:00:00Z",
       "fuente": "CARM - Agricultura",
@@ -1004,19 +1055,6 @@
       "imagen": null,
       "categorias": [
         "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "c64d71dc5cc1d240",
-      "titulo": "Miguel Esteban acogerá el VII Campeonato de España de Caza Menor con Perro Adaptada",
-      "extracto": "La prueba reunirá los días 23 y 24 de octubre a deportistas de distintos puntos de España en una nueva cita con la inclusión, el esfuerzo y…",
-      "fecha": "2026-09-30T09:00:50Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/miguel-esteban-acogera-el-vii-campeonato-de-espana-de-caza-menor-con-perro-adaptada/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/09/1-1.jpg",
-      "categorias": [
-        "Caza"
       ],
       "imagen_buscada": true
     }
