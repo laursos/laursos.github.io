@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T12:32:04Z",
+  "actualizado": "2026-10-31T21:36:01Z",
   "noticias": [
     {
       "id": "0f3d6489cc91d617",
@@ -1028,20 +1028,6 @@
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126252&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
       "imagen": null,
       "categorias": [
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "bf6beff85f675d53",
-      "titulo": "ASAJA Alicante denuncia que la industria presiona al agricultor con precios a la baja pese a la gran demanda de zumo de limón",
-      "extracto": "“Reclamamos contratos plurianuales que aporten estabilidad y seguridad a toda la cadena del limón, sobre todo al agricultor en un contexto…",
-      "fecha": "2026-10-01T15:53:57Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-alicante-denuncia-que-la-industria-presiona-al-agricultor-con-precios-a-la-baja-pese-a-la-gran-demanda-de-zumo-de-limon/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/rodrejo.jpeg",
-      "categorias": [
-        "Cítricos",
         "Mercados y precios"
       ],
       "imagen_buscada": true
