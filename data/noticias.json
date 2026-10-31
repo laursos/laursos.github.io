@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T05:43:13Z",
+  "actualizado": "2026-10-31T12:32:04Z",
   "noticias": [
     {
       "id": "0f3d6489cc91d617",
@@ -1045,18 +1045,6 @@
         "Mercados y precios"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "fe43b539bdf6a201",
-      "titulo": "Alberto Català: «La prevención de incendios debe trabajarse durante todo el año y los cazadores podemos aportar mucho»",
-      "extracto": "El delegado de la Federación de Caza en Castellón afronta sus primeros meses al frente de la delegación tras un verano marcado por los…",
-      "fecha": "2026-10-01T07:44:22Z",
-      "fuente": "Federación de Caza Comunidad Valenciana",
-      "url": "https://federacioncazacv.com/prensa/alberto-catala-la-prevencion-de-incendios-debe-trabajarse-durante-todo-el-ano-y-los-cazadores-podemos-aportar-mucho/",
-      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-01-at-09.28.12.jpeg",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
