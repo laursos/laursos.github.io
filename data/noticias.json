@@ -1,6 +1,31 @@
 {
-  "actualizado": "2026-11-02T06:06:10Z",
+  "actualizado": "2026-11-02T15:55:21Z",
   "noticias": [
+    {
+      "id": "e6593c582f69a26a",
+      "titulo": "📢 PUBLICADAS EN EL BORM LAS MODIFICACIONES DE LA ORDEN DE VEDAS 2026/2027 DE LA REGIÓN DE MURCIA",
+      "extracto": "La Consejería de Medio Ambiente ha publicado en el Boletín Oficial de la Región de Murcia (BORM) la modificación de la Orden de Vedas…",
+      "fecha": "2026-11-02T09:56:56Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%93%a2-publicadas-en-el-borm-las-modificaciones-de-la-orden-de-vedas-2026-2027-de-la-region-de-murcia/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2593%25a2-publicadas-en-el-borm-las-modificaciones-de-la-orden-de-vedas-2026-2027-de-la-region-de-murcia",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "45dbd7c15b28afd1",
+      "titulo": "Las exportaciones hortofrutícolas de la Región vuelven a batir récords al crecer un 5,4 % entre enero y agosto",
+      "extracto": "El consejero de Agricultura destaca el aumento de las ventas al exterior tras reunirse con el consejero delegado global de IFCO y el…",
+      "fecha": "2026-11-01T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126509&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "0f3d6489cc91d617",
       "titulo": "Boletín ayudas y normativas Nº 306",
