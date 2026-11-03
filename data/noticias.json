@@ -1,6 +1,18 @@
 {
-  "actualizado": "2026-11-03T14:16:51Z",
+  "actualizado": "2026-11-03T23:24:52Z",
   "noticias": [
+    {
+      "id": "4039815ff41062e3",
+      "titulo": "🔴 FINAL DEL CAMPEONATO AUTONÓMICO DE CAZA MENOR CON PERRO 2026 – REGIÓN DE MURCIA",
+      "extracto": "La Sierra de la Tercia acogió el pasado sábado 31 de octubre la gran final del Campeonato Autonómico de Caza Menor con Perro. Antes del…",
+      "fecha": "2026-11-03T10:06:55Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%94%b4-final-del-campeonato-autonomico-de-caza-menor-con-perro-2026-region-de-murcia/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2594%25b4-final-del-campeonato-autonomico-de-caza-menor-con-perro-2026-region-de-murcia",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3c6.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
     {
       "id": "68cd1869044bf012",
       "titulo": "Alberto Núñez Feijóo suscribe los diez compromisos políticos de la Real Federación Española de Caza",
@@ -804,19 +816,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "85157368209e7dd4",
-      "titulo": "El Gobierno regional presenta junto a Agrupal el plan de acción de la industria alimentaria hasta 2028 con 25 acciones para la mejora del sector",
-      "extracto": "El consejero Joaquín Buendía destaca que la industria alimentaria regional \"es un sector sólido que factura al año más de 8.800 millones de…",
-      "fecha": "2026-10-04T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126268&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
