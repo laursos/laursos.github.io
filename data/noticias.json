@@ -1,6 +1,99 @@
 {
-  "actualizado": "2026-11-06T06:48:15Z",
+  "actualizado": "2026-11-06T19:25:20Z",
   "noticias": [
+    {
+      "id": "66b4eb083be03508",
+      "titulo": "El TSJM da la razón a la RFEC y levanta la suspensión cautelar de la caza de nueve especies en Madrid",
+      "extracto": "El tribunal acuerda levantar la medida solicitada por SEO/BirdLife tras examinar las alegaciones de la RFEC y del resto de las partes, así…",
+      "fecha": "2026-11-06T12:53:05Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/el-tsjm-da-la-razon-a-la-rfec-y-levanta-la-suspension-cautelar-de-la-caza-de-nueve-especies-en-madrid/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2025/07/Codorniz-Jose-Manzano.jpg",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "c4ffa199288ca5e1",
+      "titulo": "La RFEC inicia acciones legales frente a una nueva prohibición cautelar de la caza en Castilla y León",
+      "extracto": "La Federación expresa su absoluto rechazo a una nueva medida judicial promovida por SEO/BirdLife y cuestiona la actuación judicial que…",
+      "fecha": "2026-11-06T12:17:58Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/la-rfec-inicia-acciones-legales-frente-a-una-nueva-prohibicion-cautelar-de-la-caza-en-castilla-y-leon/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2023/11/Becada.jpg",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "5f541365f6657f7f",
+      "titulo": "Boletín ayudas y normativas Nº 307",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 30 de octubre al 6 de noviembre de 2026",
+      "fecha": "2026-11-06T11:15:35Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-307/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-76.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "559e45d8e993dcb4",
+      "titulo": "ASAJA consigue recuperar las reducciones del gasóleo B y fertilizantes para la renta 2026",
+      "extracto": "ORDEN DE MODULOS 2026 El 05/11/ 2026 se publicó la Orden de módulos que regula la estimación objetiva para el año 2027 (Renta que…",
+      "fecha": "2026-11-06T11:08:18Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-consigue-recuperar-las-reducciones-del-gasoleo-b-y-fertilizantes-para-la-renta-2026/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/noticia-modulos-web.jpeg",
+      "categorias": [
+        "Fertilización",
+        "PAC y ayudas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "5393c92316c1cf27",
+      "titulo": "⚠️ NUEVAS RESTRICCIONES A LA CAZA EN ESPAÑA: CASTILLA Y LEÓN, OTRO TERRITORIO AFECTADO",
+      "extracto": "La situación que atraviesa el sector cinegético en España vuelve a generar preocupación. Tras lo sucedido recientemente en la Comunidad de…",
+      "fecha": "2026-11-06T09:50:59Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%e2%9a%a0%ef%b8%8f-nuevas-restricciones-a-la-caza-en-espana-castilla-y-leon-otro-territorio-afectado/?utm_source=rss&utm_medium=rss&utm_campaign=%25e2%259a%25a0%25ef%25b8%258f-nuevas-restricciones-a-la-caza-en-espana-castilla-y-leon-otro-territorio-afectado",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4e2.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "93b2e13e02067e29",
+      "titulo": "Crecen las exportaciones de tomate un 24 % en los ocho primeros meses de 2026",
+      "extracto": "El consejero de Agricultura visita los invernaderos del Grupo Paloma en Mazarrón Destaca la apuesta de la empresa por \"estructuras…",
+      "fecha": "2026-11-05T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126547&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "74549a6b61f1a1d2",
+      "titulo": "La Comunidad destina 4,8 millones de euros a ayudas para cultivos en zonas de montaña y con limitaciones naturales",
+      "extracto": "El presupuesto se distribuye entre 2,3 millones para zonas de montaña y casi 2,5 millones para zonas con limitaciones naturales",
+      "fecha": "2026-11-05T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126544&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "4628dcffd0401b92",
       "titulo": "ASAJA MURCIA VALORA POSITIVAMENTE LAS AYUDAS REGIONALES A LOS CITRICULTORES AFECTADOS POR LA CLOROSIS NERVIAL AMARILLA Y EXIGE AL MINISTERIO QUE FINANCIE LA REPLANTACIÓN DE LOS LIMONEROS",
@@ -806,46 +899,6 @@
       "imagen": null,
       "categorias": [
         "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "67e02e022aaeb08f",
-      "titulo": "ASAJA MURCIA SOLICITA LA REDUCCIÓN DE LAS TASAS DE HELADA Y PEDRISCO EN DETERMINADOS POLÍGONOS DE LA COMARCA RÍO SEGURA",
-      "extracto": "La organización agraria reclama revisar unas primas que, en el caso de la helada, son aproximadamente un 71% superiores a las aplicadas en…",
-      "fecha": "2026-10-07T10:07:39Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202610/07/asaja-murcia-solicita-la-reduccion-de-las-tasas-de-helada-y-pedrisco-en",
-      "imagen": null,
-      "categorias": [
-        "Cítricos",
-        "Gestión de la explotación"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "836d76d02c4a662a",
-      "titulo": "Boletín ayudas y normativas Nº 303",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 2 al 8 de octubre de 2026",
-      "fecha": "2026-10-07T08:40:06Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-303/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/WhatsApp-Image-2026-06-19-at-09.55.35-3-e1782818643468.jpg",
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "e9a1d0e53dced012",
-      "titulo": "ASAJA entregará a la distinción Mujer Rural 2026 a las propietarias del Nugolat y el de trayectoria al agricultor Pascual Román",
-      "extracto": "“Premiamos el emprendimiento y el esfuerzo incansable de las propietarias del Restaurante Nugolat y rendimos homenaje a los 91 años de…",
-      "fecha": "2026-10-07T07:01:24Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-entregara-a-la-distincion-mujer-rural-2026-a-las-propietarias-del-restaurante-nugolat-y-el-de-trayectoria-al-agricultor-de-91-anos-pascual-roman/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-noticia-fireta.jpg",
-      "categorias": [
-        "Mercados y precios"
       ],
       "imagen_buscada": true
     }
