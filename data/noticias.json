@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-07T05:59:25Z",
+  "actualizado": "2026-11-07T13:03:10Z",
   "noticias": [
     {
       "id": "66b4eb083be03508",
@@ -873,19 +873,6 @@
       "imagen": null,
       "categorias": [
         "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "cdb89a9b47d7deba",
-      "titulo": "La producción de miel cae un 11,5% y España pierde 360.000 colmenas desde 2020",
-      "extracto": "El Ministerio de Agricultura publica los indicadores económicos del sector apícola de 2025. España mantiene el mayor censo de colmenas de…",
-      "fecha": "2026-10-08T11:37:15Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/la-produccion-de-miel-cae-un-115-y-espana-pierde-360-000-colmenas-desde-2020/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/Apicultura-MAHIQUES-3.jpg",
-      "categorias": [
-        "General"
       ],
       "imagen_buscada": true
     }
