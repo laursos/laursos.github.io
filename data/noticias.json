@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T19:25:20Z",
+  "actualizado": "2026-11-07T05:59:25Z",
   "noticias": [
     {
       "id": "66b4eb083be03508",
@@ -884,19 +884,6 @@
       "fuente": "ASAJA Alicante",
       "url": "https://alicanteasaja.com/la-produccion-de-miel-cae-un-115-y-espana-pierde-360-000-colmenas-desde-2020/",
       "imagen": "https://alicanteasaja.com/wp-content/uploads/Apicultura-MAHIQUES-3.jpg",
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "8a28cbc15924dd8f",
-      "titulo": "La Comunidad presenta en Fruit Attraction el desarrollo de nuevas variedades del Imida",
-      "extracto": "El consejero Joaquín Buendía destaca que los 50 años de trayectoria del Instituto Murciano de Investigación y Desarrollo Agrario y…",
-      "fecha": "2026-10-07T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126296&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
       "categorias": [
         "General"
       ],
