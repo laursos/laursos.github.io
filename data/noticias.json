@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-07T21:51:44Z",
+  "actualizado": "2026-11-08T06:02:25Z",
   "noticias": [
     {
       "id": "66b4eb083be03508",
@@ -862,19 +862,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "68f134580e53d25d",
-      "titulo": "Las empresas regionales en Fruit Attraction superan los 15.000 contactos comerciales y consolidan su proyección internacional",
-      "extracto": "El balance de la delegación murciana en la feria refleja una intensa actividad por parte de los productores, cooperativas e industrias…",
-      "fecha": "2026-10-08T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126307&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
     }
   ]
 }
