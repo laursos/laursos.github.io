@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-11-08T06:02:25Z",
+  "actualizado": "2026-11-08T13:26:03Z",
   "noticias": [
+    {
+      "id": "c9c63bf6919b5fe7",
+      "titulo": "La Región presenta ante otros territorios europeos mediterráneos su modelo de saneamiento y reutilización del agua",
+      "extracto": "El sistema regional regenera el 96 por ciento del agua depurada, según expuso el director general del Agua en el encuentro de trabajo…",
+      "fecha": "2026-11-07T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126564&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "66b4eb083be03508",
       "titulo": "El TSJM da la razón a la RFEC y levanta la suspensión cautelar de la caza de nueve especies en Madrid",
@@ -837,31 +850,6 @@
         "Caza"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "445e4af8bea57af2",
-      "titulo": "La RFEC y CAZAVISIÓN acuerdan una tarifa exclusiva para los cazadores federados",
-      "extracto": "Los federados podrán acceder a la plataforma por 69,99 euros al año gracias al acuerdo de colaboración suscrito entre ambas entidades Con…",
-      "fecha": "2026-10-09T09:50:36Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/la-rfec-y-cazavision-acuerdan-una-tarifa-exclusiva-para-los-cazadores-federados/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/RFEC-y-CAZAVISION.webp",
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "a954961d57ef7df7",
-      "titulo": "CAMPEONATO AUTONÓMICO DE CAZA MENOR CON PERRO 2026",
-      "extracto": "❌ CAMPEONATO AUTONÓMICO DE CAZA MENOR CON PERRO 2026❌ 📝 INSCRIPCIÓN Y DECLARACIÓN RESPONSABLE EN NUESTRA PÁGINA WEB…",
-      "fecha": "2026-10-09T09:37:53Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/campeonato-autonomico-de-caza-menor-con-perro-2026/?utm_source=rss&utm_medium=rss&utm_campaign=campeonato-autonomico-de-caza-menor-con-perro-2026",
-      "imagen": "https://www.federacioncaza.com/wp-content/uploads/2026/10/CM-26-1024x1024.png",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
