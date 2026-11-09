@@ -1,6 +1,44 @@
 {
-  "actualizado": "2026-11-09T06:31:56Z",
+  "actualizado": "2026-11-09T22:22:54Z",
   "noticias": [
+    {
+      "id": "b2aff4e4eca78dd5",
+      "titulo": "MAZARRÓN ACOGIÓ EL VI CAMPEONATO AUTONÓMICO DE PODENCO ANDALUZ, MANETO Y ORITO ESPAÑOL",
+      "extracto": "El pasado sábado, Mazarrón volvió a convertirse en punto de encuentro para los aficionados a las razas de Podenco Andaluz, Maneto y Orito…",
+      "fecha": "2026-11-09T09:36:34Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/mazarron-acogio-el-vi-campeonato-autonomico-de-podenco-andaluz-maneto-y-orito-espanol/?utm_source=rss&utm_medium=rss&utm_campaign=mazarron-acogio-el-vi-campeonato-autonomico-de-podenco-andaluz-maneto-y-orito-espanol",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "0065072a056869e9",
+      "titulo": "I COPA SAN HUBERTO MAZARRÓN",
+      "extracto": "❌ I COPA SAN HUBERTO MAZARRÓN❌ 🗓️ 28 noviembre – 7:45 h. 📱 Contacto: 660 33 43 63 The post I COPA SAN HUBERTO MAZARRÓN appeared first on…",
+      "fecha": "2026-11-09T08:24:01Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/i-copa-san-huberto-mazarron/?utm_source=rss&utm_medium=rss&utm_campaign=i-copa-san-huberto-mazarron",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "c0b7c1e5885e20eb",
+      "titulo": "Las Oficinas Comarcales Agrarias gestionan más de 15.700 trámites para ayudar a agricultores y ganaderos",
+      "extracto": "En los primeros nueve meses del año se han tramitado subvenciones, certificados y medidas de control fitosanitario como las prospecciones…",
+      "fecha": "2026-11-08T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126575&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Fitosanitarios",
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "c9c63bf6919b5fe7",
       "titulo": "La Región presenta ante otros territorios europeos mediterráneos su modelo de saneamiento y reutilización del agua",
@@ -11,6 +49,19 @@
       "imagen": null,
       "categorias": [
         "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "ebf948b5c1c7edfb",
+      "titulo": "Dieciséis participantes competirán en Lleida por el título de campeón de España de Podenco Ibicenco",
+      "extracto": "Almatret y Maials serán las sedes de la XV edición del campeonato nacional, que se disputará el próximo 5 de diciembre Un total de 16…",
+      "fecha": "2026-11-06T13:30:33Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/dieciseis-participantes-competiran-en-lleida-por-el-titulo-de-campeon-de-espana-de-podenco-ibicenco/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/11/1-1.png",
+      "categorias": [
+        "Caza"
       ],
       "imagen_buscada": true
     },
