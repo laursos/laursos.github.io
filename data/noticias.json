@@ -1,6 +1,44 @@
 {
-  "actualizado": "2026-11-10T07:19:47Z",
+  "actualizado": "2026-11-10T19:44:38Z",
   "noticias": [
+    {
+      "id": "155c483260cc0287",
+      "titulo": "🏹 I Tirada de Liga Social del Club Arqueros de Carthago",
+      "extracto": "🏹 I Tirada de Liga Social del Club Arqueros de Carthago 🗓️ 28 noviembre – 9:30 horas. 📝 Inscripciones hasta 24 de noviembre en…",
+      "fecha": "2026-11-10T10:02:23Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9-i-tirada-de-liga-social-del-club-arqueros-de-carthago/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9-i-tirada-de-liga-social-del-club-arqueros-de-carthago",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3f9.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "bb45737ef9b6a366",
+      "titulo": "52 cazadores buscarán su pase a la final del Campeonato de España de Caza Menor con Perro en Castilla-La Mancha",
+      "extracto": "Villatobas (Toledo) y Llanos del Caudillo (Ciudad Real) acogerán los días 21 y 22 de noviembre las semifinales sur y norte…",
+      "fecha": "2026-11-10T08:50:02Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/52-cazadores-buscaran-su-pase-a-la-final-del-campeonato-de-espana-de-caza-menor-con-perro-en-castilla-la-mancha/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/XIII-CAMPEONATO-DE-ESPANA-DE-CAZA-MENOR-CON-PERRO-FEMENINO.png",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "e4a2da8955bd8f4a",
+      "titulo": "El Gobierno regional denuncia el \"secuestro\" de más de 70 hm3 para regadío usando como excusa las reparaciones del Trasvase",
+      "extracto": "El consejero Joaquín Buendía denuncia que \"la negativa a prorrogar los plazos responde únicamente al objetivo del Gobierno central de…",
+      "fecha": "2026-11-09T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126587&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "b2aff4e4eca78dd5",
       "titulo": "MAZARRÓN ACOGIÓ EL VI CAMPEONATO AUTONÓMICO DE PODENCO ANDALUZ, MANETO Y ORITO ESPAÑOL",
