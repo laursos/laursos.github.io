@@ -1,6 +1,33 @@
 {
-  "actualizado": "2026-11-11T06:23:20Z",
+  "actualizado": "2026-11-11T19:37:01Z",
   "noticias": [
+    {
+      "id": "5b96332f54b2ac0b",
+      "titulo": "🐾🏆 EL AGILITY MURCIANO CELEBRA UNA NUEVA PRUEBA DEL CAMPEONATO REGIONAL",
+      "extracto": "El pasado 7 de noviembre, IFEPA, en Torre Pacheco (Murcia), acogió una nueva prueba del Campeonato Regional de Agility, en una jornada en…",
+      "fecha": "2026-11-11T08:34:50Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%90%be%f0%9f%8f%86-el-agility-murciano-celebra-una-nueva-prueba-del-campeonato-regional/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2590%25be%25f0%259f%258f%2586-el-agility-murciano-celebra-una-nueva-prueba-del-campeonato-regional",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "ffe2b2605e0e9f32",
+      "titulo": "ASAJA Alicante planta cara a la crisis citrícola: reclama reciprocidad y medidas urgentes ante una campaña marcada por la vulnerabilidad fitosanitaria",
+      "extracto": "Rechaza los acuerdos comerciales con países en desigualdad de condiciones: “nos traen las plagas de fuera, nos hunden los precios y…",
+      "fecha": "2026-11-11T08:04:32Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-alicante-planta-cara-a-la-crisis-citricola-reclama-reciprocidad-y-medidas-urgentes-ante-una-campana-marcada-por-la-vulnerabilidad-fitosanitaria/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-web.jpg",
+      "categorias": [
+        "Cítricos",
+        "Fitosanitarios",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "155c483260cc0287",
       "titulo": "🏹 I Tirada de Liga Social del Club Arqueros de Carthago",
