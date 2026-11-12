@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-11-12T07:12:14Z",
+  "actualizado": "2026-11-12T19:55:07Z",
   "noticias": [
+    {
+      "id": "1371bf06788b98ec",
+      "titulo": "Copa-Cogeca llevará a Dublín su rechazo a los recortes de la PAC coincidiendo con la reunión de los líderes de la UE",
+      "extracto": "Las organizaciones europeas de agricultores y cooperativas, en las que está integrada ASAJA, reclamarán una PAC fuerte y con presupuesto…",
+      "fecha": "2026-11-12T11:22:43Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/copa-cogeca-llevara-a-dublin-su-rechazo-a-los-recortes-de-la-pac-coincidiendo-con-la-reunion-de-los-lideres-de-la-ue/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/cumbre-europa-aranceles-eeuu.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "5b96332f54b2ac0b",
       "titulo": "🐾🏆 EL AGILITY MURCIANO CELEBRA UNA NUEVA PRUEBA DEL CAMPEONATO REGIONAL",
@@ -93,7 +106,7 @@
     {
       "id": "c0b7c1e5885e20eb",
       "titulo": "Las Oficinas Comarcales Agrarias gestionan más de 15.700 trámites para ayudar a agricultores y ganaderos",
-      "extracto": "En los primeros nueve meses del año se han tramitado subvenciones, certificados y medidas de control fitosanitario como las prospecciones…",
+      "extracto": "En los primeros nueve meses del año se han tramitado subvenciones, certificados y medidas de control fitosanitario. El consejero Joaquín…",
       "fecha": "2026-11-08T23:00:00Z",
       "fuente": "CARM - Agricultura",
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126575&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
@@ -912,32 +925,6 @@
       "categorias": [
         "Fitosanitarios",
         "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "c36aa6abc5e830e1",
-      "titulo": "La Federación de Caza de la Región de Murcia informa sobre las modificaciones pendientes de la Orden de Vedas",
-      "extracto": "La Federación de Caza de la Región de Murcia informa de que, a fecha de hoy, todavía no se ha publicado en el Boletín Oficial de la Región…",
-      "fecha": "2026-10-13T09:30:25Z",
-      "fuente": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/la-federacion-de-caza-de-la-region-de-murcia-informa-sobre-las-modificaciones-pendientes-de-la-orden-de-vedas/?utm_source=rss&utm_medium=rss&utm_campaign=la-federacion-de-caza-de-la-region-de-murcia-informa-sobre-las-modificaciones-pendientes-de-la-orden-de-vedas",
-      "imagen": null,
-      "categorias": [
-        "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "a7928e1516b5482a",
-      "titulo": "Cazadores de toda España volverán a aportar datos científicos al proyecto Zorzales",
-      "extracto": "Gracias a la colaboración de más de 2.500 cazadores del país, se han obtenido ya datos de más de 12.000 jornadas de caza y se han realizado…",
-      "fecha": "2026-10-13T09:00:00Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/cazadores-de-toda-espana-volveran-a-aportar-datos-cientificos-al-proyecto-zorzales/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/zorzal-foto-amado.jpg",
-      "categorias": [
-        "Caza"
       ],
       "imagen_buscada": true
     }
