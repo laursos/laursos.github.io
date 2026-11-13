@@ -1,6 +1,45 @@
 {
-  "actualizado": "2026-11-13T06:47:33Z",
+  "actualizado": "2026-11-13T19:43:00Z",
   "noticias": [
+    {
+      "id": "a8dc59d11d9aeece",
+      "titulo": "Boletín ayudas y normativas Nº 308",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 6 al 13 de noviembre de 2026",
+      "fecha": "2026-11-13T11:33:04Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-308/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/WhatsApp-Image-2025-07-04-at-10.54.53-2.jpeg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "7de10711f6b7dc86",
+      "titulo": "ASAJA exige al Ministerio aplazar hasta 2028 el registro electrónico de fitosanitarios",
+      "extracto": "Reclama claridad normativa, libertad para elegir herramienta digital y una acción coordinada con otros Estados miembros. ASAJA ha…",
+      "fecha": "2026-11-13T07:39:27Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/asaja-exige-un-aplazamiento-para-el-registro-electronico-de-fitosanitarios/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/Normativa-comunitaria-en-el-sector-agrario-.jpg",
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "7753d329899a3d7e",
+      "titulo": "Más de 200 expertos internacionales debatirán en Murcia sobre los retos para mejorar la resiliencia hídrica europea",
+      "extracto": "Esamur organiza un Congreso Internacional que reunirá a profesionales mundiales en economía circular, desalación, reutilización de agua y…",
+      "fecha": "2026-11-12T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126606&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "1371bf06788b98ec",
       "titulo": "Copa-Cogeca llevará a Dublín su rechazo a los recortes de la PAC coincidiendo con la reunión de los líderes de la UE",
@@ -898,33 +937,6 @@
       "imagen": null,
       "categorias": [
         "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "c37fd8575fce78e0",
-      "titulo": "ASAJA Alicante participará en la gran protesta-tractorada frente al Ministerio de Agricultura en Madrid el 28 de octubre",
-      "extracto": "La organización agraria llama a agricultores y ganaderos a movilizarse frente al Ministerio de Agricultura ante el incremento de los costes…",
-      "fecha": "2026-10-14T11:23:41Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-alicante-participara-en-la-gran-protesta-tractorada-frente-al-ministerio-de-agricultura-en-madrid-el-28-de-octubre/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/tractorada-web.jpg",
-      "categorias": [
-        "Maquinaria"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "4ec8a22a677a0531",
-      "titulo": "ASAJA Alicante monta campos experimentales para desarrollar variedades resistentes al clima y las plagas",
-      "extracto": "La organización agraria junto a la Conselleria de Agricultura quiere responder con eficacia ante el cambio climático y las plagas, así como…",
-      "fecha": "2026-10-14T11:10:03Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-alicante-monta-campos-experimentales-para-desarrollar-variedades-resistentes-al-clima-y-las-plagas/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/novelda-plantaciones-campos-de-ensayo-uva-WEB.jpg",
-      "categorias": [
-        "Fitosanitarios",
-        "Mercados y precios"
       ],
       "imagen_buscada": true
     }
