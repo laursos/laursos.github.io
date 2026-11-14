@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T19:43:00Z",
+  "actualizado": "2026-11-14T06:24:53Z",
   "noticias": [
     {
       "id": "a8dc59d11d9aeece",
@@ -924,19 +924,6 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-10-at-14.49.09-1.jpeg",
       "categorias": [
         "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "eb3674c40330c6fb",
-      "titulo": "La Región es la tercera comunidad con más mujeres menores de 40 años beneficiarias de ayudas de la PAC",
-      "extracto": "El consejero de Agricultura destajado en el día de la Mujer Rural que \"el 30 por ciento de las explotaciones agrarias regionales tienen a…",
-      "fecha": "2026-10-14T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126360&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "PAC y ayudas"
       ],
       "imagen_buscada": true
     }
