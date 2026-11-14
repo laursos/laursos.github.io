@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-14T18:03:32Z",
+  "actualizado": "2026-11-14T22:25:17Z",
   "noticias": [
     {
       "id": "31feb5b283a815c9",
@@ -899,19 +899,6 @@
       "imagen": "https://alicanteasaja.com/wp-content/uploads/couleur-grapes-1611089_1920.jpg",
       "categorias": [
         "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "6d534403f2ec9bd3",
-      "titulo": "Sepor reunirá en Lorca al sector ganadero, industrial y agroalimentario",
-      "extracto": "La feria celebrará su 59ª edición del 26 al 29 de octubre en Ifelor y la organización aspira a superar los 80.000 visitantes El consejero…",
-      "fecha": "2026-10-15T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126374&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
       ],
       "imagen_buscada": true
     }
