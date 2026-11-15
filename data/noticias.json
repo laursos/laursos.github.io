@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-11-15T06:33:31Z",
+  "actualizado": "2026-11-15T18:52:26Z",
   "noticias": [
+    {
+      "id": "68f920f0b08032c2",
+      "titulo": "Sale a licitación por más de un millón de euros la mejora del camino de la Capellanía en Yecla",
+      "extracto": "Las obras tendrán un plazo de ejecución de dos meses y contarán con financiación del Fondo Europeo Agrícola de Desarrollo Rural Las…",
+      "fecha": "2026-11-14T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126629&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "31feb5b283a815c9",
       "titulo": "Aprobadas ayudas de 200.000 euros para promocionar frutas y hortalizas fuera de la UE",
@@ -886,19 +899,6 @@
       "imagen": null,
       "categorias": [
         "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "007caa2a49ca3645",
-      "titulo": "Boletín ayudas y normativas Nº 304",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 8 al 16 de octubre de 2026",
-      "fecha": "2026-10-16T08:06:54Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-304/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/couleur-grapes-1611089_1920.jpg",
-      "categorias": [
-        "PAC y ayudas"
       ],
       "imagen_buscada": true
     }
