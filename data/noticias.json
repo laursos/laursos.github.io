@@ -1,6 +1,32 @@
 {
-  "actualizado": "2026-11-16T06:31:47Z",
+  "actualizado": "2026-11-16T22:03:38Z",
   "noticias": [
+    {
+      "id": "5320ac93be48dcc4",
+      "titulo": "Alfonso Galera García asume la presidencia de ASAJA Región de Murcia y reafirma su compromiso con la defensa de los agricultores y ganaderos.",
+      "extracto": "La organización agraria inicia una nueva etapa centrada en la rentabilidad de las explotaciones, la defensa del agua, el relevo…",
+      "fecha": "2026-11-16T11:42:43Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202611/16/alfonso-galera-garcia-asume-la-presidencia-de-asaja-region-de-murcia-y-reafirma-su",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "9e3becd051a96b58",
+      "titulo": "ASAJA Murcia exige aplazar hasta 2028 el registro electrónico de fitosanitarios y reducir la burocracia en el campo.",
+      "extracto": "Alfonso Gálvez: «No podemos seguir imponiendo más obligaciones administrativas a unos agricultores que necesitan dedicar su tiempo y sus…",
+      "fecha": "2026-11-16T09:06:06Z",
+      "fuente": "ASAJA Murcia",
+      "url": "https://www.asajamurcia.com/noticia/202611/16/asaja-murcia-exige-aplazar-hasta-2028-el-registro-electronico-de-fitosanitarios-y",
+      "imagen": null,
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "68f920f0b08032c2",
       "titulo": "Sale a licitación por más de un millón de euros la mejora del camino de la Capellanía en Yecla",
@@ -883,19 +909,6 @@
       "fecha": "2026-10-18T22:00:00Z",
       "fuente": "CARM - Agricultura",
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126397&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "d1127e2f4a5cb2aa",
-      "titulo": "54 empresas de la industria alimentaria regional buscan mejorar su posición internacional en la feria SIAL de París",
-      "extracto": "El consejero Joaquín Buendía acompaña a la delegación regional que estará hasta el próximo jueves presentando sus productos a los cerca de…",
-      "fecha": "2026-10-17T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126386&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
       "imagen": null,
       "categorias": [
         "General"
