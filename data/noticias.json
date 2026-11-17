@@ -1,6 +1,45 @@
 {
-  "actualizado": "2026-11-17T07:56:01Z",
+  "actualizado": "2026-11-17T20:56:12Z",
   "noticias": [
+    {
+      "id": "586121eb918e8e7a",
+      "titulo": "José Manuel Mora Mota firma un doblete histórico en el Campeonato de España de Perros de Muestra",
+      "extracto": "El representante extremeño se proclama campeón de España de razas británicas y continentales con Savane du Gouyre y Stu del Valle de Santa…",
+      "fecha": "2026-11-17T12:02:35Z",
+      "fuente": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/jose-manuel-mora-mota-firma-un-doblete-historico-en-el-campeonato-de-espana-de-perros-de-muestra/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/11/NOTAS-DE-PRENSA.png",
+      "categorias": [
+        "Caza"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "418946c1f1ea1e0a",
+      "titulo": "269 jóvenes agricultores y ganaderos de la Región recibirán ayudas para iniciar su actividad",
+      "extracto": "La convocatoria cuenta con un presupuesto de casi 11,7 millones de euros, tras la ampliación de los 10,3 millones previstos inicialmente…",
+      "fecha": "2026-11-16T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126645&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "3e80a28ba817fce8",
+      "titulo": "La Comunidad exhibe su modelo de reutilización de agua ante más de 200 expertos de todo el mundo",
+      "extracto": "El volumen de agua depurada alcanza los 120 hectómetros cúbicos al año, el 99% de las aguas urbanas, frente al 3% de media europea y el 11%…",
+      "fecha": "2026-11-16T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126642&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "Riego y agua"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "5320ac93be48dcc4",
       "titulo": "Alfonso Galera García asume la presidencia de ASAJA Región de Murcia y reafirma su compromiso con la defensa de los agricultores y ganaderos.",
