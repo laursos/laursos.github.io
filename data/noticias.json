@@ -1,6 +1,31 @@
 {
-  "actualizado": "2026-11-18T07:29:50Z",
+  "actualizado": "2026-11-18T20:32:24Z",
   "noticias": [
+    {
+      "id": "298cce794b147f32",
+      "titulo": "🪶 Concurso Abierto – Sociedad Virgen de los Llanos",
+      "extracto": "🪶 Concurso Abierto – Sociedad Virgen de los Llanos 🗓️ 13 de diciembre 🕖 9:00 horas 📍 Campo de Fútbol de Villalba The post 🪶 Concurso…",
+      "fecha": "2026-11-18T09:38:08Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%aa%b6-concurso-abierto-sociedad-virgen-de-los-llanos/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%25aa%25b6-concurso-abierto-sociedad-virgen-de-los-llanos",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fab6.png",
+      "categorias": [
+        "Caza"
+      ]
+    },
+    {
+      "id": "53b80093ec2bc1b6",
+      "titulo": "Sale a licitación por casi 500.000 euros la mejora del camino de Piezas de Costa-Collado Blanco en Mazarrón",
+      "extracto": "La actuación tiene un plazo de ejecución de 45 días y contará con financiación del Fondo Europeo Agrícola de Desarrollo Rural Las empresas…",
+      "fecha": "2026-11-17T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126657&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "586121eb918e8e7a",
       "titulo": "José Manuel Mora Mota firma un doblete histórico en el Campeonato de España de Perros de Muestra",
