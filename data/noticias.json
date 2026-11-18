@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T20:56:12Z",
+  "actualizado": "2026-11-18T07:29:50Z",
   "noticias": [
     {
       "id": "586121eb918e8e7a",
@@ -938,19 +938,6 @@
       "imagen": null,
       "categorias": [
         "Riego y agua"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "a7fb7d22073b8a55",
-      "titulo": "Francia se mantiene como principal destino de los productos de la industria alimentaria de la Región de Murcia",
-      "extracto": "El consejero Joaquín Buendía destaca la fortaleza del sector en un acto organizado por Agrupal durante la celebración de la feria…",
-      "fecha": "2026-10-18T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126397&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
       ],
       "imagen_buscada": true
     }
