@@ -1,6 +1,19 @@
 {
-  "actualizado": "2026-11-20T07:18:02Z",
+  "actualizado": "2026-11-20T20:22:40Z",
   "noticias": [
+    {
+      "id": "0861c24cfd49a421",
+      "titulo": "Boletín ayudas y normativas Nº 309",
+      "extracto": "Últimas novedades para el sector agrario. Resumen del 13 al 20 de noviembre de 2026",
+      "fecha": "2026-11-20T09:59:26Z",
+      "fuente": "ASAJA Alicante",
+      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-309/",
+      "imagen": "https://alicanteasaja.com/wp-content/uploads/pollydot-honey-bees-326334_1920.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
     {
       "id": "298cce794b147f32",
       "titulo": "🪶 Concurso Abierto – Sociedad Virgen de los Llanos",
@@ -927,18 +940,6 @@
         "PAC y ayudas"
       ],
       "imagen_buscada": true
-    },
-    {
-      "id": "0c3abd48c2f72575",
-      "titulo": "La RFEC presenta diez compromisos políticos para el futuro de la caza y pide a los partidos que los incorporen a sus programas electorales",
-      "extracto": "«La Caza También Vota» se sustenta en un documento de propuestas estructurado en seis ejes estratégicos para el futuro de la actividad…",
-      "fecha": "2026-10-21T11:05:31Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/la-rfec-presenta-diez-compromisos-politicos-para-el-futuro-de-la-caza-y-pide-a-los-partidos-que-los-incorporen-a-sus-programas-electorales/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2026/10/IMG_8158-1024x683.jpg",
-      "categorias": [
-        "Caza"
-      ]
     }
   ]
 }
