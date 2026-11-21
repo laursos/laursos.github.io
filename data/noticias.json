@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T07:09:52Z",
+  "actualizado": "2026-11-21T19:16:54Z",
   "noticias": [
     {
       "id": "0861c24cfd49a421",
@@ -899,32 +899,6 @@
       "imagen": "https://alicanteasaja.com/wp-content/uploads/Entrega-De-Premios-ASAJA-2025-Agricultores-scaled-e1779967260596.webp",
       "categorias": [
         "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "343692a7ab98a7e2",
-      "titulo": "ASAJA Alicante alerta de los daños agrarios de la DANA Adam en la Marina Alta, con más de mil colmenas arrasadas",
-      "extracto": "Numerosos agricultores y apicultores no pueden acceder a sus explotaciones por la destrucción de caminos y las inundaciones. En Pego, los…",
-      "fecha": "2026-10-22T10:18:10Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-alicante-alerta-de-los-danos-agrarios-de-la-dana-adam-en-la-marina-alta-con-mas-de-mil-colmenas-arrasadas/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/colmenas-web.jpeg",
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "187f15057e56db71",
-      "titulo": "COMUNICADO OFICIAL: MUNDIAL DE SAN HUBERTO",
-      "extracto": "La falta de respuesta de la RSCE deja a España sin representación en el Mundial de San Huberto de Serbia La RFEC denuncia que la Real…",
-      "fecha": "2026-10-22T07:51:25Z",
-      "fuente": "Real Federación Española de Caza",
-      "url": "https://fecaza.com/comunicado-oficial-mundial-de-san-huberto/",
-      "imagen": "https://fecaza.com/wp-content/uploads/2024/08/LOGO-RFECLEYENDA.png",
-      "categorias": [
-        "Caza"
       ],
       "imagen_buscada": true
     }
