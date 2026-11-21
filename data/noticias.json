@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T20:22:40Z",
+  "actualizado": "2026-11-21T07:09:52Z",
   "noticias": [
     {
       "id": "0861c24cfd49a421",
@@ -925,19 +925,6 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2024/08/LOGO-RFECLEYENDA.png",
       "categorias": [
         "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "e0bcbfa57a28ec04",
-      "titulo": "Las ayudas para conservar el cultivo tradicional de arroz de Calasparra llegarán a 325 hectáreas",
-      "extracto": "La DOP prevé una cosecha de tres millones de kilos en esta campaña Las subvenciones beneficiarán a 48 agricultores",
-      "fecha": "2026-10-21T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126432&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "PAC y ayudas"
       ],
       "imagen_buscada": true
     }
