@@ -1,0 +1,14 @@
+name: probe
+on:
+  push:
+    branches: [probe]
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash {0}
+        run: |
+          curl -sL -m 30 -A "Mozilla/5.0" https://www.anacper.es/index.php/noticias -o /tmp/a.html; echo "SIZE $(wc -c </tmp/a.html)"
+          grep -oE '<a[^>]+href="[^"]*noticias[^"]*"[^>]*>[^<]{0,140}' /tmp/a.html | sort -u | head -40 | sed 's/^/L /'
+          grep -oE '(datetime="[^"]+"|[0-9]{1,2} [A-Za-z]+ [0-9]{4}|[0-9]{2}/[0-9]{2}/[0-9]{4})' /tmp/a.html | head -10 | sed 's/^/D /'
+          grep -oE '<h[23][^>]*>.{0,200}' /tmp/a.html | head -15 | sed 's/^/H /'
