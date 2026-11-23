@@ -1,6 +1,7 @@
 /* =============================================================
    Carrusel de noticias destacadas (portada)
-   Lee ./data/noticias.json y muestra las 5 más recientes.
+   Lee ./data/noticias.json y ./data/plazos.json. Muestra 6 destacadas con cupos:
+   hasta 2 ayudas con plazo abierto + agricultura (prioridad cítricos/hortalizas) + 1 de caza.
    Auto-avance cada 6 s; pausa al pasar el ratón, con foco o pestaña oculta.
    Flechas, puntos, teclado (← →) y deslizar en móvil.
    El listado completo está en noticias.html.
@@ -13,7 +14,12 @@
 
   const RUTA_JSON = sec.dataset.json || './data/noticias.json';
   const IMG_DEFECTO = sec.dataset.imgDefault || './img/noticia-default.jpg';
-  const NUM = 5, INTERVALO = 6000;
+  const NUM = 6, INTERVALO = 6000;
+  const RUTA_PLAZOS = sec.dataset.plazos || './data/plazos.json';
+  const IMG_PLAZO = './norm-subvenciones.jpg';
+  // Prioridad de temas agrícolas (días de 'ventaja' sobre la fecha real)
+  const PRIO = {'Cítricos':4,'Hortalizas':4,'Frutales':3,'PAC y ayudas':3,'Maquinaria':3,'Fitosanitarios':2,'Fertilización':2,'Riego y agua':2,'Gestión de la explotación':2,'Agricultura ecológica':1,'Mercados y precios':1};
+  const CAZA_UTIL = /plazo|veda|orden|temporada|convocatoria|ayuda|subvenci|licencia|precinto|da[ñn]os|jabal/i;
   // Imagen propia por tema (no se usan las fotos de los medios: evita problemas de derechos de autor)
   const IMG_TEMA = {'Cítricos':'./img/agricola.jpg','Hortalizas':'./img/planes-abonado.jpg','Frutales':'./img/informes.jpg','Fitosanitarios':'./hero-maquinaria.jpg','Fertilización':'./img/planes-abonado.jpg','Riego y agua':'./img/planes-abonado.jpg','PAC y ayudas':'./norm-pac.jpg','Maquinaria':'./maq-area.jpg','Gestión de la explotación':'./img/cuaderno-campo.jpg','Agricultura ecológica':'./img/agricola.jpg','Mercados y precios':'./img/analisis-datos.jpg','Caza':'./cin-area.jpg'};
   function imagenTema(n){const c=(Array.isArray(n.categorias)&&n.categorias.length?n.categorias:[n.categoria||'General']);for(const x of c){if(IMG_TEMA[x])return IMG_TEMA[x];}return IMG_DEFECTO;}
@@ -25,7 +31,7 @@
   const elTrack = raiz.querySelector('.nc-track');
   const elPuntos = raiz.querySelector('.nc-puntos');
   const elUpd = sec.querySelector('#nt-upd');
-  let slides = [], puntos = [], actual = 0, timer = null, pausado = false;
+  let slides = [], puntos = [], actual = 0, timer = null, pausado = false, slidesTotal = NUM;
 
   const fmt = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Europe/Madrid' });
   const fmtH = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' });
@@ -34,15 +40,39 @@
   const crear = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
   const cats = n => Array.isArray(n.categorias) && n.categorias.length ? n.categorias : [n.categoria || 'General'];
 
+  function crearSlidePlazo(n, i) {
+    const a = crear('div', 'nc-slide nc-plazo');
+    a.setAttribute('role', 'group');
+    a.setAttribute('aria-label', (i + 1) + ' de ' + slidesTotal + ': ayuda con plazo abierto. ' + (n.titulo || ''));
+    const img = document.createElement('img'); img.alt = ''; img.decoding = 'async'; img.loading = i === 0 ? 'eager' : 'lazy'; img.src = IMG_PLAZO;
+    a.appendChild(img);
+    const t = crear('div', 'nc-txt');
+    const m = crear('div', 'nc-meta');
+    m.appendChild(crear('span', 'nc-cat nc-cat-plazo', 'Plazo abierto'));
+    const fin = n.fecha_fin ? 'Hasta el ' + fecha(n.fecha_fin + 'T12:00:00Z') : (n.texto_fin ? 'Plazo: ' + corto(n.texto_fin, 60) : '');
+    m.appendChild(crear('span', null, [fin, n.ambito].filter(Boolean).join(' · ')));
+    t.appendChild(m);
+    t.appendChild(crear('h3', 'nc-tit', corto(n.titulo, 170)));
+    const acc = crear('div', 'nc-acc');
+    const href = urlSegura(n.url);
+    if (href) { const v = crear('a', 'nc-leer', 'Ver convocatoria →'); v.href = href; v.target = '_blank'; v.rel = 'noopener noreferrer'; acc.appendChild(v); }
+    const c = crear('a', 'nc-leer nc-leer-cta', 'Te ayudo a tramitarla →'); c.href = '#contacto';
+    acc.appendChild(c);
+    t.appendChild(acc);
+    a.appendChild(t);
+    return a;
+  }
+
   function crearSlide(n, i) {
+    if (n._plazo) return crearSlidePlazo(n, i);
     const a = crear('a', 'nc-slide');
     const href = urlSegura(n.url);
     if (href) { a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; }
-    a.setAttribute('aria-label', (i + 1) + ' de ' + NUM + ': ' + (n.titulo || 'Noticia'));
+    a.setAttribute('aria-label', (i + 1) + ' de ' + slidesTotal + ': ' + (n.titulo || 'Noticia'));
     const img = document.createElement('img');
     img.alt = ''; img.decoding = 'async';
     img.loading = i === 0 ? 'eager' : 'lazy';
-    img.src = urlSegura(n.imagen) || IMG_DEFECTO;
+    img.src = n._plazo ? IMG_PLAZO : imagenTema(n);
     img.addEventListener('error', () => { if (!img.src.endsWith(IMG_DEFECTO.replace('./', ''))) img.src = IMG_DEFECTO; });
     a.appendChild(img);
     const t = crear('div', 'nc-txt');
@@ -74,6 +104,7 @@
   function montar(lista) {
     elTrack.replaceChildren();
     elPuntos.replaceChildren();
+    slidesTotal = lista.length;
     slides = lista.map(crearSlide);
     slides.forEach(s => elTrack.appendChild(s));
     puntos = slides.map((s, i) => {
@@ -115,14 +146,39 @@
   });
   elTrack.addEventListener('click', e => { if (arrastre) { e.preventDefault(); arrastre = false; } }, true);
 
+  // Selección con cupos: hasta 2 plazos abiertos, 1 de caza y el resto agricultura
+  function seleccionar(noticias, plazos) {
+    const hoy = new Date().toISOString().slice(0, 10);
+    const abiertos = plazos.filter(p => !p.fecha_fin || p.fecha_fin >= hoy).slice(0, 2).map(p => Object.assign({ _plazo: true }, p));
+    const t = n => new Date(n.fecha).getTime() || 0;
+    const DIA = 864e5;
+    const esCaza = n => cats(n).includes('Caza');
+    const agri = noticias.filter(n => !esCaza(n))
+      .map(n => ({ n, s: t(n) + DIA * Math.max(0, ...cats(n).map(c => PRIO[c] || 0)) }))
+      .sort((a, b) => b.s - a.s).map(x => x.n);
+    const caza = noticias.filter(esCaza)
+      .map(n => ({ n, s: t(n) + (CAZA_UTIL.test(n.titulo + ' ' + (n.extracto || '')) ? 3 * DIA : 0) }))
+      .sort((a, b) => b.s - a.s).map(x => x.n);
+    const huecosAgri = NUM - abiertos.length - (caza.length ? 1 : 0);
+    const elegidas = agri.slice(0, huecosAgri).concat(caza.slice(0, 1));
+    // Si faltan agrícolas, se completa con caza
+    for (const n of caza.slice(1)) { if (abiertos.length + elegidas.length >= NUM) break; elegidas.push(n); }
+    // Intercala: plazo, noticia, plazo, noticia...
+    const out = [];
+    const cola = elegidas.slice();
+    abiertos.forEach(p => { out.push(p); if (cola.length) out.push(cola.shift()); });
+    return out.concat(cola).slice(0, NUM);
+  }
+
   // Carga
   (async function () {
     try {
       const r = await fetch(RUTA_JSON, { cache: 'no-cache' });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const d = await r.json();
-      const lista = (Array.isArray(d.noticias) ? d.noticias : [])
-        .slice().sort((a, b) => new Date(b.fecha) - new Date(a.fecha)).slice(0, NUM);
+      let plazos = [];
+      try { const rp = await fetch(RUTA_PLAZOS, { cache: 'no-cache' }); if (rp.ok) plazos = (await rp.json()).plazos || []; } catch (e) { /* sin plazos */ }
+      const lista = seleccionar(Array.isArray(d.noticias) ? d.noticias : [], plazos);
       if (elUpd) elUpd.replaceChildren(document.createTextNode('Última actualización: '), crear('b', null, fecha(d.actualizado, true) || '—'));
       if (!lista.length) throw new Error('sin noticias');
       montar(lista);

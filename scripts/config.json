@@ -1,7 +1,7 @@
 {
   "dias_conservar": 30,
   "max_noticias": 300,
-  "max_por_fuente": 15,
+  "max_por_fuente": 20,
   "longitud_extracto": 140,
   "excluir_si_contiene": [
     "pesca",
@@ -36,16 +36,6 @@
   ],
   "fuentes": [
     {
-      "nombre": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/feed/",
-      "categoria_por_defecto": "General"
-    },
-    {
-      "nombre": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/rss.xml",
-      "categoria_por_defecto": "General"
-    },
-    {
       "nombre": "CARM - Agricultura",
       "url": "https://www.carm.es/web/pagina?IDCONTENIDO=694&IDTIPO=200&RASTRO=&CANALRSS=1&TIPORSS=rss_2.0&__EXCLUIR_BUSCADOR_CARM=SI&__PLANT_MAESTRA=/JSP/CARM/plantillasPortal/plantillaVaciaDelTodo.jsp",
       "categoria_por_defecto": "General",
@@ -54,24 +44,52 @@
       ]
     },
     {
-      "nombre": "MAPA",
-      "url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
-      "categoria_por_defecto": "General"
+      "nombre": "Valencia Fruits",
+      "url": "https://www.valenciafruits.com/feed/",
+      "categoria_por_defecto": "General",
+      "descartar_general": true
+    },
+    {
+      "nombre": "Agroinformación",
+      "url": "https://agroinformacion.com/feed/",
+      "categoria_por_defecto": "General",
+      "descartar_general": true
+    },
+    {
+      "nombre": "Phytoma",
+      "url": "https://www.phytoma.com/feed",
+      "categoria_por_defecto": "General",
+      "descartar_general": true
+    },
+    {
+      "nombre": "Revista Mercados",
+      "url": "https://www.revistamercados.com/feed/",
+      "categoria_por_defecto": "General",
+      "descartar_general": true
+    },
+    {
+      "nombre": "Agroauténtico",
+      "url": "https://www.agroautentico.com/feed/",
+      "categoria_por_defecto": "General",
+      "descartar_general": true
     },
     {
       "nombre": "Federación de Caza Región de Murcia",
       "url": "https://www.federacioncaza.com/feed/",
-      "categoria_siempre": "Caza"
+      "categoria_siempre": "Caza",
+      "max_noticias": 8
     },
     {
       "nombre": "Federación de Caza Comunidad Valenciana",
       "url": "https://federacioncazacv.com/feed/?post_type=prensa",
-      "categoria_siempre": "Caza"
+      "categoria_siempre": "Caza",
+      "max_noticias": 8
     },
     {
       "nombre": "Real Federación Española de Caza",
       "url": "https://fecaza.com/feed/",
-      "categoria_siempre": "Caza"
+      "categoria_siempre": "Caza",
+      "max_noticias": 8
     }
   ],
   "categorias": {
@@ -110,7 +128,10 @@
       "uva de mesa",
       "olivo*",
       "aceituna*",
-      "fruta de hueso"
+      "fruta de hueso",
+      "granado*",
+      "caqui*",
+      "níspero*"
     ],
     "Fitosanitarios": [
       "fitosanit*",
@@ -225,5 +246,6 @@
     ]
   },
   "_ayuda": "Palabras clave: sin asterisco = palabra exacta; con * al final = cualquier palabra que empiece así. Una noticia recibe TODAS las categorías que coincidan; si no coincide ninguna, recibe 'General'.",
-  "_ayuda_exclusion": "excluir_si_contiene: noticias que se descartan (salvo si son de Caza). ignorar_frases: textos que se borran antes de comprobar (nombres de ministerios/consejerías que incluyen 'Pesca')."
+  "_ayuda_exclusion": "excluir_si_contiene: noticias que se descartan (salvo si son de Caza). ignorar_frases: textos que se borran antes de comprobar (nombres de ministerios/consejerías que incluyen 'Pesca').",
+  "_ayuda_fuentes": "descartar_general: true = solo se guardan las noticias que encajan en algún tema (para medios generalistas). max_noticias limita cuántas se leen de esa fuente en cada actualización."
 }

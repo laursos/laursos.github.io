@@ -1,0 +1,13 @@
+{
+  "_instrucciones": "Avisos de ayudas que quieras destacar a mano. Cada aviso se muestra hasta su fecha_fin (incluida) y luego desaparece solo. Formato de fecha: AAAA-MM-DD. Copia el bloque de ejemplo dentro de 'avisos' y rellénalo. categorias (opcional): p. ej. [\"Jóvenes agricultores\"], [\"Maquinaria\"], [\"Caza\"].",
+  "_ejemplo": {
+    "titulo": "Ayudas a la incorporación de jóvenes agricultores 2027",
+    "organismo": "Conselleria de Agricultura",
+    "ambito": "Comunitat Valenciana",
+    "fecha_inicio": "2027-02-01",
+    "fecha_fin": "2027-03-15",
+    "url": "https://enlace-a-la-convocatoria",
+    "categorias": ["Jóvenes agricultores"]
+  },
+  "avisos": []
+}

@@ -155,6 +155,9 @@ def leer_fuente(fuente, categorias, cfg, exclusion=None):
                            fuente.get("categoria_siempre"))
         if es_excluida(f"{titulo} {resumen}", cats, exclusion):
             continue
+        # Medios generalistas: solo noticias que encajen en algún tema
+        if fuente.get("descartar_general") and cats == ["General"]:
+            continue
 
         noticias.append({
             "id": hashlib.sha1(url.encode()).hexdigest()[:16],
@@ -188,6 +191,10 @@ def main():
                 anteriores[n["id"]] = n
         except (json.JSONDecodeError, KeyError):
             print("Aviso: noticias.json anterior no válido; se regenera.")
+
+    # Se retiran las noticias de fuentes que ya no están en config.json
+    activas = {f["nombre"] for f in cfg["fuentes"]}
+    anteriores = {k: n for k, n in anteriores.items() if n.get("fuente") in activas}
 
     errores = 0
     for fuente in cfg["fuentes"]:
@@ -223,6 +230,13 @@ def main():
         "noticias": lista,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Total guardadas: {len(lista)} | Fuentes con error: {errores}")
+
+    # Ayudas y plazos abiertos (BDNS + avisos manuales)
+    try:
+        import plazos
+        plazos.actualizar()
+    except Exception as ex:
+        print(f"ERROR plazos: {ex}")
 
     # Solo falla si TODAS las fuentes fallan (para que GitHub avise)
     if errores == len(cfg["fuentes"]):

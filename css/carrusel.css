@@ -27,6 +27,12 @@
 .nc-pie{display:flex;justify-content:center;margin-top:26px}
 .nc-ver{display:inline-flex;align-items:center;gap:8px;font-family:var(--nt-display);font-size:14px;font-weight:700;padding:13px 26px;border-radius:999px;background:var(--nt-verde-osc);color:#fff;text-decoration:none;transition:background .2s,transform .2s}
 .nc-ver:hover{background:var(--nt-citrico-osc);color:#fff;transform:translateY(-1px)}
+/* Ayudas con plazo abierto */
+.nc-cat-plazo{background:#C0392B}
+.nc-acc{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.nc-plazo .nc-leer{text-decoration:none}
+.nc-plazo .nc-leer:hover{background:var(--nt-citrico);color:#fff}
+.nc-leer-cta{background:var(--nt-citrico);color:#fff}
 @media (max-width:640px){
   .nc-slide,.nc-skel{min-height:380px}
   .nc-txt{padding:24px 20px 52px}
