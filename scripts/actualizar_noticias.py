@@ -88,7 +88,14 @@ def compilar_exclusion(cfg):
     return patron, frases
 
 
+POLITICA = re.compile(
+    r"partido popular|\bpp\b|psoe|\bvox\b|podemos|sumar|compromís|compromis|feij[oó]o|pedro s[aá]nchez|"
+    r"tellado|abascal|elecciones|campaña electoral|votar|mitin|candidat", re.I)
+
+
 def es_excluida(texto, categorias_noticia, exclusion):
+    if POLITICA.search(texto):  # la web es técnica y neutral: nada de política de partidos
+        return True
     """True si la noticia trata de un tema descartado y no es de caza."""
     if not exclusion or "Caza" in categorias_noticia:
         return False
@@ -140,8 +147,44 @@ def imagen_de_pagina(url):
     return None
 
 
+# Enlaces oficiales que se buscan dentro de una noticia (para no enlazar a la fuente intermedia)
+OFICIALES = [
+    ("infosubvenciones.es", "BDNS"), ("pap.hacienda.gob.es/bdnstrans", "BDNS"),
+    ("dogv.gva.es", "DOGV"), ("boe.es", "BOE"), ("borm.es", "BORM"), ("sede.gva.es", "Sede GVA"),
+    ("agroambient.gva.es", "Conselleria de Agricultura"), ("gva.es", "Generalitat Valenciana"),
+    ("mapa.gob.es", "Ministerio de Agricultura"), ("fega.gob.es", "FEGA"), ("carm.es", "CARM"),
+    ("diputacionalicante.es", "Diputación de Alicante"), ("dip-alicante.es", "Diputación de Alicante"),
+]
+
+
+def enlaces_oficiales(url, maximo=8):
+    """Abre la noticia y devuelve [(url_oficial, organismo, texto_del_enlace)] de publicaciones oficiales."""
+    salida, vistos = [], set()
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=20)
+        r.raise_for_status()
+        cuerpo = r.text
+        m = re.search(r"<article.*?</article>", cuerpo, re.S | re.I)  # solo el texto de la noticia
+        cuerpo = m.group(0) if m else cuerpo
+        for href, texto in re.findall(r'<a[^>]+href=["\'](https?://[^"\'#]+)["\'][^>]*>(.*?)</a>', cuerpo, re.S | re.I):
+            href = html.unescape(href)
+            org = next((n for d, n in OFICIALES if d in href.lower()), None)
+            if not org or href in vistos:
+                continue
+            vistos.add(href)
+            texto = limpiar_html(texto)
+            salida.append((href, org, texto))
+            if len(salida) >= maximo:
+                break
+    except Exception:
+        pass
+    return salida
+
+
 def leer_fuente(fuente, categorias, cfg, exclusion=None):
-    resp = requests.get(fuente["url"], headers=HEADERS, timeout=30)
+    # verify=False solo para fuentes oficiales con certificado mal configurado (p. ej. MAPA)
+    resp = requests.get(fuente["url"], headers=HEADERS, timeout=30,
+                        verify=not fuente.get("certificado_no_verificable"))
     resp.raise_for_status()
     feed = feedparser.parse(resp.content)
     if not feed.entries:
@@ -185,12 +228,38 @@ def leer_fuente(fuente, categorias, cfg, exclusion=None):
         if fuente.get("descartar_general") and cats == ["General"]:
             continue
 
+        if fuente.get("solo_enlace_oficial"):
+            # La fuente solo sirve de aviso: se publican las disposiciones oficiales que enlaza
+            # (título = texto oficial del enlace; enlace = DOGV, BOE, BDNS...)
+            for href, org, texto in enlaces_oficiales(url):
+                if len(texto) < 30:
+                    continue
+                t = recortar(texto, 220)
+                c2 = categorizar(t, categorias, "General")
+                if c2 == ["General"] or es_excluida(t, c2, exclusion):
+                    continue
+                c2, loc2 = aplicar_zona(t, c2)
+                if fuente.get("solo_zona") and not loc2:
+                    continue
+                noticias.append({
+                    "id": hashlib.sha1(href.encode()).hexdigest()[:16], "titulo": t, "extracto": "",
+                    "fecha": fecha_iso(e), "fuente": org, "origen": fuente["nombre"], "url": href,
+                    "imagen": None, "categorias": c2, "local": loc2,
+                })
+            continue
+        # Filtros por fuente: temas permitidos y palabras a evitar
+        if fuente.get("solo_categorias") and not set(cats) & set(fuente["solo_categorias"]):
+            continue
+        if fuente.get("excluir_palabras") and re.search(fuente["excluir_palabras"], texto_completo, re.I):
+            continue
+        nombre_fuente = fuente["nombre"]
         noticias.append({
             "id": hashlib.sha1(url.encode()).hexdigest()[:16],
             "titulo": titulo,
             "extracto": recortar(resumen, cfg["longitud_extracto"]),
             "fecha": fecha_iso(e),  # datetime o None; se resuelve en main()
-            "fuente": fuente["nombre"],
+            "fuente": nombre_fuente,
+            "origen": fuente["nombre"],
             "url": url,
             "imagen": extraer_imagen(e),
             "categorias": cats,
@@ -221,16 +290,33 @@ def main():
 
     # Se retiran las noticias de fuentes que ya no están en config.json
     activas = {f["nombre"] for f in cfg["fuentes"]}
-    anteriores = {k: n for k, n in anteriores.items() if n.get("fuente") in activas}
+    anteriores = {k: n for k, n in anteriores.items() if n.get("origen", n.get("fuente")) in activas}
     # Recalcula los temas de las guardadas (por si se han cambiado las palabras clave)
     fijas = {f["nombre"]: f.get("categoria_siempre") for f in cfg["fuentes"]}
+    anteriores = {k: n for k, n in anteriores.items()
+                  if not es_excluida(f"{n.get('titulo','')} {n.get('extracto','')}", [], None)}
     for n in anteriores.values():
         texto = f"{n.get('titulo','')} {n.get('extracto','')}"
         n["categorias"], n["local"] = aplicar_zona(
-            texto, categorizar(texto, categorias, "General", fijas.get(n.get("fuente"))))
+            texto, categorizar(texto, categorias, "General", fijas.get(n.get("origen", n.get("fuente")))))
+    por_nombre = {f["nombre"]: f for f in cfg["fuentes"]}
+
+    def sigue_valida(n):
+        f = por_nombre.get(n.get("origen", n.get("fuente")), {})
+        txt = f"{n.get('titulo','')} {n.get('extracto','')}".lower()
+        if f.get("contiene_alguna") and not any(w.lower() in txt for w in f["contiene_alguna"]):
+            return False
+        if f.get("solo_categorias") and not set(n["categorias"]) & set(f["solo_categorias"]):
+            return False
+        if f.get("excluir_palabras") and re.search(f["excluir_palabras"], txt, re.I):
+            return False
+        if f.get("solo_enlace_oficial") and len(n.get("titulo", "")) < 30:
+            return False
+        return True
+    anteriores = {k: n for k, n in anteriores.items() if sigue_valida(n)}
     solo_zona = {f["nombre"] for f in cfg["fuentes"] if f.get("solo_zona")}
     anteriores = {k: n for k, n in anteriores.items()
-                  if not (n.get("fuente") in solo_zona and not n.get("local"))}
+                  if not (n.get("origen", n.get("fuente")) in solo_zona and not n.get("local"))}
 
     errores = 0
     for fuente in cfg["fuentes"]:

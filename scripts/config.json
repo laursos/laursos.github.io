@@ -59,6 +59,25 @@
       ]
     },
     {
+      "nombre": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
+      "categoria_por_defecto": "General",
+      "descartar_general": true,
+      "certificado_no_verificable": true,
+      "solo_categorias": [
+        "Cítricos",
+        "Hortalizas",
+        "Frutales",
+        "Daños y siniestros",
+        "Jóvenes agricultores",
+        "Maquinaria",
+        "Fitosanitarios",
+        "Fertilización"
+      ],
+      "excluir_palabras": "luis planas|se re[uú]ne|hom[oó]log|conferencia|bruselas|gastronom|castilla|galicia|andaluc|arag[oó]n|extremadura|navarra|catalu|asturias|cantabria|rioja|pa[ií]s vasco|canarias|baleares|madrid",
+      "max_noticias": 6
+    },
+    {
       "nombre": "CARM - Agricultura",
       "url": "https://www.carm.es/web/pagina?IDCONTENIDO=694&IDTIPO=200&RASTRO=&CANALRSS=1&TIPORSS=rss_2.0&__EXCLUIR_BUSCADOR_CARM=SI&__PLANT_MAESTRA=/JSP/CARM/plantillasPortal/plantillaVaciaDelTodo.jsp",
       "categoria_por_defecto": "General",
@@ -98,12 +117,6 @@
       "descartar_general": true
     },
     {
-      "nombre": "Federación de Caza Región de Murcia",
-      "url": "https://www.federacioncaza.com/feed/",
-      "categoria_siempre": "Caza",
-      "max_noticias": 8
-    },
-    {
       "nombre": "Federación de Caza Comunidad Valenciana",
       "url": "https://federacioncazacv.com/feed/?post_type=prensa",
       "categoria_siempre": "Caza",
@@ -113,7 +126,13 @@
       "nombre": "Real Federación Española de Caza",
       "url": "https://fecaza.com/feed/",
       "categoria_siempre": "Caza",
-      "max_noticias": 8
+      "max_noticias": 8,
+      "contiene_alguna": [
+        "valencian",
+        "alicante",
+        "alacant",
+        "comunitat"
+      ]
     }
   ],
   "categorias": {
@@ -215,11 +234,13 @@
     "Fertilización": [
       "fertiliza*",
       "fertilizante*",
-      "abono*",
       "abonado*",
       "nitrato*",
       "nitrógeno",
-      "enmienda*"
+      "abono",
+      "abonos",
+      "abonado de",
+      "enmiendas orgánicas"
     ],
     "Riego y agua": [
       "riego*",
@@ -311,5 +332,7 @@
   "_ayuda_exclusion": "excluir_si_contiene: noticias que se descartan (salvo si son de Caza). ignorar_frases: textos que se borran antes de comprobar (nombres de ministerios/consejerías que incluyen 'Pesca').",
   "_ayuda_fuentes": "descartar_general: true = solo se guardan las noticias que encajan en algún tema (para medios generalistas). max_noticias limita cuántas se leen de esa fuente en cada actualización.",
   "_ayuda_zona": "solo_zona: true = de esa fuente solo entran noticias que citen la zona (Vega Baja, Elche, Crevillent, provincia de Alicante o Murcia limítrofe).",
-  "_ayuda_contiene": "contiene_alguna: solo entran noticias de esa fuente que incluyan alguna de esas palabras."
+  "_ayuda_contiene": "contiene_alguna: solo entran noticias de esa fuente que incluyan alguna de esas palabras.",
+  "_ayuda_oficial": "solo_enlace_oficial: true = la fuente solo sirve de aviso; se abre su noticia, se busca el enlace a la publicación oficial (DOGV, BOE, BORM, BDNS, GVA, MAPA...) y se muestra ese enlace. Si no hay enlace oficial, la noticia no se publica.",
+  "_ayuda_filtros": "solo_categorias: solo entran noticias de esos temas. excluir_palabras: expresión con palabras que descartan la noticia (separadas por |)."
 }

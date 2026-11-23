@@ -31,8 +31,9 @@ La web queda en `https://TU-USUARIO.github.io/NOMBRE-REPO/`.
   si pasa, entra en Actions y pulsa *Enable workflow*.
 
 ## Fuentes configuradas
-Alicante Plaza · Convega (Vega Baja) · CARM - Agricultura (solo noticias de la zona) · Valencia Fruits · Agroinformación · Phytoma · Revista Mercados · Agroauténtico ·
-Federación de Caza Región de Murcia · Federación de Caza Comunidad Valenciana · Real Federación Española de Caza.
+Alicante Plaza · Convega (Vega Baja) · MAPA (solo cítricos, hortalizas, frutales, siniestros, jóvenes, maquinaria, fitosanitarios y fertilización; sin agenda ministerial ni otras comunidades) · CARM - Agricultura (solo noticias de la zona) · Valencia Fruits · Agroinformación · Phytoma · Revista Mercados · Agroauténtico ·
+Federación de Caza Comunidad Valenciana · Real Federación Española de Caza (solo noticias que citan la Comunitat Valenciana o Alicante).
+Se descartan siempre las noticias de política de partidos.
 Los medios generalistas llevan `descartar_general: true` (solo entran noticias de algún tema).
 Las federaciones de caza llevan siempre la categoría 'Caza' y como máximo 8 noticias por actualización.
 
