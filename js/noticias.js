@@ -156,7 +156,7 @@
     if (n.fecha) t.dateTime = n.fecha;
     meta.appendChild(t);
     cuerpo.appendChild(meta);
-    cuerpo.appendChild(crear('h3', 'nt-tit', n.titulo || ''));
+    cuerpo.appendChild(crear('p', 'nt-tit', n.titulo || ''));
     // Si el extracto viene vacío, no se muestra el bloque
     if (n.extracto && String(n.extracto).trim()) cuerpo.appendChild(crear('p', 'nt-ext', corto(n.extracto, 140)));
     const pie = crear('div', 'nt-pie');

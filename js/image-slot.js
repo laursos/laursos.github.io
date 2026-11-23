@@ -10,7 +10,7 @@
       const src=this.getAttribute('src');
       let img=this.querySelector('img');
       if(!src){ if(img) img.remove(); this.style.background='var(--lm-green-tint,#E8F5EF)'; return; }
-      if(!img){img=document.createElement('img');img.decoding='async';img.loading='lazy';
+      if(!img){img=document.createElement('img');img.decoding='async';img.loading=/^hero-/.test(this.id)?'eager':'lazy';
         img.style.cssText='width:100%;height:100%;object-fit:cover;display:block';this.appendChild(img);}
       img.alt=this.getAttribute('alt')||'';
       if(img.getAttribute('src')!==src) img.src=src;
