@@ -1,14 +1,75 @@
 {
-  "actualizado": "2026-11-23T00:38:35Z",
+  "actualizado": "2026-11-23T00:47:10Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-23T00:38:35Z",
+      "fecha": "2026-11-23T00:47:10Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
+      "imagen": null,
+      "categorias": [
+        "Fertilización",
+        "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "416da5da8caa0652",
+      "titulo": "Sorteo de Navidad Anacper 2026",
+      "extracto": "",
+      "fecha": "2026-11-23T00:47:10Z",
+      "fuente": "ANACPER (perdiz con reclamo)",
+      "origen": "ANACPER (perdiz con reclamo)",
+      "url": "https://www.anacper.es/index.php/noticias/10-noticias/183-sorteo-de-navidad-anacper-2026",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "8704531c677dfe90",
+      "titulo": "Feliz 7º Aniversario",
+      "extracto": "",
+      "fecha": "2026-11-23T00:46:10Z",
+      "fuente": "ANACPER (perdiz con reclamo)",
+      "origen": "ANACPER (perdiz con reclamo)",
+      "url": "https://www.anacper.es/index.php/noticias/10-noticias/182-feliz-7-aniversario",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "e13d00d09689e9e3",
+      "titulo": "SORTEO 7º Aniversario ANACPER",
+      "extracto": "",
+      "fecha": "2026-11-23T00:45:10Z",
+      "fuente": "ANACPER (perdiz con reclamo)",
+      "origen": "ANACPER (perdiz con reclamo)",
+      "url": "https://www.anacper.es/index.php/noticias/10-noticias/181-7-aniversario-de-la-creacion-de-anacper",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "3dcabc35a8bc4937",
+      "titulo": "Los agricultores de Murcia han recibido 8,4 millones de euros de las ayudas para la compra de fertilizantes",
+      "extracto": "",
+      "fecha": "2026-11-23T00:44:10Z",
+      "fuente": "MAPA",
+      "origen": "MAPA",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/los-agricultores-de-murcia-han-recibido-8-4-millones-de-euros-de-las-ayudas-para-la-compra-de-fertilizantes-/3b065048-1610-4b75-a96d-0aea62d0c73e",
       "imagen": null,
       "categorias": [
         "Fertilización",
@@ -454,6 +515,20 @@
       "imagen_buscada": true
     },
     {
+      "id": "298cce794b147f32",
+      "titulo": "🪶 Concurso Abierto – Sociedad Virgen de los Llanos",
+      "extracto": "🪶 Concurso Abierto – Sociedad Virgen de los Llanos 🗓️ 13 de diciembre 🕖 9:00 horas 📍 Campo de Fútbol de Villalba The post 🪶 Concurso…",
+      "fecha": "2026-11-18T09:38:08Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%aa%b6-concurso-abierto-sociedad-virgen-de-los-llanos/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%25aa%25b6-concurso-abierto-sociedad-virgen-de-los-llanos",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fab6.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
       "id": "7546890d19e5f8fa",
       "titulo": "La elección de las variedades y las estrategias de protección, claves para el cultivo del brócoli",
       "extracto": "La finca experimental de INTIA en Cadreita acogió la jornada de hortícolas de otoño/invierno, en la que se hizo balance del inicio de la…",
@@ -525,6 +600,104 @@
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "5b96332f54b2ac0b",
+      "titulo": "🐾🏆 EL AGILITY MURCIANO CELEBRA UNA NUEVA PRUEBA DEL CAMPEONATO REGIONAL",
+      "extracto": "El pasado 7 de noviembre, IFEPA, en Torre Pacheco (Murcia), acogió una nueva prueba del Campeonato Regional de Agility, en una jornada en…",
+      "fecha": "2026-11-11T08:34:50Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%90%be%f0%9f%8f%86-el-agility-murciano-celebra-una-nueva-prueba-del-campeonato-regional/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2590%25be%25f0%259f%258f%2586-el-agility-murciano-celebra-una-nueva-prueba-del-campeonato-regional",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "155c483260cc0287",
+      "titulo": "🏹 I Tirada de Liga Social del Club Arqueros de Carthago",
+      "extracto": "🏹 I Tirada de Liga Social del Club Arqueros de Carthago 🗓️ 28 noviembre – 9:30 horas. 📝 Inscripciones hasta 24 de noviembre en…",
+      "fecha": "2026-11-10T10:02:23Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%8f%b9-i-tirada-de-liga-social-del-club-arqueros-de-carthago/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%258f%25b9-i-tirada-de-liga-social-del-club-arqueros-de-carthago",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3f9.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "b2aff4e4eca78dd5",
+      "titulo": "MAZARRÓN ACOGIÓ EL VI CAMPEONATO AUTONÓMICO DE PODENCO ANDALUZ, MANETO Y ORITO ESPAÑOL",
+      "extracto": "El pasado sábado, Mazarrón volvió a convertirse en punto de encuentro para los aficionados a las razas de Podenco Andaluz, Maneto y Orito…",
+      "fecha": "2026-11-09T09:36:34Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/mazarron-acogio-el-vi-campeonato-autonomico-de-podenco-andaluz-maneto-y-orito-espanol/?utm_source=rss&utm_medium=rss&utm_campaign=mazarron-acogio-el-vi-campeonato-autonomico-de-podenco-andaluz-maneto-y-orito-espanol",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "0065072a056869e9",
+      "titulo": "I COPA SAN HUBERTO MAZARRÓN",
+      "extracto": "❌ I COPA SAN HUBERTO MAZARRÓN❌ 🗓️ 28 noviembre – 7:45 h. 📱 Contacto: 660 33 43 63 The post I COPA SAN HUBERTO MAZARRÓN appeared first on…",
+      "fecha": "2026-11-09T08:24:01Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/i-copa-san-huberto-mazarron/?utm_source=rss&utm_medium=rss&utm_campaign=i-copa-san-huberto-mazarron",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "5393c92316c1cf27",
+      "titulo": "⚠️ NUEVAS RESTRICCIONES A LA CAZA EN ESPAÑA: CASTILLA Y LEÓN, OTRO TERRITORIO AFECTADO",
+      "extracto": "La situación que atraviesa el sector cinegético en España vuelve a generar preocupación. Tras lo sucedido recientemente en la Comunidad de…",
+      "fecha": "2026-11-06T09:50:59Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%e2%9a%a0%ef%b8%8f-nuevas-restricciones-a-la-caza-en-espana-castilla-y-leon-otro-territorio-afectado/?utm_source=rss&utm_medium=rss&utm_campaign=%25e2%259a%25a0%25ef%25b8%258f-nuevas-restricciones-a-la-caza-en-espana-castilla-y-leon-otro-territorio-afectado",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4e2.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "0ca493a2534d9ef8",
+      "titulo": "MAZARRÓN ACOGIÓ EL XXI CAMPEONATO AUTONÓMICO DE CETRERÍA",
+      "extracto": "El pasado fin de semana, Mazarrón se convirtió en punto de encuentro para los amantes de la cetrería con la celebración del XXI Campeonato…",
+      "fecha": "2026-11-05T08:24:44Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/mazarron-acogio-el-xxi-campeonato-autonomico-de-cetreria/?utm_source=rss&utm_medium=rss&utm_campaign=mazarron-acogio-el-xxi-campeonato-autonomico-de-cetreria",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "548d645a84b6d71a",
+      "titulo": "🐾🏆 LA SELECCIÓN MURCIANA DE AGILITY, PRESENTE EN EL XII CAMPEONATO DE ESPAÑA",
+      "extracto": "Del 30 de octubre al 1 de noviembre, Arcos de la Frontera (Cádiz) acogió el XII Campeonato de España de Agility, en el que los…",
+      "fecha": "2026-11-04T09:24:47Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%90%be%f0%9f%8f%86-la-seleccion-murciana-de-agility-presente-en-el-xii-campeonato-de-espana/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2590%25be%25f0%259f%258f%2586-la-seleccion-murciana-de-agility-presente-en-el-xii-campeonato-de-espana",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
     }
   ]
 }
