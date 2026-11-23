@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T00:23:59Z",
+  "actualizado": "2026-11-23T00:25:12Z",
   "noticias": [
     {
       "id": "3894866085839066",
@@ -11,7 +11,8 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/11/FIRMA-FEIJOO-5-1024x682.jpeg",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "a8676bccdeca829e",
@@ -23,7 +24,8 @@
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PAC-ULTIMA-PROPUESTA-PARA-LOS-PRESUPUESTOS-EUROPEOS-150x150.jpg",
       "categorias": [
         "PAC y ayudas"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "c9de3feb93ad815b",
@@ -35,7 +37,8 @@
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/QUITAR-EL-IVA-A-LA-CARNE-FECIC-150x150.jpg",
       "categorias": [
         "PAC y ayudas"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "8668b471f4ee8640",
@@ -47,7 +50,8 @@
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/DEBATE-ELECTORAL-SIN-CAMPO-UNION-UNIONES-150x150.jpg",
       "categorias": [
         "PAC y ayudas"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "87b3a17c9e5b09cf",
@@ -58,9 +62,9 @@
       "url": "https://agroinformacion.com/el-reparto-de-ayudas-en-el-ojo-del-huracan-no-se-trata-de-si-entra-o-no-un-cultivo-sino-en-que-se-concentren-en-los-que-mas-han-perdido/",
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/REPARTO-DE-AYUDAS-CYL-ASAJA-BURGOS-AVILA-ZAMORA-VALLADOLID-150x150.jpg",
       "categorias": [
-        "Daños y siniestros",
         "PAC y ayudas"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "465609ac679fdfe8",
@@ -73,6 +77,7 @@
       "categorias": [
         "PAC y ayudas"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -85,7 +90,8 @@
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Pimiento-amarillo-Nun-59505-PPS-de-Nunhems-2-525x315.webp",
       "categorias": [
         "Cítricos"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "d84aa4562c8857cd",
@@ -98,6 +104,7 @@
       "categorias": [
         "Cítricos"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -110,7 +117,8 @@
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/EXCESO-DE-BUROCRACIA-ASAJA-CAMPANA-Unlock-Farm-Potential-150x150.jpg",
       "categorias": [
         "Jóvenes agricultores"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "fb10b8b0625a078f",
@@ -123,7 +131,8 @@
       "categorias": [
         "PAC y ayudas",
         "Mercados y precios"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "7fe602b9c723864d",
@@ -136,6 +145,7 @@
       "categorias": [
         "Cítricos"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -148,7 +158,8 @@
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/PXL_20260318_161815387.MP_-scaled.jpg",
       "categorias": [
         "Mercados y precios"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "4254b8b77d0561be",
@@ -160,7 +171,8 @@
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/CEREAL-ROMPE-SU-RACHA-BAJISTA-ABASTORES-150x150.jpg",
       "categorias": [
         "Mercados y precios"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "3815903ac73d615f",
@@ -172,7 +184,8 @@
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/CARTA-ABIERTA-ALMENDRAVE-PERE-FERRE-150x150.jpg",
       "categorias": [
         "Frutales"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "6a7ea981759902f1",
@@ -184,7 +197,8 @@
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Jiffy_Hydrogel_V1-09-Medium-1024x683-1.jpg",
       "categorias": [
         "Mercados y precios"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "e72c20c259e1c80b",
@@ -198,6 +212,7 @@
         "Hortalizas",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -212,6 +227,7 @@
         "Cítricos",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -226,6 +242,7 @@
         "Hortalizas",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -242,6 +259,7 @@
         "PAC y ayudas",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -256,6 +274,7 @@
         "Hortalizas",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -270,6 +289,7 @@
         "Frutales",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -283,6 +303,7 @@
       "categorias": [
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -296,6 +317,7 @@
       "categorias": [
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -308,7 +330,8 @@
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Anecoop-Bodegas-en-Prowine-Mumbai-2026-1-525x315.webp",
       "categorias": [
         "Mercados y precios"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "a49c04e35ead58c5",
@@ -322,6 +345,7 @@
         "Cítricos",
         "Mercados y precios"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -335,6 +359,7 @@
       "categorias": [
         "Hortalizas"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -350,6 +375,7 @@
         "Fitosanitarios",
         "PAC y ayudas"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -362,7 +388,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fab6.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "7546890d19e5f8fa",
@@ -376,6 +403,7 @@
         "Hortalizas",
         "Gestión de la explotación"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -388,20 +416,8 @@
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/pimiento-temprano-balanegra-18-NOVIEMBRE-vilmorin-252x315.webp",
       "categorias": [
         "Hortalizas"
-      ]
-    },
-    {
-      "id": "53b80093ec2bc1b6",
-      "titulo": "Sale a licitación por casi 500.000 euros la mejora del camino de Piezas de Costa-Collado Blanco en Mazarrón",
-      "extracto": "La actuación tiene un plazo de ejecución de 45 días y contará con financiación del Fondo Europeo Agrícola de Desarrollo Rural Las empresas…",
-      "fecha": "2026-11-17T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126657&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
       ],
-      "imagen_buscada": true
+      "local": false
     },
     {
       "id": "aa1d1d1b50d5ff7c",
@@ -413,7 +429,8 @@
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Semilleros-Forum-525x315.webp",
       "categorias": [
         "Fitosanitarios"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "586121eb918e8e7a",
@@ -426,6 +443,7 @@
       "categorias": [
         "Caza"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -438,34 +456,8 @@
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Jose-Antonio-Monrabal-responsable-comercial-de-Seminis-en-Almeria-y-Khalid-Smaili-delegado-comercial-525x315.webp",
       "categorias": [
         "Hortalizas"
-      ]
-    },
-    {
-      "id": "418946c1f1ea1e0a",
-      "titulo": "269 jóvenes agricultores y ganaderos de la Región recibirán ayudas para iniciar su actividad",
-      "extracto": "La convocatoria cuenta con un presupuesto de casi 11,7 millones de euros, tras la ampliación de los 10,3 millones previstos inicialmente…",
-      "fecha": "2026-11-16T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126645&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Jóvenes agricultores",
-        "PAC y ayudas"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "3e80a28ba817fce8",
-      "titulo": "La Comunidad exhibe su modelo de reutilización de agua ante más de 200 expertos de todo el mundo",
-      "extracto": "Se depura el 99% de las aguas urbanas, frente al 3% de media europea y el 11% en el conjunto de España. El consejero Joaquín Buendía…",
-      "fecha": "2026-11-16T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126642&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Riego y agua"
-      ],
-      "imagen_buscada": true
+      "local": false
     },
     {
       "id": "41784162d122a9e1",
@@ -478,46 +470,7 @@
       "categorias": [
         "Fitosanitarios"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "68f920f0b08032c2",
-      "titulo": "Sale a licitación por más de un millón de euros la mejora del camino de la Capellanía en Yecla",
-      "extracto": "Las obras tendrán un plazo de ejecución de dos meses y contarán con financiación del Fondo Europeo Agrícola de Desarrollo Rural Las…",
-      "fecha": "2026-11-14T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126629&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "31feb5b283a815c9",
-      "titulo": "Aprobadas ayudas de 200.000 euros para promocionar frutas y hortalizas fuera de la UE",
-      "extracto": "Asopex, Fecoam y Proexport serán las destinatarias de las subvenciones para actividades de promoción en 2026 Las ayudas cubrirán la…",
-      "fecha": "2026-11-13T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126623&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Hortalizas",
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "7753d329899a3d7e",
-      "titulo": "Más de 200 expertos internacionales debatirán en Murcia sobre los retos para mejorar la resiliencia hídrica europea",
-      "extracto": "Esamur organiza un Congreso Internacional que reunirá a profesionales mundiales en economía circular, desalación, reutilización de agua y…",
-      "fecha": "2026-11-12T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126606&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Riego y agua"
-      ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -530,7 +483,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "155c483260cc0287",
@@ -542,7 +496,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3f9.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "bb45737ef9b6a366",
@@ -555,19 +510,7 @@
       "categorias": [
         "Caza"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "e4a2da8955bd8f4a",
-      "titulo": "El Gobierno regional denuncia el \"secuestro\" de más de 70 hm3 para regadío usando como excusa las reparaciones del Trasvase",
-      "extracto": "El consejero Joaquín Buendía denuncia que \"la negativa a prorrogar los plazos responde únicamente al objetivo del Gobierno central de…",
-      "fecha": "2026-11-09T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126587&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Riego y agua"
-      ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -580,7 +523,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "0065072a056869e9",
@@ -592,34 +536,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/274c.png",
       "categorias": [
         "Caza"
-      ]
-    },
-    {
-      "id": "c0b7c1e5885e20eb",
-      "titulo": "Las Oficinas Comarcales Agrarias gestionan más de 15.700 trámites para ayudar a agricultores y ganaderos",
-      "extracto": "En los primeros nueve meses del año se han tramitado subvenciones, certificados y medidas de control fitosanitario. El consejero Joaquín…",
-      "fecha": "2026-11-08T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126575&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Fitosanitarios",
-        "PAC y ayudas"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "c9c63bf6919b5fe7",
-      "titulo": "La Región presenta ante otros territorios europeos mediterráneos su modelo de saneamiento y reutilización del agua",
-      "extracto": "El sistema regional regenera el 96 por ciento del agua depurada, según expuso el director general del Agua en el encuentro de trabajo…",
-      "fecha": "2026-11-07T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126564&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Riego y agua"
-      ],
-      "imagen_buscada": true
+      "local": false
     },
     {
       "id": "ebf948b5c1c7edfb",
@@ -632,6 +550,7 @@
       "categorias": [
         "Caza"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -645,6 +564,7 @@
       "categorias": [
         "Caza"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -658,6 +578,7 @@
       "categorias": [
         "Caza"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -670,34 +591,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f4e2.png",
       "categorias": [
         "Caza"
-      ]
-    },
-    {
-      "id": "93b2e13e02067e29",
-      "titulo": "Crecen las exportaciones de tomate un 24 % en los ocho primeros meses de 2026",
-      "extracto": "El consejero de Agricultura visita los invernaderos del Grupo Paloma en Mazarrón Destaca la apuesta de la empresa por \"estructuras…",
-      "fecha": "2026-11-05T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126547&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "74549a6b61f1a1d2",
-      "titulo": "La Comunidad destina 4,8 millones de euros a ayudas para cultivos en zonas de montaña y con limitaciones naturales",
-      "extracto": "El presupuesto se distribuye entre 2,3 millones para zonas de montaña y casi 2,5 millones para zonas con limitaciones naturales",
-      "fecha": "2026-11-05T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126544&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
+      "local": false
     },
     {
       "id": "0ca493a2534d9ef8",
@@ -709,7 +604,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "e8f60585bf8e7e98",
@@ -722,6 +618,7 @@
       "categorias": [
         "Caza"
       ],
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -734,7 +631,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "6d036de2db9dbf6e",
@@ -746,20 +644,8 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/11/IMG_5015-1024x768.jpg",
       "categorias": [
         "Caza"
-      ]
-    },
-    {
-      "id": "8b172092a97af5e8",
-      "titulo": "La Comunidad licita las obras de mejora de tres caminos rurales de Ricote por 254.000 euros",
-      "extracto": "La actuación renovará 1.150 metros de los caminos de Mula, Prolongación de Mula y del Rife, y mejorará la seguridad vial y los accesos a…",
-      "fecha": "2026-11-03T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126532&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
       ],
-      "imagen_buscada": true
+      "local": false
     },
     {
       "id": "4039815ff41062e3",
@@ -771,7 +657,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3c6.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "68cd1869044bf012",
@@ -784,21 +671,8 @@
       "categorias": [
         "Caza"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "ff8bd96629540e51",
-      "titulo": "La Región de Murcia lidera las exportaciones españolas de equipamiento de riego con un crecimiento del 48%",
-      "extracto": "Las ventas al exterior rozan los 40 millones entre enero y agosto y representan el 36 % del total nacional. El consejero de Agricultura…",
-      "fecha": "2026-11-02T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126517&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Riego y agua",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
+      "imagen_buscada": true,
+      "local": false
     },
     {
       "id": "e6593c582f69a26a",
@@ -810,20 +684,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png",
       "categorias": [
         "Caza"
-      ]
-    },
-    {
-      "id": "45dbd7c15b28afd1",
-      "titulo": "Las exportaciones hortofrutícolas de la Región vuelven a batir récords al crecer un 5,4 % entre enero y agosto",
-      "extracto": "El consejero de Agricultura destaca el aumento de las ventas al exterior tras reunirse con el consejero delegado global de IFCO y el…",
-      "fecha": "2026-11-01T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126509&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Mercados y precios"
       ],
-      "imagen_buscada": true
+      "local": false
     },
     {
       "id": "b7766a1569c48066",
@@ -835,7 +697,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "8bad8ee712eac9ef",
@@ -847,7 +710,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f49a.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "5b529e46a9f2e6a3",
@@ -861,20 +725,8 @@
         "Caza",
         "Mercados y precios"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "2d687f9d19d7f734",
-      "titulo": "El Cifea de Lorca forma en el manejo de colmenas a profesionales del sector agrario, agroalimentario y forestal",
-      "extracto": "El consejero de Agricultura señala que \"la formación en apicultura ofrece una vía para diversificar la actividad agraria y contribuye a…",
-      "fecha": "2026-10-29T23:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126495&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
+      "imagen_buscada": true,
+      "local": false
     },
     {
       "id": "f9dc8f053c9e19a9",
@@ -887,7 +739,8 @@
       "categorias": [
         "Caza"
       ],
-      "imagen_buscada": true
+      "imagen_buscada": true,
+      "local": false
     },
     {
       "id": "dac6875095045249",
@@ -899,7 +752,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f947.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "77b2aeb48a5a02f0",
@@ -912,7 +766,8 @@
       "categorias": [
         "Caza"
       ],
-      "imagen_buscada": true
+      "imagen_buscada": true,
+      "local": false
     },
     {
       "id": "99fa10b5ef8ffe66",
@@ -924,7 +779,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "d7f060cf079bce60",
@@ -936,7 +792,8 @@
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f534.png",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "67dedd2c46e4aec1",
@@ -948,7 +805,8 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/10/88-1024x576.jpg",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "d0200c6ddf9881fb",
@@ -960,7 +818,8 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/10/IMG_4219-1024x768.jpg",
       "categorias": [
         "Caza"
-      ]
+      ],
+      "local": false
     },
     {
       "id": "d9a239f6a6a79031",
@@ -973,20 +832,8 @@
       "categorias": [
         "Caza"
       ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "074970a918a34f5d",
-      "titulo": "Sale a licitación la mejora del camino rural Valdepino de Cehegín",
-      "extracto": "Cuenta con un presupuesto de cerca de 635.000 euros y las empresas interesadas pueden presentar sus ofertas hasta el 16 de noviembre",
-      "fecha": "2026-10-24T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126455&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "General"
-      ],
-      "imagen_buscada": true
+      "imagen_buscada": true,
+      "local": false
     }
   ]
 }

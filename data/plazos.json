@@ -1,6 +1,36 @@
 {
-  "actualizado": "2026-11-23T00:24:42Z",
+  "actualizado": "2026-11-23T00:26:11Z",
   "plazos": [
+    {
+      "id": "bdns-928561",
+      "titulo": "Resolución del Vicepresidente Tercero y Conseller de Medio Ambiente, Infraestructuras, Territorio y de la Recuperación, para la concesión de una subvención a la Comunidad de Regantes San Felipe Neri, en 2026",
+      "organismo": "Secretaría autonómica de medio ambiente  y territorio",
+      "ambito": "Provincia de Alicante",
+      "publicada": "2026-09-09",
+      "fecha_inicio": "2026-09-07",
+      "fecha_fin": "2026-12-30",
+      "texto_fin": null,
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928561",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "origen": "BDNS"
+    },
+    {
+      "id": "bdns-928543",
+      "titulo": "Resolución del Vicepresidente Tercero y Conseller de Medio Ambiente, Infraestructuras, Territorio y de la Recuperación, para la concesión de una subvención a la Comunidad General de Regadío del Llevant, Margen Izquierda del Segura en 2026",
+      "organismo": "Secretaría autonómica de medio ambiente  y territorio",
+      "ambito": "Provincia de Alicante",
+      "publicada": "2026-09-09",
+      "fecha_inicio": "2026-09-07",
+      "fecha_fin": "2026-12-30",
+      "texto_fin": null,
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/928543",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "origen": "BDNS"
+    },
     {
       "id": "bdns-939415",
       "titulo": "Rehabilitación de balsas de riego para la mejora de condiciones de seguridad",
