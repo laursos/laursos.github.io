@@ -493,18 +493,25 @@ button.op-btn{border:0;cursor:pointer}
 .quien-a{flex:none;font-family:var(--font-display);font-weight:700;font-size:13.5px;padding:10px 18px;border:1px solid var(--lm-green);border-radius:8px}
 .quien-a:hover{background:var(--lm-green);color:#fff}
 @media (max-width:760px){.quien-in{flex-wrap:wrap;gap:12px 14px}.quien-foto{width:64px;height:64px}.quien-n{font-size:16px}.quien-d{font-size:13.5px}.quien-a{width:100%;text-align:center}}
-/* ===== BARRA DE SERVICIOS SIEMPRE VISIBLE ===== */
-.sv-bar{position:sticky;top:60px;z-index:40;margin:18px -8px 14px;padding:8px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.07)}
-.sv-bar-in{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;justify-content:center}
-.sv-bar-in::-webkit-scrollbar{display:none}
-.sv-bar button{flex:none;font-family:var(--font-display);font-weight:600;font-size:13.5px;padding:9px 16px;border-radius:999px;border:1px solid var(--line-2);background:#fff;color:var(--lm-black);cursor:pointer;transition:border-color .2s,background .2s,color .2s}
-.sv-bar button:hover{border-color:var(--lm-green)}
-.sv-bar button.on{background:var(--lm-green);border-color:var(--lm-green);color:#fff}
-@media (max-width:760px){.sv-bar{margin:14px -18px 12px;border-radius:0;padding:8px 12px}.sv-bar-in{justify-content:flex-start}.sv-bar button{font-size:12.5px;padding:8px 13px}}
   .eyebrow,.g-t,.cred h4{font-size:18px;letter-spacing:.14em}
 .h2,.sv-h,.sv-head .sv-h{font-size:clamp(22px,2.2vw,28px)}
 #hero-cinegetica img{object-position:22% 50%}
 @media (max-width:760px){#hero-cinegetica img{object-position:50% 0%}}
+/* Otros servicios: nombre + subservicios */
+.ot{border-radius:16px;padding:8px 18px 8px 8px;text-align:left;max-width:340px}
+.ot-t{display:flex;flex-direction:column;gap:2px;line-height:1.25}
+.ot-t b{font-weight:600}
+.ot-s{font-family:var(--font-body);font-weight:400;font-size:12px;color:var(--lm-gray-500)}
+@media (max-width:760px){.ot{max-width:none;align-items:flex-start}.ot-s{font-size:11.5px}}
+/* Botón Solicitar presupuesto más visible */
+.panel .pcta a,.pcta.solo a{font-size:16px;padding:16px 36px;border-radius:10px;letter-spacing:.01em;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.panel .pcta a{background:#fff;color:var(--lm-green-darker)}
+.panel .pcta a:hover{background:var(--lm-earth);color:#1a1a1a}
+/* Opiniones: tarjetas centradas, opinión y llamada lado a lado */
+#op-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch}
+#op-grid>.op{flex:1 1 300px;max-width:520px;grid-column:auto;margin:0}
+#op-grid>.op-vacio{display:flex;flex-direction:column;justify-content:center;align-items:center}
+@media (max-width:760px){.otros-l{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="no-sponsors">
@@ -557,11 +564,8 @@ button.op-btn{border:0;cursor:pointer}
     <button class="tab sh-r" data-sub="medioambiente" role="tab" aria-selected="false"><span class="tim"><img src="./img/tortola.jpg" alt="" loading="lazy"></span><span class="tbox"><b>Medio ambiente</b><small>Impacto ambiental, paisaje y huella de carbono</small><span class="tver">Ver servicios <span class="tn"></span></span></span></button>
     </div></div>
   </div>
-  <nav class="sv-bar" id="sv-bar" aria-label="Cambiar de servicio"><div class="sv-bar-in">
-    <button type="button" data-sub="asesoramiento">Asesoramiento</button><button type="button" data-sub="normativa">Normativa y ayudas</button><button type="button" data-sub="catastro">Mediciones y catastro</button><button type="button" data-sub="maquinaria">Maquinaria</button><button type="button" data-sub="cinegetica">Caza</button><button type="button" data-sub="medioambiente">Medio ambiente</button>
-  </div></nav>
   <div id="areas"></div>
-  <nav class="otros" id="otros" aria-label="Otros servicios"><p class="otros-t">¿Buscas otro servicio?</p><div class="otros-l"><span class="otros-g">Agrícola</span><button type="button" class="ot" data-sub="asesoramiento"><span class="ot-i"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="ot-t">Asesoramiento técnico</span></button><button type="button" class="ot" data-sub="normativa"><span class="ot-i"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="ot-t">Normativa y ayudas</span></button><button type="button" class="ot" data-sub="catastro"><span class="ot-i"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="ot-t">Mediciones y catastro</span></button><button type="button" class="ot" data-sub="maquinaria"><span class="ot-i"><img src="./maq-area.jpg" alt="" loading="lazy"></span><span class="ot-t">Maquinaria agrícola</span></button><span class="otros-g">Cinegética y medio ambiente</span><button type="button" class="ot" data-sub="cinegetica"><span class="ot-i"><img src="./img/ciervo.jpg" alt="" loading="lazy"></span><span class="ot-t">Gestión cinegética</span></button><button type="button" class="ot" data-sub="medioambiente"><span class="ot-i"><img src="./img/tortola.jpg" alt="" loading="lazy"></span><span class="ot-t">Medio ambiente</span></button></div></nav>
+  <nav class="otros" id="otros" aria-label="Otros servicios"><p class="otros-t">¿Buscas otro servicio?</p><div class="otros-l"><span class="otros-g">Agrícola</span><button type="button" class="ot" data-sub="asesoramiento"><span class="ot-i"><img src="./img/asesoramiento-integral.jpg" alt="" loading="lazy"></span><span class="ot-t"><b>Asesoramiento técnico</b><small class="ot-s">Cultivos, abonado, cuaderno de campo, GLOBALG.A.P., ecológico</small></span></button><button type="button" class="ot" data-sub="normativa"><span class="ot-i"><img src="./norm-pac.jpg" alt="" loading="lazy"></span><span class="ot-t"><b>Normativa y ayudas</b><small class="ot-s">PAC, REA, REGEPA, subvenciones, quemas, alegaciones</small></span></button><button type="button" class="ot" data-sub="catastro"><span class="ot-i"><img src="./cat-fondo.jpg" alt="" loading="lazy"></span><span class="ot-t"><b>Mediciones y catastro</b><small class="ot-s">Mediciones GPS, Catastro, SIGPAC, segregaciones</small></span></button><button type="button" class="ot" data-sub="maquinaria"><span class="ot-i"><img src="./maq-area.jpg" alt="" loading="lazy"></span><span class="ot-t"><b>Maquinaria agrícola</b><small class="ot-s">ROMA, ITEAF, gasóleo B</small></span></button><span class="otros-g">Cinegética y medio ambiente</span><button type="button" class="ot" data-sub="cinegetica"><span class="ot-i"><img src="./img/ciervo.jpg" alt="" loading="lazy"></span><span class="ot-t"><b>Gestión cinegética</b><small class="ot-s">Planes de caza, daños, censos, precintos, armas</small></span></button><button type="button" class="ot" data-sub="medioambiente"><span class="ot-i"><img src="./img/tortola.jpg" alt="" loading="lazy"></span><span class="ot-t"><b>Medio ambiente</b><small class="ot-s">Impacto ambiental, paisaje, huella de carbono</small></span></button></div></nav>
 </div></section>
 
 <section class="s soft noticias" id="noticias" aria-labelledby="noticias-titulo" data-json="./data/noticias.json" data-img-default="./img/noticia-default.jpg"><div class="wrap">
@@ -790,8 +794,10 @@ function actualizarCifras(){const a=document.getElementById('c-anios'),sv=docume
 actualizarCifras();
 /* Opiniones reales de clientes (con su permiso). La sección solo aparece si hay alguna.
    Formato: {texto:'...', nombre:'Nombre A.', detalle:'Cítricos · Orihuela'} */
-const OPINIONES=[];
-(function(){if(!OPINIONES.length)return;const escH=x=>String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));const g=document.getElementById('op-grid');g.innerHTML=OPINIONES.map(o=>`<figure class="op"><q>${escH(o.texto)}</q><figcaption class="who"><span class="av">${escH(o.nombre.trim()[0]||'')}</span><span><b>${escH(o.nombre)}</b><small>${escH(o.detalle||'')}</small></span></figcaption></figure>`).join('');})();
+const OPINIONES=[
+  {texto:'Laura es una gran profesional, apasionada de su trabajo y con un carácter técnico intachable. Destaca su capacidad de mediación, cercanía, empatía y saber hacer. Es una persona imprescindible para todo agricultor que quiera estar cumpliendo con la legislación vigente. La recomiendo 100%.',nombre:'Manuel Lozano',detalle:'★★★★★ · Cox (Alicante)'}
+];
+(function(){if(!OPINIONES.length)return;const escH=x=>String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));const g=document.getElementById('op-grid');g.insertAdjacentHTML('afterbegin',OPINIONES.map(o=>`<figure class="op"><q>${escH(o.texto)}</q><figcaption class="who"><span class="av">${escH(o.nombre.trim()[0]||'')}</span><span><b>${escH(o.nombre)}</b><small>${escH(o.detalle||'')}</small></span></figcaption></figure>`).join(''));})();
 // Indicador verde que se desliza bajo la pestaña activa
 function moverIndicador(){const t=document.querySelector('.tab.on'),ind=document.querySelector('.tab-ind');if(!t||!ind)return;ind.style.width=t.offsetWidth+'px';ind.style.transform='translateX('+t.offsetLeft+'px)';}
 window.addEventListener('resize',moverIndicador);window.addEventListener('load',moverIndicador);moverIndicador();
