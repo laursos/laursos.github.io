@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T19:41:50Z",
+  "actualizado": "2026-11-23T00:02:43Z",
   "noticias": [
     {
       "id": "3894866085839066",
@@ -14,14 +14,327 @@
       ]
     },
     {
-      "id": "0861c24cfd49a421",
-      "titulo": "Boletín ayudas y normativas Nº 309",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 13 al 20 de noviembre de 2026",
-      "fecha": "2026-11-20T09:59:26Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-309/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/pollydot-honey-bees-326334_1920.jpg",
+      "id": "a8676bccdeca829e",
+      "titulo": "La última propuesta para los presupuestos europeos rebaja aún más los recortes para la PAC y los pagos directos a los agricultores",
+      "extracto": "El presidente del Consejo Europeo, António Costa, ha presentado este sábado la ultima propuesta para los presupuestos europeos, con un…",
+      "fecha": "2026-11-22T09:37:12Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/la-ultima-propuesta-para-los-presupuestos-europeos-rebaja-aun-mas-los-recortes-para-la-pac-y-los-pagos-directos-a-los-agricultores/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PAC-ULTIMA-PROPUESTA-PARA-LOS-PRESUPUESTOS-EUROPEOS-150x150.jpg",
       "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "c9de3feb93ad815b",
+      "titulo": "La patronal cárnica Fecic reclama quitar el IVA a la carne porque es un alimento «esencial» y para ayudar a aumentar las ventas",
+      "extracto": "El secretario general de la patronal de la industria cárnica Fecic, Ignasi Pons, ha reclamado la eliminación del IVA a la carne y a los…",
+      "fecha": "2026-11-22T09:13:59Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/la-patronal-carnica-fecic-reclama-quitar-el-iva-a-la-carne-porque-es-un-alimento-esencial-y-para-ayudar-a-aumentar-las-ventas/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/QUITAR-EL-IVA-A-LA-CARNE-FECIC-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "8668b471f4ee8640",
+      "titulo": "Lamentan que el campo vuelva a quedar fuera del debate electoral: no se habló de sus problemas y ni una palabra sobre la futura PAC",
+      "extracto": "Unión de Uniones lamenta que el cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo dejara fuera los principales problemas del sector…",
+      "fecha": "2026-11-21T09:46:27Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/lamentan-que-el-campo-vuelva-a-quedar-fuera-del-debate-electoral-no-se-hablo-de-los-problemas-del-campo-y-ni-una-palabra-sobre-la-pac/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/DEBATE-ELECTORAL-SIN-CAMPO-UNION-UNIONES-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "87b3a17c9e5b09cf",
+      "titulo": "El reparto de ayudas, en el ojo del huracán: «No se trata de si entra o no un cultivo, sino en que se concentren en los que más han perdido»",
+      "extracto": "ASAJA Avila, ASAJA Burgos, Asaja Valladolid y ASAJA Zamora respaldan el criterio de que las ayudas extraordinarias puestas en marcha por la…",
+      "fecha": "2026-11-21T09:18:47Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/el-reparto-de-ayudas-en-el-ojo-del-huracan-no-se-trata-de-si-entra-o-no-un-cultivo-sino-en-que-se-concentren-en-los-que-mas-han-perdido/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/REPARTO-DE-AYUDAS-CYL-ASAJA-BURGOS-AVILA-ZAMORA-VALLADOLID-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ]
+    },
+    {
+      "id": "465609ac679fdfe8",
+      "titulo": "Reclaman ayudas para el sector arrocero de la Albufera",
+      "extracto": "La Unió reclama una ayuda de 1.200 €/ha para evitar que la Albufera se quede sin arroceros mientras aspira a ser Reserva de la Biosfera…",
+      "fecha": "2026-11-21T07:12:00Z",
+      "fuente": "Valencia Fruits",
+      "url": "https://valenciafruits.com/reclaman-ayudas-sector-arrocero-albufera/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/125f8319-ed77-4bd4-8708-8cfd46c7917a.jpg.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "0dc8edbff1487114",
+      "titulo": "Nunhems completa su catálogo de amarillo con un tardío que cuaja con blanqueo",
+      "extracto": "Esta nueva variedad de California amarillo para el ciclo medio-tardío de BASF | Nunhems destaca por su equilibrio generativo-vegetativo…",
+      "fecha": "2026-11-21T04:55:07Z",
+      "fuente": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/nunhems-completa-su-catalogo-de-amarillo-con-un-tardio-que-cuaja-con-blanqueo/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Pimiento-amarillo-Nun-59505-PPS-de-Nunhems-2-525x315.webp",
+      "categorias": [
+        "Cítricos"
+      ]
+    },
+    {
+      "id": "d84aa4562c8857cd",
+      "titulo": "“Hacia una citricultura sostenible: el CIVAC-19 y el Forner Alcaide 5 en la renovación del cultivo”, por Mª Ángeles Forner",
+      "extracto": "La Coordinadora del Centro de Citricultura y Producción Vegetal e investigadora principal del Grupo de Patrones de Cítricos, Mª Ángeles…",
+      "fecha": "2026-11-20T12:06:03Z",
+      "fuente": "Valencia Fruits",
+      "url": "https://valenciafruits.com/hacia-citricultura-sostenible-civac-19-forner-alcaide-5-renovacion-cultivo-ma-angeles-forner/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/FS04-2_3170.jpg",
+      "categorias": [
+        "Cítricos"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "fb10b8b0625a078f",
+      "titulo": "El Ministerio fija los importes unitarios provisionales revisados de los eco-régimenes de la PAC de la campaña 2026",
+      "extracto": "El Ministerio de Agricultura, Pesca y Alimentación (MAPA) ha publicado, a través del Fega, los importes unitarios provisionales revisados…",
+      "fecha": "2026-11-20T10:30:07Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/el-ministerio-fija-los-importes-unitarios-provisionales-revisados-de-los-eco-regimenes-de-la-pac-de-la-campana-2026/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/IMPORTES-DE-LOS-ECO-REGIMENES-DE-LA-PAC-2026-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas",
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "7fe602b9c723864d",
+      "titulo": "La Unió exige a Aldi y Lidl que retiren sus ofertas de naranjas a 0,95 €/kg",
+      "extracto": "La organización reclama a AICA y a la Conselleria de Agricultura inspecciones inmediatas para comprobar quién financia los descuentos y si…",
+      "fecha": "2026-11-20T10:20:36Z",
+      "fuente": "Valencia Fruits",
+      "url": "https://valenciafruits.com/unio-exige-aldi-lidl-retiren-ofertas-aranjas-095-kg/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/a20a3de3-63d4-4574-b591-65605a0d5e7b.jpg.jpg",
+      "categorias": [
+        "Cítricos"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "c5479e7180691937",
+      "titulo": "Una nueva generación para seguir evolucionando sin perder las raíces, Pepe Beltrán, 30 de 30",
+      "extracto": "Para Pepe Beltrán, incorporarse a Patatas Beltrán nunca fue una obligación marcada por el apellido. Creció rodeado de la empresa, visitando…",
+      "fecha": "2026-11-20T10:17:05Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/una-nueva-generacion-para-seguir/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/PXL_20260318_161815387.MP_-scaled.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "4254b8b77d0561be",
+      "titulo": "El cereal rompe su racha bajista y vuelve a cotizar al alza tanto porque hay una menor oferta disponibles como por la volatilidad exterior",
+      "extracto": "Cambio de tendencia en las cotizaciones del cereal, que rompe su racha bajista y vuelve a cotizar al alza tanto porque hay una menor oferta…",
+      "fecha": "2026-11-20T09:51:45Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/el-cereal-rompe-su-racha-bajista-y-vuelve-a-cotizar-al-alza-tanto-porque-hay-una-menor-oferta-disponibles-como-por-la-volatilidad-exterior/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/CEREAL-ROMPE-SU-RACHA-BAJISTA-ABASTORES-150x150.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "3815903ac73d615f",
+      "titulo": "Carta abierta del presidente de SAB-Almendrave, Pere Ferré",
+      "extracto": "Pere Ferré / Presidente de SAB-Almendrave La última reunión de la Mesa Sectorial de Frutos Secos, celebrada el pasado 5 de noviembre por el…",
+      "fecha": "2026-11-20T09:40:22Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/carta-abierta-del-presidente-de-sab-almendrave-pere-ferre/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/CARTA-ABIERTA-ALMENDRAVE-PERE-FERRE-150x150.jpg",
+      "categorias": [
+        "Frutales"
+      ]
+    },
+    {
+      "id": "6a7ea981759902f1",
+      "titulo": "«Todo empieza en las raíces», Isidoro Sánchez, JiffyGroup España",
+      "extracto": "La calidad del medio en el que crecen las raíces es el punto de partida del trabajo de JiffyGroup. La compañía, especializada en sustratos…",
+      "fecha": "2026-11-20T09:35:09Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/todo-empieza-en-las-raices-isidoro-sanchez-jiffygroup-espana/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Jiffy_Hydrogel_V1-09-Medium-1024x683-1.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "e72c20c259e1c80b",
+      "titulo": "+Brócoli organiza por primera vez en Navarra su tradicional jornada de corte",
+      "extracto": "La Asociación Nacional +Brócoli ha celebrado su tradicional acto de inicio de campaña, una cita simbólica en la que cada año se realiza el…",
+      "fecha": "2026-11-20T07:10:44Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/brocoli-organiza-por-primera-vez-en-navarra-su-tradicional-jornada-de-corte/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/brocoli_11zon.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "6309d3e2233ff368",
+      "titulo": "Red Lina presenta su naranja pigmentada de maduración temprana",
+      "extracto": "Productores, técnicos y operadores comerciales han podido conocer de primera mano Red Lina en las tres jornadas de campo organizadas por…",
+      "fecha": "2026-11-20T07:08:35Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/red-lina-presenta-su-naranja-pigmentada-de-maduracion-temprana/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/naranja_11zon.webp",
+      "categorias": [
+        "Cítricos",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "b0c690e17c69dd0e",
+      "titulo": "El pimiento Nun 59505 PPS F1 destaca por su producción escalonada y su calidad de fruto",
+      "extracto": "Salonikas F1, el NUN 59503 PPS* y ahora Nun 59505 PPS*. Es la última novedad en California amarillo de BASF | Nunhems, con la que la casa…",
+      "fecha": "2026-11-20T07:05:59Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/el-pimiento-nun-59505-pps-f1-destaca-por-su-produccion-escalonada-y-su-calidad-de-fruto/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/YDRAY-Jornda-de-campo-california-amarillo-59505-23-1_11zon.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "52ba2f49dfc38c10",
+      "titulo": "Fitosanitarios, agua, empleo, PAC y comercio: las prioridades de FEPEX ante las elecciones",
+      "extracto": "Ante las elecciones del 29 de noviembre de 2026, FEPEX plantea cinco prioridades para reforzar la competitividad del sector hortofrutícola…",
+      "fecha": "2026-11-20T07:03:31Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/fitosanitarios-agua-empleo-pac-y-comercio-las-prioridades-de-fepex-ante-las-elecciones/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/logo_29N_mejorado.webp",
+      "categorias": [
+        "Fitosanitarios",
+        "Riego y agua",
+        "PAC y ayudas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "91f2e27de59ed7cc",
+      "titulo": "HORTYFRUTA activa la Extensión de Norma para hacer frente a la alerta de berenjena negra",
+      "extracto": "La Interprofesional de Frutas y Hortalizas de Andalucía, HORTYFRUTA, ha acordado la activación de la Extensión de Norma en materia de…",
+      "fecha": "2026-11-20T07:00:30Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/hortyfruta-activa-la-extension-de-norma-para-hacer-frente-a-la-alerta-de-berenjena-negra/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/berenjena_11zon.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "fe9ae28c46522282",
+      "titulo": "Metis® cierra la campaña 2026 con 6.000 toneladas comercializadas y una nueva identidad de marca",
+      "extracto": "Metis® cierra la temporada 2026 con un volumen comercializado de aproximadamente 6.000 toneladas y un balance marcado por el lanzamiento de…",
+      "fecha": "2026-11-20T06:40:40Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/metis-cierra-la-campana-2026-con-6-000-toneladas-comercializadas-y-una-nueva-identidad-de-marca/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/metis-2_11zon.webp",
+      "categorias": [
+        "Frutales",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "6eecda0d124e62e0",
+      "titulo": "CASI, reconocida con el Premio de Comercio Interior de Andalucía por su trayectoria e innovación",
+      "extracto": "La cooperativa almeriense CASI ha recibido de manos de la consejera de Empleo, Empresa y Trabajo Autónomo, Rocío Blanco Eguren, el Premio…",
+      "fecha": "2026-11-20T06:35:35Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/casi-reconocida-con-el-premio-de-comercio-interior-de-andalucia-por-su-trayectoria-e-innovacion/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/casi_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "7bcca34e591de7de",
+      "titulo": "Samantha Vallejo-Nágera propone una nueva receta otoñal con aguacate español",
+      "extracto": "¿Quién dijo que el aguacate es solo para ensaladas frescas, tostadas o recetas veraniegas? Samantha Vallejo-Nágera propone darle una vuelta…",
+      "fecha": "2026-11-20T06:30:56Z",
+      "fuente": "Revista Mercados",
+      "url": "https://revistamercados.com/samantha-vallejo-nagera-propone-una-nueva-receta-otonal-con-aguacate-espanol/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/aguacate_11zon-e1795170022104.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "995054be797c3d83",
+      "titulo": "Anecoop Bodegas explora nuevas oportunidades de comercialización en la India",
+      "extracto": "Desde hoy promociona en ProWine Mumbai los vinos de sus bodegas socias Cooperativa La Viña, Bodegas Reymos y Bodegas San Martín. El Acuerdo…",
+      "fecha": "2026-11-19T13:32:07Z",
+      "fuente": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/anecoop-bodegas-explora-nuevas-oportunidades-de-comercializacion-en-la-india/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Anecoop-Bodegas-en-Prowine-Mumbai-2026-1-525x315.webp",
+      "categorias": [
+        "Mercados y precios"
+      ]
+    },
+    {
+      "id": "a49c04e35ead58c5",
+      "titulo": "La campaña de cítricos de Córdoba arranca con calibres más pequeños y menos producción",
+      "extracto": "La Lonja de Cítricos sitúa la Navelina entre 0,26 y 0,28 €/kg para primera calidad y entre 0,22 y 0,25 €/kg para segunda, mientras las…",
+      "fecha": "2026-11-19T13:27:06Z",
+      "fuente": "Valencia Fruits",
+      "url": "https://valenciafruits.com/la-campana-de-citricos-de-cordoba-arranca-con-calibres-mas-pequenos-y-menos-produccion/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2025/06/Naranjas.jpg",
+      "categorias": [
+        "Cítricos",
+        "Mercados y precios"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "3ad0e705b2f9b372",
+      "titulo": "El impacto de Thrips parvispinus llega a los supermercados europeos",
+      "extracto": "“El cultivo de pimientos en España lo tiene difícil actualmente debido a condiciones de cultivo desafiantes. Por esta razón, la oferta es…",
+      "fecha": "2026-11-19T09:44:27Z",
+      "fuente": "Phytoma",
+      "url": "https://phytoma.com/noticias/el-impacto-de-thrips-parvispinus-llega-a-los-supermercados-europeos",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/Parvispinus-Belgica.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "fac4ad14e6d09b1c",
+      "titulo": "Murcia subvenciona el arranque voluntario de limoneros ante el virus CYVCV",
+      "extracto": "El Consejo de Gobierno de la Región de Murcia ha aprobado un decreto que regula las ayudas de concesión directa destinadas a compensar a…",
+      "fecha": "2026-11-18T10:45:33Z",
+      "fuente": "Phytoma",
+      "url": "https://phytoma.com/noticias/murcia-subvenciona-el-arranque-voluntario-de-limoneros-ante-el-virus-cyvcv",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/CYVCV-MURCIA.jpg",
+      "categorias": [
+        "Cítricos",
+        "Fitosanitarios",
         "PAC y ayudas"
       ],
       "imagen_buscada": true
@@ -39,6 +352,32 @@
       ]
     },
     {
+      "id": "7546890d19e5f8fa",
+      "titulo": "La elección de las variedades y las estrategias de protección, claves para el cultivo del brócoli",
+      "extracto": "La finca experimental de INTIA en Cadreita acogió la jornada de hortícolas de otoño/invierno, en la que se hizo balance del inicio de la…",
+      "fecha": "2026-11-18T09:15:02Z",
+      "fuente": "Phytoma",
+      "url": "https://phytoma.com/noticias/la-eleccion-de-las-variedades-y-las-estrategias-de-proteccion-claves-para-el-cultivo-del-brocoli",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/INTIA-brocoli.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Gestión de la explotación"
+      ],
+      "imagen_buscada": true
+    },
+    {
+      "id": "e3596e1d6bf9d929",
+      "titulo": "Día 19 de noviembre. Jornada de pimiento de Vilmorin-Mikado",
+      "extracto": "Vilmorin-Mikado organiza próximo jueves 19 de noviembre una jornada de campo en Venta Nueva (Balanegra), en la que los asistentes podrán…",
+      "fecha": "2026-11-18T00:07:16Z",
+      "fuente": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/dia-19-de-noviembre-jornada-de-pimiento-de-vilmorin-mikado/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/pimiento-temprano-balanegra-18-NOVIEMBRE-vilmorin-252x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ]
+    },
+    {
       "id": "53b80093ec2bc1b6",
       "titulo": "Sale a licitación por casi 500.000 euros la mejora del camino de Piezas de Costa-Collado Blanco en Mazarrón",
       "extracto": "La actuación tiene un plazo de ejecución de 45 días y contará con financiación del Fondo Europeo Agrícola de Desarrollo Rural Las empresas…",
@@ -52,6 +391,18 @@
       "imagen_buscada": true
     },
     {
+      "id": "aa1d1d1b50d5ff7c",
+      "titulo": "Semilleros Forum reúne a 200 profesionales en El Ejido en su primera edición",
+      "extracto": "Semilleros Forum arranca en El Ejido con más de 200 profesionales y sitúa la sanidad vegetal entre las principales preocupaciones del…",
+      "fecha": "2026-11-17T21:00:49Z",
+      "fuente": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/semilleros-forum-reune-a-200-profesionales-en-el-ejido-en-su-primera-edicion/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Semilleros-Forum-525x315.webp",
+      "categorias": [
+        "Fitosanitarios"
+      ]
+    },
+    {
       "id": "586121eb918e8e7a",
       "titulo": "José Manuel Mora Mota firma un doblete histórico en el Campeonato de España de Perros de Muestra",
       "extracto": "El representante extremeño se proclama campeón de España de razas británicas y continentales con Savane du Gouyre y Stu del Valle de Santa…",
@@ -63,6 +414,18 @@
         "Caza"
       ],
       "imagen_buscada": true
+    },
+    {
+      "id": "f3c1d04eca5a311f",
+      "titulo": "La doble resistencia en lamuyo es posible y la presenta Seminis",
+      "extracto": "El nuevo pimiento lamuyo de Seminis llega con una gran novedad en su paquete de resistencias, ya que junto a oídio incorpora nematodos…",
+      "fecha": "2026-11-17T06:00:33Z",
+      "fuente": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/la-doble-resistencia-en-lamuyo-es-posible-y-la-presenta-seminis/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Jose-Antonio-Monrabal-responsable-comercial-de-Seminis-en-Almeria-y-Khalid-Smaili-delegado-comercial-525x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ]
     },
     {
       "id": "418946c1f1ea1e0a",
@@ -91,26 +454,13 @@
       "imagen_buscada": true
     },
     {
-      "id": "5320ac93be48dcc4",
-      "titulo": "Alfonso Galera García asume la presidencia de ASAJA Región de Murcia y reafirma su compromiso con la defensa de los agricultores y ganaderos.",
-      "extracto": "La organización agraria inicia una nueva etapa centrada en la rentabilidad de las explotaciones, la defensa del agua, el relevo…",
-      "fecha": "2026-11-16T11:42:43Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202611/16/alfonso-galera-garcia-asume-la-presidencia-de-asaja-region-de-murcia-y-reafirma-su",
-      "imagen": null,
-      "categorias": [
-        "Riego y agua"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "9e3becd051a96b58",
-      "titulo": "ASAJA Murcia exige aplazar hasta 2028 el registro electrónico de fitosanitarios y reducir la burocracia en el campo.",
-      "extracto": "Alfonso Gálvez: «No podemos seguir imponiendo más obligaciones administrativas a unos agricultores que necesitan dedicar su tiempo y sus…",
-      "fecha": "2026-11-16T09:06:06Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202611/16/asaja-murcia-exige-aplazar-hasta-2028-el-registro-electronico-de-fitosanitarios-y",
-      "imagen": null,
+      "id": "41784162d122a9e1",
+      "titulo": "Phytoma recopilará en una guía un centenar de plagas y enfermedades de los espacios verdes",
+      "extracto": "Phytoma lanzará próximamente la Guía de campo Plagas y enfermedades de ornamentales en espacios verdes, un ambicioso proyecto editorial…",
+      "fecha": "2026-11-16T16:13:20Z",
+      "fuente": "Phytoma",
+      "url": "https://phytoma.com/noticias/phytoma-recopilara-en-una-guia-un-centenar-de-plagas-y-enfermedades-de-los-espacios-verdes",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/00-PORTADA-GUIA-ORNAMENTALES.png",
       "categorias": [
         "Fitosanitarios"
       ],
@@ -145,32 +495,6 @@
       "imagen_buscada": true
     },
     {
-      "id": "a8dc59d11d9aeece",
-      "titulo": "Boletín ayudas y normativas Nº 308",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 6 al 13 de noviembre de 2026",
-      "fecha": "2026-11-13T11:33:04Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-308/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/WhatsApp-Image-2025-07-04-at-10.54.53-2.jpeg",
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "7de10711f6b7dc86",
-      "titulo": "ASAJA exige al Ministerio aplazar hasta 2028 el registro electrónico de fitosanitarios",
-      "extracto": "Reclama claridad normativa, libertad para elegir herramienta digital y una acción coordinada con otros Estados miembros. ASAJA ha…",
-      "fecha": "2026-11-13T07:39:27Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-exige-un-aplazamiento-para-el-registro-electronico-de-fitosanitarios/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/Normativa-comunitaria-en-el-sector-agrario-.jpg",
-      "categorias": [
-        "Fitosanitarios"
-      ],
-      "imagen_buscada": true
-    },
-    {
       "id": "7753d329899a3d7e",
       "titulo": "Más de 200 expertos internacionales debatirán en Murcia sobre los retos para mejorar la resiliencia hídrica europea",
       "extracto": "Esamur organiza un Congreso Internacional que reunirá a profesionales mundiales en economía circular, desalación, reutilización de agua y…",
@@ -180,19 +504,6 @@
       "imagen": null,
       "categorias": [
         "Riego y agua"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "1371bf06788b98ec",
-      "titulo": "Copa-Cogeca llevará a Dublín su rechazo a los recortes de la PAC coincidiendo con la reunión de los líderes de la UE",
-      "extracto": "Las organizaciones europeas de agricultores y cooperativas, en las que está integrada ASAJA, reclamarán una PAC fuerte y con presupuesto…",
-      "fecha": "2026-11-12T11:22:43Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/copa-cogeca-llevara-a-dublin-su-rechazo-a-los-recortes-de-la-pac-coincidiendo-con-la-reunion-de-los-lideres-de-la-ue/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/cumbre-europa-aranceles-eeuu.jpg",
-      "categorias": [
-        "PAC y ayudas"
       ],
       "imagen_buscada": true
     },
@@ -207,21 +518,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "ffe2b2605e0e9f32",
-      "titulo": "ASAJA Alicante planta cara a la crisis citrícola: reclama reciprocidad y medidas urgentes ante una campaña marcada por la vulnerabilidad fitosanitaria",
-      "extracto": "Rechaza los acuerdos comerciales con países en desigualdad de condiciones: “nos traen las plagas de fuera, nos hunden los precios y…",
-      "fecha": "2026-11-11T08:04:32Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-alicante-planta-cara-a-la-crisis-citricola-reclama-reciprocidad-y-medidas-urgentes-ante-una-campana-marcada-por-la-vulnerabilidad-fitosanitaria/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-web.jpg",
-      "categorias": [
-        "Cítricos",
-        "Fitosanitarios",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
     },
     {
       "id": "155c483260cc0287",
@@ -352,34 +648,6 @@
       "imagen_buscada": true
     },
     {
-      "id": "5f541365f6657f7f",
-      "titulo": "Boletín ayudas y normativas Nº 307",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 30 de octubre al 6 de noviembre de 2026",
-      "fecha": "2026-11-06T11:15:35Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-307/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/foto-76.jpg",
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "559e45d8e993dcb4",
-      "titulo": "ASAJA consigue recuperar las reducciones del gasóleo B y fertilizantes para la renta 2026",
-      "extracto": "ORDEN DE MODULOS 2026 El 05/11/ 2026 se publicó la Orden de módulos que regula la estimación objetiva para el año 2027 (Renta que…",
-      "fecha": "2026-11-06T11:08:18Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-consigue-recuperar-las-reducciones-del-gasoleo-b-y-fertilizantes-para-la-renta-2026/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/noticia-modulos-web.jpeg",
-      "categorias": [
-        "Fertilización",
-        "PAC y ayudas",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
       "id": "5393c92316c1cf27",
       "titulo": "⚠️ NUEVAS RESTRICCIONES A LA CAZA EN ESPAÑA: CASTILLA Y LEÓN, OTRO TERRITORIO AFECTADO",
       "extracto": "La situación que atraviesa el sector cinegético en España vuelve a generar preocupación. Tras lo sucedido recientemente en la Comunidad de…",
@@ -419,38 +687,6 @@
       "imagen_buscada": true
     },
     {
-      "id": "4628dcffd0401b92",
-      "titulo": "ASAJA MURCIA VALORA POSITIVAMENTE LAS AYUDAS REGIONALES A LOS CITRICULTORES AFECTADOS POR LA CLOROSIS NERVIAL AMARILLA Y EXIGE AL MINISTERIO QUE FINANCIE LA REPLANTACIÓN DE LOS LIMONEROS",
-      "extracto": "La organización agraria destaca el consenso alcanzado con el Gobierno regional para compensar los arranques de las plantaciones afectadas y…",
-      "fecha": "2026-11-05T12:29:55Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202611/05/asaja-murcia-valora-positivamente-las-ayudas-regionales-los-citricultores",
-      "imagen": null,
-      "categorias": [
-        "Cítricos",
-        "Fitosanitarios",
-        "PAC y ayudas",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "59004bcc1b19a826",
-      "titulo": "ASAJA MURCIA VALORA POSITIVAMENTE LAS AYUDAS REGIONALES A LOS CITRICULTORES AFECTADOS POR LA CLOROSIS NERVIAL AMARILLA Y EXIGE AL MINISTERIO QUE FINANCIE LA REPLANTACIÓN DE LOS LIMONEROS",
-      "extracto": "La organización agraria destaca el consenso alcanzado con el Gobierno regional para compensar los arranques de las plantaciones afectadas y…",
-      "fecha": "2026-11-05T12:27:10Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/202611/05/asaja-murcia-valora-positivamente-las-ayudas-regionales-los-citricultores-afectados-por-la",
-      "imagen": null,
-      "categorias": [
-        "Cítricos",
-        "Fitosanitarios",
-        "PAC y ayudas",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
       "id": "0ca493a2534d9ef8",
       "titulo": "MAZARRÓN ACOGIÓ EL XXI CAMPEONATO AUTONÓMICO DE CETRERÍA",
       "extracto": "El pasado fin de semana, Mazarrón se convirtió en punto de encuentro para los amantes de la cetrería con la celebración del XXI Campeonato…",
@@ -472,19 +708,6 @@
       "imagen": "https://fecaza.com/wp-content/uploads/2026/11/1.png",
       "categorias": [
         "Caza"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "fcafffabb3e19b86",
-      "titulo": "ASAJA Alicante celebra las ayudas al cereal de secano del Consell tras reclamar compensaciones por las pérdidas de campaña",
-      "extracto": "“Mostramos nuestra satisfacción porque la Conselleria de Agricultura haya atendido nuestras reivindicaciones ante las pérdidas sufridas por…",
-      "fecha": "2026-11-04T12:56:35Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-alicante-celebra-las-ayudas-al-cereal-de-secano-del-consell-tras-reclamar-compensaciones-por-las-perdidas-de-campana/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/WhatsApp-Image-2026-07-29-at-08.27.23-e1785306977855.jpeg",
-      "categorias": [
-        "PAC y ayudas"
       ],
       "imagen_buscada": true
     },
@@ -590,19 +813,6 @@
       "imagen_buscada": true
     },
     {
-      "id": "0f3d6489cc91d617",
-      "titulo": "Boletín ayudas y normativas Nº 306",
-      "extracto": "Últimas novedades para el sector agrario. Resumen del 23 al 30 de octubre de 2026",
-      "fecha": "2026-10-30T12:33:30Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/boletin-ayudas-y-normativas-no-306/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/olive-1027542_1280.jpg",
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
       "id": "b7766a1569c48066",
       "titulo": "🏹🏆 CAMPEONATO AUTONÓMICO DE RECORRIDOS DE MONTE 3D 2026",
       "extracto": "El pasado sábado, 10 de octubre, Cartagena acogió la última prueba de la Liga Autonómica de Recorridos de Monte 3D, poniendo el broche…",
@@ -654,47 +864,6 @@
       "imagen_buscada": true
     },
     {
-      "id": "6eca37d6dac2745a",
-      "titulo": "ASAJA REGIÓN DE MURCIA EXIGE MEDIDAS URGENTES PARA SALVAR LA RENTABILIDAD DEL CAMPO, AUNQUE EL GOBIERNO ESTÉ EN FUNCIONES",
-      "extracto": "La organización reclama ayudas frente al aumento de los costes, medidas contra la competencia desleal de Marruecos, Sudáfrica y Mercosur y…",
-      "fecha": "2026-10-29T12:40:02Z",
-      "fuente": "ASAJA Murcia",
-      "url": "https://www.asajamurcia.com/noticia/202610/29/asaja-region-de-murcia-exige-medidas-urgentes-para-salvar-la-rentabilidad-del",
-      "imagen": null,
-      "categorias": [
-        "Fitosanitarios",
-        "PAC y ayudas",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "7252c745e501ebb3",
-      "titulo": "ASAJA agradece el comportamiento ejemplar del campo desplazado a Madrid y estudiará un nuevo calendario de movilizaciones",
-      "extracto": "Ayer, ante el gravísimo accidente ferroviario, ASAJA, COAG y Unión de Uniones decidieron desconvocar la Gran Tractorada prevista en Madrid…",
-      "fecha": "2026-10-29T11:54:26Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-agradece-el-comportamiento-ejemplar-del-campo-de-todo-el-pais-desplazado-a-madrid-y-estudiara-un-nuevo-calendario-de-movilizaciones/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/np-manifestacion.jpeg",
-      "categorias": [
-        "Maquinaria"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "8965b9ccd3fe8e1c",
-      "titulo": "ASAJA advierte de que no hay motivos para celebrar el acuerdo sobre la PAC sin un presupuesto suficiente",
-      "extracto": "ASAJA considera que el acuerdo alcanzado por el Consejo de Ministros de Agricultura sobre la futura PAC es únicamente un avance parcial y…",
-      "fecha": "2026-10-29T11:07:05Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-advierte-de-que-no-hay-motivos-para-celebrar-el-acuerdo-sobre-la-pac-sin-un-presupuesto-suficiente/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/Asaja-protesta-bruselas.jpg",
-      "categorias": [
-        "PAC y ayudas"
-      ],
-      "imagen_buscada": true
-    },
-    {
       "id": "f9dc8f053c9e19a9",
       "titulo": "La FCRM traslada su apoyo y solidaridad a los afectados por el accidente ferroviario de Toledo",
       "extracto": "Desde la Federación de Caza de la Región de Murcia, queremos trasladar nuestro más sentido pésame a los familiares y allegados de las…",
@@ -718,33 +887,6 @@
       "categorias": [
         "Caza"
       ]
-    },
-    {
-      "id": "4c1eab91f351289b",
-      "titulo": "Las plagas y la subida de costes merman la apicultura de la provincia",
-      "extracto": "El presidente de la sectorial apícola de Asaja Alicante, Guillermo Rosell, no duda a la hora de señalar que el sector al que representa se…",
-      "fecha": "2026-10-26T13:42:16Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/las-plagas-y-la-subida-de-costes-merman-la-apicultura-de-la-provincia/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/rosa-colmenas.jpg",
-      "categorias": [
-        "Fitosanitarios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "b9b42e4efe4c017c",
-      "titulo": "ASAJA presenta a la CE una solicitud para activar la cláusula de salvaguardia por las mandarinas de Sudáfrica",
-      "extracto": "ASAJA presenta ante la Comisión Europea una solicitud para la activación de la cláusula bilateral de salvaguardia prevista en el artículo…",
-      "fecha": "2026-10-26T11:21:42Z",
-      "fuente": "ASAJA Alicante",
-      "url": "https://alicanteasaja.com/asaja-presenta-a-la-ce-una-solicitud-para-activar-la-clausula-de-salvaguardia-por-las-mandarinas-de-sudafrica/",
-      "imagen": "https://alicanteasaja.com/wp-content/uploads/mandarina-sudafrica.jpeg",
-      "categorias": [
-        "Cítricos",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
     },
     {
       "id": "77b2aeb48a5a02f0",
@@ -831,36 +973,6 @@
       "imagen": null,
       "categorias": [
         "General"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "7f9f2830225a90e6",
-      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región y roza los 5.000 operarios certificados",
-      "extracto": "La Región cuenta con 40.000 hectáreas de almendro ecológico, el 60 por ciento de este cultivo. El director general de Agricultura señala…",
-      "fecha": "2026-10-23T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126445&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Frutales",
-        "Agricultura ecológica",
-        "Mercados y precios"
-      ],
-      "imagen_buscada": true
-    },
-    {
-      "id": "7bc28ce36c20f8d7",
-      "titulo": "La producción ecológica supera el 30 por ciento de la superficie agraria útil de la Región de Murcia",
-      "extracto": "La Región cuenta con casi 5.000 operadores certificados y 40.000 hectáreas de almendro ecológico que representan el 60 por ciento de la…",
-      "fecha": "2026-10-23T22:00:00Z",
-      "fuente": "CARM - Agricultura",
-      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126447&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
-      "imagen": null,
-      "categorias": [
-        "Frutales",
-        "Agricultura ecológica",
-        "Mercados y precios"
       ],
       "imagen_buscada": true
     }
