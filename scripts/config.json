@@ -117,10 +117,25 @@
       "descartar_general": true
     },
     {
+      "nombre": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/feed/",
+      "categoria_siempre": "Caza",
+      "max_noticias": 8
+    },
+    {
       "nombre": "Federación de Caza Comunidad Valenciana",
       "url": "https://federacioncazacv.com/feed/?post_type=prensa",
       "categoria_siempre": "Caza",
       "max_noticias": 8
+    },
+    {
+      "nombre": "ANACPER (perdiz con reclamo)",
+      "url": "https://www.anacper.es/index.php/noticias",
+      "tipo": "html",
+      "patron_enlace": "<a class=\"uk-link-reset\" href=\"(/index.php/noticias/\\d+-noticias/(\\d+)-[^\"]+)\">([^<]+)",
+      "categoria_siempre": "Caza",
+      "max_noticias": 3,
+      "excluir_palabras": "feliz navidad|felicidades"
     },
     {
       "nombre": "Real Federación Española de Caza",
@@ -334,5 +349,6 @@
   "_ayuda_zona": "solo_zona: true = de esa fuente solo entran noticias que citen la zona (Vega Baja, Elche, Crevillent, provincia de Alicante o Murcia limítrofe).",
   "_ayuda_contiene": "contiene_alguna: solo entran noticias de esa fuente que incluyan alguna de esas palabras.",
   "_ayuda_oficial": "solo_enlace_oficial: true = la fuente solo sirve de aviso; se abre su noticia, se busca el enlace a la publicación oficial (DOGV, BOE, BORM, BDNS, GVA, MAPA...) y se muestra ese enlace. Si no hay enlace oficial, la noticia no se publica.",
-  "_ayuda_filtros": "solo_categorias: solo entran noticias de esos temas. excluir_palabras: expresión con palabras que descartan la noticia (separadas por |)."
+  "_ayuda_filtros": "solo_categorias: solo entran noticias de esos temas. excluir_palabras: expresión con palabras que descartan la noticia (separadas por |).",
+  "_ayuda_html": "tipo: html = web sin RSS; se leen los enlaces de su página de noticias con patron_enlace (grupos: enlace, número, título). Sin fecha publicada: se usa la de la primera vez que se ve."
 }

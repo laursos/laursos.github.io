@@ -20,7 +20,7 @@
   // Prioridad de temas agrícolas (días de 'ventaja' sobre la fecha real)
   const PRIO = {'Daños y siniestros':8,'Jóvenes agricultores':6,'Modernización e inversiones':6,'Cítricos':4,'Hortalizas':4,'Frutales':3,'PAC y ayudas':3,'Maquinaria':3,'Fitosanitarios':2,'Fertilización':2,'Riego y agua':2,'Gestión de la explotación':2,'Agricultura ecológica':1,'Mercados y precios':1};
   // Noticias de la zona (Vega Baja, Elche, Crevillent, provincia de Alicante): +4 días de ventaja
-  const CAZA_UTIL = /plazo|veda|orden|temporada|convocatoria|ayuda|subvenci|licencia|precinto|da[ñn]os|jabal/i;
+  const CAZA_UTIL = /plazo|veda|orden|temporada|convocatoria|ayuda|subvenci|licencia|precinto|da[ñn]os|jabal|restricci|normativa|\bley\b|prohibici|coto|plan t[eé]cnico|reclamo|gripe aviar/i;
   // Imagen propia por tema (no se usan las fotos de los medios: evita problemas de derechos de autor)
   const IMG_TEMA = {'Daños y siniestros':'./img/informes.jpg','Jóvenes agricultores':'./norm-subvenciones.jpg','Modernización e inversiones':'./norm-subvenciones.jpg','Cítricos':'./img/agricola.jpg','Hortalizas':'./img/planes-abonado.jpg','Frutales':'./img/informes.jpg','Fitosanitarios':'./hero-maquinaria.jpg','Fertilización':'./img/planes-abonado.jpg','Riego y agua':'./img/planes-abonado.jpg','PAC y ayudas':'./norm-pac.jpg','Maquinaria':'./maq-area.jpg','Gestión de la explotación':'./img/cuaderno-campo.jpg','Agricultura ecológica':'./img/agricola.jpg','Mercados y precios':'./img/analisis-datos.jpg','Caza':'./cin-area.jpg'};
   function imagenTema(n){const c=(Array.isArray(n.categorias)&&n.categorias.length?n.categorias:[n.categoria||'General']);for(const x of c){if(IMG_TEMA[x])return IMG_TEMA[x];}return IMG_DEFECTO;}

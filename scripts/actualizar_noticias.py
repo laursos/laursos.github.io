@@ -186,7 +186,22 @@ def leer_fuente(fuente, categorias, cfg, exclusion=None):
     resp = requests.get(fuente["url"], headers=HEADERS, timeout=30,
                         verify=not fuente.get("certificado_no_verificable"))
     resp.raise_for_status()
-    feed = feedparser.parse(resp.content)
+    if fuente.get("tipo") == "html":
+        # Web sin RSS: se leen los enlaces de su página de noticias (patron_enlace con grupos url, id, título)
+        base = re.match(r"https?://[^/]+", fuente["url"]).group(0)
+        vistos, entradas = set(), []
+        for url_rel, num, tit in re.findall(fuente["patron_enlace"], resp.text, re.I):
+            if url_rel in vistos:
+                continue
+            vistos.add(url_rel)
+            entradas.append((int(num), {"link": requests.compat.urljoin(base, url_rel), "title": html.unescape(tit).strip()}))
+        entradas.sort(key=lambda x: x[0], reverse=True)  # el número más alto es la más reciente
+
+        class _Feed:  # mismo formato que feedparser
+            entries = [e for _, e in entradas]
+        feed = _Feed()
+    else:
+        feed = feedparser.parse(resp.content)
     if not feed.entries:
         raise ValueError("el feed no contiene noticias (¿no es RSS?)")
 
