@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-23T00:49:02Z",
+  "actualizado": "2026-11-23T07:40:25Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-23T00:49:02Z",
+      "fecha": "2026-11-23T07:40:25Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -13,6 +13,112 @@
       "categorias": [
         "Fertilización",
         "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "95a25e49e0181191",
+      "titulo": "Comunicado de ANACPER: “Manifiesto de defensa de la participación de menores como acompañantes en el Arte de la caza de la perdiz con reclamo”",
+      "extracto": "",
+      "fecha": "2026-11-23T07:38:25Z",
+      "fuente": "ANACPER (perdiz con reclamo)",
+      "origen": "ANACPER (perdiz con reclamo)",
+      "url": "https://www.anacper.es/index.php/noticias/10-noticias/173-comunicado-de-anacper-manifiesto-de-defensa-de-la-participacion-de-menores-como-acompanantes-en-el-arte-de-la-caza-de-la-perdiz-con-reclamo",
+      "imagen": null,
+      "categorias": [
+        "Caza"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "c6a6a9dafa2741dc",
+      "titulo": "“La conveniencia amplía ocasiones de consumo”",
+      "extracto": "OPORTUNIDAD O SUSTITUTO Desde nuestra perspectiva como tienda especializada en la venta de frutas y verduras ecológicas certificadas, la…",
+      "fecha": "2026-11-23T07:01:30Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-conveniencia-amplia-ocasiones-de-consumo/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naturasi.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "6759c8d0cc2453a6",
+      "titulo": "Panoramix responde a los cortes de agua sin peseta y refuerza su protección frente al rugoso",
+      "extracto": "CapGen Seeds reunió a agricultores y técnicos agrícolas en una jornada de puertas abiertas celebrada en La Cañada (Almería) para mostrar…",
+      "fecha": "2026-11-23T07:00:43Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/panoramix-responde-a-los-cortes-de-agua-sin-peseta-y-refuerza-su-proteccion-frente-al-rugoso/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/01-Panoramix-lacanada-tomate-pera-CapGen_11zon.webp",
+      "categorias": [
+        "Hortalizas",
+        "Riego y agua",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "fd2b67dd60756921",
+      "titulo": "TOMRA Food presenta en Interpom 2026 su nueva clasificadora de patatas TOMRA 4A",
+      "extracto": "TOMRA Food presentará su innovación más reciente para la industria de la patata, la TOMRA 4A, en Interpom 2026, que se celebrará del 29 de…",
+      "fecha": "2026-11-23T07:00:18Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/tomra-food-presenta-en-interpom-2026-su-nueva-clasificadora-de-patatas-tomra-4a/",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/2122.png",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "125dc0b04bf9051c",
+      "titulo": "“Los vegetales mínimamente procesados son un complemento del fresco y no un sustituto”",
+      "extracto": "El consumidor se ha convertido en uno de los principales motores de cambio de la cadena alimentaria. Ante la menor disponibilidad de…",
+      "fecha": "2026-11-23T07:00:08Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/los-vegetales-minimamente-procesados-son-un-complemento-del-fresco-y-no-un-sustituto/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/CarlosPuente.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "71f9e037484d0373",
+      "titulo": "La campaña citrícola de Córdoba reduce sus previsiones ante el menor tamaño de la fruta",
+      "extracto": "La campaña citrícola de Córdoba ha comenzado con unas perspectivas de producción más moderadas de lo previsto inicialmente. Aunque se…",
+      "fecha": "2026-11-23T06:58:22Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-campana-citricola-de-cordoba-reduce-sus-previsiones-ante-el-menor-tamano-de-la-fruta/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naranjos-cargados-de-fruta-bajo-el-sol-1_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "7eb57b2945c0a851",
+      "titulo": "Motor | Škoda espera cerrar 2026 con su cuarto récord de ventas consecutivo en el mercado español",
+      "extracto": "Motor: Škoda espera cerrar 2026 con su cuarto récord de ventas consecutivo en el mercado español",
+      "fecha": "2026-11-23T05:00:05Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/motoralicante/skoda-espera-cerrar-2026-con-su-cuarto-record-de-ventas-consecutivo-en-el-mercado-espanol",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1971328.jpg",
+      "categorias": [
+        "Mercados y precios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -400,8 +506,7 @@
       "url": "https://revistamercados.com/hortyfruta-activa-la-extension-de-norma-para-hacer-frente-a-la-alerta-de-berenjena-negra/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/berenjena_11zon.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": false,
       "imagen_buscada": true
@@ -416,8 +521,7 @@
       "url": "https://revistamercados.com/metis-cierra-la-campana-2026-con-6-000-toneladas-comercializadas-y-una-nueva-identidad-de-marca/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/metis-2_11zon.webp",
       "categorias": [
-        "Frutales",
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -432,7 +536,7 @@
       "url": "https://revistamercados.com/casi-reconocida-con-el-premio-de-comercio-interior-de-andalucia-por-su-trayectoria-e-innovacion/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/casi_11zon.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -447,7 +551,7 @@
       "url": "https://revistamercados.com/samantha-vallejo-nagera-propone-una-nueva-receta-otonal-con-aguacate-espanol/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/aguacate_11zon-e1795170022104.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
