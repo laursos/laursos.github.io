@@ -135,7 +135,7 @@
       "patron_enlace": "<a class=\"uk-link-reset\" href=\"(/index.php/noticias/\\d+-noticias/(\\d+)-[^\"]+)\">([^<]+)",
       "categoria_siempre": "Caza",
       "max_noticias": 3,
-      "excluir_palabras": "feliz navidad|felicidades"
+      "excluir_palabras": "\\bfeliz\\b|felicidades"
     },
     {
       "nombre": "Real Federación Española de Caza",
