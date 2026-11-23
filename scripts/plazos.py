@@ -28,7 +28,23 @@ FICHA = "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{}"
 HEADERS = {"User-Agent": "Mozilla/5.0 (aviso de ayudas agrarias; GitHub Actions)", "Accept": "application/json"}
 
 FINALIDAD_AGRICULTURA = 12
-REGIONES = {54: "Comunitat Valenciana", 72: "Región de Murcia"}
+REGIONES = {54: "Comunitat Valenciana", 55: "Provincia de Alicante"}
+MURCIA = 72  # Murcia: solo lo que afecte a la zona limítrofe con la Vega Baja
+
+# Zona de trabajo: provincia de Alicante, sobre todo Vega Baja, Elche y Crevillent
+ZONA = re.compile(
+    r"vega baja|bajo segura|orihuela|callosa|almorad|dolores|catral|\bcox\b|redov[aá]n|rafal|benej[uú]zar|"
+    r"benferri|bigastro|jacarilla|algorfa|daya|formentera del segura|rojales|guardamar|torrevieja|"
+    r"pilar de la horadada|san fulgencio|benij[oó]far|granja de rocamora|albatera|san isidro|"
+    r"crevillen|elche|\belx\b|alicante|alacant|segura", re.I)
+# Murcia limítrofe con la Vega Baja
+LIMITROFE = re.compile(r"vega baja|vega media|beniel|santomera|abanilla|fortuna|r[ií]o segura|bajo segura", re.I)
+# Ayudas de la Generalitat limitadas a otras comarcas (se descartan si no citan la zona)
+OTRAS_ZONAS = re.compile(
+    r"provincia de val[eè]ncia|provincia de castell|castell[oó]n|huerta de val|horta de val|l'horta|"
+    r"albufera|arroz|arr[oò]s|ribera|safor|maestrat|els ports|vall d'albaida|requena|utiel", re.I)
+# Entidades locales de interés (Diputación y municipios de la zona)
+LOCALES = re.compile(r"diputaci[oó]n.*alicante|diputaci[oó]n.*alacant|" + ZONA.pattern, re.I)
 DIAS_BUSQUEDA = 150      # convocatorias publicadas en los últimos N días
 DIAS_SIN_FECHA = 45      # cuánto se muestra una convocatoria con plazo solo en texto
 MAX_DETALLES = 120       # consultas de detalle por ejecución (para no saturar la API)
@@ -37,7 +53,8 @@ MAX_DETALLES = 120       # consultas de detalle por ejecución (para no saturar 
 RELEVANTE = re.compile(
     r"agr[ií]col|agrari|agricult|explotaci|cultivo|c[ií]tric|hort[ií]col|hortaliza|frutal|"
     r"granad|olivar|olivo|almendr|regad|riego|regante|maquinaria|tractor|modernizaci|"
-    r"joven(es)? agricultor|incorporaci[oó]n|relevo generacional|seguro agrario|ecol[oó]gic|"
+    r"joven(es)? agricultor|j[oó]venes agricultoras|nuevos? agricultor|establecimiento de personas|"
+    r"primera instalaci|incorporaci[oó]n|relevo generacional|seguro agrario|ecol[oó]gic|paliar|adversidad|"
     r"sanidad vegetal|plaga|fitosanit|fertiliz|caza|cineg|coto|fauna|da[ñn]os|dana|inundaci|siniestr|"
     r"cat[aá]strof|granizo|pedrisco|helada|temporal|incendi|lluvias",
     re.I)
@@ -50,18 +67,18 @@ DESCARTE = re.compile(
 BENEFICIARIO_UTIL = "PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
 
 # Siniestros: búsquedas extra sin filtro de finalidad (se exige además un término agrario)
-SINIESTROS = ("DANA", "inundaciones", "daños agrícolas", "granizo", "temporal", "catástrofe")
+SINIESTROS = ("DANA", "inundaciones", "paliar los daños", "daños producidos", "granizo", "temporal", "catástrofe", "adversidad")
 AGRARIO = re.compile(r"agr[ai]|explotaci|cultiv|regad|rural|campo|cosecha", re.I)
 # Orden de prioridad en la portada (primero lo que más interesa a la clientela)
 PRIORIDAD = ["Daños y siniestros", "Jóvenes agricultores", "Modernización", "Maquinaria", "Riego y agua"]
 
 CATEGORIAS = [
-    ("Daños y siniestros", r"\bdanas?\b|inundaci|siniestr|cat[aá]strof|granizo|pedrisco|helada|temporal|incendi|lluvias|riada|damnificad|da[ñn]os por"),
+    ("Daños y siniestros", r"\bdanas?\b|inundaci|siniestr|cat[aá]strof|granizo|pedrisco|helada|temporal|incendi|lluvias|riada|damnificad|da[ñn]os por|da[ñn]os producidos|paliar|adversidad"),
     ("Caza", r"caza|cineg|coto"),
     ("Maquinaria", r"maquinaria|tractor|pulverizad|atomizad|renove"),
-    ("Jóvenes agricultores", r"joven(es)? agricultor|incorporaci[oó]n|relevo generacional"),
+    ("Jóvenes agricultores", r"joven(es)? agricultor|j[oó]venes agricultoras|nuevos? agricultor|establecimiento de personas|primera instalaci|incorporaci[oó]n|relevo generacional|6961"),
     ("Riego y agua", r"riego|regad|regante|h[ií]dric|agua"),
-    ("Modernización", r"modernizaci|inversi|mejora de (las )?explotaci"),
+    ("Modernización", r"modernizaci|inversiones en explotaciones|mejora de (las )?explotaci|planes colectivos|6841"),
     ("Seguros agrarios", r"seguro"),
     ("Agricultura ecológica", r"ecol[oó]gic"),
     ("Sanidad vegetal", r"sanidad vegetal|plaga|fitosanit"),
@@ -110,37 +127,49 @@ def _categorias(texto):
 
 
 def candidatas():
-    """Convocatorias publicadas recientemente que pueden interesar."""
+    """Convocatorias publicadas recientemente que pueden interesar en la zona."""
     vistas = {}
+
+    def add(c, ambito):
+        c["_ambito"] = ambito
+        vistas.setdefault(c["numeroConvocatoria"], c)
+
+    # Generalitat Valenciana y provincia de Alicante (incluye Diputación y ayuntamientos)
     for region, nombre in REGIONES.items():
         for c in _buscar(finalidad=FINALIDAD_AGRICULTURA, regiones=region):
-            c["_ambito"] = nombre
-            vistas.setdefault(c["numeroConvocatoria"], c)
-        for palabra in ("caza", "cinegética"):
+            add(c, nombre)
+        for palabra in ("caza", "cinegética") + SINIESTROS:
             for c in _buscar(descripcion=palabra, regiones=region):
-                c["_ambito"] = nombre
-                vistas.setdefault(c["numeroConvocatoria"], c)
-        for palabra in SINIESTROS:
-            for c in _buscar(descripcion=palabra, regiones=region):
-                if AGRARIO.search(c.get("descripcion") or ""):
-                    c["_ambito"] = nombre
-                    vistas.setdefault(c["numeroConvocatoria"], c)
+                add(c, nombre)
+    # Murcia: solo siniestros o ayudas que citen la zona limítrofe con la Vega Baja
+    for c in _buscar(finalidad=FINALIDAD_AGRICULTURA, regiones=MURCIA):
+        if LIMITROFE.search(c.get("descripcion") or ""):
+            add(c, "Región de Murcia (zona limítrofe)")
     for palabra in SINIESTROS:
-        for c in _buscar(descripcion=palabra):
-            if c.get("nivel1") == "ESTATAL" and AGRARIO.search(c.get("descripcion") or ""):
-                c["_ambito"] = "Estatal"
-                vistas.setdefault(c["numeroConvocatoria"], c)
+        for c in _buscar(descripcion=palabra, regiones=MURCIA):
+            if LIMITROFE.search(c.get("descripcion") or ""):
+                add(c, "Región de Murcia (zona limítrofe)")
+    # Estado: maquinaria, jóvenes, modernización, seguros... y siniestros solo si citan la zona
     for c in _buscar(finalidad=FINALIDAD_AGRICULTURA):
         if c.get("nivel1") == "ESTATAL":
-            c["_ambito"] = "Estatal"
-            vistas.setdefault(c["numeroConvocatoria"], c)
+            add(c, "Estatal")
 
     filtradas = []
     for c in vistas.values():
         txt = c.get("descripcion") or ""
-        if c.get("nivel1") == "LOCAL":          # ayuntamientos: fuera
-            continue
+        organo = f"{c.get('nivel2') or ''} {c.get('nivel3') or ''}"
         if not RELEVANTE.search(txt) or DESCARTE.search(txt):
+            continue
+        if re.search(r"convenio|nominativ", txt, re.I):
+            continue
+        if c.get("nivel1") == "LOCAL" and not LOCALES.search(organo):
+            continue
+        if c.get("nivel1") == "AUTONOMICA" and OTRAS_ZONAS.search(txt) and not ZONA.search(txt):
+            continue
+        siniestro = re.search(CATEGORIAS[0][1], txt, re.I)
+        if c["_ambito"] == "Estatal" and siniestro and not (ZONA.search(txt) or re.search(r"valenciana", txt, re.I)):
+            continue
+        if siniestro and not AGRARIO.search(txt):
             continue
         filtradas.append(c)
     return filtradas

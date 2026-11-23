@@ -36,12 +36,36 @@
   ],
   "fuentes": [
     {
+      "nombre": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/rss",
+      "categoria_por_defecto": "General",
+      "descartar_general": true
+    },
+    {
+      "nombre": "Convega (Vega Baja)",
+      "url": "https://www.convega.com/feed",
+      "categoria_por_defecto": "General",
+      "contiene_alguna": [
+        "ayuda",
+        "subvenci",
+        "convocatoria",
+        "agric",
+        "agrari",
+        "rural",
+        "leader",
+        "regante",
+        "dana",
+        "inundaci"
+      ]
+    },
+    {
       "nombre": "CARM - Agricultura",
       "url": "https://www.carm.es/web/pagina?IDCONTENIDO=694&IDTIPO=200&RASTRO=&CANALRSS=1&TIPORSS=rss_2.0&__EXCLUIR_BUSCADOR_CARM=SI&__PLANT_MAESTRA=/JSP/CARM/plantillasPortal/plantillaVaciaDelTodo.jsp",
       "categoria_por_defecto": "General",
       "solo_si_contiene": [
         "Agua, Agricultura, Ganadería y Pesca"
-      ]
+      ],
+      "solo_zona": true
     },
     {
       "nombre": "Valencia Fruits",
@@ -285,5 +309,7 @@
   },
   "_ayuda": "Palabras clave: sin asterisco = palabra exacta; con * al final = cualquier palabra que empiece así. Una noticia recibe TODAS las categorías que coincidan; si no coincide ninguna, recibe 'General'.",
   "_ayuda_exclusion": "excluir_si_contiene: noticias que se descartan (salvo si son de Caza). ignorar_frases: textos que se borran antes de comprobar (nombres de ministerios/consejerías que incluyen 'Pesca').",
-  "_ayuda_fuentes": "descartar_general: true = solo se guardan las noticias que encajan en algún tema (para medios generalistas). max_noticias limita cuántas se leen de esa fuente en cada actualización."
+  "_ayuda_fuentes": "descartar_general: true = solo se guardan las noticias que encajan en algún tema (para medios generalistas). max_noticias limita cuántas se leen de esa fuente en cada actualización.",
+  "_ayuda_zona": "solo_zona: true = de esa fuente solo entran noticias que citen la zona (Vega Baja, Elche, Crevillent, provincia de Alicante o Murcia limítrofe).",
+  "_ayuda_contiene": "contiene_alguna: solo entran noticias de esa fuente que incluyan alguna de esas palabras."
 }

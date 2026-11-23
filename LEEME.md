@@ -31,7 +31,7 @@ La web queda en `https://TU-USUARIO.github.io/NOMBRE-REPO/`.
   si pasa, entra en Actions y pulsa *Enable workflow*.
 
 ## Fuentes configuradas
-CARM - Agricultura · Valencia Fruits · Agroinformación · Phytoma · Revista Mercados · Agroauténtico ·
+Alicante Plaza · Convega (Vega Baja) · CARM - Agricultura (solo noticias de la zona) · Valencia Fruits · Agroinformación · Phytoma · Revista Mercados · Agroauténtico ·
 Federación de Caza Región de Murcia · Federación de Caza Comunidad Valenciana · Real Federación Española de Caza.
 Los medios generalistas llevan `descartar_general: true` (solo entran noticias de algún tema).
 Las federaciones de caza llevan siempre la categoría 'Caza' y como máximo 8 noticias por actualización.
@@ -41,8 +41,11 @@ Hasta 2 ayudas con plazo abierto + agricultura (prioridad cítricos y hortalizas
 PAC, maquinaria...) + 1 de caza. Se configura al principio de `js/carrusel-noticias.js` (`PRIO`).
 
 ## Ayudas y plazos abiertos (`data/plazos.json`)
-- Automático: `scripts/plazos.py` consulta la Base de Datos Nacional de Subvenciones
-  (convocatorias de agricultura de la Comunitat Valenciana, Murcia y el Estado, y de caza).
+- Automático: `scripts/plazos.py` consulta la Base de Datos Nacional de Subvenciones (BDNS).
+  Zona: Generalitat Valenciana (sin las limitadas a Valencia/Castellón), provincia de Alicante
+  (Diputación y ayuntamientos de Vega Baja, Elche y Crevillent), Murcia solo si cita la zona limítrofe
+  y Estado (siniestros solo si citan la zona). Las convocatorias del DOGV y del BORM se registran en la BDNS,
+  que envía el extracto al boletín, así que aparecen aquí el mismo día o antes.
   Cada convocatoria se muestra hasta su fecha de fin de solicitud.
 - Manual: añade avisos en `data/plazos-manuales.json` (hay un ejemplo dentro).
   Se muestran primero y desaparecen solos al pasar su `fecha_fin`.

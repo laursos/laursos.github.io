@@ -58,6 +58,24 @@ def categorizar(texto, categorias, por_defecto, siempre=None):
     return encontradas or [por_defecto]
 
 
+# Zona de trabajo: provincia de Alicante (sobre todo Vega Baja, Elche y Crevillent)
+# y Murcia limítrofe. Una noticia de siniestros fuera de la zona no se destaca.
+ZONA = re.compile(
+    r"vega baja|bajo segura|orihuela|callosa|almorad|dolores|catral|\bcox\b|redov[aá]n|rafal|benej[uú]zar|"
+    r"benferri|bigastro|jacarilla|algorfa|daya|formentera del segura|rojales|guardamar|torrevieja|"
+    r"pilar de la horadada|san fulgencio|benij[oó]far|granja de rocamora|albatera|san isidro|"
+    r"crevillen|elche|\belx\b|alicante|alacant|r[ií]o segura|beniel|santomera|abanilla|fortuna",
+    re.I)
+
+
+def aplicar_zona(texto, cats):
+    """Marca si la noticia es de la zona; quita 'Daños y siniestros' si el siniestro es de fuera."""
+    local = bool(ZONA.search(texto))
+    if "Daños y siniestros" in cats and not (local or re.search(r"valencian", texto, re.I)):
+        cats = [c for c in cats if c != "Daños y siniestros"] or ["General"]
+    return cats, local
+
+
 def compilar_exclusion(cfg):
     """Prepara el filtro de temas descartados (p. ej. pesca).
     'ignorar_frases' se borran antes de comprobar, para que el nombre del
@@ -155,6 +173,14 @@ def leer_fuente(fuente, categorias, cfg, exclusion=None):
                            fuente.get("categoria_siempre"))
         if es_excluida(f"{titulo} {resumen}", cats, exclusion):
             continue
+        cats, local = aplicar_zona(f"{titulo} {resumen}", cats)
+        # Fuentes de fuera de la zona (p. ej. Murcia): solo lo que afecte a la zona
+        if fuente.get("solo_zona") and not local:
+            continue
+        # Fuentes que publican de todo: solo si contienen alguna de estas palabras
+        alguna = fuente.get("contiene_alguna")
+        if alguna and not any(w.lower() in texto_completo.lower() for w in alguna):
+            continue
         # Medios generalistas: solo noticias que encajen en algún tema
         if fuente.get("descartar_general") and cats == ["General"]:
             continue
@@ -168,6 +194,7 @@ def leer_fuente(fuente, categorias, cfg, exclusion=None):
             "url": url,
             "imagen": extraer_imagen(e),
             "categorias": cats,
+            "local": local,
         })
     return noticias
 
@@ -198,8 +225,12 @@ def main():
     # Recalcula los temas de las guardadas (por si se han cambiado las palabras clave)
     fijas = {f["nombre"]: f.get("categoria_siempre") for f in cfg["fuentes"]}
     for n in anteriores.values():
-        n["categorias"] = categorizar(f"{n.get('titulo','')} {n.get('extracto','')}", categorias,
-                                      "General", fijas.get(n.get("fuente")))
+        texto = f"{n.get('titulo','')} {n.get('extracto','')}"
+        n["categorias"], n["local"] = aplicar_zona(
+            texto, categorizar(texto, categorias, "General", fijas.get(n.get("fuente"))))
+    solo_zona = {f["nombre"] for f in cfg["fuentes"] if f.get("solo_zona")}
+    anteriores = {k: n for k, n in anteriores.items()
+                  if not (n.get("fuente") in solo_zona and not n.get("local"))}
 
     errores = 0
     for fuente in cfg["fuentes"]:
