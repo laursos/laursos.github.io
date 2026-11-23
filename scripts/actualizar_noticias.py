@@ -195,6 +195,11 @@ def main():
     # Se retiran las noticias de fuentes que ya no están en config.json
     activas = {f["nombre"] for f in cfg["fuentes"]}
     anteriores = {k: n for k, n in anteriores.items() if n.get("fuente") in activas}
+    # Recalcula los temas de las guardadas (por si se han cambiado las palabras clave)
+    fijas = {f["nombre"]: f.get("categoria_siempre") for f in cfg["fuentes"]}
+    for n in anteriores.values():
+        n["categorias"] = categorizar(f"{n.get('titulo','')} {n.get('extracto','')}", categorias,
+                                      "General", fijas.get(n.get("fuente")))
 
     errores = 0
     for fuente in cfg["fuentes"]:

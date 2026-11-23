@@ -93,6 +93,49 @@
     }
   ],
   "categorias": {
+    "Daños y siniestros": [
+      "dana",
+      "danas",
+      "inundaci*",
+      "inundad*",
+      "riada*",
+      "lluvias torrenciales",
+      "temporal de*",
+      "tormenta*",
+      "granizo",
+      "granizada*",
+      "pedrisco",
+      "helada*",
+      "incendio*",
+      "siniestro*",
+      "catástrofe*",
+      "catastrófic*",
+      "zona catastrófica",
+      "damnificad*",
+      "daños por*",
+      "daños en cultivos",
+      "informe* de daños",
+      "ayudas extraordinarias"
+    ],
+    "Jóvenes agricultores": [
+      "jóvenes agricultores",
+      "joven agricultor",
+      "jóvenes agricultoras",
+      "joven agricultora",
+      "incorporación",
+      "relevo generacional",
+      "primera instalación"
+    ],
+    "Modernización e inversiones": [
+      "modernizaci*",
+      "inversion*",
+      "inversión",
+      "mejora* de explotaci*",
+      "mejora* de instalaciones",
+      "plan renove",
+      "reconversi*",
+      "digitalizaci*"
+    ],
     "Cítricos": [
       "cítric*",
       "citric*",
@@ -178,11 +221,6 @@
       "subvenci*",
       "fega",
       "convocatoria*",
-      "jóvenes agricultores",
-      "joven agricultor",
-      "modernizaci*",
-      "mejora* de instalaciones",
-      "reconversi*",
       "gasóleo*",
       "gasoil",
       "bonificaci*"

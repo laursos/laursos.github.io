@@ -38,7 +38,8 @@ RELEVANTE = re.compile(
     r"agr[ií]col|agrari|agricult|explotaci|cultivo|c[ií]tric|hort[ií]col|hortaliza|frutal|"
     r"granad|olivar|olivo|almendr|regad|riego|regante|maquinaria|tractor|modernizaci|"
     r"joven(es)? agricultor|incorporaci[oó]n|relevo generacional|seguro agrario|ecol[oó]gic|"
-    r"sanidad vegetal|plaga|fitosanit|fertiliz|caza|cineg|coto|fauna|da[ñn]os",
+    r"sanidad vegetal|plaga|fitosanit|fertiliz|caza|cineg|coto|fauna|da[ñn]os|dana|inundaci|siniestr|"
+    r"cat[aá]strof|granizo|pedrisco|helada|temporal|incendi|lluvias",
     re.I)
 # Se descartan (pesca, acuicultura, ganadería exclusiva, actos o premios)
 DESCARTE = re.compile(
@@ -48,7 +49,14 @@ DESCARTE = re.compile(
     re.I)
 BENEFICIARIO_UTIL = "PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
 
+# Siniestros: búsquedas extra sin filtro de finalidad (se exige además un término agrario)
+SINIESTROS = ("DANA", "inundaciones", "daños agrícolas", "granizo", "temporal", "catástrofe")
+AGRARIO = re.compile(r"agr[ai]|explotaci|cultiv|regad|rural|campo|cosecha", re.I)
+# Orden de prioridad en la portada (primero lo que más interesa a la clientela)
+PRIORIDAD = ["Daños y siniestros", "Jóvenes agricultores", "Modernización", "Maquinaria", "Riego y agua"]
+
 CATEGORIAS = [
+    ("Daños y siniestros", r"\bdanas?\b|inundaci|siniestr|cat[aá]strof|granizo|pedrisco|helada|temporal|incendi|lluvias|riada|damnificad|da[ñn]os por"),
     ("Caza", r"caza|cineg|coto"),
     ("Maquinaria", r"maquinaria|tractor|pulverizad|atomizad|renove"),
     ("Jóvenes agricultores", r"joven(es)? agricultor|incorporaci[oó]n|relevo generacional"),
@@ -111,6 +119,16 @@ def candidatas():
         for palabra in ("caza", "cinegética"):
             for c in _buscar(descripcion=palabra, regiones=region):
                 c["_ambito"] = nombre
+                vistas.setdefault(c["numeroConvocatoria"], c)
+        for palabra in SINIESTROS:
+            for c in _buscar(descripcion=palabra, regiones=region):
+                if AGRARIO.search(c.get("descripcion") or ""):
+                    c["_ambito"] = nombre
+                    vistas.setdefault(c["numeroConvocatoria"], c)
+    for palabra in SINIESTROS:
+        for c in _buscar(descripcion=palabra):
+            if c.get("nivel1") == "ESTATAL" and AGRARIO.search(c.get("descripcion") or ""):
+                c["_ambito"] = "Estatal"
                 vistas.setdefault(c["numeroConvocatoria"], c)
     for c in _buscar(finalidad=FINALIDAD_AGRICULTURA):
         if c.get("nivel1") == "ESTATAL":
@@ -233,7 +251,10 @@ def actualizar():
     ids = {p["id"] for p in manuales}
     lista = manuales + [p for p in bdns if p["id"] not in ids]
     # Primero las destacadas (manuales), luego por fecha de cierre más próxima; sin fecha al final
-    lista.sort(key=lambda p: (not p.get("destacado"), p.get("fecha_fin") or "9999-12-31"))
+    def prio(p):
+        rangos = [PRIORIDAD.index(c) for c in p.get("categorias", []) if c in PRIORIDAD]
+        return min(rangos) if rangos else len(PRIORIDAD)
+    lista.sort(key=lambda p: (not p.get("destacado"), prio(p), p.get("fecha_fin") or "9999-12-31"))
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     SALIDA.write_text(json.dumps({
         "actualizado": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),

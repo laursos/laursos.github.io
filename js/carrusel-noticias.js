@@ -18,10 +18,10 @@
   const RUTA_PLAZOS = sec.dataset.plazos || './data/plazos.json';
   const IMG_PLAZO = './norm-subvenciones.jpg';
   // Prioridad de temas agrícolas (días de 'ventaja' sobre la fecha real)
-  const PRIO = {'Cítricos':4,'Hortalizas':4,'Frutales':3,'PAC y ayudas':3,'Maquinaria':3,'Fitosanitarios':2,'Fertilización':2,'Riego y agua':2,'Gestión de la explotación':2,'Agricultura ecológica':1,'Mercados y precios':1};
+  const PRIO = {'Daños y siniestros':8,'Jóvenes agricultores':6,'Modernización e inversiones':6,'Cítricos':4,'Hortalizas':4,'Frutales':3,'PAC y ayudas':3,'Maquinaria':3,'Fitosanitarios':2,'Fertilización':2,'Riego y agua':2,'Gestión de la explotación':2,'Agricultura ecológica':1,'Mercados y precios':1};
   const CAZA_UTIL = /plazo|veda|orden|temporada|convocatoria|ayuda|subvenci|licencia|precinto|da[ñn]os|jabal/i;
   // Imagen propia por tema (no se usan las fotos de los medios: evita problemas de derechos de autor)
-  const IMG_TEMA = {'Cítricos':'./img/agricola.jpg','Hortalizas':'./img/planes-abonado.jpg','Frutales':'./img/informes.jpg','Fitosanitarios':'./hero-maquinaria.jpg','Fertilización':'./img/planes-abonado.jpg','Riego y agua':'./img/planes-abonado.jpg','PAC y ayudas':'./norm-pac.jpg','Maquinaria':'./maq-area.jpg','Gestión de la explotación':'./img/cuaderno-campo.jpg','Agricultura ecológica':'./img/agricola.jpg','Mercados y precios':'./img/analisis-datos.jpg','Caza':'./cin-area.jpg'};
+  const IMG_TEMA = {'Daños y siniestros':'./img/informes.jpg','Jóvenes agricultores':'./norm-subvenciones.jpg','Modernización e inversiones':'./norm-subvenciones.jpg','Cítricos':'./img/agricola.jpg','Hortalizas':'./img/planes-abonado.jpg','Frutales':'./img/informes.jpg','Fitosanitarios':'./hero-maquinaria.jpg','Fertilización':'./img/planes-abonado.jpg','Riego y agua':'./img/planes-abonado.jpg','PAC y ayudas':'./norm-pac.jpg','Maquinaria':'./maq-area.jpg','Gestión de la explotación':'./img/cuaderno-campo.jpg','Agricultura ecológica':'./img/agricola.jpg','Mercados y precios':'./img/analisis-datos.jpg','Caza':'./cin-area.jpg'};
   function imagenTema(n){const c=(Array.isArray(n.categorias)&&n.categorias.length?n.categorias:[n.categoria||'General']);for(const x of c){if(IMG_TEMA[x])return IMG_TEMA[x];}return IMG_DEFECTO;}
   // Extracto breve (cita corta con enlace a la fuente)
   function corto(t,max){t=String(t||'').trim();if(t.length<=max)return t;return t.slice(0,max).replace(/\s+\S*$/,'').replace(/[.,;:]$/,'')+'…';}
@@ -65,9 +65,11 @@
 
   function crearSlide(n, i) {
     if (n._plazo) return crearSlidePlazo(n, i);
-    const a = crear('a', 'nc-slide');
+    const danos = cats(n).includes('Daños y siniestros');
+    const a = crear(danos ? 'div' : 'a', 'nc-slide');
     const href = urlSegura(n.url);
-    if (href) { a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    if (href && !danos) { a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    if (danos) a.setAttribute('role', 'group');
     a.setAttribute('aria-label', (i + 1) + ' de ' + slidesTotal + ': ' + (n.titulo || 'Noticia'));
     const img = document.createElement('img');
     img.alt = ''; img.decoding = 'async';
@@ -77,12 +79,18 @@
     a.appendChild(img);
     const t = crear('div', 'nc-txt');
     const m = crear('div', 'nc-meta');
-    m.appendChild(crear('span', 'nc-cat', cats(n)[0]));
+    const principal = cats(n).slice().sort((x, y) => (PRIO[y] || 0) - (PRIO[x] || 0))[0];
+    m.appendChild(crear('span', 'nc-cat' + (principal === 'Daños y siniestros' ? ' nc-cat-plazo' : ''), principal));
     m.appendChild(crear('span', null, [fecha(n.fecha), n.fuente].filter(Boolean).join(' · ')));
     t.appendChild(m);
     t.appendChild(crear('h3', 'nc-tit', n.titulo || ''));
     if (n.extracto && String(n.extracto).trim()) t.appendChild(crear('p', 'nc-ext', corto(n.extracto, 140)));
-    t.appendChild(crear('span', 'nc-leer', 'Leer noticia →'));
+    if (danos) {
+      const acc = crear('div', 'nc-acc');
+      if (href) { const v = crear('a', 'nc-leer', 'Leer noticia →'); v.href = href; v.target = '_blank'; v.rel = 'noopener noreferrer'; acc.appendChild(v); }
+      const c = crear('a', 'nc-leer nc-leer-cta', '¿Te ha afectado? Informe de daños →'); c.href = '#contacto'; acc.appendChild(c);
+      t.appendChild(acc);
+    } else t.appendChild(crear('span', 'nc-leer', 'Leer noticia →'));
     a.appendChild(t);
     return a;
   }

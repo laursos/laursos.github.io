@@ -1,5 +1,5 @@
 {
-  "_instrucciones": "Avisos de ayudas que quieras destacar a mano. Cada aviso se muestra hasta su fecha_fin (incluida) y luego desaparece solo. Formato de fecha: AAAA-MM-DD. Copia el bloque de ejemplo dentro de 'avisos' y rellénalo. categorias (opcional): p. ej. [\"Jóvenes agricultores\"], [\"Maquinaria\"], [\"Caza\"].",
+  "_instrucciones": "Avisos de ayudas que quieras destacar a mano. Cada aviso se muestra hasta su fecha_fin (incluida) y luego desaparece solo. Formato de fecha: AAAA-MM-DD. Copia el bloque de ejemplo dentro de 'avisos' y rellénalo. categorias (opcional): p. ej. [\"Daños y siniestros\"], [\"Jóvenes agricultores\"], [\"Modernización\"], [\"Maquinaria\"], [\"Caza\"]. Las de Daños y siniestros y Jóvenes agricultores salen primero.",
   "_ejemplo": {
     "titulo": "Ayudas a la incorporación de jóvenes agricultores 2027",
     "organismo": "Conselleria de Agricultura",

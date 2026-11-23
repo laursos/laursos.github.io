@@ -66,7 +66,7 @@ main{padding:64px 0 80px}
 <main>
 <section class="plazos" id="plazos" aria-labelledby="plazos-titulo" hidden><div class="wrap">
   <div class="eyebrow">Ayudas y subvenciones</div><h2 class="h2" id="plazos-titulo" style="font-size:clamp(22px,2.6vw,30px)">Plazos abiertos</h2>
-  <p class="pl-sub">Convocatorias para explotaciones agrarias, maquinaria y caza de la Comunitat Valenciana, la Región de Murcia y el Estado. Se muestran mientras el plazo de solicitud sigue abierto.</p>
+  <p class="pl-sub">Convocatorias para explotaciones agrarias (jóvenes agricultores, modernización, daños por DANA, inundaciones, granizo u otros siniestros), maquinaria y caza de la Comunitat Valenciana, la Región de Murcia y el Estado. Se muestran mientras el plazo de solicitud sigue abierto.</p>
   <div class="pl-grid" id="pl-grid"></div>
   <p class="pl-nota">Fuente: Base de Datos Nacional de Subvenciones (infosubvenciones.es). Comprueba siempre las bases y el plazo en la convocatoria oficial.</p>
 </div></section>
@@ -101,7 +101,7 @@ main{padding:64px 0 80px}
       c.appendChild(el('p','pl-org',[p.organismo,p.ambito].filter(Boolean).join(' · ')));
       var a=el('div','pl-acc'),u=segura(p.url);
       if(u){var v=el('a',null,'Ver convocatoria');v.href=u;v.target='_blank';v.rel='noopener noreferrer';a.appendChild(v);}
-      var k=el('a','cta','Te ayudo a tramitarla');k.href='./index.html#contacto';a.appendChild(k);
+      var dn=(p.categorias||[]).indexOf('Daños y siniestros')>-1;var k=el('a','cta',dn?'Te preparo el informe de daños':'Te ayudo a tramitarla');k.href='./index.html#contacto';a.appendChild(k);
       c.appendChild(a);grid.appendChild(c);
     });
     sec.hidden=false;
