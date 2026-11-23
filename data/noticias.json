@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-23T07:40:25Z",
+  "actualizado": "2026-11-23T23:54:28Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-23T07:40:25Z",
+      "fecha": "2026-11-23T23:54:28Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -13,6 +13,228 @@
       "categorias": [
         "Fertilización",
         "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "bab27a445bcc5587",
+      "titulo": "VINALOPÓ | Novelda activa una nueva campaña de Bono Consumo con 720.000 euros para impulsar el comercio local",
+      "extracto": "VINALOPÓ: Novelda activa una nueva campaña de Bono Consumo con 720.000 euros para impulsar el comercio local",
+      "fecha": "2026-11-23T16:10:28Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/elda-vinalopo-mitja/novelda-activa-una-nueva-campana-de-bono-consumo-con-720000-euros-para-impulsar-el-comercio-local",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1972973.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "2ef2783c542446d8",
+      "titulo": "VEGA BAJA | La Generalitat invertirá 7,7 millones para llevar agua del Júcar directamente a más de 1.000 regantes de Albatera y Hondón",
+      "extracto": "VEGA BAJA: La Generalitat invertirá 7,7 millones para llevar agua del Júcar directamente a más de 1.000 regantes de Albatera y Hondón",
+      "fecha": "2026-11-23T15:48:31Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/orihuela1/la-generalitat-invertira-77-millones-para-llevar-agua-del-jucar-directamente-a-mas-de-1000-regantes-de-albatera-y-hondon",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1972945.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "8abc13606a36e7b4",
+      "titulo": "España se mantiene como el país de la UE con mayor superficie de producción ecológica",
+      "extracto": "España se mantiene como el país de la Unión Europea con mayor superficie destinada a la producción agrícola ecológica, con 2.986.824…",
+      "fecha": "2026-11-23T14:29:14Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/espana-se-mantiene-como-el-pais-de-la-ue-con-mayor-superficie-de-produccion-ecologica",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/Produccion-Ecologica.jpg",
+      "categorias": [
+        "Agricultura ecológica"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "05da6f5c114d062f",
+      "titulo": "Patatas Beltrán hace historia en Castilla y León superando las 10.000 toneladas de producción",
+      "extracto": "Este crecimiento está impulsado por la ampliación y la incorporación de tecnología de última generación en la planta de envasado de la…",
+      "fecha": "2026-11-23T12:34:21Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/patatas-beltran-hace-historia-en-castilla-y-leon-superando-las-10-000-toneladas-de-produccion/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/Patatas-Beltran-01.jpg",
+      "categorias": [
+        "Jóvenes agricultores"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "69168c912103f612",
+      "titulo": "La DOP Melocotón de Calanda supera los 5 millones de kilos certificados",
+      "extracto": "Iguala la segunda mejor campaña de la denominación y, a no ser por el granizo, pudo alcanzar el récord de producción de 5,5 millones de…",
+      "fecha": "2026-11-23T12:33:22Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/dop-melocoton-calanda-supera-5-millones-kilos-certificados/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F08-1_3170.jpg",
+      "categorias": [
+        "Frutales"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "2cc8a54ea6b50bb8",
+      "titulo": "El IVIA reúne a investigadores de China para abordar los retos de la citricultura",
+      "extracto": "La jornada, que se celebra el 27 de noviembre en la sede del IVIA, contará con científicos de la Universidad Agrícola de Huazhong y de…",
+      "fecha": "2026-11-23T12:17:52Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/ivia-reune-investigadores-china-abordar-retos-citricultura/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/naranjo07.jpg",
+      "categorias": [
+        "Cítricos"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "71121d6c6fe61e02",
+      "titulo": "Botrytis cinerea en hortícolas de invernadero: Estrategias de control con la nueva formulación de Teldor® SC",
+      "extracto": "Diego Hernández Responsable de Agronomía y Digital de cultivos de invernadero. La protección de cultivos en invernadero se encuentra en un…",
+      "fecha": "2026-11-23T12:13:19Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/botrytis-cinerea-en-horticolas-de-invernadero-estrategias-de-control-con-la-nueva-formulacion-de-teldor-sc",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/BAY2600679D_TELDOR_HORTICOLAS_INDOOR_IMAGENES_diego_hernandez.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "6bb600c8ac408bf0",
+      "titulo": "Piden 6 millones en ayudas para apicultores de CYL mientras la Junta prepara un apoyo extra y en Aragón el sector sale a la calle a pedir soluciones",
+      "extracto": "COAG de Castilla y León ha reclamado este lunes 23 entre cinco y seis millones de euros para el sector apícola, mientras la Junta estudia…",
+      "fecha": "2026-11-23T11:24:47Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/piden-6-millones-en-ayudas-para-apicultores-de-cyl-mientras-la-junta-prepara-un-apoyo-extra-y-en-aragon-el-sector-sale-a-la-calle-a-pedir-soluciones/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/AYUDAS-PARA-APICULTORES-COAG-CYL-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "local": false
+    },
+    {
+      "id": "00ef8ab98645a4b3",
+      "titulo": "Más voces exigen la derogación del reglamento europeo que a partir del 1 de enero obligará a realizar el registro fitosanitario digital",
+      "extracto": "LA UNIÓ Llauradora, al igual que otras organizaciones agrarias, se opone frontalmente a la obligatoriedad del registro electrónico de los…",
+      "fecha": "2026-11-23T10:55:27Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/mas-voces-exigen-la-derogacion-del-reglamento-europeo-que-a-partir-del-1-de-enero-obligara-a-realizar-el-registro-fitosanitario-digital/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/REGISTRO-SANITARIO-DIGITAL-DEROGACION-LA-UNIO-150x150.jpg",
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "local": false
+    },
+    {
+      "id": "316d0163caf9abc7",
+      "titulo": "Salen a subasta pública 192.000 metros cuadrados de terrenos de uso agrario en ocho lotes con precios de salida con descuentos del 90%",
+      "extracto": "El portal especializado Escrapalia, ha lanzado a subasta pública 8 lotes de terrenos de uso agrario con un total de 192.000 metros…",
+      "fecha": "2026-11-23T10:42:16Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/salen-a-subasta-publica-192-000-metros-cuadrados-de-terrenos-de-uso-agrario-en-ocho-lotes-con-precios-de-salida-con-descuentos-del-90/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/TERRENOS-DE-USO-AGRARIO-ESCRAPALIA-150x150.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "a6d43fa4b4a76799",
+      "titulo": "ALEJANDRO IBÁÑEZ, SEGUNDO CLASIFICADO EN LA SEMIFINAL DEL CAMPEONATO DE ESPAÑA DE CAZA MENOR CON PERRO",
+      "extracto": "¡Gran resultado para la Región de Murcia! Nuestro representante murciano Alejandro Ibáñez López ha conseguido un magnífico segundo puesto…",
+      "fecha": "2026-11-23T10:39:48Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/alejandro-ibanez-segundo-clasificado-en-la-semifinal-del-campeonato-de-espana-de-caza-menor-con-perro/?utm_source=rss&utm_medium=rss&utm_campaign=alejandro-ibanez-segundo-clasificado-en-la-semifinal-del-campeonato-de-espana-de-caza-menor-con-perro",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f44f.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "070ad18572026afd",
+      "titulo": "Panoramix responde sin peseta a los cortes de agua y reafirma su blindaje frente al rugoso en La Cañada",
+      "extracto": "Panoramix – variedad pera de exportación de CapGen resistente a rugoso – muestra su comportamiento en puertas abiertas en La Cañada…",
+      "fecha": "2026-11-23T10:03:21Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/panoramix-responde-sin-peseta-a-los-cortes-de-agua-y-reafirma-su-blindaje-frente-al-rugoso-en-la-canada/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Tomate-Panoramix-resistente-a-rugoso-525x315.webp",
+      "categorias": [
+        "Hortalizas",
+        "Riego y agua",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "a4470da8cce56b63",
+      "titulo": "Día 24 de noviembre. Jornada de pimiento tardío de Syngenta",
+      "extracto": "Syngenta celebrará el próximo 24 de noviembre, de 9:00 a 13:00 horas, una jornada de california rojo en la finca de Juan Barrera, situada…",
+      "fecha": "2026-11-23T08:56:34Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/dia-24-de-noviembre-jornada-de-pimiento-tardio-de-syngenta/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/SYNGENTA-pimiento-tardio-de-Syngenta-282x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false
+    },
+    {
+      "id": "176a7aaaadabd0f8",
+      "titulo": "El proyecto TRANSFERES evaluará variedades de vid resistentes al mildiu y el oídio",
+      "extracto": "El centro tecnológico NEIKER coordina TRANSFERES, un proyecto de cooperación transfronteriza que busca impulsar el conocimiento y la…",
+      "fecha": "2026-11-23T08:17:00Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/el-proyecto-transferes-evaluara-variedades-de-vid-resistentes-al-mildiu-y-el-oidio",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/Transferes-NEIKER.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "e0a7f9e3c44fdce4",
+      "titulo": "Avanza el volumen hortofrutícola importado en septiembre frente al estancamiento de la exportación",
+      "extracto": "La exportación española de frutas y hortalizas frescas se situó en 8,8 millones de toneladas entre enero y septiembre de 2026 prácticamente…",
+      "fecha": "2026-11-23T07:44:01Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/avanza-volumen-hortofruticola-importado-septiembre-frente-estancamiento-exportacion/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/10/frutas.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -42,7 +264,6 @@
       "url": "https://revistamercados.com/la-conveniencia-amplia-ocasiones-de-consumo/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naturasi.webp",
       "categorias": [
-        "Hortalizas",
         "Mercados y precios"
       ],
       "local": false,
@@ -58,9 +279,7 @@
       "url": "https://revistamercados.com/panoramix-responde-a-los-cortes-de-agua-sin-peseta-y-refuerza-su-proteccion-frente-al-rugoso/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/01-Panoramix-lacanada-tomate-pera-CapGen_11zon.webp",
       "categorias": [
-        "Hortalizas",
-        "Riego y agua",
-        "Mercados y precios"
+        "Riego y agua"
       ],
       "local": false
     },
@@ -74,7 +293,7 @@
       "url": "https://revistamercados.com/tomra-food-presenta-en-interpom-2026-su-nueva-clasificadora-de-patatas-tomra-4a/",
       "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/2122.png",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
@@ -88,7 +307,7 @@
       "url": "https://revistamercados.com/los-vegetales-minimamente-procesados-son-un-complemento-del-fresco-y-no-un-sustituto/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/CarlosPuente.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -103,7 +322,7 @@
       "url": "https://revistamercados.com/la-campana-citricola-de-cordoba-reduce-sus-previsiones-ante-el-menor-tamano-de-la-fruta/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naranjos-cargados-de-fruta-bajo-el-sol-1_11zon.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -402,7 +621,7 @@
       "url": "https://revistamercados.com/una-nueva-generacion-para-seguir/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/PXL_20260318_161815387.MP_-scaled.jpg",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
@@ -444,7 +663,7 @@
       "url": "https://revistamercados.com/todo-empieza-en-las-raices-isidoro-sanchez-jiffygroup-espana/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Jiffy_Hydrogel_V1-09-Medium-1024x683-1.jpg",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
@@ -458,8 +677,7 @@
       "url": "https://revistamercados.com/brocoli-organiza-por-primera-vez-en-navarra-su-tradicional-jornada-de-corte/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/brocoli_11zon.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": false,
       "imagen_buscada": true
@@ -474,8 +692,7 @@
       "url": "https://revistamercados.com/red-lina-presenta-su-naranja-pigmentada-de-maduracion-temprana/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/naranja_11zon.webp",
       "categorias": [
-        "Cítricos",
-        "Mercados y precios"
+        "Cítricos"
       ],
       "local": false,
       "imagen_buscada": true
@@ -490,8 +707,7 @@
       "url": "https://revistamercados.com/el-pimiento-nun-59505-pps-f1-destaca-por-su-produccion-escalonada-y-su-calidad-de-fruto/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/YDRAY-Jornda-de-campo-california-amarillo-59505-23-1_11zon.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": false,
       "imagen_buscada": true
@@ -642,8 +858,7 @@
       "url": "https://phytoma.com/noticias/la-eleccion-de-las-variedades-y-las-estrategias-de-proteccion-claves-para-el-cultivo-del-brocoli",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/INTIA-brocoli.jpg",
       "categorias": [
-        "Hortalizas",
-        "Gestión de la explotación"
+        "Hortalizas"
       ],
       "local": false,
       "imagen_buscada": true
