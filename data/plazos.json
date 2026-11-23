@@ -1,21 +1,6 @@
 {
-  "actualizado": "2026-11-23T00:03:29Z",
+  "actualizado": "2026-11-23T00:14:55Z",
   "plazos": [
-    {
-      "id": "bdns-931561",
-      "titulo": "Resolución del 25 septiembre de 2026 del director de la Agencia Valenciana de Fomento y Garantía Agraria, por la que se convocan ayudas al establecimiento de personas jóvenes agricultoras y nuevos agricultores de la Comunitat Valenciana en el marco del Pl",
-      "organismo": "Agencia valenciana de fomento y garantía agraria",
-      "ambito": "Comunitat Valenciana",
-      "publicada": "2026-09-24",
-      "fecha_inicio": "2026-10-05",
-      "fecha_fin": "2026-12-04",
-      "texto_fin": null,
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931561",
-      "categorias": [
-        "Ayudas agrarias"
-      ],
-      "origen": "BDNS"
-    },
     {
       "id": "bdns-939415",
       "titulo": "Rehabilitación de balsas de riego para la mejora de condiciones de seguridad",
@@ -28,6 +13,21 @@
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/939415",
       "categorias": [
         "Riego y agua"
+      ],
+      "origen": "BDNS"
+    },
+    {
+      "id": "bdns-931561",
+      "titulo": "Resolución del 25 septiembre de 2026 del director de la Agencia Valenciana de Fomento y Garantía Agraria, por la que se convocan ayudas al establecimiento de personas jóvenes agricultoras y nuevos agricultores de la Comunitat Valenciana en el marco del Pl",
+      "organismo": "Agencia valenciana de fomento y garantía agraria",
+      "ambito": "Comunitat Valenciana",
+      "publicada": "2026-09-24",
+      "fecha_inicio": "2026-10-05",
+      "fecha_fin": "2026-12-04",
+      "texto_fin": null,
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931561",
+      "categorias": [
+        "Ayudas agrarias"
       ],
       "origen": "BDNS"
     }

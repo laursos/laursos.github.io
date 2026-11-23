@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T00:02:43Z",
+  "actualizado": "2026-11-23T00:14:10Z",
   "noticias": [
     {
       "id": "3894866085839066",
@@ -58,6 +58,7 @@
       "url": "https://agroinformacion.com/el-reparto-de-ayudas-en-el-ojo-del-huracan-no-se-trata-de-si-entra-o-no-un-cultivo-sino-en-que-se-concentren-en-los-que-mas-han-perdido/",
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/REPARTO-DE-AYUDAS-CYL-ASAJA-BURGOS-AVILA-ZAMORA-VALLADOLID-150x150.jpg",
       "categorias": [
+        "Daños y siniestros",
         "PAC y ayudas"
       ]
     },
@@ -98,6 +99,18 @@
         "Cítricos"
       ],
       "imagen_buscada": true
+    },
+    {
+      "id": "adbe9b61adbd4fb9",
+      "titulo": "Una campaña europea liderada con el testimonio de jóvenes agricultoras impulsa una iniciativa para liberar al campo del exceso de burocracia",
+      "extracto": "ASAJA se une a ‘Unlock Farm Potential’, la campaña que Copa-Cogeca impulsa en toda Europa para denunciar que unos trámites de autorización…",
+      "fecha": "2026-11-20T11:55:59Z",
+      "fuente": "Agroinformación",
+      "url": "https://agroinformacion.com/una-campana-europea-liderada-con-el-testimonio-de-jovenes-agricultores-impulsa-una-iniciativa-para-liberar-al-campo-del-exceso-de-burocracia/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/EXCESO-DE-BUROCRACIA-ASAJA-CAMPANA-Unlock-Farm-Potential-150x150.jpg",
+      "categorias": [
+        "Jóvenes agricultores"
+      ]
     },
     {
       "id": "fb10b8b0625a078f",
@@ -436,6 +449,7 @@
       "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126645&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
       "imagen": null,
       "categorias": [
+        "Jóvenes agricultores",
         "PAC y ayudas"
       ],
       "imagen_buscada": true
@@ -489,8 +503,7 @@
       "imagen": null,
       "categorias": [
         "Hortalizas",
-        "PAC y ayudas",
-        "Mercados y precios"
+        "PAC y ayudas"
       ],
       "imagen_buscada": true
     },
@@ -845,8 +858,8 @@
       "url": "https://fecaza.com/toledo-acogera-el-xxxv-campeonato-de-espana-de-perros-de-muestra-y-la-ii-copa-de-espana-de-spaniels-levantadores/",
       "imagen": "https://fecaza.com/wp-content/uploads/2026/10/1.jpg",
       "categorias": [
-        "Mercados y precios",
-        "Caza"
+        "Caza",
+        "Mercados y precios"
       ],
       "imagen_buscada": true
     },
@@ -946,7 +959,6 @@
       "url": "https://fecaza.com/la-escuela-espanola-de-caza-forma-a-once-alumnos-en-un-nuevo-curso-de-tiro-con-escopeta-en-mentrida/",
       "imagen": "https://fecaza.com/wp-content/uploads/2026/10/IMG_4219-1024x768.jpg",
       "categorias": [
-        "Mercados y precios",
         "Caza"
       ]
     },
