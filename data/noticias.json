@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-23T00:47:10Z",
+  "actualizado": "2026-11-23T00:49:02Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-23T00:47:10Z",
+      "fecha": "2026-11-23T00:49:02Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -33,13 +33,13 @@
       "imagen_buscada": true
     },
     {
-      "id": "8704531c677dfe90",
-      "titulo": "Feliz 7º Aniversario",
+      "id": "6c1c6196bcd30d3d",
+      "titulo": "Comunicado sobre “gripe aviar”",
       "extracto": "",
-      "fecha": "2026-11-23T00:46:10Z",
+      "fecha": "2026-11-23T00:47:02Z",
       "fuente": "ANACPER (perdiz con reclamo)",
       "origen": "ANACPER (perdiz con reclamo)",
-      "url": "https://www.anacper.es/index.php/noticias/10-noticias/182-feliz-7-aniversario",
+      "url": "https://www.anacper.es/index.php/noticias/10-noticias/174-comunicado-sobre-gripe-aviar",
       "imagen": null,
       "categorias": [
         "Caza"
