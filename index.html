@@ -50,7 +50,7 @@ h1,h2,h3{margin:0}
 .tile .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,30,.78) 0%,rgba(10,40,30,.15) 55%,transparent 75%);pointer-events:none;transition:opacity .3s}
 .tile .cap{position:absolute;left:28px;right:28px;bottom:32px;color:#fff;pointer-events:none}
 .tile .cap .k{font-family:var(--font-display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;opacity:.9}
-.tile .cap .cap-t{margin:8px 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(28px,3.2vw,44px);text-transform:uppercase;line-height:1.05;margin-top:8px}
+.tile .cap .cap-t{margin:8px 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(20px,2.2vw,30px);text-transform:uppercase;line-height:1.05;margin-top:8px}
 .tile .cap .go{pointer-events:auto;display:inline-flex;gap:8px;align-items:center;margin-top:14px;color:#fff;font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:3px}
 .hero-card{position:absolute;left:50%;top:44px;transform:translateX(-50%);background:#fff;padding:26px 34px;border-radius:14px;box-shadow:var(--shadow-3);text-align:center;max-width:620px;width:calc(100% - 64px);z-index:2}
 .hero-card h1{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,2.4vw,32px);text-transform:uppercase;line-height:1.1}
@@ -244,7 +244,7 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 
 /* Portada: bloques enteros clicables y "Ver servicios" más visible */
 .tile{cursor:pointer}
-.tile .cap{bottom:48px}
+.tile .cap{bottom:40px}
 .tile .cap .cap-t{transition:transform .25s ease}
 .tile:hover .cap .cap-t{transform:translateY(-3px)}
 .tile .cap .go{margin-top:18px;padding:14px 30px;border:2px solid rgba(255,255,255,.95);border-radius:999px;font-size:15px;letter-spacing:.08em;background:rgba(10,40,30,.35);backdrop-filter:blur(4px);transition:background .2s,color .2s,border-color .2s}
@@ -509,6 +509,11 @@ button.op-btn{border:0;cursor:pointer}
 .panel .pcta a,.pcta.solo a{font-size:16px;padding:16px 36px;border-radius:10px;letter-spacing:.01em;box-shadow:0 6px 18px rgba(0,0,0,.18)}
 .panel .pcta a{background:#fff;color:var(--lm-green-darker)}
 .panel .pcta a:hover{background:var(--lm-earth);color:#1a1a1a}
+/* Portada: un único botón en la tarjeta; las fotos siguen siendo pulsables */
+.tile .cap .go{display:none}
+.tile{cursor:pointer}
+.hero-btn{display:inline-block;margin-top:14px;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:700;font-size:15px;padding:13px 30px;border-radius:999px;transition:background .2s,transform .2s}
+.hero-btn:hover{background:var(--lm-green-dark);color:#fff;transform:translateY(-2px)}
 /* Opiniones: tarjetas centradas, opinión y llamada lado a lado */
 #op-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch}
 #op-grid>.op{flex:1 1 300px;max-width:520px;grid-column:auto;margin:0}
@@ -527,7 +532,7 @@ button.op-btn{border:0;cursor:pointer}
 <nav class="menu-movil" id="menu-movil" aria-label="Menú"><a href="#servicios">Servicios</a><a href="#noticias">Noticias</a><a href="#sobre">Sobre mí</a><a href="#contacto">Contacto</a></nav><div class="prog" id="prog" aria-hidden="true"></div></header>
 
 <section class="hero" id="inicio">
-  <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Ingeniera técnica agrícola en la Vega Baja y Alicante</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Asesoramiento técnico agrícola, cinegético y de maquinaria para mejorar tu explotación.</span></b></p></div>
+  <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Ingeniera técnica agrícola en la Vega Baja y Alicante</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Asesoramiento técnico agrícola, cinegético y de maquinaria para mejorar tu explotación.</span></b></p><a class="hero-btn" href="#servicios">Ver servicios →</a></div>
   <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade"></div><div class="cap"><p class="cap-t" style="color:#F3F1F1">Agrícola</p><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
     <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./cin-hero.jpg?v=2"></image-slot><div class="shade"></div><div class="cap"><p class="cap-t" style="color:#F3F1F1FC">Cinegética y medio ambiente</p><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
 </section>
