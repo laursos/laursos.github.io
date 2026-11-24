@@ -44,13 +44,13 @@ h1,h2,h3{margin:0}
 .cta{white-space:nowrap;justify-self:end;background:var(--lm-green);color:#fff;font-family:var(--font-display);font-weight:600;font-size:13px;padding:10px 18px;border-radius:8px;transition:background .15s}
 .cta:hover{background:var(--lm-green-dark);color:#fff}
 /* HERO MOSAIC */
-.hero{position:relative;height:calc(100vh - 80px);min-height:560px;max-height:860px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;background:#fff}
+.hero{position:relative;height:calc(72vh - 80px);min-height:460px;max-height:620px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;background:#fff}
 .tile{position:relative;overflow:hidden}
 .tile .ph{position:absolute;inset:0}
 .tile .shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,30,.78) 0%,rgba(10,40,30,.15) 55%,transparent 75%);pointer-events:none;transition:opacity .3s}
 .tile .cap{position:absolute;left:28px;right:28px;bottom:32px;color:#fff;pointer-events:none}
 .tile .cap .k{font-family:var(--font-display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;opacity:.9}
-.tile .cap .cap-t{margin:8px 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(24px,2.6vw,36px);text-transform:uppercase;line-height:1.05;margin-top:8px}
+.tile .cap .cap-t{margin:8px 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(28px,3.2vw,44px);text-transform:uppercase;line-height:1.05;margin-top:8px}
 .tile .cap .go{pointer-events:auto;display:inline-flex;gap:8px;align-items:center;margin-top:14px;color:#fff;font-family:var(--font-display);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:3px}
 .hero-card{position:absolute;left:50%;top:44px;transform:translateX(-50%);background:#fff;padding:26px 34px;border-radius:14px;box-shadow:var(--shadow-3);text-align:center;max-width:620px;width:calc(100% - 64px);z-index:2}
 .hero-card h1{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,2.4vw,32px);text-transform:uppercase;line-height:1.1}
@@ -244,10 +244,10 @@ footer .p{font-family:var(--font-display);text-transform:uppercase;letter-spacin
 
 /* Portada: bloques enteros clicables y "Ver servicios" más visible */
 .tile{cursor:pointer}
-.tile .cap{bottom:72px}
+.tile .cap{bottom:48px}
 .tile .cap .cap-t{transition:transform .25s ease}
 .tile:hover .cap .cap-t{transform:translateY(-3px)}
-.tile .cap .go{margin-top:16px;padding:11px 20px;border:1.5px solid rgba(255,255,255,.9);border-radius:999px;font-size:13px;letter-spacing:.08em;background:rgba(10,40,30,.35);backdrop-filter:blur(4px);transition:background .2s,color .2s,border-color .2s}
+.tile .cap .go{margin-top:18px;padding:14px 30px;border:2px solid rgba(255,255,255,.95);border-radius:999px;font-size:15px;letter-spacing:.08em;background:rgba(10,40,30,.35);backdrop-filter:blur(4px);transition:background .2s,color .2s,border-color .2s}
 .tile:hover .cap .go,.tile .cap .go:focus-visible{background:var(--lm-green);border-color:var(--lm-green);color:#fff}
 .tile .cap{text-align:center;display:flex;flex-direction:column;align-items:center}
 @media (max-width:760px){.tile .cap{bottom:28px}.tile .cap .go{padding:10px 18px}}
@@ -496,8 +496,8 @@ button.op-btn{border:0;cursor:pointer}
 .quien-a:hover{background:var(--lm-green);color:#fff}
 @media (max-width:760px){.quien-in{flex-wrap:wrap;gap:12px 14px}.quien-foto{width:64px;height:64px}.quien-n{font-size:16px}.quien-d{font-size:13.5px}.quien-a{width:100%;text-align:center}}
   .eyebrow,.g-t,.cred h4{font-size:18px;letter-spacing:.14em}
-.h2,.sv-h,.sv-head .sv-h{font-size:clamp(22px,2.2vw,28px)}
-#hero-cinegetica img{object-position:22% 50%}
+.h2,.sv-h,.sv-head .sv-h{font-size:clamp(20px,1.8vw,24px)}
+#hero-cinegetica img{object-position:50% 15%}
 @media (max-width:760px){#hero-cinegetica img{object-position:50% 0%}}
 /* Otros servicios: nombre + subservicios */
 .ot{border-radius:16px;padding:8px 18px 8px 8px;text-align:left;max-width:340px}
@@ -623,7 +623,6 @@ button.op-btn{border:0;cursor:pointer}
     <div class="clist">
       <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg><a href="tel:+34661915900">+34 661 915 900</a>&nbsp;·&nbsp;<a href="https://wa.me/34661915900" target="_blank" rel="noopener">WhatsApp</a></div>
       <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#147A59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:laurams.consultoresagricolas@gmail.com?subject=Consulta%20desde%20la%20web">laurams.consultoresagricolas@gmail.com</a><button type="button" class="copiar" data-copiar="laurams.consultoresagricolas@gmail.com" aria-label="Copiar email">Copiar</button></div>
-      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><a href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener">LinkedIn · Laura Muñoz</a></div>
     </div>
   </div>
   <form class="form" id="form-contacto">
