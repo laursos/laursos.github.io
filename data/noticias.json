@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-24T09:55:25Z",
+  "actualizado": "2026-11-24T22:27:50Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-24T09:55:25Z",
+      "fecha": "2026-11-24T22:27:50Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -16,6 +16,80 @@
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "f9321bfba451ca04",
+      "titulo": "El rechazo al impacto en la PAC de la propuesta de presupuesto europeo de Costa sigue aumentando y se anuncia movilizaciones para diciembre",
+      "extracto": "El futuro del campo europeo se juega estos días en las instituciones europeas y en las calles con protestas y movilizaciones, ya que para…",
+      "fecha": "2026-11-24T15:59:22Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-rechazo-a-la-propuesta-de-presupuesto-europeo-de-costa-sigue-aumentando-y-se-anuncia-movilizaciones-para-diciembre/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/IMPACTO-EN-LA-PAC-PRESUPUESTO-EUROPEO-UPA-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "local": false
+    },
+    {
+      "id": "51a566f7862ac2d9",
+      "titulo": "Aprobado el plan de seguros agrarios combinados para 2027 con una dotación de 315 millones, la misma que el pasado año",
+      "extracto": "El Consejo de Ministros ha aprobado este martes 24, a propuesta del Ministerio de Agricultura, Pesca y Alimentación, el 48º Plan de Seguros…",
+      "fecha": "2026-11-24T15:36:16Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/aprobado-el-plan-de-seguros-agrarios-combinados-para-2027-con-una-dotacion-de-315-millones-el-mismo-que-el-pasado-ano/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PLAN-DE-SEGUROS-AGRARIOS-COMBINADOS-2027-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas",
+        "Gestión de la explotación"
+      ],
+      "local": false
+    },
+    {
+      "id": "7e97e0acbee64e1a",
+      "titulo": "VEGA BAJA | La Vega Baja mantiene 2.500 hectáreas de alcachofa y prevé cosechar 27.000 toneladas tras una campaña difícil",
+      "extracto": "VEGA BAJA: La Vega Baja mantiene 2.500 hectáreas de alcachofa y prevé cosechar 27.000 toneladas tras una campaña difícil",
+      "fecha": "2026-11-24T13:46:24Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/orihuela1/la-vega-baja-mantiene-2500-hectareas-de-alcachofa-y-preve-cosechar-27000-toneladas-tras-una-campana-dificil",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1973830.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "f28947598ab337e3",
+      "titulo": "Ya se conocen los 24 clasificados para la final del Campeonato de España de Caza Menor con Perro",
+      "extracto": "El valenciano Carlos Díaz Moya y el riojano Héctor Segura Sanz se imponen en las semifinales sur y norte, respectivamente, celebradas este…",
+      "fecha": "2026-11-24T11:53:53Z",
+      "fuente": "Real Federación Española de Caza",
+      "origen": "Real Federación Española de Caza",
+      "url": "https://fecaza.com/ya-se-conocen-los-24-clasificados-para-la-final-del-campeonato-de-espana-de-caza-menor-con-perro/",
+      "imagen": "https://fecaza.com/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-24-at-12.48.37.jpeg",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "c31baf5300cbff19",
+      "titulo": "Día 26 de noviembre. Jornada de tomate de Gautier",
+      "extracto": "Gautier Semences celebrará el próximo 26 de noviembre de 2026 una nueva edición de sus Discovery Days, una jornada para mostrar sus nuevas…",
+      "fecha": "2026-11-24T10:28:49Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/jornada-de-tomate-de-gautier/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Gautier-tomate-315x315.webp",
+      "categorias": [
+        "Hortalizas",
+        "Fitosanitarios"
+      ],
+      "local": false
     },
     {
       "id": "a16392f1e5b7eded",
@@ -156,6 +230,22 @@
       "local": false
     },
     {
+      "id": "5adbb54a1b15d57e",
+      "titulo": "La Alcachofa de Benicarló, Mejor Producto del Baix Maestrat",
+      "extracto": "El presidente del Consejo Regulador de la Denominación de Origen Protegida Alcachofa de Benicarló, Víctor Morera, ha expresado su…",
+      "fecha": "2026-11-24T06:59:27Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-alcachofa-de-benicarlo-mejor-producto-del-baix-maestrat/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Alcachofa.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
       "id": "52715da48a56944e",
       "titulo": "El ecosistema de innovación agroalimentaria de Cajamar: sus herramientas para la cadena de frutas y hortalizas",
       "extracto": "La Fundación Grupo Cajamar articula cinco líneas de actuación que combinan investigación aplicada, conocimiento, formación y emprendimiento…",
@@ -180,6 +270,39 @@
       "url": "https://revistamercados.com/tosca-reivindica-el-embalaje-como-pieza-clave-de-la-cadena-de-suministro/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/tosca_11zon.webp",
       "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "879fa3fe5a6fed15",
+      "titulo": "La Junta de Andalucía y el sector trabajan para reforzar la lucha contra el trips",
+      "extracto": "La Junta de Andalucía y el sector agrícola almeriense han mantenido este lunes una reunión de trabajo para analizar la evolución de la…",
+      "fecha": "2026-11-24T06:55:07Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-junta-de-andalucia-y-el-sector-trabajan-para-reforzar-la-lucha-contra-el-trips/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Junta-trips-reunion.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Fitosanitarios",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "72ab6eceaacce85f",
+      "titulo": "España lidera la cantidad de OPFH en Europa y Países Bajos en dimensión",
+      "extracto": "En 2024, la UE contaba con 1.488 organizaciones de productores reconocidas, que agrupaban a 187.372 productores, a las que se añadían 69…",
+      "fecha": "2026-11-24T06:54:06Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/espana-lidera-la-cantidad-de-opfh-en-europa-y-paises-bajos-en-dimension/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/08/CASI-empresa.webp",
+      "categorias": [
+        "Hortalizas",
         "Mercados y precios"
       ],
       "local": false,
@@ -228,6 +351,22 @@
       "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F10_3170.jpg",
       "categorias": [
         "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "be79bf70df60fed2",
+      "titulo": "PROCECAM impulsa el International Onion Meeting como referente del sector",
+      "extracto": "La Asociación de Productores de Cebolla de Castilla-La Mancha (PROCECAM) ha celebrado hoy su Asamblea General, en la que ha situado la…",
+      "fecha": "2026-11-24T06:00:18Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/procecam-impulsa-el-international-onion-meeting-como-referente-del-sector/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/procecam_11zon.webp",
+      "categorias": [
+        "Fitosanitarios",
         "Mercados y precios"
       ],
       "local": false,
@@ -290,6 +429,21 @@
         "PAC y ayudas"
       ],
       "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "2f1cd1ecbb3f60a6",
+      "titulo": "El empleo de la industria alimentaria regional aumentó un 4,5 % en el tercer trimestre de 2026",
+      "extracto": "Según refleja el segundo Informe de Coyuntura de la Agrupación de Industrias Alimentarias de Murcia, Alicante y Albacete (Agrupal)…",
+      "fecha": "2026-11-23T23:00:00Z",
+      "fuente": "CARM - Agricultura",
+      "origen": "CARM - Agricultura",
+      "url": "http://www.carm.es/web/pagina?IDCONTENIDO=126709&IDTIPO=10&RASTRO=c$m122,70&PORCANALRSS=1",
+      "imagen": null,
+      "categorias": [
+        "General"
+      ],
+      "local": true,
       "imagen_buscada": true
     },
     {
@@ -450,7 +604,7 @@
       "url": "https://revistamercados.com/patatas-beltran-supera-por-primera-vez-las-10-000-toneladas-en-castilla-y-leon/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/beltran-castilla-6.jpeg",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
@@ -584,7 +738,6 @@
       "url": "https://revistamercados.com/la-conveniencia-amplia-ocasiones-de-consumo/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naturasi.webp",
       "categorias": [
-        "Hortalizas",
         "Mercados y precios"
       ],
       "local": false,
@@ -600,8 +753,7 @@
       "url": "https://revistamercados.com/panoramix-responde-a-los-cortes-de-agua-sin-peseta-y-refuerza-su-proteccion-frente-al-rugoso/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/01-Panoramix-lacanada-tomate-pera-CapGen_11zon.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
