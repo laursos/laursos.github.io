@@ -529,7 +529,7 @@ button.op-btn{border:0;cursor:pointer}
 <section class="hero" id="inicio">
   <div class="hero-card" style="background-color:#FEFFFD"><h1 style="color:#F7F3F3"><span style="font-size:clamp(22px,2.4vw,32px);letter-spacing:-0.426509px;color:#1FA67A">Ingeniera técnica agrícola en la Vega Baja y Alicante</span></h1><p style="color:#FBFCFC"><b style="color:#126728"><span style="font-weight:normal">Asesoramiento técnico agrícola, cinegético y de maquinaria para mejorar tu explotación.</span></b></p></div>
   <div class="tile"><image-slot class="ph" id="hero-agricola" shape="rect" placeholder="Foto campo / cultivo" src="./hero-asesoramiento.jpg"></image-slot><div class="shade"></div><div class="cap"><p class="cap-t" style="color:#F3F1F1">Agrícola</p><a class="go" href="#servicios" data-area="agricola">Ver servicios →</a></div></div>
-    <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./cin-hero.jpg"></image-slot><div class="shade"></div><div class="cap"><p class="cap-t" style="color:#F3F1F1FC">Cinegética y medio ambiente</p><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
+    <div class="tile"><image-slot class="ph" id="hero-cinegetica" shape="rect" placeholder="Foto coto / fauna" src="./cin-hero.jpg?v=2"></image-slot><div class="shade"></div><div class="cap"><p class="cap-t" style="color:#F3F1F1FC">Cinegética y medio ambiente</p><a class="go" href="#servicios" data-area="cinegetica">Ver servicios →</a></div></div>
 </section>
 
 <section class="quien" aria-label="Quién soy"><div class="wrap quien-in">
@@ -732,7 +732,7 @@ const icono=t=>{const n=t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').
 const FONDOS={asesoramiento:['./img/agricola.jpg','./hero-asesoramiento.jpg','./img/asesoramiento-integral.jpg','./img/planes-abonado.jpg','./img/informes.jpg'],
   normativa:['./norm-pac.jpg','./norm-area.jpg','./norm-subvenciones.jpg','./norm-documental.jpg'],
   maquinaria:['./maq-area.jpg','./hero-maquinaria.jpg','./img/maquinaria.jpg'],
-  cinegetica:['./cin-hero.jpg','./cin-area.jpg','./cin-planes.jpg','./cin-recuperacion.jpg','./cin-danos.jpg','./cin-medidas.jpg','./cin-censos.jpg'],
+  cinegetica:['./cin-hero.jpg?v=2','./cin-area.jpg','./cin-planes.jpg','./cin-recuperacion.jpg','./cin-danos.jpg','./cin-medidas.jpg','./cin-censos.jpg'],
   catastro:['./cat-fondo.jpg'],
   medioambiente:['./ma-fondo.jpg','./hero-asesoramiento.jpg','./img/planes-abonado.jpg','./cin-recuperacion.jpg']};
 const fondos=k=>(FONDOS[k]||[]).map((u,n)=>`<img src="${u}" alt="" ${n?'loading="lazy"':''} class="${n?'':'on'}" onerror="if(this.classList.contains('on')&&this.nextElementSibling)this.nextElementSibling.classList.add('on');this.remove()">`).join('');
