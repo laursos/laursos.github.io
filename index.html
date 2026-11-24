@@ -139,7 +139,9 @@ section.soft{background:var(--lm-gray-50)}
 .about li::before{content:"";position:absolute;left:0;top:17px;width:8px;height:8px;background:var(--lm-green);border-radius:2px}
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
 .clist{display:flex;flex-direction:column;gap:12px;margin-top:22px;font-size:15px}
-.clist div{display:flex;align-items:center;gap:10px}
+.clist div{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.copiar{font:600 12px var(--font-display);padding:4px 10px;border-radius:999px;border:1px solid var(--line-2);background:#fff;color:var(--lm-green-dark);cursor:pointer}
+.copiar:hover{border-color:var(--lm-green)}
 .form{background:#fff;border:1px solid var(--line-2);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px}
 .form label{display:flex;flex-direction:column;gap:6px;font-family:var(--font-display);font-size:12px;font-weight:600}
 .form input,.form select,.form textarea{font-family:var(--font-body);font-size:14px;padding:10px 12px;border:1px solid var(--line-1);border-radius:8px}
@@ -619,8 +621,8 @@ button.op-btn{border:0;cursor:pointer}
     <h2 class="h2">¿Hablamos?</h2>
     <p class="lede">Cuéntame qué necesitas y te respondo lo antes posible.</p>
     <div class="clist">
-      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg><a href="tel:+34661915900">661 915 900</a>&nbsp;·&nbsp;<a href="https://wa.me/34661915900" target="_blank" rel="noopener">WhatsApp</a></div>
-      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#147A59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:laurams.consultoresagricolas@gmail.com">laurams.consultoresagricolas@gmail.com</a></div>
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg><a href="tel:+34661915900">+34 661 915 900</a>&nbsp;·&nbsp;<a href="https://wa.me/34661915900" target="_blank" rel="noopener">WhatsApp</a></div>
+      <div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#147A59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:laurams.consultoresagricolas@gmail.com?subject=Consulta%20desde%20la%20web">laurams.consultoresagricolas@gmail.com</a><button type="button" class="copiar" data-copiar="laurams.consultoresagricolas@gmail.com" aria-label="Copiar email">Copiar</button></div>
       <div><svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><a href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener">LinkedIn · Laura Muñoz</a></div>
     </div>
   </div>
@@ -677,7 +679,7 @@ button.op-btn{border:0;cursor:pointer}
   </form>
 </dialog>
 <footer>
-  <span>© 2026 Laura Muñoz Socorro · Ingeniera Técnica Agrícola colegiada · Crevillente (Alicante) · <a href="tel:+34661915900">661 915 900</a></span>
+  <span>© 2026 Laura Muñoz Socorro · Ingeniera Técnica Agrícola colegiada · Crevillente (Alicante) · <a href="tel:+34661915900">+34 661 915 900</a></span>
   <nav class="legal"><a href="./aviso-legal.html">Aviso legal</a><a href="./privacidad.html">Política de privacidad</a><a href="./cookies.html">Política de cookies</a><a href="https://www.linkedin.com/in/laura-munoz-ingeniera-agricola/" target="_blank" rel="noopener">LinkedIn</a></nav>
   <span class="ia">Algunas imágenes de esta web han sido generadas o editadas con inteligencia artificial con fines ilustrativos.</span>
   <span class="p">Profesional · Cercana · Confianza · Resultados</span>
@@ -864,6 +866,9 @@ f.addEventListener('submit',async e=>{e.preventDefault();
   catch(err){m.textContent='No se ha podido enviar. Inténtalo de nuevo más tarde.';m.className='op-msg err';}
   finally{b.disabled=false;b.textContent='Enviar opinión';}});})();
 
+
+/* Botón copiar email (por si el visitante no tiene programa de correo configurado) */
+document.querySelectorAll('.copiar').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.copiar);b.textContent='¡Copiado!';}catch(e){b.textContent='Selecciona y copia';}setTimeout(()=>b.textContent='Copiar',2000);}));
 /* Menú móvil */
 (function(){const b=document.getElementById('menu-btn'),m=document.getElementById('menu-movil');if(!b||!m)return;
 function set(o){m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');}
