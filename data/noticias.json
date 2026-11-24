@@ -1,17 +1,292 @@
 {
-  "actualizado": "2026-11-23T23:54:28Z",
+  "actualizado": "2026-11-24T09:55:25Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-23T23:54:28Z",
+      "fecha": "2026-11-24T09:55:25Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
       "imagen": null,
       "categorias": [
         "Fertilización",
+        "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "a16392f1e5b7eded",
+      "titulo": "Trabajo en conjunto en Andalucía para reforzar la lucha contra la plaga del Thrips parvispinus, la “prioridad número uno” del sector",
+      "extracto": "La Junta de Andalucía y el sector agrícola almeriense han mantenido este pasado lunes una reunión de trabajo para analizar la evolución de…",
+      "fecha": "2026-11-24T09:13:00Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/trabajo-en-conjunto-en-andalucia-para-reforzar-la-lucha-contra-la-plaga-del-thrips-parvispinus-la-prioridad-numero-uno-del-sector/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/LA-PLAGA-DEL-THRIPS-PARVISPINUS-JUNTA-NDALUCIA-150x150.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Fitosanitarios"
+      ],
+      "local": false
+    },
+    {
+      "id": "79aeb16c9c153580",
+      "titulo": "“El campo y sus condiciones para tener futuro”, por Cirilo Arnandis",
+      "extracto": "El Presidente de Frutas y Hortalizas de Cooperatives Agro-Alimentàries, Cirilo Arnandis, habla sobre el futuro del campo español Cirilo…",
+      "fecha": "2026-11-24T09:11:37Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/campo-condiciones-tener-futuro-cirilo-arnandis/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F05_3170.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "48b46edb28f3a44b",
+      "titulo": "Críticas a la última propuesta a los presupuestos europeos: mantiene el recorte de la PAC y reduce hasta en un 30% la reserva de crisis",
+      "extracto": "Unión de Uniones, tras analizar la propuesta presentada por el presidente del Consejo Europeo, António Costa, para el próximo Marco…",
+      "fecha": "2026-11-24T08:45:33Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/criticas-a-la-ultima-propuesta-a-los-presupuestos-europeos-mantiene-el-recorte-de-la-pac-y-reduce-hasta-en-un-30-la-reserva-de-crisis/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/LOS-PRESUPUESTOS-EUROPEOS-PAC-RECORTES-UNION-UNIONES-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "local": false
+    },
+    {
+      "id": "274c626c0ee2e700",
+      "titulo": "La Sociedad de Agricultura Ecológica pide llegar al 25% de superficie ecológica en 2030",
+      "extracto": "La SEAE ha explicado que “urgen medidas” para compensar el sobrecoste que conlleva el impulso de fincas ecológicas y diversificadas…",
+      "fecha": "2026-11-24T08:38:02Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/sociedad-agricultura-ecologica-pide-llegar-25-superficie-ecologica-2030/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2019/02/Citricos_ecologicos.jpg",
+      "categorias": [
+        "Agricultura ecológica"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "529d3be61f3dbd27",
+      "titulo": "La Xylella desciende a Calabria tras detectarse el primer brote regional",
+      "extracto": "La subespecie pauca de la Xylella fastidiosa, responsable de la muerte de millones de olivos en Apulia desde 2013, se ha detectado por…",
+      "fecha": "2026-11-24T08:26:00Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/contenido-exclusivo-phytomacommunity/la-xylella-desciende-a-calabria-tras-detectarse-el-primer-brote-regional",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/01/olivo_enfermo_navas_web.jpg",
+      "categorias": [
+        "Frutales",
+        "Fitosanitarios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "4349fe5330a02f6e",
+      "titulo": "La Escuela de Caza llega a más de 2.500 niños con cerca de 50 actividades por toda la Comunitat Valenciana en 2026",
+      "extracto": "La Federación de Caza ha desarrollado su programación en 20 comarcas de las tres provincias, con propuestas infantiles y divulgativas…",
+      "fecha": "2026-11-24T07:54:17Z",
+      "fuente": "Federación de Caza Comunidad Valenciana",
+      "origen": "Federación de Caza Comunidad Valenciana",
+      "url": "https://federacioncazacv.com/prensa/escuela-caza-federacion-caza-comunitat-valenciana-2500-ninos-50-actividades-2026/",
+      "imagen": "https://federacioncazacv.com/wp-content/uploads/2026/11/Escuelaa1.jpeg",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "181b49ddeff3f9ec",
+      "titulo": "La ingeniería agrícola sitúa el criterio profesional en el centro de la transformación del sector",
+      "extracto": "El III Congreso Técnico de la Ingeniería Agrícola, organizado por el Consejo de Colegios de Ingenieros Agrícolas, celebró en Córdoba dos…",
+      "fecha": "2026-11-24T07:30:00Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/la-ingenieria-agricola-situa-el-criterio-profesional-en-el-centro-de-la-transformacion-del-sector-agroalimentario",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/mesa-colegiados-congreso-ingenieros-agricolas-cordoba.jpg",
+      "categorias": [
+        "Modernización e inversiones",
+        "Fitosanitarios",
+        "Fertilización"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "9997881c1062885f",
+      "titulo": "Garantía de suministro frente al reto climático: la receta del ‘retail’",
+      "extracto": "El impacto directo del cambio climático en el sector agroalimentario es una realidad constatada. Fenómenos como lluvias torrenciales…",
+      "fecha": "2026-11-24T07:00:49Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/garantia-de-suministro-frente-al-reto-climatico-la-receta-del-retail/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2025/07/coag-tomates-cherry-carrefour.webp",
+      "categorias": [
+        "Hortalizas",
+        "Riego y agua",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "5253daf3fccf5184",
+      "titulo": "Mayor anticipación ante la incertidumbre",
+      "extracto": "La anticipación es clave El cambio climático está introduciendo una mayor incertidumbre en las campañas agrícolas. Cualquier alteración…",
+      "fecha": "2026-11-24T07:00:28Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/mayor-anticipacion-ante-la-incertidumbre/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Cash-Lepe.webp",
+      "categorias": [
+        "Riego y agua",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "52715da48a56944e",
+      "titulo": "El ecosistema de innovación agroalimentaria de Cajamar: sus herramientas para la cadena de frutas y hortalizas",
+      "extracto": "La Fundación Grupo Cajamar articula cinco líneas de actuación que combinan investigación aplicada, conocimiento, formación y emprendimiento…",
+      "fecha": "2026-11-24T06:59:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/ecosistema-innovacion-agroalimentaria-cajamar-herramientas-cadena-frutas-hortalizas/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F16-1_3170.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "93192fc802c7e785",
+      "titulo": "Tosca reivindica el embalaje como pieza clave de la cadena de suministro",
+      "extracto": "Tosca, líder mundial en soluciones de embalaje reutilizable y de gestión compartida, ha publicado su Informe de Sostenibilidad de 2026, en…",
+      "fecha": "2026-11-24T06:58:49Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/tosca-reivindica-el-embalaje-como-pieza-clave-de-la-cadena-de-suministro/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/tosca_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "8f5e75f8db18de79",
+      "titulo": "Murcia impulsa sus exportaciones hortofrutícolas, Andalucía se mantiene y Valencia retrocede",
+      "extracto": "La evolución de la exportación española de frutas y hortalizas por comunidades autónomas hasta septiembre de 2026 muestra comportamientos…",
+      "fecha": "2026-11-24T06:53:57Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/murcia-impulsa-sus-exportaciones-hortofruticolas-andalucia-se-mantiene-y-valencia-retrocede/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/fepex_11zon-1.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "910578750f47ae11",
+      "titulo": "La agricultura ecológica reivindica su valor sostenible, pero reclama rentabilidad para garantizar su futuro",
+      "extracto": "Rafael Aznar Garrigues y José vicente Andreu hablan sobre la importancia de las tres patas de la sostenibilidad Una información de Raquel…",
+      "fecha": "2026-11-24T06:43:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/agricultura-ecologica-reivindica-valor-sostenible-pero-reclama-rentabilidad-garantizar-futuro/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/Captura-de-pantalla-2026-11-19-a-las-13.40.01.png",
+      "categorias": [
+        "Agricultura ecológica",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "8f6b5a52bec74ece",
+      "titulo": "Los productores de hortalizas de invierno de la Región de Murcia dan un paso al frente para frenar las ventas a pérdidas",
+      "extracto": "Los socios de Proexport defienden que se debe conseguir que sea “una línea roja” de cara a los clientes y a los mercados y apelan... The…",
+      "fecha": "2026-11-24T06:13:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/productores-hortalizas-invierno-region-murcia-dan-paso-frente-frenar-ventas-perdidas/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F10_3170.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "371525f996038e28",
+      "titulo": "Hortalizas de invierno: páginas centrales de Valencia Fruits",
+      "extracto": "Conoce todas las novedades sobre la campaña de hortalizas de invierno en las páginas centrales de Valencia Fruits Valencia Fruits…",
+      "fecha": "2026-11-24T05:59:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/hortalizas-invierno-paginas-centrales-valencia-fruits/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/P10_3170_pagrdvge-0001.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "198af193ed361d40",
+      "titulo": "La novedad Jalisco es el pimiento rojo de Fitó para Almería",
+      "extracto": "Jalisco es el nuevo pimiento california rojo de Fitó para los ciclos medios de Almería, resistente a oídio y de planta abierta y con…",
+      "fecha": "2026-11-24T05:00:25Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/la-novedad-jalisco-es-el-pimiento-rojo-de-fito-para-almeria/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Inma-Duarte-Juan-Lopez-y-Maria-Cara-en-las-primeras-puertas-abiertas-de-Fito-525x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false
+    },
+    {
+      "id": "da85661842bbd935",
+      "titulo": "VEGA BAJA | La Diputación aprueba un proyecto de 60.500 euros para digitalizar la gestión del agua de riego en Almoradí",
+      "extracto": "VEGA BAJA: La Diputación aprueba un proyecto de 60.500 euros para digitalizar la gestión del agua de riego en Almoradí",
+      "fecha": "2026-11-24T05:00:05Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/orihuela1/la-diputacion-aprueba-un-proyecto-de-60500-euros-para-digitalizar-la-gestion-del-agua-de-riego-en-almoradi",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1972975.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "7ee3303791416511",
+      "titulo": "Alcoy - El Comtat | Alcoy planta cara al cierre de comercios por jubilación: guía sobre cómo facilitar el relevo y ayudas hasta 2.300€",
+      "extracto": "Alcoy - El Comtat: Alcoy planta cara al cierre de comercios por jubilación: guía sobre cómo facilitar el relevo y ayudas hasta 2.300€",
+      "fecha": "2026-11-24T05:00:05Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/alcoy-el-comtat/alcoy-planta-cara-al-cierre-de-comercios-por-jubilacion-guia-sobre-como-facilitar-el-relevo-y-ayudas-hasta-2300",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1973425.jpg",
+      "categorias": [
         "PAC y ayudas"
       ],
       "local": false,
@@ -74,7 +349,7 @@
       "categorias": [
         "Jóvenes agricultores"
       ],
-      "local": true,
+      "local": false,
       "imagen_buscada": true
     },
     {
@@ -151,6 +426,35 @@
       "local": false
     },
     {
+      "id": "d33c6be6aeaf87e3",
+      "titulo": "TROPS refuerza su apuesta por el aguacate valenciano con una nueva planta cercana al millón de euros",
+      "extracto": "Entrevista a David Sarmiento, presidente de TROPS La apertura de las instalaciones de Palma de Gandía supone un nuevo paso en la expansión…",
+      "fecha": "2026-11-23T10:46:23Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/trops-refuerza-su-apuesta-por-el-aguacate-valenciano-con-una-nueva-planta-cercana-al-millon-de-euros/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/trops-David-Sarmiento.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "2d3b69be06174bca",
+      "titulo": "Patatas Beltrán supera por primera vez las 10.000 toneladas en Castilla y León y consolida su apuesta por el origen nacional",
+      "extracto": "Patatas Beltrán ha alcanzado un nuevo hito en su trayectoria al superar, por primera vez en su historia, las 10.000 toneladas de patata en…",
+      "fecha": "2026-11-23T10:45:09Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/patatas-beltran-supera-por-primera-vez-las-10-000-toneladas-en-castilla-y-leon/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/beltran-castilla-6.jpeg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
       "id": "316d0163caf9abc7",
       "titulo": "Salen a subasta pública 192.000 metros cuadrados de terrenos de uso agrario en ocho lotes con precios de salida con descuentos del 90%",
       "extracto": "El portal especializado Escrapalia, ha lanzado a subasta pública 8 lotes de terrenos de uso agrario con un total de 192.000 metros…",
@@ -177,6 +481,22 @@
         "Caza"
       ],
       "local": false
+    },
+    {
+      "id": "d7e4fcf74c2d36b3",
+      "titulo": "Una campaña lleva el brócoli a más de 10.000 supermercados para impulsar su consumo",
+      "extracto": "Al horno con especias, en una tortilla, salteado con arroz o convertido en una crema para la cena. El brócoli tiene muchas maneras de…",
+      "fecha": "2026-11-23T10:36:19Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/una-campana-lleva-el-brocoli-a-mas-de-10-000-supermercados-para-impulsar-su-consumo/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/brocoli_11zon-1.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
     },
     {
       "id": "070ad18572026afd",
@@ -264,6 +584,7 @@
       "url": "https://revistamercados.com/la-conveniencia-amplia-ocasiones-de-consumo/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naturasi.webp",
       "categorias": [
+        "Hortalizas",
         "Mercados y precios"
       ],
       "local": false,
@@ -271,7 +592,7 @@
     },
     {
       "id": "6759c8d0cc2453a6",
-      "titulo": "Panoramix responde a los cortes de agua sin peseta y refuerza su protección frente al rugoso",
+      "titulo": "Panoramix destaca por su estabilidad sin peseta y resistencia al rugoso",
       "extracto": "CapGen Seeds reunió a agricultores y técnicos agrícolas en una jornada de puertas abiertas celebrada en La Cañada (Almería) para mostrar…",
       "fecha": "2026-11-23T07:00:43Z",
       "fuente": "Revista Mercados",
@@ -279,7 +600,8 @@
       "url": "https://revistamercados.com/panoramix-responde-a-los-cortes-de-agua-sin-peseta-y-refuerza-su-proteccion-frente-al-rugoso/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/01-Panoramix-lacanada-tomate-pera-CapGen_11zon.webp",
       "categorias": [
-        "Riego y agua"
+        "Hortalizas",
+        "Mercados y precios"
       ],
       "local": false
     },
