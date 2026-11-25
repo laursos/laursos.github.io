@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-24T22:27:50Z",
+  "actualizado": "2026-11-25T08:36:24Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-24T22:27:50Z",
+      "fecha": "2026-11-25T08:36:24Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -13,6 +13,172 @@
       "categorias": [
         "Fertilización",
         "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "636982877d0ae4d2",
+      "titulo": "La alcachofa de la Vega Baja inicia la temporada con optimismo por la calidad y la demanda conservera",
+      "extracto": "La comarca mantiene unas 2.500 hectáreas de cultivo y se consolida como segunda zona productora de España, primera de la Comunitat…",
+      "fecha": "2026-11-25T08:34:08Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/la-alcachofa-de-la-vega-baja-inicia-la-temporada-con-optimismo-por-la-calidad-y-la-demanda-conservera/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/inicio_alcachofa_vegabaja4.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "c62d64c99a7df25c",
+      "titulo": "La Comisión de Desembalse del Guadalquivir finaliza la campaña de riego 2026 almacenando 5.559 hm³ e incrementa sus reservas en 2.175 hm³",
+      "extracto": "En la Comisión de Desembalse de la Confederación Hidrográfica del Guadalquivir (CHG) se ha informado a los usuarios del desarrollo de la…",
+      "fecha": "2026-11-25T08:25:17Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/la-comision-de-desembalse-del-guadalquivir-finaliza-la-campana-de-riego-2026-almacenando-5-559-hm%c2%b3-e-incrementa-sus-reservas-en-2-175-hm%c2%b3/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/COMISION-DE-DESEMBALSE-GUADALQUIVIR-RESERVAS-150x150.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": false
+    },
+    {
+      "id": "9f67030914de656f",
+      "titulo": "Frutaria se incorpora a Mercalicante con una capacidad comercial de 120 millones de kilos anuales",
+      "extracto": "La compañía, perteneciente al Grupo SAMCA, ocupará seis módulos en las naves I y II del Mercado Mayorista de Frutas y Hortalizas y contará…",
+      "fecha": "2026-11-25T08:05:01Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/frutaria-se-incorpora-a-mercalicante-con-una-capacidad-comercial-de-120-millones-de-kilos-anuales/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/Foto-Frutaria.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "8d6081a4bb52b633",
+      "titulo": "La genética vegetal responde al consumidor del futuro",
+      "extracto": "Durante décadas, la mejora genética vegetal ha estado enfocada prioritariamente en la productividad, el rendimiento y las resistencias…",
+      "fecha": "2026-11-25T07:00:43Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-genetica-vegetal-responde-al-consumidor-del-futuro/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Durlinda-Seminis.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "e8fba9245d6859bd",
+      "titulo": "Jalisco refuerza la apuesta de Fitó por un California rojo adaptado a suelos exigentes",
+      "extracto": "Guada Quesada En un escenario en el que las condiciones del suelo y las exigencias de calidad condicionan cada vez más las decisiones del…",
+      "fecha": "2026-11-25T07:00:07Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/jalisco-refuerza-la-apuesta-de-fito-por-un-california-rojo-adaptado-a-suelos-exigentes/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/IMG_0298_11zon-e1795592706622.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "d193ddb490d48baf",
+      "titulo": "El proveedor local, garantía de aprovisionamiento",
+      "extracto": "Un modelo que asegura el abastecimiento El cambio climático puede provocar el adelanto o retraso en el inicio de las campañas, acortando en…",
+      "fecha": "2026-11-25T06:58:29Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/el-proveedor-local-garantia-de-aprovisionamiento/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/makro-1.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "9cbc177d0f4c746c",
+      "titulo": "Felipe López (Fecoam): “Las cooperativas de la Región de Murcia han comenzado la campaña moderando su oferta al 25%”",
+      "extracto": "Entrevista al Vocal de Hortalizas de la Federación de Cooperativas Agrarias de la Región de Murcia, Fecoam y director ejecutivo de Gregal…",
+      "fecha": "2026-11-25T06:57:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/felipe-lopez-fecoam-cooperativas-region-murcia-han-comenzado-campanya-moderando-oferta-25/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F14_3170.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "4d5221c279c8591d",
+      "titulo": "La alcachofa de la Vega Baja arranca la campaña con buenas perspectivas",
+      "extracto": "El artista almoradidense de talla internacional Daniel García Andújar ha sido el encargado de inaugurar la temporada de la alcachofa en la…",
+      "fecha": "2026-11-25T06:55:37Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-alcachofa-de-la-vega-baja-arranca-la-campana-con-buenas-perspectivas/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/alcachofa_11zon-1.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "503d43bbe6527154",
+      "titulo": "El futuro del sector de la manzana centra la apertura de Interpoma 2026",
+      "extracto": "Interpoma 2026 ha celebrado esta tarde en Bolzano su Opening Night, el acto inaugural de la decimocuarta edición de la feria, que tendrá…",
+      "fecha": "2026-11-25T06:55:05Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/el-futuro-del-sector-de-la-manzana-centra-la-apertura-de-interpoma-2026/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Interpoma-Opening-2026-Ph.FieraMesse-Marco-Parisi-1-1_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "6d693b968a3a0f28",
+      "titulo": "“La sostenibilidad también se compra”, por Nando Durà",
+      "extracto": "El agricultor y divulgador en redes sociales, Nando Durà, habla sobre la importancia del producto de proximidad y kilometro cero en el…",
+      "fecha": "2026-11-25T06:52:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/sostenibilidad-tambien-compra-nando-dura/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/FS04-3_3170.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "fa48aa02baf3bf46",
+      "titulo": "Citrosol acuerda la adquisición de activos estratégicos de postcosecha",
+      "extracto": "Citrosol ha alcanzado un acuerdo estratégico con Janssen PMP para asegurar la continuidad a largo plazo de FUNGAFLOR®, FUNGAZIL®, PENBOTEC®…",
+      "fecha": "2026-11-25T06:50:15Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/citrosol-acuerda-la-adquisicion-de-activos-estrategicos-de-postcosecha/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/citrosol_11zon-e1795595751720.webp",
+      "categorias": [
+        "Mercados y precios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -285,9 +451,7 @@
       "url": "https://revistamercados.com/la-junta-de-andalucia-y-el-sector-trabajan-para-reforzar-la-lucha-contra-el-trips/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Junta-trips-reunion.jpg",
       "categorias": [
-        "Hortalizas",
-        "Fitosanitarios",
-        "Mercados y precios"
+        "Fitosanitarios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -302,8 +466,7 @@
       "url": "https://revistamercados.com/espana-lidera-la-cantidad-de-opfh-en-europa-y-paises-bajos-en-dimension/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/08/CASI-empresa.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -366,8 +529,7 @@
       "url": "https://revistamercados.com/procecam-impulsa-el-international-onion-meeting-como-referente-del-sector/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/procecam_11zon.webp",
       "categorias": [
-        "Fitosanitarios",
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -589,7 +751,7 @@
       "url": "https://revistamercados.com/trops-refuerza-su-apuesta-por-el-aguacate-valenciano-con-una-nueva-planta-cercana-al-millon-de-euros/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/trops-David-Sarmiento.jpg",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
