@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-25T08:36:24Z",
+  "actualizado": "2026-11-25T21:42:37Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-25T08:36:24Z",
+      "fecha": "2026-11-25T21:42:37Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -16,6 +16,138 @@
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "ef993859cad7e15b",
+      "titulo": "Día 26 de noviembre. Jornada de tomate pera de Syngenta",
+      "extracto": "Syngenta organiza el próximo 26 de noviembre una jornada de campo dedicada al tomate pera, en la que los asistentes podrán conocer…",
+      "fecha": "2026-11-25T16:18:51Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/jornada-de-tomate-pera-de-syngenta/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Jornada-TOMATE-pera_-Syngenta-281x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false
+    },
+    {
+      "id": "f0638bbc972814ec",
+      "titulo": "El ministerio reconoce la sanidad vegetal como especialidad universitaria",
+      "extracto": "El Ministerio de Ciencia, Innovación y Universidades ha publicado en el Boletín Oficial del Estado el Real Decreto 1025/2026, de 18 de…",
+      "fecha": "2026-11-25T15:25:20Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/el-ministerio-reconoce-la-sanidad-vegetal-como-especialidad-universitaria",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/Adulto-de-Coccinella-septempunctata-depredando-pulgon-en-planta-de-pimiento.jpg",
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "e2c36777125daa04",
+      "titulo": "Los ingenieros forestales y de montes reivindican su papel esencial en la gestión de las reservas regionales de caza",
+      "extracto": "Ante las informaciones publicadas en los últimos días sobre la gestión de las reservas regionales de caza de Castilla y León, el Colegio…",
+      "fecha": "2026-11-25T11:37:27Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/los-ingenieros-forestales-y-de-montes-reivindican-su-papel-esencial-en-la-gestion-de-las-reservas-regionales-de-caza/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/INGENIEROS-FORESTALES-Y-DE-MONTES-GESTION-COTOS-CAZA-150x150.jpg",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "f9be0681377b2ab0",
+      "titulo": "Planococcus ficus, la cochinilla de la vid",
+      "extracto": "Planococcus ficus se ha consolidado como una de las principales plagas de la vid. Phytoma acaba de publicar en su canal de Youtube un vídeo…",
+      "fecha": "2026-11-25T10:57:57Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/planococcus-ficus-la-cochinilla-de-la-vid",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/Planococcus-ficus.jpg",
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "546746257e552034",
+      "titulo": "La disponibilidad de agua no depende solo del clima: un estudio liderado por la UPM evidencia que el papel de las políticas de gestión",
+      "extracto": "Cuando se habla de escasez de agua, suele asumirse que la cantidad disponible depende principalmente de la lluvia y las condiciones…",
+      "fecha": "2026-11-25T10:20:37Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/la-disponibilidad-de-agua-no-depende-solo-del-clima-un-estudio-liderado-por-la-upm-evidencia-que-el-papel-de-las-politicas-de-gestion/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/DISPONIBILIDAD-DE-AGUA-UPM-ESTUDIO-150x150.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": false
+    },
+    {
+      "id": "4f98efab2586ab97",
+      "titulo": "Alimentación sostenible: acceso económico, sensibilización y medidas a largo plazo",
+      "extracto": "Accesibilidad económica a alimentos sostenibles –ya que el precio es el factor que más influye a la hora de hacer la compra–…",
+      "fecha": "2026-11-25T09:41:09Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/alimentacion-sostenible-acceso-economico-sensibilizacion-y-medidas-a-largo-plazo/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/alimentacion_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "2efef3a8b9d88176",
+      "titulo": "El encalado rojo reduce la población de Thrips parvispinus",
+      "extracto": "La presión continuada de Thrips parvispinus sobre las plantaciones de pimiento en el sureste peninsular exige explorar alternativas…",
+      "fecha": "2026-11-25T09:13:05Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/el-encalado-rojo-reduce-la-poblacion-de-thrips-parvispinus",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/encalado-rojo.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "f23c8719bdb92635",
+      "titulo": "El pistacho de Castilla La-Mancha apuesta por la industria de transformación",
+      "extracto": "Este producto busca “salir del granel y conquistar mercados”, según el director general de Solagro, Ernesto Tardío Efeagro. El sector del…",
+      "fecha": "2026-11-25T08:53:49Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/pistacho-castilla-mancha-apuesta-industria-transformacion/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2019/03/pistachios-3223610_1920.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "818d8536346c4501",
+      "titulo": "Hortyfruta aclara que la retirada de la berenjena negra de segunda categoría no está relacionada con la seguridad alimentaria ni hay riesgo en su consumo",
+      "extracto": "La Interprofesional de Frutas y Hortalizas de Andalucía, Hortyfruta, ha querido aclarar que decisión de activación de la Extensión de Norma…",
+      "fecha": "2026-11-25T08:37:10Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/hortyfruta-aclara-que-la-retirada-de-la-berenjena-negra-de-segunda-categoria-no-esta-relacionada-con-la-seguridad-alimentaria-ni-hay-riesgo-en-su-consumo/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/BERENJENA-NEGRA-RETIRADA-HORTYFRUTA-150x150.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false
     },
     {
       "id": "636982877d0ae4d2",
@@ -123,6 +255,21 @@
       "imagen_buscada": true
     },
     {
+      "id": "57a8a2349ec02a1f",
+      "titulo": "BASF | Nunhems presenta Labomba* F1, una cebolla versátil y de alta conservación",
+      "extracto": "BASF | Nunhems celebró el pasado martes, 24 de noviembre, en las instalaciones de Ferroice en Barrax (Albacete) una jornada para presentar…",
+      "fecha": "2026-11-25T06:55:44Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/basf-nunhems-presenta-labomba-f1-una-cebolla-versatil-y-de-alta-conservacion/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/YDRAY-Evento-Labomba-BASF-Nunhems-8-1_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
       "id": "4d5221c279c8591d",
       "titulo": "La alcachofa de la Vega Baja arranca la campaña con buenas perspectivas",
       "extracto": "El artista almoradidense de talla internacional Daniel García Andújar ha sido el encargado de inaugurar la temporada de la alcachofa en la…",
@@ -184,6 +331,21 @@
       "imagen_buscada": true
     },
     {
+      "id": "6d49a3f1015b7f8d",
+      "titulo": "Natuber convierte la fécula de patata en materia prima para otras industrias",
+      "extracto": "La economía circular forma parte del modelo de trabajo de Natuber, empresa integrada en Somos Hijolusa, que ha desarrollado un sistema de…",
+      "fecha": "2026-11-25T06:45:13Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/natuber-convierte-la-fecula-de-patata-en-materia-prima-para-otras-industrias/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/fecula-de-patata.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
       "id": "f9321bfba451ca04",
       "titulo": "El rechazo al impacto en la PAC de la propuesta de presupuesto europeo de Costa sigue aumentando y se anuncia movilizaciones para diciembre",
       "extracto": "El futuro del campo europeo se juega estos días en las instituciones europeas y en las calles con protestas y movilizaciones, ya que para…",
@@ -207,7 +369,6 @@
       "url": "https://agroinformacion.com/aprobado-el-plan-de-seguros-agrarios-combinados-para-2027-con-una-dotacion-de-315-millones-el-mismo-que-el-pasado-ano/",
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PLAN-DE-SEGUROS-AGRARIOS-COMBINADOS-2027-150x150.jpg",
       "categorias": [
-        "PAC y ayudas",
         "Gestión de la explotación"
       ],
       "local": false
@@ -267,7 +428,6 @@
       "url": "https://agroinformacion.com/trabajo-en-conjunto-en-andalucia-para-reforzar-la-lucha-contra-la-plaga-del-thrips-parvispinus-la-prioridad-numero-uno-del-sector/",
       "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/LA-PLAGA-DEL-THRIPS-PARVISPINUS-JUNTA-NDALUCIA-150x150.jpg",
       "categorias": [
-        "Hortalizas",
         "Fitosanitarios"
       ],
       "local": false
@@ -373,9 +533,7 @@
       "url": "https://revistamercados.com/garantia-de-suministro-frente-al-reto-climatico-la-receta-del-retail/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2025/07/coag-tomates-cherry-carrefour.webp",
       "categorias": [
-        "Hortalizas",
-        "Riego y agua",
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -390,8 +548,7 @@
       "url": "https://revistamercados.com/mayor-anticipacion-ante-la-incertidumbre/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Cash-Lepe.webp",
       "categorias": [
-        "Riego y agua",
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
@@ -405,8 +562,7 @@
       "url": "https://revistamercados.com/la-alcachofa-de-benicarlo-mejor-producto-del-baix-maestrat/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Alcachofa.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": false,
       "imagen_buscada": true
@@ -436,7 +592,7 @@
       "url": "https://revistamercados.com/tosca-reivindica-el-embalaje-como-pieza-clave-de-la-cadena-de-suministro/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/tosca_11zon.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -854,7 +1010,7 @@
       "url": "https://phytoma.com/noticias/el-proyecto-transferes-evaluara-variedades-de-vid-resistentes-al-mildiu-y-el-oidio",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/Transferes-NEIKER.jpg",
       "categorias": [
-        "Riego y agua"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -1418,7 +1574,7 @@
       "url": "https://agroautentico.com/2026/11/anecoop-bodegas-explora-nuevas-oportunidades-de-comercializacion-en-la-india/",
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Anecoop-Bodegas-en-Prowine-Mumbai-2026-1-525x315.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
