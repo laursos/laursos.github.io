@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-25T21:42:37Z",
+  "actualizado": "2026-11-26T08:19:40Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-25T21:42:37Z",
+      "fecha": "2026-11-26T08:19:40Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -13,6 +13,176 @@
       "categorias": [
         "Fertilización",
         "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "0e6ad29e919f1cc1",
+      "titulo": "AguacateForum estrecha alianzas para consolidar el crecimiento del cultivo",
+      "extracto": "El IV Foro Internacional del Cultivo del Aguacate, AguacateForum 2026, reunió en Valencia a más de 500 profesionales y expertos de esta…",
+      "fecha": "2026-11-26T07:57:00Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/aguacateforum-estrecha-alianzas-para-consolidar-el-crecimiento-del-cultivo",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/aguacateforum.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "ce944ccb3964e3c6",
+      "titulo": "El avance del trips pone al límite la capacidad de respuesta del campo almeriense",
+      "extracto": "COAG reclama al Ministerio nuevas herramientas fitosanitarias, financiación y un pacto institucional urgente para evitar el cierre de…",
+      "fecha": "2026-11-26T07:50:10Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/el-avance-del-trips-pone-al-limite-la-capacidad-de-respuesta-del-campo-almeriense/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/07/pimiento2-1024x576-1.jpg",
+      "categorias": [
+        "Fitosanitarios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "039b14648bf0d67f",
+      "titulo": "Asociafruit arranca el camino hacia su 50 aniversario con la entrega de los I Premios GAIA en el Real Alcázar",
+      "extracto": "El sector hortofrutícola de Andalucía se dio cita en el Real Alcázar de Sevilla para la entrega de la I edición de los Premios GAIA de la…",
+      "fecha": "2026-11-26T07:00:56Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/asociafruit-arranca-el-camino-hacia-su-50-aniversario-con-la-entrega-de-los-i-premios-gaia-en-el-real-alcazar/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/IPremiosGAIA.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "4a7cd87b3b4c5e04",
+      "titulo": "“Comprar menos cantidad no significa necesariamente consumir menos”",
+      "extracto": "Durante años hemos tendido a pensar que el consumidor elegía frutas y hortalizas según tres variables: calidad, precio y frescura. Todas…",
+      "fecha": "2026-11-26T07:00:36Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/comprar-menos-cantidad-no-significa-necesariamente-consumir-menos/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Reino-Unido.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "f549444f0c26f3b8",
+      "titulo": "J.M. Lezcano, Ahorramas: “Cada vez es más necesario mantener relaciones estables con los proveedores”",
+      "extracto": "Un verdadero desafío Las incidencias climáticas las sufrimos todos, desde la producción hasta la distribución. No hay un cultivo en…",
+      "fecha": "2026-11-26T07:00:16Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/cada-vez-es-mas-necesario-mantener-relaciones-estables-con-los-proveedores/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2025/10/Ahorramas.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "517a3bf973bde488",
+      "titulo": "PROEXPORT promociona las frutas y hortalizas españolas en Reino Unido",
+      "extracto": "La Asociación de Productores-Exportadores de Frutas y Hortalizas de la Región de Murcia (Proexport) participará con un stand en la Festive…",
+      "fecha": "2026-11-26T06:50:57Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/proexport-promociona-las-frutas-y-hortalizas-espanolas-en-reino-unido/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/proexport_11zon.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "839926c7e436d833",
+      "titulo": "La elección de las variedades y las estrategias de protección de cultivo son determinantes para el cultivo del brócoli",
+      "extracto": "INTIA congregó a casi ochenta personas profesionales en la jornada de hortícolas de otoño-invierno que se celebró en la finca experimental…",
+      "fecha": "2026-11-26T06:49:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/eleccion-variedades-estrategias-proteccion-cultivo-son-determinantes-cultivo-brocoli/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/F13_3170.jpg",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "b3f8cfeefcf46822",
+      "titulo": "La cebolla crecerá en 2027 pese a la falta de soluciones fitosanitarias",
+      "extracto": "La Asamblea General de la Asociación de Productores de Cebolla de Castilla-La Mancha, PROCECAM, celebrada el martes, ha situado entre las…",
+      "fecha": "2026-11-26T06:40:53Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-cebolla-crecera-en-2027-pese-a-la-falta-de-soluciones-fitosanitarias/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/ShowImage_11zon-1.webp",
+      "categorias": [
+        "Fitosanitarios",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "a273c0f46e253a8c",
+      "titulo": "Los supermercados invierten 45 millones y crean 450 empleos en Canarias",
+      "extracto": "ASUICAN (Asociación de Supermercados de las Islas Canarias) y ASEDAS (Asociación Española de Distribuidores, Autoservicios y Supermercados)…",
+      "fecha": "2026-11-26T06:30:51Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/los-supermercados-invierten-45-millones-y-crean-450-empleos-en-canarias/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/20261125-Foto-de-familia_11zon.webp",
+      "categorias": [
+        "Modernización e inversiones",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "9ba89271bf9a3df1",
+      "titulo": "GO SINEMA investiga nuevas soluciones contra los nematodos en la fresa",
+      "extracto": "El Grupo Operativo GO SINEMA (Soluciones Integradas para Nematodos en Agricultura) continúa avanzando en sus trabajos de investigación con…",
+      "fecha": "2026-11-26T06:20:09Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/go-sinema-investiga-nuevas-soluciones-contra-los-nematodos-en-la-fresa/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/fresa-1_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "ece8232b7e17ef85",
+      "titulo": "La producción citrícola del hemisferio norte crecerá un 10,72%",
+      "extracto": "La Organización Mundial de los Cítricos (WCO, por sus siglas en inglés) ha publicado su previsión anual de producción de cítricos para la…",
+      "fecha": "2026-11-26T06:15:45Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-produccion-citricola-del-hemisferio-norte-crecera-un-1072/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naranjas-entre-hojas-del-huerto-1_11zon.webp",
+      "categorias": [
+        "Cítricos",
+        "Mercados y precios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -205,7 +375,7 @@
       "url": "https://revistamercados.com/la-genetica-vegetal-responde-al-consumidor-del-futuro/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Durlinda-Seminis.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -220,7 +390,7 @@
       "url": "https://revistamercados.com/jalisco-refuerza-la-apuesta-de-fito-por-un-california-rojo-adaptado-a-suelos-exigentes/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/IMG_0298_11zon-e1795592706622.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false
     },
@@ -234,7 +404,7 @@
       "url": "https://revistamercados.com/el-proveedor-local-garantia-de-aprovisionamiento/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/makro-1.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -264,7 +434,7 @@
       "url": "https://revistamercados.com/basf-nunhems-presenta-labomba-f1-una-cebolla-versatil-y-de-alta-conservacion/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/YDRAY-Evento-Labomba-BASF-Nunhems-8-1_11zon.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -279,8 +449,7 @@
       "url": "https://revistamercados.com/la-alcachofa-de-la-vega-baja-arranca-la-campana-con-buenas-perspectivas/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/alcachofa_11zon-1.webp",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": true,
       "imagen_buscada": true
@@ -295,7 +464,7 @@
       "url": "https://revistamercados.com/el-futuro-del-sector-de-la-manzana-centra-la-apertura-de-interpoma-2026/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Interpoma-Opening-2026-Ph.FieraMesse-Marco-Parisi-1-1_11zon.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -325,7 +494,7 @@
       "url": "https://revistamercados.com/citrosol-acuerda-la-adquisicion-de-activos-estrategicos-de-postcosecha/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/citrosol_11zon-e1795595751720.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -340,7 +509,7 @@
       "url": "https://revistamercados.com/natuber-convierte-la-fecula-de-patata-en-materia-prima-para-otras-industrias/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/fecula-de-patata.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
