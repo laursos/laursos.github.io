@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T08:21:22Z",
+  "actualizado": "2026-11-26T21:34:26Z",
   "plazos": [
     {
       "id": "bdns-928561",
@@ -56,6 +56,21 @@
       "fecha_fin": "2026-12-04",
       "texto_fin": null,
       "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/931561",
+      "categorias": [
+        "Ayudas agrarias"
+      ],
+      "origen": "BDNS"
+    },
+    {
+      "id": "bdns-945056",
+      "titulo": "RESOLUCIÓN del director de la Agencia Valenciana de Fomento y Garantía Agraria, por la que se convocan ayudas a la destilación de subproductos de vinificación campaña 2026/2027",
+      "organismo": "Agencia valenciana de fomento y garantía agraria",
+      "ambito": "Comunitat Valenciana",
+      "publicada": "2026-11-26",
+      "fecha_inicio": "2026-12-10",
+      "fecha_fin": "2027-07-20",
+      "texto_fin": null,
+      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945056",
       "categorias": [
         "Ayudas agrarias"
       ],

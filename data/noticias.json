@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-26T08:19:40Z",
+  "actualizado": "2026-11-26T21:33:03Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-26T08:19:40Z",
+      "fecha": "2026-11-26T21:33:03Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -16,6 +16,224 @@
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "0bd99b3278e269c4",
+      "titulo": "Tierra de empresas | Veolia invierte más de 8,5 millones de euros en la Vega Baja para impulsar el uso de agua regenerada",
+      "extracto": "Tierra de empresas: Veolia invierte más de 8,5 millones de euros en la Vega Baja para impulsar el uso de agua regenerada",
+      "fecha": "2026-11-26T18:38:26Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/tierra-de-empresas-alicante/veolia-invierte-mas-de-85-millones-de-euros-en-la-vega-baja-para-impulsar-el-uso-de-agua-regenerada",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1976046.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "07d0523fd79b3753",
+      "titulo": "VEGA BAJA | Veolia impulsa proyectos por 8,5 millones para reutilizar agua regenerada en la Vega Baja",
+      "extracto": "VEGA BAJA: Veolia impulsa proyectos por 8,5 millones para reutilizar agua regenerada en la Vega Baja",
+      "fecha": "2026-11-26T16:57:53Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/orihuela1/veolia-impulsa-proyectos-por-85-millones-para-reutilizar-agua-regenerada-en-la-vega-baja",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1976038.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "cfe16252dcb51d74",
+      "titulo": "Denuncian que la UE importa este año más de 821.000 toneladas de arroz de Mercosur, Myanmar y Camboya un 22% inferiores a los de 2025",
+      "extracto": "LA UNIÓ Llauradora denuncia que la Unión Europea ha importado más de 821.000 toneladas de arroz procedentes de Mercosur, Myanmar y Camboya…",
+      "fecha": "2026-11-26T15:59:19Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/denuncian-que-la-ue-importa-este-ano-mas-de-821-000-toneladas-de-arroz-de-mercosur-myanmar-y-camboya-un-22-inferiores-a-los-de-2025/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/ARROZ-DE-MERCOSUR-MYANMAR-Y-CAMBOYA-LA-UNIO-150x150.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "aeb196ca8504303e",
+      "titulo": "El maíz regresa a la tablilla de precios de la lonja de León a 252,00 €/t, solo dos euros por encima de lo que cotizaba al dejar de hacerlo",
+      "extracto": "Después de varias sesiones en las cuales el maíz no cotizó por falta de acuerdo entre las partes, en la sesión de la lonja de León…",
+      "fecha": "2026-11-26T15:58:13Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-maiz-regresa-a-la-tablilla-de-precios-de-la-lonja-de-leon-a-25200-e-t-solo-dos-euros-por-encima-de-lo-que-cotizaba-al-dejar-de-hacerlo/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/EL-MAIZ-REGRESA-Y-COTIZA-EN-LA-LONJA-DE-LEON-150x150.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "a7f640eceb47c1e6",
+      "titulo": "El campo europeo da el primer toque en la calle y amenaza con inundar Bruselas de tractores el 17 de diciembre en defensa de la PAC",
+      "extracto": "Las organizaciones y cooperativas agrarias de la Unión Europea (Copa-Cogeca) han salido a la calle este jueves 26 en Bruselas, donde han…",
+      "fecha": "2026-11-26T15:41:12Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-campo-europeo-da-el-primer-toque-en-la-calle-y-amenaza-con-inundar-bruselas-de-tractores-el-17-de-diciembre-en-defensa-de-la-pac/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/EN-DEFENSA-DE-LA-PAC-PROTESTA-BRUSELAS-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas",
+        "Maquinaria"
+      ],
+      "local": false
+    },
+    {
+      "id": "7c89f8111fe67108",
+      "titulo": "Bollo pone en marcha su campaña de cítricos 2026-27",
+      "extracto": "La marca inicia en Valencia una campaña itinerante que llevará sus mandarinas, naranjas y limones a diferentes ciudades con acciones de…",
+      "fecha": "2026-11-26T13:53:47Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/bollo-pone-en-marcha-su-campana-de-citricos-2026-27/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/IMG_8122-scaled.jpg",
+      "categorias": [
+        "Cítricos"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "1bae9ab353bcca1c",
+      "titulo": "Día 27 de noviembre. Jornada de tomate cocktail de CapGen",
+      "extracto": "CapGen Seeds presenta Robroy, su nuevo tomate cocktail en ramo con blindaje frente al ToBRFV La casa de semillas celebrará una jornada de…",
+      "fecha": "2026-11-26T12:10:40Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/dia-27-de-noviembre-jornada-de-tomate-cocktail-de-capgen/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Robroy-open-day-CapGen-560x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false
+    },
+    {
+      "id": "4e1eddd22d2bb7ab",
+      "titulo": "El presidente francés deja claro que quiere para Francia la misma dotación de la PAC en los nuevos presupuestos de la UE, «ni un euro menos»",
+      "extracto": "El presidente francés, Emmanuel Macron, subrayó este miércoles que su posición en las negociaciones para los próximos presupuestos de la…",
+      "fecha": "2026-11-26T11:07:20Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-presidente-frances-deja-claro-que-quiere-para-francia-la-misma-dotacion-de-la-pac-en-los-nuevos-presupuestos-de-la-ue-ni-un-euro-menos/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/MISMA-DOTACION-DE-LA-PAC-QUE-LA-ANTERIOR-FRANCIA-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "local": false
+    },
+    {
+      "id": "dac430b600ce3b36",
+      "titulo": "AgroMurcia 2027 responde al desafío de producir más con menos herramientas",
+      "extracto": "Tras el rotundo éxito alcanzado en sus dos primeras ediciones, que congregaron cada una a más de 600 profesionales, el Auditorio y Palacio…",
+      "fecha": "2026-11-26T10:33:56Z",
+      "fuente": "Phytoma",
+      "origen": "Phytoma",
+      "url": "https://phytoma.com/noticias/agromurcia-2027-responde-al-desafio-de-producir-mas-con-menos-herramientas",
+      "imagen": "https://phytoma.com/wp-content/uploads/2026/11/AGROMURCIA27-imagen-portada-noticia.png",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "ee86fcd7d51550f1",
+      "titulo": "📢 COMUNICADO DE LA FEDERACIÓN DE CAZA DE LA REGIÓN DE MURCIA",
+      "extracto": "Desde la Federación de Caza de la Región de Murcia queremos agradecer los mensajes recibidos y aclarar algunas cuestiones en relación con…",
+      "fecha": "2026-11-26T10:27:44Z",
+      "fuente": "Federación de Caza Región de Murcia",
+      "origen": "Federación de Caza Región de Murcia",
+      "url": "https://www.federacioncaza.com/%f0%9f%93%a2-comunicado-de-la-federacion-de-caza-de-la-region-de-murcia/?utm_source=rss&utm_medium=rss&utm_campaign=%25f0%259f%2593%25a2-comunicado-de-la-federacion-de-caza-de-la-region-de-murcia",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25aa.png",
+      "categorias": [
+        "Caza"
+      ],
+      "local": false
+    },
+    {
+      "id": "8204ac67de9372ea",
+      "titulo": "Almería, origen y destino para el mercado de la industria auxiliar",
+      "extracto": "Almería, origen y destino de oportunidades de negocio para la industria auxiliar de la agricultura Infoagro Exhibition supone un punto de…",
+      "fecha": "2026-11-26T10:18:20Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/almeria-origen-y-destino-para-el-mercado-de-la-industria-auxiliar/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Almeria-origen-y-destino-para-el-mercado-de-la-industria-auxiliar-525x315.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "e33f0749f70ea723",
+      "titulo": "Agroseguro abona 20,1 millones por los daños del pedrisco en el kaki valenciano",
+      "extracto": "Las tormentas registradas entre agosto y octubre afectaron a más de 4.800 hectáreas, principalmente en la provincia de Valencia Valencia…",
+      "fecha": "2026-11-26T10:16:33Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/agroseguro-abona-201-millones-por-los-danos-del-pedrisco-en-el-kaki-valenciano/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/08.Agosto_Caqui-Valencia_20-08-26-4.jpeg",
+      "categorias": [
+        "Daños y siniestros",
+        "Gestión de la explotación"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "5db412127b45fed9",
+      "titulo": "El trasvase Tajo-Segura alcanza los 12 m3/sg y proseguirá su incremento gradual hasta los 18 m3/sg este jueves",
+      "extracto": "El Trasvase Tajo-Segura funciona actualmente con un caudal de 12 m³/s, después de que el pasado 23 de noviembre se reanudara el envío de…",
+      "fecha": "2026-11-26T09:58:50Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-trasvase-tajo-segura-alcanza-los-12-m3-sg-y-proseguira-su-incremento-gradual-hasta-los-18-m3-sg-este-jueves/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/EL-TRASVASE-TAJO-SEGUR-ALCANZA-LOS-12M3-SG-150x150.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": false
+    },
+    {
+      "id": "9f97822b68b4327c",
+      "titulo": "El campo granadino da por agotada la vía del diálogo tras el «engaño» del Ministerio por las ayudas y abre una nueva etapa de reivindicaciones",
+      "extracto": "Cooperativas Agroalimentarias de Granada (Faeca), UPA y COAG Granada han expresado su «profunda decepción e indignación» con el Ministerio…",
+      "fecha": "2026-11-26T09:03:32Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-campo-granadino-da-por-agotada-la-via-del-dialogo-tras-el-engano-del-ministerio-por-las-ayudas-y-abre-una-nueva-etapa-de-reivindicaciones/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/NUEVA-ETAPA-DE-REIVINDICACIONES-SETOR-AGRARIO-GRANADA-150x150.jpg",
+      "categorias": [
+        "Frutales",
+        "PAC y ayudas"
+      ],
+      "local": false
+    },
+    {
+      "id": "355607c5eb0e2574",
+      "titulo": "El maratón de la negociación sobre la futura PAC entra en su recta final",
+      "extracto": "Pedro Medina / ingeniero agrónomo y ex−viceconsejero de Política Agraria Comunitaria y Desarrollo Rural de la Junta de Castilla y León Hace…",
+      "fecha": "2026-11-26T08:30:23Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-maraton-de-la-negociacion-sobre-la-futura-pac-entra-en-su-recta-final/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/NEGOCIACION-SOBRE-LA-FUTURA-PAC-JUAN-PEDRO-MEDINA-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "local": false
     },
     {
       "id": "0e6ad29e919f1cc1",
@@ -139,6 +357,20 @@
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "8b423953534b4dbc",
+      "titulo": "La CH Guadalquivir licita las obras de actualización y mejora del sistema de auscultación de las presas estatales de la zona de Granada",
+      "extracto": "La Confederación Hidrográfica del Guadalquivir (CHG), organismo dependiente del Ministerio para la Transición Ecológica y Reto Demográfico…",
+      "fecha": "2026-11-26T06:32:44Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/la-ch-guadalquivir-licita-las-obras-de-actualizacion-y-mejora-del-sistema-de-auscultacion-de-las-presas-estatales-de-la-zona-de-granada/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/OBRAS-DE-ACTUALIZACION-Y-MEJORA-CHG-PRESAS-GRANADA-150x150.jpg",
+      "categorias": [
+        "Frutales"
+      ],
+      "local": false
     },
     {
       "id": "a273c0f46e253a8c",
@@ -329,8 +561,7 @@
       "url": "https://valenciafruits.com/la-alcachofa-de-la-vega-baja-inicia-la-temporada-con-optimismo-por-la-calidad-y-la-demanda-conservera/",
       "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/inicio_alcachofa_vegabaja4.jpg",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": true,
       "imagen_buscada": true
@@ -1033,8 +1264,7 @@
       "url": "https://phytoma.com/noticias/botrytis-cinerea-en-horticolas-de-invernadero-estrategias-de-control-con-la-nueva-formulacion-de-teldor-sc",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/BAY2600679D_TELDOR_HORTICOLAS_INDOOR_IMAGENES_diego_hernandez.jpg",
       "categorias": [
-        "Hortalizas",
-        "Mercados y precios"
+        "Hortalizas"
       ],
       "local": false
     },
@@ -1509,7 +1739,7 @@
       "url": "https://agroautentico.com/2026/11/nunhems-completa-su-catalogo-de-amarillo-con-un-tardio-que-cuaja-con-blanqueo/",
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Pimiento-amarillo-Nun-59505-PPS-de-Nunhems-2-525x315.webp",
       "categorias": [
-        "Cítricos"
+        "General"
       ],
       "local": false
     },
