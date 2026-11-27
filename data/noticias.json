@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-26T21:33:03Z",
+  "actualizado": "2026-11-27T08:35:42Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-26T21:33:03Z",
+      "fecha": "2026-11-27T08:35:42Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -13,6 +13,191 @@
       "categorias": [
         "Fertilización",
         "PAC y ayudas"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "c054c2c7315222f7",
+      "titulo": "Irritec Iberia lanza Cultivis™ y Commander® Master",
+      "extracto": "Las nuevas aplicaciones constituyen un ecosistema digital que facilita y agiliza el control del riego Valencia Fruits. Redacción. En…",
+      "fecha": "2026-11-27T08:31:45Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/irritec-iberia-lanza-cultivis-y-commander-master/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/Irritec.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "2c0663d63c53d40c",
+      "titulo": "Calibre homogéneo durante toda la campaña, la apuesta de Vilmorin-Mikado",
+      "extracto": "Guada Quesada En el cultivo de pimiento, mantener la regularidad del calibre y la calidad comercial durante toda la campaña es uno de los…",
+      "fecha": "2026-11-27T07:52:24Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/calibre-homogeneo-durante-toda-la-campana-la-apuesta-de-vilmorin-mikado-2/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Turing-2-pimiento-VIlmorin-1.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "62e9197fe22ab919",
+      "titulo": "La demanda de frutas y hortalizas en Alemania resiste pese a la presión inflacionista",
+      "extracto": "El coste de la vida en Alemania siguió aumentando en 2025. Sin embargo, cuando analizamos específicamente las frutas y hortalizas, la…",
+      "fecha": "2026-11-27T07:00:55Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-demanda-de-frutas-y-hortalizas-en-alemania-resiste-pese-a-la-presion-inflacionista/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Koch_Michael_Alemania.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "6ca144e5de211d79",
+      "titulo": "“La planificación es clave para asegurar continuidad con calidad y frescura”",
+      "extracto": "El cambio climático tiene un impacto directo y transformador en el sector agroalimentario. Los fenómenos extremos como lluvias…",
+      "fecha": "2026-11-27T07:00:25Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-planificacion-es-clave-para-asegurar-continuidad-con-calidad-y-frescura/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Xavi-Navarro-Plusfresc.webp",
+      "categorias": [
+        "Riego y agua",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "66c5f42e5d8981a3",
+      "titulo": "La DOP Cereza del Jerte reclama herramientas para mejorar la rentabilidad del cultivo",
+      "extracto": "El Consejo Regulador de la Denominación de Origen Protegida (DOP) Cereza del Jerte ha celebrado este jueves sus XIV Jornadas Técnicas bajo…",
+      "fecha": "2026-11-27T06:59:05Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/la-dop-cereza-del-jerte-reclama-herramientas-para-mejorar-la-rentabilidad-del-cultivo/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Jornadas-Tecnicas-Cereza-del-Jerte.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "fd9373d8ce992c22",
+      "titulo": "Bollo lanza una campaña que pone en valor el origen y el sabor",
+      "extracto": "Con esta nueva campaña, la marca pretende continuar capitalizando el concepto «lo bueno, BUENO», una declinación creativa que inició en la…",
+      "fecha": "2026-11-27T06:55:58Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/bollo-lanza-una-campana-que-pone-en-valor-el-origen-y-el-sabor/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/IMG_8018-scaled.webp",
+      "categorias": [
+        "Cítricos",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "a8ebcfb7e210ca3f",
+      "titulo": "España lidera la producción europea de granada",
+      "extracto": "La campaña de granada en España afronta la temporada con una previsión sectorial de entre 40.000 y 50.000 toneladas, en un contexto en el…",
+      "fecha": "2026-11-27T06:55:11Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/espana-lidera-la-produccion-europea-de-granada/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Corona-de-queso-con-granada-y-miel.webp",
+      "categorias": [
+        "Frutales",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "5e1b3c55f6874b20",
+      "titulo": "Irritec integra análisis de datos y control remoto para optimizar el riego y la fertirrigación",
+      "extracto": "En agricultura, un riego más preciso y eficiente pasa también por sistemas de automatización que analizan de forma dinámica y en tiempo…",
+      "fecha": "2026-11-27T06:54:31Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/irritec-integra-analisis-de-datos-y-control-remoto-para-optimizar-el-riego-y-la-fertirrigacion/",
+      "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/2122.png",
+      "categorias": [
+        "Riego y agua",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "f0d6f3d4a2cd3784",
+      "titulo": "Juan Antonio Martínez (Toñifruit): “Eliminar el 10% de IVA de los productos ecológicos sería una medida para reducir su precio final y fomentar su consumo”",
+      "extracto": "Entrevista al Gerente de Bio Toñifruit, Juan Antonio Martínez Rubio Pilar Benito. Murcia. Juan Antonio Martínez Rubio es el gerente de la…",
+      "fecha": "2026-11-27T05:24:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/juan-antonio-martinez-tonifruit-eliminar-10-iva-productos-ecologicos-seria-medida-reducir-precio-final-fomentar-consumo/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2026/11/FS18_3170.jpg",
+      "categorias": [
+        "Cítricos",
+        "Agricultura ecológica",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "692157403fb46748",
+      "titulo": "La nueva cebolla de BASF | Nunhems es Labomba",
+      "extracto": "La nueva cebolla de BASF | Nunhems es Labomba* F1: alta conservación y calidad en todos los formatos Según el manejo y densidad de…",
+      "fecha": "2026-11-27T05:00:20Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/la-nueva-cebolla-de-basf-nunhems-es-labomba/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/YDRAY-Evento-Labomba-BASF-Nunhems-4-525x315.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "d5635e6b61188547",
+      "titulo": "L'Alacantí | El bono consumo en Mutxamel: faltan por canjear 10.000 unidades a cuatro días de cerrar la campaña",
+      "extracto": "L'Alacantí: El bono consumo en Mutxamel: faltan por canjear 10.000 unidades a cuatro días de cerrar la campaña",
+      "fecha": "2026-11-27T05:00:06Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/alacanti/el-bonoconsumo-en-mutxamel-faltan-por-canjear-10000-unidades-a-cuatro-dias-de-cerrar-la-campana",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1975875.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "9e68fc92f740e85c",
+      "titulo": "COMUNITAT VALENCIANA | Comparativa de programas electorales del 29N: los recursos hídricos y medio ambiente",
+      "extracto": "COMUNITAT VALENCIANA: Comparativa de programas electorales del 29N: los recursos hídricos y medio ambiente",
+      "fecha": "2026-11-27T05:00:06Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/comunitat-valenciana/comparativa-de-programas-electorales-del-29n-los-recursos-hidricos-y-medio-ambiente",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1956132.jpg",
+      "categorias": [
+        "Riego y agua"
       ],
       "local": false,
       "imagen_buscada": true
@@ -306,7 +491,7 @@
       "url": "https://revistamercados.com/cada-vez-es-mas-necesario-mantener-relaciones-estables-con-los-proveedores/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2025/10/Ahorramas.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -352,8 +537,7 @@
       "url": "https://revistamercados.com/la-cebolla-crecera-en-2027-pese-a-la-falta-de-soluciones-fitosanitarias/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/ShowImage_11zon-1.webp",
       "categorias": [
-        "Fitosanitarios",
-        "Mercados y precios"
+        "Fitosanitarios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -382,8 +566,7 @@
       "url": "https://revistamercados.com/los-supermercados-invierten-45-millones-y-crean-450-empleos-en-canarias/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/20261125-Foto-de-familia_11zon.webp",
       "categorias": [
-        "Modernización e inversiones",
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -398,7 +581,7 @@
       "url": "https://revistamercados.com/go-sinema-investiga-nuevas-soluciones-contra-los-nematodos-en-la-fresa/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/fresa-1_11zon.webp",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -413,8 +596,7 @@
       "url": "https://revistamercados.com/la-produccion-citricola-del-hemisferio-norte-crecera-un-1072/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/Naranjas-entre-hojas-del-huerto-1_11zon.webp",
       "categorias": [
-        "Cítricos",
-        "Mercados y precios"
+        "Cítricos"
       ],
       "local": false,
       "imagen_buscada": true
