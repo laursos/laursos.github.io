@@ -1,21 +1,151 @@
 {
-  "actualizado": "2026-11-27T08:35:42Z",
+  "actualizado": "2026-11-27T21:18:20Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-27T08:35:42Z",
+      "fecha": "2026-11-27T21:18:20Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
-      "imagen": null,
+      "imagen": "https://www.mapa.gob.es/.imaging/mte/mapaTheme/1200x630/dam/mapa/contenido/prensa/notas-de-prensa/imagenes/21-10-2026-ministro-consultivos---4-.jpg/jcr:content/21.10.2026%20Ministro%20Consultivos%20%20(4).JPG",
       "categorias": [
         "Fertilización",
         "PAC y ayudas"
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "7776652a6705a00d",
+      "titulo": "Alcoy - El Comtat | Ibi lanza el Bono Consumo 2026: generará una inyección de cerca de 700.000€ en el comercio local",
+      "extracto": "Alcoy - El Comtat: Ibi lanza el Bono Consumo 2026: generará una inyección de cerca de 700.000€ en el comercio local",
+      "fecha": "2026-11-27T18:08:02Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/alcoy-el-comtat/ibi-lanza-el-bono-consumo-2026-generara-una-inyeccion-de-cerca-de-700000-en-el-comercio-local",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1977107.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "f666c06344c6b90f",
+      "titulo": "Elche | Aigües d’Elx y el Clúster de Economía Circular impulsan la jornada 'Agua y Futuro: 25 años en red'",
+      "extracto": "Elche: Aigües d’Elx y el Clúster de Economía Circular impulsan la jornada 'Agua y Futuro: 25 años en red'",
+      "fecha": "2026-11-27T12:51:30Z",
+      "fuente": "Alicante Plaza",
+      "origen": "Alicante Plaza",
+      "url": "https://alicanteplaza.es/alicanteplaza/elcheplaza/aiges-delx-y-el-cluster-de-economia-circular-impulsan-la-jornada-agua-y-futuro-25-anos-en-red",
+      "imagen": "https://d31u1w5651ly23.cloudfront.net/articulos/articulos-1976890.jpg",
+      "categorias": [
+        "Riego y agua"
+      ],
+      "local": true,
+      "imagen_buscada": true
+    },
+    {
+      "id": "8a8c614c47a592ed",
+      "titulo": "Plantean la unión de todo el sector productor para liderar la defensa del cultivo y conseguir un precio justo para el tomate",
+      "extracto": "UPA-UCE Extremadura ha planteado la necesidad de sentarse con el sector productor de tomate, como OPFH y Cooperativas Agro-Alimentarias…",
+      "fecha": "2026-11-27T11:53:04Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/plantean-la-union-de-todo-el-sector-productor-para-liderar-la-defensa-del-cultivo-y-conseguir-un-precio-justo-para-el-tomate/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PRECIO-JUSTO-PARA-EL-TOMATE-UPA-UCE-150x150.jpg",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "979bade8fb4b1070",
+      "titulo": "El cereal consolida su escalada alcista con subidas generalizadas en las lonjas con subidas de hasta 7 €/tm al haber escasa oferta en origen",
+      "extracto": "El cereal por tercera semana consecutiva consolida su escalada alcista con subidas generalizadas en todas las lonjas con incrementos en la…",
+      "fecha": "2026-11-27T11:36:16Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-cereal-consolida-su-escalada-alcista-con-subidas-generalizadas-en-las-lonjas-con-subidas-de-hasta-7-e-tm-al-haber-escasa-oferta-en-origen/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/CEREAL-CONSOLIDA-SU-ESCALADA-ALCISTA-ABASTORES-150x150.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "ee47d96ff7ebb5af",
+      "titulo": "Para no perder fondos: exigen a la Generalitat que active antes de final de año los 500.000 euros previstos para promocionar los cítricos valencianos",
+      "extracto": "LA UNIÓ Llauradora exige a la Conselleria de Agricultura que destine íntegramente a la promoción de los cítricos valencianos los 500.000…",
+      "fecha": "2026-11-27T11:09:06Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/para-no-perder-fondos-exigen-a-la-generalitat-que-active-antes-de-final-de-ano-los-500-000-euros-previstos-para-promocionar-los-citricos-valencianos/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PROMOCIONAR-LOS-CITRICOS-VALENCIANOS-LA-UNIO-150x150.jpg",
+      "categorias": [
+        "Cítricos"
+      ],
+      "local": false
+    },
+    {
+      "id": "8aeff2b7994e9ec1",
+      "titulo": "Días 2 y 3 de diciembre. Jornadas de pimiento de Vilmorin Mikado",
+      "extracto": "Vilmorin Mikado celebrará los próximos 2 y 3 de diciembre sus Jornadas de Pimiento, un encuentro dirigido a profesionales del sector…",
+      "fecha": "2026-11-27T10:56:00Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/jornadas-de-pimiento-de-vilmorin-mikado-2/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Jornada-de-pimiento-de-Vilmorin-4-373x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false
+    },
+    {
+      "id": "7effc51b54723af5",
+      "titulo": "Azucarera eleva esta campaña a 43€/t su oferta para mejorar la rentabilidad de la remolacha en Castilla y León y asumirá nuevos costes",
+      "extracto": "Azucarera ha presentado a sus agricultores su oferta de contratación para la campaña 2027/28 con la que refuerza su apuesta por el futuro…",
+      "fecha": "2026-11-27T09:57:47Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/azucarera-eleva-esta-campana-a-43e-t-su-oferta-para-mejorar-la-rentabilidad-de-la-remolacha-en-castilla-y-leon-y-asumira-nuevos-costes/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/RENTABILIDAD-DE-LA-REMOLACHA-43-EUROS-AZUCARERA-150x150.jpg",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false
+    },
+    {
+      "id": "e021dcbe9f00ba00",
+      "titulo": "El Ministerio de Agricultura, Pesca y Alimentación acuerda un plan de actuación contra el virus de la clorosis de los cítricos",
+      "extracto": "El Comité Fitosanitario Nacional, órgano de coordinación entre la Administración General del Estado y las comunidades autónomas en materia…",
+      "fecha": "2026-11-27T09:42:20Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/el-ministerio-de-agricultura-pesca-y-alimentacion-acuerda-un-plan-de-actuacion-contra-el-virus-de-la-clorosis-de-los-citricos/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/PLAN-DE-ACTUACION-CONTRA-LA-CLOROSIS-150x150.jpg",
+      "categorias": [
+        "Cítricos",
+        "Fitosanitarios"
+      ],
+      "local": false
+    },
+    {
+      "id": "5caf977b60d6382e",
+      "titulo": "Publicada una nueva relación de 1.433 beneficiarios de la ayuda por daños de las borrascas no cubiertos por los seguros por 10,7 millones",
+      "extracto": "El Ministerio de Agricultura, Pesca y Alimentación ha publicado en su sede electrónica la resolución definitiva de concesión de 10,7…",
+      "fecha": "2026-11-27T09:06:59Z",
+      "fuente": "Agroinformación",
+      "origen": "Agroinformación",
+      "url": "https://agroinformacion.com/publicada-una-nueva-relacion-de-1-433-beneficiarios-de-la-ayuda-por-danos-de-las-borrascas-no-cubiertos-por-los-seguros-por-107-millones/",
+      "imagen": "https://agroinformacion.com/wp-content/uploads/2026/11/DANOS-POR-LAS-BORRASCAS-AYUDAS-MAPA-150x150.jpg",
+      "categorias": [
+        "PAC y ayudas"
+      ],
+      "local": false
     },
     {
       "id": "c054c2c7315222f7",
@@ -127,6 +257,21 @@
       "imagen_buscada": true
     },
     {
+      "id": "19ae4b7a86510241",
+      "titulo": "Bejo reúne al sector de la cebolla en su segundo simposio",
+      "extracto": "La segunda edición del Simposio de Cebolla de Bejo volvió a reunir a numerosos agricultores, técnicos y profesionales vinculados al cultivo…",
+      "fecha": "2026-11-27T06:55:01Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/bejo-reune-al-sector-de-la-cebolla-en-su-segundo-simposio/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/cebolla_11zon.webp",
+      "categorias": [
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
       "id": "5e1b3c55f6874b20",
       "titulo": "Irritec integra análisis de datos y control remoto para optimizar el riego y la fertirrigación",
       "extracto": "En agricultura, un riego más preciso y eficiente pasa también por sistemas de automatización que analizan de forma dinámica y en tiempo…",
@@ -140,6 +285,22 @@
         "Mercados y precios"
       ],
       "local": false
+    },
+    {
+      "id": "68eb6cfb7c863410",
+      "titulo": "Se repartirán 3.600 piezas de brócoli y alcachofa en la Gran Vía de Madrid",
+      "extracto": "Cansado de vivir a la sombra de un plato principal, un brócoli reclama su protagonismo. A su lado, una alcachofa reivindica todo lo que…",
+      "fecha": "2026-11-27T06:20:17Z",
+      "fuente": "Revista Mercados",
+      "origen": "Revista Mercados",
+      "url": "https://revistamercados.com/3-600-piezas-de-brocoli-y-alcachofa-en-la-gran-via-de-madrid/",
+      "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/madrid_11zon.webp",
+      "categorias": [
+        "Hortalizas",
+        "Mercados y precios"
+      ],
+      "local": false,
+      "imagen_buscada": true
     },
     {
       "id": "f0d6f3d4a2cd3784",
@@ -328,7 +489,7 @@
       "url": "https://phytoma.com/noticias/agromurcia-2027-responde-al-desafio-de-producir-mas-con-menos-herramientas",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/AGROMURCIA27-imagen-portada-noticia.png",
       "categorias": [
-        "Riego y agua"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -430,7 +591,7 @@
       "url": "https://phytoma.com/noticias/aguacateforum-estrecha-alianzas-para-consolidar-el-crecimiento-del-cultivo",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/aguacateforum.jpg",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -460,7 +621,7 @@
       "url": "https://revistamercados.com/asociafruit-arranca-el-camino-hacia-su-50-aniversario-con-la-entrega-de-los-i-premios-gaia-en-el-real-alcazar/",
       "imagen": "https://revistamercados.com/wp-content/uploads/2026/11/IPremiosGAIA.jpg",
       "categorias": [
-        "Mercados y precios"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -1098,9 +1259,7 @@
       "url": "https://phytoma.com/noticias/la-ingenieria-agricola-situa-el-criterio-profesional-en-el-centro-de-la-transformacion-del-sector-agroalimentario",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/mesa-colegiados-congreso-ingenieros-agricolas-cordoba.jpg",
       "categorias": [
-        "Modernización e inversiones",
-        "Fitosanitarios",
-        "Fertilización"
+        "General"
       ],
       "local": false,
       "imagen_buscada": true
@@ -1561,7 +1720,6 @@
       "url": "https://agroautentico.com/2026/11/panoramix-responde-sin-peseta-a-los-cortes-de-agua-y-reafirma-su-blindaje-frente-al-rugoso-en-la-canada/",
       "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Tomate-Panoramix-resistente-a-rugoso-525x315.webp",
       "categorias": [
-        "Hortalizas",
         "Riego y agua",
         "Mercados y precios"
       ],
