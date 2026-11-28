@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-11-27T21:18:20Z",
+  "actualizado": "2026-11-28T07:50:35Z",
   "noticias": [
     {
       "id": "59e947d8c4511ef7",
       "titulo": "El Gobierno distribuye entre las comunidades autónomas fondos agrarios por 69,2 millones de euros",
       "extracto": "El Ministerio de Agricultura, Pesca y Alimentación distribuye entre las comunidades autónomas los 50,1 millones de euros asignados a España…",
-      "fecha": "2026-11-27T21:18:20Z",
+      "fecha": "2026-11-28T07:50:35Z",
       "fuente": "MAPA",
       "origen": "MAPA",
       "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-gobierno-distribuye-entre-las-comunidades-aut-nomas-fondos-agrarios-por-69-2-millones-de-euros/784b0d6d-be95-4c12-8a7f-b9915407c8bb",
@@ -16,6 +16,35 @@
       ],
       "local": false,
       "imagen_buscada": true
+    },
+    {
+      "id": "64d277532db94be3",
+      "titulo": "España lidera la producción europea de granada",
+      "extracto": "La campaña se presenta con una previsión de entre 40.000 y 50.000 toneladas, mientras crece el interés internacional por la fruta y sus…",
+      "fecha": "2026-11-28T06:40:00Z",
+      "fuente": "Valencia Fruits",
+      "origen": "Valencia Fruits",
+      "url": "https://valenciafruits.com/espana-lidera-la-produccion-europea-de-granada/",
+      "imagen": "https://valenciafruits.com/wp-content/uploads/2021/09/granadas.jpg",
+      "categorias": [
+        "Frutales"
+      ],
+      "local": false,
+      "imagen_buscada": true
+    },
+    {
+      "id": "3b47fbe0a2176bb5",
+      "titulo": "El daño por Parvispinus deja al campo ‘en carne viva’",
+      "extracto": "El daño por Parvispinus no es un número de invernaderos arrancados. Son agricultores, familias, testimonios. ‘Nechite’ pone voz a todos…",
+      "fecha": "2026-11-28T06:00:22Z",
+      "fuente": "Agroauténtico",
+      "origen": "Agroauténtico",
+      "url": "https://agroautentico.com/2026/11/el-dano-por-parvispinus-deja-al-campo-en-carne-viva/",
+      "imagen": "https://agroautentico.com/wp-content/uploads/2026/11/Jose-Luis-Martin-apodado-‘Nechite-agricultor-afectado-por-Parvispinus-525x315.webp",
+      "categorias": [
+        "Hortalizas"
+      ],
+      "local": false
     },
     {
       "id": "7776652a6705a00d",
@@ -489,7 +518,7 @@
       "url": "https://phytoma.com/noticias/agromurcia-2027-responde-al-desafio-de-producir-mas-con-menos-herramientas",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/AGROMURCIA27-imagen-portada-noticia.png",
       "categorias": [
-        "General"
+        "Riego y agua"
       ],
       "local": false,
       "imagen_buscada": true
@@ -591,7 +620,7 @@
       "url": "https://phytoma.com/noticias/aguacateforum-estrecha-alianzas-para-consolidar-el-crecimiento-del-cultivo",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/aguacateforum.jpg",
       "categorias": [
-        "General"
+        "Mercados y precios"
       ],
       "local": false,
       "imagen_buscada": true
@@ -1259,7 +1288,9 @@
       "url": "https://phytoma.com/noticias/la-ingenieria-agricola-situa-el-criterio-profesional-en-el-centro-de-la-transformacion-del-sector-agroalimentario",
       "imagen": "https://phytoma.com/wp-content/uploads/2026/11/mesa-colegiados-congreso-ingenieros-agricolas-cordoba.jpg",
       "categorias": [
-        "General"
+        "Modernización e inversiones",
+        "Fitosanitarios",
+        "Fertilización"
       ],
       "local": false,
       "imagen_buscada": true
